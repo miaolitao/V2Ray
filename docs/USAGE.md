@@ -18,7 +18,7 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/your-username/V2Ray.git
+git clone https://github.com/miaolitao/V2Ray.git
 cd V2Ray
 
 # 运行安装脚本
@@ -248,7 +248,7 @@ cp output/clash.yaml ~/.config/clash/config.yaml
 如果你的仓库是公开的，可以使用 GitHub Raw 链接作为订阅地址：
 
 ```
-https://raw.githubusercontent.com/your-username/V2Ray/main/output/clash.yaml
+https://raw.githubusercontent.com/miaolitao/V2Ray/main/output/latest/clash.yaml
 ```
 
 ### V2Ray 配置（v2ray.json）
@@ -455,6 +455,6 @@ python -c "from src.config_manager import ConfigManager; c = ConfigManager(); pr
 如有其他问题，请：
 
 1. 查看 [项目文档](../README.md)
-2. 提交 [Issue](https://github.com/your-username/V2Ray/issues)
-3. 查看现有的 [Issue](https://github.com/your-username/V2Ray/issues) 和讨论
+2. 提交 [Issue](https://github.com/miaolitao/V2Ray/issues)
+3. 查看现有的 [Issue](https://github.com/miaolitao/V2Ray/issues) 和讨论
 

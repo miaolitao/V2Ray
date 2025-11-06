@@ -1,6 +1,6 @@
 # V2Ray 节点聚合系统
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/your-username/V2Ray/update-nodes.yml?style=flat-square)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/miaolitao/V2Ray/update-nodes.yml?style=flat-square)
 ![Python Version](https://img.shields.io/badge/python-3.9+-blue?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
 
@@ -30,7 +30,7 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/your-username/V2Ray.git
+git clone https://github.com/miaolitao/V2Ray.git
 cd V2Ray
 
 # 运行安装脚本
@@ -380,8 +380,8 @@ filter:
 
 ## 📬 联系方式
 
-- 项目地址：https://github.com/your-username/V2Ray
-- Issue 反馈：https://github.com/your-username/V2Ray/issues
+- 项目地址：https://github.com/miaolitao/V2Ray
+- Issue 反馈：https://github.com/miaolitao/V2Ray/issues
 
 ---
 

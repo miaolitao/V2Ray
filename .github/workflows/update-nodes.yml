@@ -59,8 +59,8 @@ jobs:
       - name: 读取统计信息
         id: stats
         run: |
-          if [ -f output/stats.json ]; then
-            TOTAL=$(jq -r '.total_nodes' output/stats.json)
+          if [ -f output/latest/stats.json ]; then
+            TOTAL=$(jq -r '.total_nodes' output/latest/stats.json)
             echo "total_nodes=$TOTAL" >> $GITHUB_OUTPUT
           else
             echo "total_nodes=0" >> $GITHUB_OUTPUT
@@ -71,7 +71,9 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          git add output/
+          # 只提交最新的输出目录和 latest 符号链接
+          git add output/latest
+          git add output/[0-9]*
           
           if [ -n "$(git status --porcelain)" ]; then
             git commit -m "🔄 更新节点 - $(date '+%Y-%m-%d %H:%M:%S') - 节点数: ${{ steps.stats.outputs.total_nodes }}"

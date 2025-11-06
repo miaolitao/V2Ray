@@ -207,7 +207,7 @@ class ConfigManager:
 ### 1. 克隆仓库
 
 ```bash
-git clone https://github.com/your-username/V2Ray.git
+git clone https://github.com/miaolitao/V2Ray.git
 cd V2Ray
 ```
 
@@ -542,9 +542,9 @@ git push origin feature/my-feature
 
 ## 联系方式
 
-- 项目地址：https://github.com/your-username/V2Ray
-- Issue：https://github.com/your-username/V2Ray/issues
-- Discussions：https://github.com/your-username/V2Ray/discussions
+- 项目地址：https://github.com/miaolitao/V2Ray
+- Issue：https://github.com/miaolitao/V2Ray/issues
+- Discussions：https://github.com/miaolitao/V2Ray/discussions
 
 欢迎贡献代码！🎉
 
