@@ -1,0 +1,63 @@
+# 系统配置文件
+
+# 通用配置
+general:
+  log_level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  timeout: 10  # HTTP 请求超时时间（秒）
+  max_workers: 10  # 最大并发数
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+
+# 测速配置
+speed_test:
+  enabled: true  # 是否启用测速
+  timeout: 15  # 测速超时时间（秒）
+  min_speed: 1.0  # 最低速度要求（MB/s）
+  max_latency: 1000  # 最大延迟（ms）
+  test_url: "https://www.google.com/generate_204"  # 测速 URL
+  test_size: 1048576  # 测速数据大小（字节，1MB）
+  concurrent_tests: 50  # 并发测速数量
+  filter_invalid: true  # 过滤无效节点
+
+# 输出配置
+output:
+  max_nodes: 200  # 输出的最大节点数
+  max_nodes_per_protocol: 50  # 每种协议的最大节点数
+  sort_by: "speed"  # 排序方式：speed, latency, name
+  output_dir: "output"  # 输出目录
+  formats:
+    - base64
+    - clash
+    - v2ray
+    - surge
+    - quantumult
+
+# 去重配置
+deduplication:
+  method: "hash"  # 去重方式：hash, address, both
+  keep_faster: true  # 保留速度更快的重复节点
+
+# 节点过滤配置
+filter:
+  exclude_keywords:  # 排除包含这些关键词的节点
+    - "过期"
+    - "expired"
+    - "禁用"
+    - "disabled"
+  include_protocols:  # 包含的协议
+    - ss
+    - ssr
+    - vmess
+    - trojan
+    - vless
+  exclude_countries: []  # 排除的国家（为空表示不排除）
+  include_countries: []  # 包含的国家（为空表示包含所有）
+
+# Clash 模板配置
+clash_template:
+  port: 7890
+  socks_port: 7891
+  allow_lan: false
+  mode: rule
+  log_level: info
+  external_controller: 127.0.0.1:9090
+

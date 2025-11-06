@@ -1,0 +1,91 @@
+name: 更新节点
+
+on:
+  # 定时触发（每 6 小时）
+  schedule:
+    - cron: '0 */6 * * *'
+  
+  # 手动触发
+  workflow_dispatch:
+    inputs:
+      skip_test:
+        description: '跳过测速'
+        required: false
+        type: boolean
+        default: false
+      format:
+        description: '输出格式'
+        required: false
+        type: choice
+        options:
+          - all
+          - base64
+          - clash
+          - v2ray
+          - surge
+          - quantumult
+        default: all
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+      
+      - name: 设置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+      
+      - name: 安装 uv
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+      
+      - name: 安装依赖
+        run: |
+          uv pip install --system -e .
+      
+      - name: 运行节点更新
+        run: |
+          if [ "${{ github.event.inputs.skip_test }}" = "true" ]; then
+            python main.py --skip-test --format ${{ github.event.inputs.format || 'all' }}
+          else
+            python main.py --format ${{ github.event.inputs.format || 'all' }}
+          fi
+      
+      - name: 读取统计信息
+        id: stats
+        run: |
+          if [ -f output/stats.json ]; then
+            TOTAL=$(jq -r '.total_nodes' output/stats.json)
+            echo "total_nodes=$TOTAL" >> $GITHUB_OUTPUT
+          else
+            echo "total_nodes=0" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: 提交更新
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          git add output/
+          
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "🔄 更新节点 - $(date '+%Y-%m-%d %H:%M:%S') - 节点数: ${{ steps.stats.outputs.total_nodes }}"
+            git push
+          else
+            echo "没有更新"
+          fi
+      
+      - name: 上传产物
+        uses: actions/upload-artifact@v4
+        with:
+          name: v2ray-nodes-${{ github.run_number }}
+          path: |
+            output/
+            logs/
+          retention-days: 7
+
