@@ -71,9 +71,9 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          # 只提交最新的输出目录和 latest 符号链接
-          git add output/latest
-          git add output/[0-9]*
+          # 强制添加输出目录（绕过 .gitignore）
+          git add -f output/latest
+          git add -f output/[0-9]*
           
           if [ -n "$(git status --porcelain)" ]; then
             git commit -m "🔄 更新节点 - $(date '+%Y-%m-%d %H:%M:%S') - 节点数: ${{ steps.stats.outputs.total_nodes }}"
