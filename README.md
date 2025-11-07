@@ -16,6 +16,52 @@
 - 🛠️ **本地运行**：支持命令行参数，灵活配置
 - 🌐 **全协议支持**：SS、SSR、VMess、Trojan、VLESS 五种协议
 
+## 📱 订阅链接
+
+> **注意**：订阅链接通过 GitHub Pages 托管，每 6 小时自动更新一次。
+
+### 🌐 在线订阅页面
+
+访问订阅页面查看所有可用格式：
+
+**🔗 https://miaolitao.github.io/V2Ray/**
+
+### 📋 直接订阅链接
+
+#### Base64 通用订阅
+```
+https://miaolitao.github.io/V2Ray/nodes.txt
+```
+适用于：Shadowrocket、V2RayNG、Qv2ray 等
+
+#### Clash 订阅
+```
+https://miaolitao.github.io/V2Ray/clash.yaml
+```
+适用于：Clash for Windows、Clash for Android、ClashX 等
+
+#### Surge 订阅
+```
+https://miaolitao.github.io/V2Ray/surge.conf
+```
+适用于：Surge iOS、Surge Mac
+
+#### Quantumult X 订阅
+```
+https://miaolitao.github.io/V2Ray/quantumult.conf
+```
+适用于：Quantumult X
+
+### 📊 节点统计
+
+```
+https://miaolitao.github.io/V2Ray/stats.json
+```
+
+### ⚠️ 免责声明
+
+本项目仅供学习和技术研究使用。节点来源于互联网公开渠道，不保证可用性、稳定性和安全性。请勿用于非法用途，使用本项目所产生的一切后果由使用者自行承担。
+
 ## 📋 系统要求
 
 - Python 3.9 或更高版本
