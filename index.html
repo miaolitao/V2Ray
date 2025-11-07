@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V2Ray 免费节点订阅</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            padding: 40px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .stat-value {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .stat-label {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        .links {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .links h2 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        .link-item {
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #e0e0e0;
+        }
+        .link-item:last-child { margin-bottom: 0; }
+        .link-name {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .link-url {
+            font-family: monospace;
+            font-size: 13px;
+            color: #666;
+            word-break: break-all;
+            flex: 1;
+            margin-right: 10px;
+        }
+        .copy-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+        .copy-btn:hover {
+            background: #5568d3;
+        }
+        .footer {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+        .update-time {
+            color: #999;
+            font-size: 13px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 V2Ray 免费节点订阅</h1>
+        <p class="subtitle">每 6 小时自动更新 | 多种客户端支持</p>
+        
+        <div class="stats" id="stats">
+            <div class="stat-card">
+                <div class="stat-value" id="total">-</div>
+                <div class="stat-label">总节点数</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="valid">-</div>
+                <div class="stat-label">有效节点</div>
+            </div>
+        </div>
+        
+        <div class="links">
+            <h2>📱 订阅链接</h2>
+            <div class="link-item">
+                <div>
+                    <div class="link-name">Base64 通用订阅</div>
+                    <div class="link-url" id="base64-url"></div>
+                </div>
+                <button class="copy-btn" onclick="copyLink('base64')">复制</button>
+            </div>
+            <div class="link-item">
+                <div>
+                    <div class="link-name">Clash 订阅</div>
+                    <div class="link-url" id="clash-url"></div>
+                </div>
+                <button class="copy-btn" onclick="copyLink('clash')">复制</button>
+            </div>
+            <div class="link-item">
+                <div>
+                    <div class="link-name">Surge 订阅</div>
+                    <div class="link-url" id="surge-url"></div>
+                </div>
+                <button class="copy-btn" onclick="copyLink('surge')">复制</button>
+            </div>
+            <div class="link-item">
+                <div>
+                    <div class="link-name">Quantumult X 订阅</div>
+                    <div class="link-url" id="quantumult-url"></div>
+                </div>
+                <button class="copy-btn" onclick="copyLink('quantumult')">复制</button>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>⚠️ 免费节点仅供学习测试使用，请勿用于非法用途</p>
+            <p class="update-time">更新时间：<span id="update-time">-</span></p>
+            <p style="margin-top: 10px;">
+                <a href="https://github.com/miaolitao/V2Ray" target="_blank" style="color: #667eea; text-decoration: none;">
+                    ⭐ GitHub 项目地址
+                </a>
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        const baseUrl = window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '');
+        
+        const links = {
+            base64: baseUrl + '/nodes.txt',
+            clash: baseUrl + '/clash.yaml',
+            surge: baseUrl + '/surge.conf',
+            quantumult: baseUrl + '/quantumult.conf'
+        };
+        
+        document.getElementById('base64-url').textContent = links.base64;
+        document.getElementById('clash-url').textContent = links.clash;
+        document.getElementById('surge-url').textContent = links.surge;
+        document.getElementById('quantumult-url').textContent = links.quantumult;
+        
+        fetch('./stats.json')
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById('total').textContent = data.total_nodes || 0;
+                document.getElementById('valid').textContent = data.valid_nodes || 0;
+                if (data.last_update) {
+                    document.getElementById('update-time').textContent = new Date(data.last_update).toLocaleString('zh-CN');
+                }
+            })
+            .catch(err => console.error('加载统计信息失败:', err));
+        
+        function copyLink(type) {
+            const link = links[type];
+            navigator.clipboard.writeText(link).then(() => {
+                alert('✅ 链接已复制到剪贴板！\n' + link);
+            }).catch(err => {
+                console.error('复制失败:', err);
+                alert('❌ 复制失败，请手动复制');
+            });
+        }
+    </script>
+</body>
+</html>
+
