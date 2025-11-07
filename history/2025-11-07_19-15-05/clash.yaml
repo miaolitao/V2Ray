@@ -1,0 +1,2380 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+proxies:
+- name: 香港ripaojiedian
+  type: vmess
+  server: v9.heduian.link
+  port: 30809
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /oooo
+    headers:
+      Host: baidu.com
+- name: 香港3ripaojiedian
+  type: trojan
+  server: 203.198.122.194
+  port: 443
+  password: 1b57001bd214304027025a740b6cf1ac
+  sni: www.nintendogames.net
+- name: 香港4ripaojiedian
+  type: trojan
+  server: 36.150.215.231
+  port: 1655
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: 香港5ripaojiedian
+  type: trojan
+  server: 203.198.122.129
+  port: 443
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: 香港6ripaojiedian
+  type: vmess
+  server: 36.133.73.36
+  port: 11819
+  uuid: de32752c-0661-467e-82d3-35bc740a787f
+  alterId: 0
+  cipher: auto
+- name: 香港7ripaojiedian
+  type: vmess
+  server: 36.150.27.76
+  port: 49509
+  uuid: aed41f1e-75e7-41ce-a2d4-38f65a6bbc86
+  alterId: 0
+  cipher: auto
+- name: 日本ripaojiedian
+  type: trojan
+  server: 36.150.215.245
+  port: 4041
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: 日本2ripaojiedian
+  type: trojan
+  server: 117.172.176.23
+  port: 4452
+  password: 1b57001bd214304027025a740b6cf1ac
+  sni: www.nintendogames.net
+- name: 日本3ripaojiedian
+  type: trojan
+  server: 117.172.176.23
+  port: 1332
+  password: 1b57001bd214304027025a740b6cf1ac
+  sni: www.nintendogames.net
+- name: 韩国ripaojiedian
+  type: vmess
+  server: 152.70.92.69
+  port: 80
+  uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b
+  alterId: 0
+  cipher: auto
+- name: 新加坡ripaojiedian
+  type: trojan
+  server: 117.172.176.23
+  port: 2283
+  password: 1b57001bd214304027025a740b6cf1ac
+  sni: www.nintendogames.net
+- name: 新加坡2ripaojiedian
+  type: trojan
+  server: 117.172.176.23
+  port: 2173
+  password: 1b57001bd214304027025a740b6cf1ac
+  sni: www.nintendogames.net
+- name: 新加坡3ripaojiedian
+  type: trojan
+  server: 36.150.215.137
+  port: 9713
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: 美国ripaojiedian
+  type: trojan
+  server: 117.172.176.23
+  port: 4553
+  password: 1b57001bd214304027025a740b6cf1ac
+  sni: www.nintendogames.net
+- name: 美国2ripaojiedian
+  type: trojan
+  server: 160.16.231.103
+  port: 3777
+  password: e4e262d453466988575c397a30562337
+  sni: www.nintendogames.net
+  skip-cert-verify: true
+- name: 美国3ripaojiedian
+  type: trojan
+  server: 36.150.215.245
+  port: 9269
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: 越南ripaojiedian
+  type: vmess
+  server: 103.197.185.149
+  port: 23806
+  uuid: 841550b4-d4bf-4e3e-de9c-cff7baa47df3
+  alterId: 0
+  cipher: auto
+- name: 香港ripaojiedian
+  type: vmess
+  server: v9.heduian.link
+  port: 30809
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: '2'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /oooo
+    headers:
+      Host: baidu.com
+- name: 香港6ripaojiedian
+  type: vmess
+  server: 36.133.73.36
+  port: 11819
+  uuid: de32752c-0661-467e-82d3-35bc740a787f
+  alterId: '0'
+  cipher: auto
+- name: 香港7ripaojiedian
+  type: vmess
+  server: 36.150.27.76
+  port: 49509
+  uuid: aed41f1e-75e7-41ce-a2d4-38f65a6bbc86
+  alterId: '0'
+  cipher: auto
+- name: 韩国ripaojiedian
+  type: vmess
+  server: 152.70.92.69
+  port: 80
+  uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b
+  alterId: '0'
+  cipher: auto
+- name: 越南ripaojiedian
+  type: vmess
+  server: 103.197.185.149
+  port: 23806
+  uuid: 841550b4-d4bf-4e3e-de9c-cff7baa47df3
+  alterId: '0'
+  cipher: auto
+- name: 防范境外势力渗透
+  type: vmess
+  server: 127.0.0.53
+  port: 80
+  uuid: 88888888-8888-8888-8888-888888888888
+  alterId: 0
+  cipher: auto
+- name: 防范境外势力渗透 1
+  type: vmess
+  server: 127.0.0.53
+  port: 81
+  uuid: 88888888-8888-8888-8888-888888888888
+  alterId: 0
+  cipher: auto
+- name: 防范境外势力渗透 2
+  type: vmess
+  server: 127.0.0.53
+  port: 82
+  uuid: 88888888-8888-8888-8888-888888888888
+  alterId: 0
+  cipher: auto
+- name: 防范境外势力渗透 3
+  type: vmess
+  server: 127.0.0.53
+  port: 83
+  uuid: 88888888-8888-8888-8888-888888888888
+  alterId: 0
+  cipher: auto
+- name: 防范境外势力渗透 4
+  type: vmess
+  server: 127.0.0.53
+  port: 84
+  uuid: 88888888-8888-8888-8888-888888888888
+  alterId: 0
+  cipher: auto
+- name: 防范境外势力渗透 5
+  type: vmess
+  server: 127.0.0.53
+  port: 85
+  uuid: 88888888-8888-8888-8888-888888888888
+  alterId: 0
+  cipher: auto
+- name: 防范境外势力渗透 6
+  type: vmess
+  server: 127.0.0.53
+  port: 86
+  uuid: 88888888-8888-8888-8888-888888888888
+  alterId: 0
+  cipher: auto
+- name: 防范境外势力渗透 7
+  type: vmess
+  server: 127.0.0.53
+  port: 87
+  uuid: 88888888-8888-8888-8888-888888888888
+  alterId: 0
+  cipher: auto
+- name: 防范境外势力渗透 8
+  type: vmess
+  server: 127.0.0.53
+  port: 88
+  uuid: 88888888-8888-8888-8888-888888888888
+  alterId: 0
+  cipher: auto
+- name: 防范境外势力渗透 9
+  type: vmess
+  server: 127.0.0.53
+  port: 89
+  uuid: 88888888-8888-8888-8888-888888888888
+  alterId: 0
+  cipher: auto
+- name: tg频道ripaojiedian
+  type: ss
+  server: 3.9.17.198
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 香港2ripaojiedian
+  type: ss
+  server: 103.103.245.158
+  port: 443
+  cipher: aes-256-gcm
+  password: ccf426f1fe78
+- name: 香港3ripaojiedian
+  type: trojan
+  server: 203.198.122.194
+  port: 443
+  password: 1b57001bd214304027025a740b6cf1ac
+  sni: www.nintendogames.net
+- name: 香港4ripaojiedian
+  type: trojan
+  server: 36.150.215.231
+  port: 1655
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: 香港5ripaojiedian
+  type: trojan
+  server: 203.198.122.129
+  port: 443
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: 日本ripaojiedian
+  type: trojan
+  server: 36.150.215.245
+  port: 4041
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: 日本2ripaojiedian
+  type: trojan
+  server: 117.172.176.23
+  port: 4452
+  password: 1b57001bd214304027025a740b6cf1ac
+  sni: www.nintendogames.net
+- name: 日本3ripaojiedian
+  type: trojan
+  server: 117.172.176.23
+  port: 1332
+  password: 1b57001bd214304027025a740b6cf1ac
+  sni: www.nintendogames.net
+- name: 新加坡ripaojiedian
+  type: trojan
+  server: 117.172.176.23
+  port: 2283
+  password: 1b57001bd214304027025a740b6cf1ac
+  sni: www.nintendogames.net
+- name: 新加坡2ripaojiedian
+  type: trojan
+  server: 117.172.176.23
+  port: 2173
+  password: 1b57001bd214304027025a740b6cf1ac
+  sni: www.nintendogames.net
+- name: 新加坡3ripaojiedian
+  type: trojan
+  server: 36.150.215.137
+  port: 9713
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: 美国ripaojiedian
+  type: trojan
+  server: 117.172.176.23
+  port: 4553
+  password: 1b57001bd214304027025a740b6cf1ac
+  sni: www.nintendogames.net
+- name: 美国2ripaojiedian
+  type: trojan
+  server: 160.16.231.103
+  port: 3777
+  password: e4e262d453466988575c397a30562337
+  sni: www.nintendogames.net
+  skip-cert-verify: true
+- name: 美国3ripaojiedian
+  type: trojan
+  server: 36.150.215.245
+  port: 9269
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: _CN_中国-_JP_日本
+  type: trojan
+  server: 36.156.102.115
+  port: 26876
+  password: BxceQaOe
+  skip-cert-verify: true
+- name: _CN_中国-_US_美国
+  type: vmess
+  server: v29.heduian.link
+  port: 30829
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /oooo
+    headers:
+      Host: ''
+- name: _MD_摩尔多瓦-_RU_俄罗斯
+  type: ss
+  server: 185.153.197.5
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: CA-134.195.198.147-1109
+  type: vmess
+  server: 134.195.198.147
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: inna.cfd
+  tls: true
+- name: CA-23.162.200.227-7878
+  type: vmess
+  server: 23.162.200.227
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: ''
+  tls: true
+- name: CA-15.235.85.147-1214
+  type: vmess
+  server: 15.235.85.147
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: pelang.org
+  tls: true
+- name: 8J2BHrPCfh6dHQi02Mi4xMDAuMjA1LjQ4LTU0NjM3D
+  type: ssr
+  server: 62.100.205.48
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  protocol: origin
+  obfs: plain
+  protocol-param: ''
+  obfs-param: ''
+- name: FR-57.128.189.240-5439
+  type: vmess
+  server: 57.128.189.240
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: ''
+  tls: true
+- name: FR-141.94.155.229-1196
+  type: vmess
+  server: 141.94.155.229
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: pelang.org
+  tls: true
+- name: FR-91.134.8.93-1212
+  type: vmess
+  server: 91.134.8.93
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: pelang.org
+  tls: true
+- name: RELAY-172.67.200.13-1501
+  type: vmess
+  server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+  port: 443
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /azumase.ren
+    headers:
+      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+  tls: true
+- name: US-38.99.82.193-0991
+  type: vmess
+  server: 38.99.82.193
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: tilebani.com
+  tls: true
+- name: RELAY-172.67.200.13-1151
+  type: vmess
+  server: 172.67.200.13
+  port: 443
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /azumase.ren
+    headers:
+      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+  tls: true
+- name: DE-57.129.24.125-7856
+  type: vmess
+  server: 57.129.24.125
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+- name: FR-146.59.85.226-1213
+  type: vmess
+  server: 146.59.85.226
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: pelang.org
+  tls: true
+- name: BR-95.164.4.88-0792
+  type: vmess
+  server: pq-brazil1.09vpn.com
+  port: 80
+  uuid: c04c3b34-70fd-4fec-963e-c12d09f36bef
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: pq-brazil1.09vpn.com
+- name: LV-216.173.69.250-0308
+  type: vmess
+  server: 216.173.69.250
+  port: 8443
+  uuid: 91382092-2330-455b-8a1c-9c129cfe661a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.com
+- name: SG-45.76.181.246-0324
+  type: vmess
+  server: 45.76.181.246
+  port: 12345
+  uuid: 52263901-b3cf-4d7d-b4fd-a12fe178ef2a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: US-154.64.243.19-0316
+  type: vmess
+  server: 154.64.243.19
+  port: 38533
+  uuid: 9bc23ccf-4769-4e9a-b278-2dfa8d9ef425
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: JP-8.211.164.215-5662
+  type: vmess
+  server: 8.211.164.215
+  port: 20522
+  uuid: 73193cce-7ca1-4b08-93ff-4ee8b0147374
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /telegram_@sswia
+    headers:
+      Host: ''
+- name: CY-45.89.107.51-0331
+  type: vmess
+  server: 45.89.107.51
+  port: 20521
+  uuid: 3dbaa5c3-f493-4ad1-9c5d-8525f4962a6c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: HK-47.238.78.223-5733
+  type: vmess
+  server: 47.238.78.223
+  port: 17723
+  uuid: 48acb3b4-574a-45b2-b527-c0f9a3e6dfa0
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-47.243.231.14-5652
+  type: vmess
+  server: 47.243.231.14
+  port: 20522
+  uuid: 8353b026-ad63-4395-907e-5cc31b9e0d3b
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /telegram_@sswia
+    headers:
+      Host: ''
+- name: HK-47.238.247.69-5731
+  type: vmess
+  server: 47.238.247.69
+  port: 8535
+  uuid: aca68896-1d4e-41fc-b1ed-e9295c8a5f5e
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-47.86.85.95-5736
+  type: vmess
+  server: 47.86.85.95
+  port: 8934
+  uuid: a50e42f2-d578-4cb9-8d38-a9a382ef5534
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: CA-51.79.102.253-0851
+  type: vmess
+  server: 51.79.102.253
+  port: 80
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+- name: HK-47.243.251.240-5650
+  type: vmess
+  server: 47.243.251.240
+  port: 14382
+  uuid: d9d94dcc-f461-41d2-8f30-45716b902475
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-47.243.168.211-5655
+  type: vmess
+  server: 47.243.168.211
+  port: 24680
+  uuid: 33cb9737-88a5-4372-9db0-84255e243c1d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: MY-38.54.98.150-5737
+  type: vmess
+  server: 38.54.98.150
+  port: 62656
+  uuid: b771d99f-ef69-4b5c-8398-665bf851a661
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: CA-51.79.102.253-1496
+  type: vmess
+  server: 51.79.102.253
+  port: 80
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+    headers:
+      Host: ''
+- name: HK-45.136.12.37-5453
+  type: vmess
+  server: 45.136.12.37
+  port: 20521
+  uuid: 090d0bd9-f9c4-4c3b-8aae-ffa678765935
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: VN-160.30.54.67-6040
+  type: vmess
+  server: 160.30.54.67
+  port: 20522
+  uuid: 4651d550-ab4e-4e76-9320-f44fc2a0189f
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /telegram_@sswia
+    headers:
+      Host: ''
+- name: HK-8.217.92.110-5527
+  type: vmess
+  server: 8.217.92.110
+  port: 20522
+  uuid: 31e1f90f-0218-4097-91f9-a42df9b3334a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /telegram_@sswia
+    headers:
+      Host: ''
+- name: HK-8.217.209.82-5709
+  type: vmess
+  server: 8.217.209.82
+  port: 6874
+  uuid: 1f8a9781-3088-4499-8909-283826d05457
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: US-209.126.84.189-0711
+  type: vmess
+  server: 209.126.84.189
+  port: 443
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmessws
+    headers:
+      Host: 209.126.84.189
+- name: US-209.126.84.189-0889
+  type: vmess
+  server: v2ray.codefyinc.com
+  port: 443
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmessws
+    headers:
+      Host: v2ray.codefyinc.com
+- name: HK-8.210.52.211-5528
+  type: vmess
+  server: 8.210.52.211
+  port: 20522
+  uuid: 37827036-1fc5-41ea-9fc5-111af1db49dc
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /telegram_@sswia
+    headers:
+      Host: ''
+- name: MY-47.250.45.234-5668
+  type: vmess
+  server: 47.250.45.234
+  port: 43063
+  uuid: c77f48f5-4be3-4461-b52b-49998e7b897b
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-47.86.85.95-5734
+  type: vmess
+  server: 47.86.85.95
+  port: 26006
+  uuid: 7d719104-729e-4698-a597-59798aa64f0f
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-47.243.168.211-5641
+  type: vmess
+  server: 47.243.168.211
+  port: 50059
+  uuid: 017a9e5a-0fe4-41fb-925a-fc240dae809c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-47.86.85.95-5726
+  type: vmess
+  server: 47.86.85.95
+  port: 14044
+  uuid: 74475bf0-0267-4a04-b431-54752e31994b
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-47.239.102.115-5610
+  type: vmess
+  server: 47.239.102.115
+  port: 7040
+  uuid: 1bf931d3-2ae5-4137-9b26-298833bf7576
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-8.218.113.19-7815
+  type: vmess
+  server: 8.218.113.19
+  port: 54100
+  uuid: 9b401fe8-7a80-4c9d-8126-e29407a6032c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-8.217.158.92-5694
+  type: vmess
+  server: 8.217.158.92
+  port: 49761
+  uuid: b224875e-98a6-4477-a1ee-533887b6701d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-8.210.212.196-5647
+  type: vmess
+  server: 8.210.212.196
+  port: 43149
+  uuid: bdb46289-9b42-447a-b5db-1453324dc40b
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-8.218.175.64-5690
+  type: vmess
+  server: 8.218.175.64
+  port: 51377
+  uuid: 45bfcaaa-f3db-4e93-8164-4203eaa2a2cc
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: MY-47.250.45.234-5669
+  type: vmess
+  server: 47.250.45.234
+  port: 8613
+  uuid: 80039b4d-bac0-4f89-82c7-54fad3b0a1ea
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-47.243.39.20-5637
+  type: vmess
+  server: 47.243.39.20
+  port: 36512
+  uuid: cc13ac4b-d38f-4ebb-8a2a-73cf3aff5650
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-8.210.122.139-5636
+  type: vmess
+  server: 8.210.122.139
+  port: 39194
+  uuid: b34a4bd6-0d5d-421b-b6ff-5ab6a6c3bb82
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-47.239.102.115-5615
+  type: vmess
+  server: 47.239.102.115
+  port: 56675
+  uuid: 36303fd3-e1e3-4159-81cb-92a7580db3b8
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-8.218.152.97-5602
+  type: vmess
+  server: 8.218.152.97
+  port: 46433
+  uuid: 4648e017-a18f-48b6-a570-1bfe61fc3825
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-47.83.174.131-5717
+  type: vmess
+  server: 47.83.174.131
+  port: 29493
+  uuid: 12c24fed-1079-41d6-ab51-4e8ab3cc1267
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-8.218.175.64-5705
+  type: vmess
+  server: 8.218.175.64
+  port: 51823
+  uuid: b8ee639c-a7ac-49fa-bc49-2510e885043f
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-8.218.140.27-5704
+  type: vmess
+  server: 8.218.140.27
+  port: 32876
+  uuid: d54c887a-7d47-4dc8-995d-df7687ef0494
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-47.239.20.252-5616
+  type: vmess
+  server: 47.239.20.252
+  port: 55335
+  uuid: 21a52ae7-fb73-4b02-a545-af7852ccc4f2
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-47.243.231.14-5639
+  type: vmess
+  server: 47.243.231.14
+  port: 34404
+  uuid: 80d50481-a070-41fa-b7c1-82b49f053c7a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-8.217.21.237-5605
+  type: vmess
+  server: 8.217.21.237
+  port: 35638
+  uuid: 132c1dc3-9ac5-4a54-9945-7b2aae2eacaa
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-47.243.172.177-5645
+  type: vmess
+  server: 47.243.172.177
+  port: 48540
+  uuid: 61999571-f1f4-47b1-b303-692ab359892d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-8.218.175.64-5697
+  type: vmess
+  server: 8.218.175.64
+  port: 9754
+  uuid: 5b9575c3-c404-4c93-98f8-63581e88ffdf
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: TW-83.147.13.228-5594
+  type: vmess
+  server: 83.147.13.228
+  port: 8080
+  uuid: 26d77d7a-d4ea-40cd-8da5-54a9c84e7362
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /ec-McAuth/index
+    headers:
+      Host: ''
+- name: HK-47.239.141.74-5551
+  type: vmess
+  server: 47.239.141.74
+  port: 11886
+  uuid: 0d36b017-6d7c-493d-bb12-55c34faf6efc
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: HK-47.239.102.115-5720
+  type: vmess
+  server: 47.239.102.115
+  port: 5361
+  uuid: a053682e-9373-4fe7-8277-1de3f8d1eacd
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-8.217.159.96-5698
+  type: vmess
+  server: 8.217.159.96
+  port: 47872
+  uuid: 23ea0b75-206b-4e3b-b624-e093d5808bf8
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-8.218.71.140-5701
+  type: vmess
+  server: 8.218.71.140
+  port: 37121
+  uuid: dec97969-e770-44ec-9429-6b57be19fc63
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-47.239.252.30-5617
+  type: vmess
+  server: 47.239.252.30
+  port: 24792
+  uuid: cbbdf09b-498a-4e91-9508-71a79d7fa517
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: 8J2BHrfCfh7BISy0xNTAuMTA3LjQ2LjIxLTA0MjQ3D
+  type: ssr
+  server: 150.107.46.21
+  port: 8083
+  cipher: aes-256-cfb
+  password: aUZxbnpTc2NO/
+  protocol: origin
+  obfs: tls1.2_ticket_auth
+  protocol-param: ''
+  obfs-param: ''
+- name: HK-47.243.172.177-5643
+  type: vmess
+  server: 47.243.172.177
+  port: 17527
+  uuid: 499ee2c5-30a7-4939-8b3c-781b07486d4c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: RELAY-185.146.173.126-1547
+  type: vmess
+  server: 185.146.173.126
+  port: 80
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+- name: HK-47.86.85.95-5724
+  type: vmess
+  server: 47.86.85.95
+  port: 20522
+  uuid: 9beaafcd-bdc1-420e-984a-b834337bcb16
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /telegram_@sswia
+    headers:
+      Host: ''
+- name: HK-47.239.252.30-5608
+  type: vmess
+  server: 47.239.252.30
+  port: 8849
+  uuid: 4244267d-52b3-4ae2-9926-da2b07de889b
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-47.239.20.252-5612
+  type: vmess
+  server: 47.239.20.252
+  port: 26048
+  uuid: 5011f3af-eb8c-4057-9d00-7141e875c45a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-45.116.78.152-5634
+  type: vmess
+  server: 45.116.78.152
+  port: 7151
+  uuid: a3a95415-b7f3-4f1f-9486-bee6a68feaa2
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: HK-8.217.158.92-5706
+  type: vmess
+  server: 8.217.158.92
+  port: 50060
+  uuid: 7ecac376-1809-4f72-bd59-aa93d748a822
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: github.comfreefq-美国华盛顿Cogent通信公司8
+  type: ss
+  server: 38.114.114.67
+  port: 6697
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+- name: github.comfreefq-美国华盛顿Cogent通信公司20
+  type: ss
+  server: 38.75.136.21
+  port: 8080
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: github.comfreefq-英国54
+  type: ss
+  server: 185.167.116.253
+  port: 9014
+  cipher: aes-256-cfb
+  password: KnJGad3FqTvjqbaX
+- name: github.comfreefq-美国华盛顿Cogent通信公司5
+  type: ss
+  server: 38.114.114.19
+  port: 5601
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: github.comfreefq-美国华盛顿Cogent通信公司11
+  type: ss
+  server: 38.75.136.21
+  port: 5001
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: github.comfreefq-英国46
+  type: ss
+  server: 185.167.116.253
+  port: 9050
+  cipher: aes-256-cfb
+  password: FG5ddLsMPbV5CutE
+- name: github.comfreefq-美国华盛顿Cogent通信公司15
+  type: ss
+  server: 38.114.114.19
+  port: 443
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+- name: github.comfreefq-美国华盛顿Cogent通信公司62
+  type: ss
+  server: 38.75.136.21
+  port: 5003
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+- name: github.comfreefq-美国华盛顿Cogent通信公司18
+  type: ss
+  server: 38.143.66.99
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: github.comfreefq-美国华盛顿Cogent通信公司21
+  type: ss
+  server: 38.143.66.99
+  port: 5001
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: github.comfreefq-法国39
+  type: trojan
+  server: us-05.licom.ml
+  port: 12501
+  password: ce433528-39fa-4711-bc0d-25a5b1579574
+- name: github.comfreefq-英国52
+  type: ss
+  server: 78.129.253.9
+  port: 809
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: github.comfreefq-英国45
+  type: ss
+  server: 185.167.116.24
+  port: 9097
+  cipher: aes-256-cfb
+  password: Sn5B7jTqr76aCJT8
+- name: github.comfreefq - 美国弗吉尼亚州文特山农场OVH数据中心 9
+  type: vmess
+  server: 51.81.223.22
+  port: 443
+  uuid: c0156451-4efb-45e2-84fc-8d315c4650db
+  alterId: '32'
+  cipher: auto
+- name: github.comfreefq-美国华盛顿Cogent通信公司17
+  type: ss
+  server: 38.68.134.85
+  port: 5600
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: github.comfreefq-北美地区22
+  type: ss
+  server: 134.195.196.149
+  port: 7307
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+- name: github.comfreefq-加拿大42
+  type: ss
+  server: 38.64.138.145
+  port: 8080
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: github.comfreefq-美国华盛顿Cogent通信公司26
+  type: ss
+  server: 38.68.134.85
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+- name: github.comfreefq-瑞典35
+  type: ss
+  server: 167.88.63.79
+  port: 3306
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: github.comfreefq-法国ONLINES.A.S.数据中心66
+  type: ss
+  server: 195.154.200.150
+  port: 2376
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: github.comfreefq-英国47
+  type: ss
+  server: 145.239.1.100
+  port: 8080
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: github.comfreefq-美国华盛顿Cogent通信公司28
+  type: ss
+  server: 38.121.43.71
+  port: 8119
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: github.comfreefq-英国44
+  type: ss
+  server: 145.239.1.100
+  port: 8888
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: github.comfreefq-法国OVH机房SAS硬盘BGP主机41
+  type: ss
+  server: 149.202.82.172
+  port: 6697
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+- name: github.comfreefq-俄罗斯莫斯科Melbicom数据中心12
+  type: ss
+  server: 213.183.53.222
+  port: 9014
+  cipher: aes-256-cfb
+  password: KnJGad3FqTvjqbaX
+- name: github.comfreefq-英国51
+  type: ss
+  server: 145.239.1.100
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: github.comfreefq-美国29
+  type: trojan
+  server: kr05.wangxd.life
+  port: 3052
+  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
+- name: github.comfreefq-新加坡M247网络58
+  type: trojan
+  server: supersouth.xn--mesv7f5toqlp.club
+  port: 12004
+  password: dd04c158-1bac-47cd-99c1-5c4f64796dd5
+- name: github.comfreefq-法国OVH机房SAS硬盘BGP主机49
+  type: ss
+  server: 149.202.82.172
+  port: 8080
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: github.comfreefq-德国黑森州法兰克福Amazon数据中心32
+  type: ss
+  server: 52.58.249.78
+  port: 57824
+  cipher: chacha20-ietf-poly1305
+  password: pryhyxya
+- name: github.comfreefq-瑞典7
+  type: ss
+  server: 167.88.61.175
+  port: 8080
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: github.comfreefq-美国华盛顿Cogent通信公司37
+  type: ss
+  server: 38.121.43.71
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: github.comfreefq-塞舌尔27
+  type: ss
+  server: 196.247.59.154
+  port: 800
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: github.comfreefq-美国33
+  type: ss
+  server: 172.99.190.39
+  port: 5500
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: github.comfreefq-美国华盛顿Cogent通信公司59
+  type: ss
+  server: 38.68.135.18
+  port: 5500
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: github.comfreefq-美国31
+  type: ss
+  server: 172.99.190.39
+  port: 5003
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+- name: github.comfreefq-日本东京Linode数据中心68
+  type: trojan
+  server: in-01.licom.ml
+  port: 8443
+  password: ce433528-39fa-4711-bc0d-25a5b1579574
+- name: github.comfreefq-保加利亚索非亚Melbicom数据中心55
+  type: ss
+  server: 213.183.63.221
+  port: 9001
+  cipher: aes-256-cfb
+  password: UkXRsXvR6buDMG2Y
+- name: github.comfreefq - 美国  19
+  type: vmess
+  server: 152.69.197.60
+  port: 1069
+  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
+  alterId: '0'
+  cipher: auto
+- name: AM_1
+  type: vmess
+  server: 185.162.228.229
+  port: 443
+  uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+  tls: true
+  servername: oplg1.zhujicn2.com
+- name: BZ_5
+  type: vmess
+  server: 203.30.190.191
+  port: 443
+  uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+  tls: true
+  servername: oplg1.zhujicn2.com
+- name: BZ_6
+  type: vmess
+  server: 203.30.189.191
+  port: 443
+  uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+  tls: true
+  servername: lg10.cfcdn1.xyz
+- name: CA_8
+  type: vmess
+  server: 139.99.61.53
+  port: 80
+  uuid: 60f30e26-0af7-4b64-ba94-71450ed77e23
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: CN_9
+  type: vmess
+  server: cu.awslcn.cc
+  port: 25240
+  uuid: 848ae1b7-1693-4887-8833-07b899a602cd
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: CN_10
+  type: vmess
+  server: jp1.awslcn.cc
+  port: 25237
+  uuid: 848ae1b7-1693-4887-8833-07b899a602cd
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: CN_11
+  type: vmess
+  server: zfd-moblev2.gatknqh.cn
+  port: 16278
+  uuid: 6a8c6772-6b96-375e-a583-fed6db181e6d
+  alterId: 0
+  cipher: auto
+- name: CN_12
+  type: vmess
+  server: jp2.awslcn.cc
+  port: 25237
+  uuid: 848ae1b7-1693-4887-8833-07b899a602cd
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: CN_13
+  type: vmess
+  server: cm1.awslcn.cc
+  port: 25241
+  uuid: 848ae1b7-1693-4887-8833-07b899a602cd
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: CN_14
+  type: vmess
+  server: 39.103.165.178
+  port: 50002
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+- name: CN_15
+  type: vmess
+  server: us1.awslcn.cc
+  port: 25239
+  uuid: 848ae1b7-1693-4887-8833-07b899a602cd
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: CN_16
+  type: vmess
+  server: us2.awslcn.cc
+  port: 25239
+  uuid: 848ae1b7-1693-4887-8833-07b899a602cd
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: CN_17
+  type: vmess
+  server: sg1.awslcn.cc
+  port: 25253
+  uuid: 848ae1b7-1693-4887-8833-07b899a602cd
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: CN_18
+  type: vmess
+  server: sg1.awslcn.cc
+  port: 25246
+  uuid: 848ae1b7-1693-4887-8833-07b899a602cd
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: CN_19
+  type: vmess
+  server: cm1.awslcn.cc
+  port: 25230
+  uuid: 848ae1b7-1693-4887-8833-07b899a602cd
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: CN_20
+  type: vmess
+  server: cm1.awslcn.cc
+  port: 25232
+  uuid: 848ae1b7-1693-4887-8833-07b899a602cd
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: CN_21
+  type: vmess
+  server: cm1.awslcn.cc
+  port: 25218
+  uuid: 848ae1b7-1693-4887-8833-07b899a602cd
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: CN_22
+  type: vmess
+  server: cm1.awslcn.cc
+  port: 25228
+  uuid: 848ae1b7-1693-4887-8833-07b899a602cd
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: CN_23
+  type: vmess
+  server: jp1.awslcn.cc
+  port: 25219
+  uuid: 848ae1b7-1693-4887-8833-07b899a602cd
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: CN_24
+  type: vmess
+  server: smart.2022.2024.mlinuu.top
+  port: 11001
+  uuid: 261d6e98-f009-331f-8350-eba6f59b2bf0
+  alterId: 0
+  cipher: auto
+- name: CN_25
+  type: vmess
+  server: 106.55.234.95
+  port: 31372
+  uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411
+  alterId: 0
+  cipher: auto
+- name: CY_26
+  type: vmess
+  server: 203.24.108.9
+  port: 443
+  uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+  tls: true
+  servername: oplg1.zhujicn2.com
+- name: DE_28
+  type: vmess
+  server: lu1.gogogoo.cyou
+  port: 443
+  uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+  tls: true
+- name: DE_29
+  type: vmess
+  server: 5.75.154.136
+  port: 63456
+  uuid: dab6ce8a-8059-4357-9083-c5283e1908b2
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: Earth_30
+  type: vmess
+  server: 190.93.245.4
+  port: 443
+  uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+  tls: true
+  servername: lg10.cfcdn1.xyz
+- name: Earth_31
+  type: vmess
+  server: 198.41.212.123
+  port: 443
+  uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+  tls: true
+  servername: opfr1.v2rayfree1.xyz
+- name: Earth_32
+  type: vmess
+  server: v2.kdanmmgmasz.xyz
+  port: 443
+  uuid: ae0b2b4a-47ac-4d72-b03c-524f959d5a1a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+  tls: true
+  servername: v2.kdanmmgmasz.xyz
+- name: Earth_33
+  type: vmess
+  server: v2ray.damesppd.club
+  port: 443
+  uuid: ae0b2b4a-47ac-4d72-b03c-524f959d5a1a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+  tls: true
+  servername: v2ray.damesppd.club
+- name: Earth_35
+  type: vmess
+  server: 190.93.246.4
+  port: 443
+  uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+  tls: true
+  servername: lg10.cfcdn1.xyz
+- name: Earth_36
+  type: vmess
+  server: 198.41.203.5
+  port: 443
+  uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+  tls: true
+  servername: opfr1.v2rayfree1.xyz
+- name: Earth_37
+  type: vmess
+  server: 103.166.183.226
+  port: 80
+  uuid: ef919c67-6638-4416-91af-9a13ffe5b9ca
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: Earth_38
+  type: vmess
+  server: a.v2ray.world
+  port: 443
+  uuid: 05b6b25b-bb5d-4dcd-9710-31e374ffa584
+  alterId: 64
+  cipher: auto
+  tls: true
+- name: Earth_39
+  type: vmess
+  server: fr.sangyu.tw
+  port: 443
+  uuid: ce14d788-0f79-491e-85ca-05240612f28a
+  alterId: 233
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+  tls: true
+  servername: fr.sangyu.tw
+- name: Earth_40
+  type: vmess
+  server: 127.0.0.1
+  port: 80
+  uuid: c52e27cd-9c9c-44a2-9371-125b1ea8953c
+  alterId: 64
+  cipher: auto
+- name: Earth_41
+  type: vmess
+  server: cf.fovi.tk
+  port: 2053
+  uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+  tls: true
+  servername: foxpol.fovi.tk
+- name: Earth_42
+  type: vmess
+  server: 141.101.114.134
+  port: 443
+  uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+  tls: true
+  servername: opfr1.v2rayfree1.xyz
+- name: Earth_43
+  type: vmess
+  server: 141.101.114.31
+  port: 443
+  uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+  tls: true
+  servername: oplg1.zhujicn2.com
+- name: FR_50
+  type: vmess
+  server: 51.89.138.147
+  port: 80
+  uuid: 0f95cb36-4f7d-45be-b44d-d7a4f221ad49
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: FR_51
+  type: vmess
+  server: 51.68.139.22
+  port: 80
+  uuid: c6744c44-4eb7-48d5-a879-a10474e2ba34
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: FR_52
+  type: vmess
+  server: 51.77.212.145
+  port: 80
+  uuid: 5f6e42bb-2fd1-478b-8f0f-e52b2d6f7652
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: FR_53
+  type: vmess
+  server: fr2.v2rayserv.com
+  port: 80
+  uuid: 720e5c4e-4e44-40f6-8e73-7c32e18b61d0
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: HK_55
+  type: vmess
+  server: v1-hk.xtspeeder001.xyz
+  port: 18001
+  uuid: 7affa329-5e15-369e-8929-b6452cdf2616
+  alterId: 0
+  cipher: auto
+proxy-groups:
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - 🔮 负载均衡
+  - DIRECT
+  - 香港ripaojiedian
+  - 香港3ripaojiedian
+  - 香港4ripaojiedian
+  - 香港5ripaojiedian
+  - 香港6ripaojiedian
+  - 香港7ripaojiedian
+  - 日本ripaojiedian
+  - 日本2ripaojiedian
+  - 日本3ripaojiedian
+  - 韩国ripaojiedian
+  - 新加坡ripaojiedian
+  - 新加坡2ripaojiedian
+  - 新加坡3ripaojiedian
+  - 美国ripaojiedian
+  - 美国2ripaojiedian
+  - 美国3ripaojiedian
+  - 越南ripaojiedian
+  - 香港ripaojiedian
+  - 香港6ripaojiedian
+  - 香港7ripaojiedian
+  - 韩国ripaojiedian
+  - 越南ripaojiedian
+  - 防范境外势力渗透
+  - 防范境外势力渗透 1
+  - 防范境外势力渗透 2
+  - 防范境外势力渗透 3
+  - 防范境外势力渗透 4
+  - 防范境外势力渗透 5
+  - 防范境外势力渗透 6
+  - 防范境外势力渗透 7
+  - 防范境外势力渗透 8
+  - 防范境外势力渗透 9
+  - tg频道ripaojiedian
+  - 香港2ripaojiedian
+  - 香港3ripaojiedian
+  - 香港4ripaojiedian
+  - 香港5ripaojiedian
+  - 日本ripaojiedian
+  - 日本2ripaojiedian
+  - 日本3ripaojiedian
+  - 新加坡ripaojiedian
+  - 新加坡2ripaojiedian
+  - 新加坡3ripaojiedian
+  - 美国ripaojiedian
+  - 美国2ripaojiedian
+  - 美国3ripaojiedian
+  - _CN_中国-_JP_日本
+  - _CN_中国-_US_美国
+  - _MD_摩尔多瓦-_RU_俄罗斯
+  - CA-134.195.198.147-1109
+  - CA-23.162.200.227-7878
+  - CA-15.235.85.147-1214
+  - 8J2BHrPCfh6dHQi02Mi4xMDAuMjA1LjQ4LTU0NjM3D
+  - FR-57.128.189.240-5439
+  - FR-141.94.155.229-1196
+  - FR-91.134.8.93-1212
+  - RELAY-172.67.200.13-1501
+  - US-38.99.82.193-0991
+  - RELAY-172.67.200.13-1151
+  - DE-57.129.24.125-7856
+  - FR-146.59.85.226-1213
+  - BR-95.164.4.88-0792
+  - LV-216.173.69.250-0308
+  - SG-45.76.181.246-0324
+  - US-154.64.243.19-0316
+  - JP-8.211.164.215-5662
+  - CY-45.89.107.51-0331
+  - HK-47.238.78.223-5733
+  - HK-47.243.231.14-5652
+  - HK-47.238.247.69-5731
+  - HK-47.86.85.95-5736
+  - CA-51.79.102.253-0851
+  - HK-47.243.251.240-5650
+  - HK-47.243.168.211-5655
+  - MY-38.54.98.150-5737
+  - CA-51.79.102.253-1496
+  - HK-45.136.12.37-5453
+  - VN-160.30.54.67-6040
+  - HK-8.217.92.110-5527
+  - HK-8.217.209.82-5709
+  - US-209.126.84.189-0711
+  - US-209.126.84.189-0889
+  - HK-8.210.52.211-5528
+  - MY-47.250.45.234-5668
+  - HK-47.86.85.95-5734
+  - HK-47.243.168.211-5641
+  - HK-47.86.85.95-5726
+  - HK-47.239.102.115-5610
+  - HK-8.218.113.19-7815
+  - HK-8.217.158.92-5694
+  - HK-8.210.212.196-5647
+  - HK-8.218.175.64-5690
+  - MY-47.250.45.234-5669
+  - HK-47.243.39.20-5637
+  - HK-8.210.122.139-5636
+  - HK-47.239.102.115-5615
+  - HK-8.218.152.97-5602
+  - HK-47.83.174.131-5717
+  - HK-8.218.175.64-5705
+  - HK-8.218.140.27-5704
+  - HK-47.239.20.252-5616
+  - HK-47.243.231.14-5639
+  - HK-8.217.21.237-5605
+  - HK-47.243.172.177-5645
+  - HK-8.218.175.64-5697
+  - TW-83.147.13.228-5594
+  - HK-47.239.141.74-5551
+  - HK-47.239.102.115-5720
+  - HK-8.217.159.96-5698
+  - HK-8.218.71.140-5701
+  - HK-47.239.252.30-5617
+  - 8J2BHrfCfh7BISy0xNTAuMTA3LjQ2LjIxLTA0MjQ3D
+  - HK-47.243.172.177-5643
+  - RELAY-185.146.173.126-1547
+  - HK-47.86.85.95-5724
+  - HK-47.239.252.30-5608
+  - HK-47.239.20.252-5612
+  - HK-45.116.78.152-5634
+  - HK-8.217.158.92-5706
+  - github.comfreefq-美国华盛顿Cogent通信公司8
+  - github.comfreefq-美国华盛顿Cogent通信公司20
+  - github.comfreefq-英国54
+  - github.comfreefq-美国华盛顿Cogent通信公司5
+  - github.comfreefq-美国华盛顿Cogent通信公司11
+  - github.comfreefq-英国46
+  - github.comfreefq-美国华盛顿Cogent通信公司15
+  - github.comfreefq-美国华盛顿Cogent通信公司62
+  - github.comfreefq-美国华盛顿Cogent通信公司18
+  - github.comfreefq-美国华盛顿Cogent通信公司21
+  - github.comfreefq-法国39
+  - github.comfreefq-英国52
+  - github.comfreefq-英国45
+  - github.comfreefq - 美国弗吉尼亚州文特山农场OVH数据中心 9
+  - github.comfreefq-美国华盛顿Cogent通信公司17
+  - github.comfreefq-北美地区22
+  - github.comfreefq-加拿大42
+  - github.comfreefq-美国华盛顿Cogent通信公司26
+  - github.comfreefq-瑞典35
+  - github.comfreefq-法国ONLINES.A.S.数据中心66
+  - github.comfreefq-英国47
+  - github.comfreefq-美国华盛顿Cogent通信公司28
+  - github.comfreefq-英国44
+  - github.comfreefq-法国OVH机房SAS硬盘BGP主机41
+  - github.comfreefq-俄罗斯莫斯科Melbicom数据中心12
+  - github.comfreefq-英国51
+  - github.comfreefq-美国29
+  - github.comfreefq-新加坡M247网络58
+  - github.comfreefq-法国OVH机房SAS硬盘BGP主机49
+  - github.comfreefq-德国黑森州法兰克福Amazon数据中心32
+  - github.comfreefq-瑞典7
+  - github.comfreefq-美国华盛顿Cogent通信公司37
+  - github.comfreefq-塞舌尔27
+  - github.comfreefq-美国33
+  - github.comfreefq-美国华盛顿Cogent通信公司59
+  - github.comfreefq-美国31
+  - github.comfreefq-日本东京Linode数据中心68
+  - github.comfreefq-保加利亚索非亚Melbicom数据中心55
+  - github.comfreefq - 美国  19
+  - AM_1
+  - BZ_5
+  - BZ_6
+  - CA_8
+  - CN_9
+  - CN_10
+  - CN_11
+  - CN_12
+  - CN_13
+  - CN_14
+  - CN_15
+  - CN_16
+  - CN_17
+  - CN_18
+  - CN_19
+  - CN_20
+  - CN_21
+  - CN_22
+  - CN_23
+  - CN_24
+  - CN_25
+  - CY_26
+  - DE_28
+  - DE_29
+  - Earth_30
+  - Earth_31
+  - Earth_32
+  - Earth_33
+  - Earth_35
+  - Earth_36
+  - Earth_37
+  - Earth_38
+  - Earth_39
+  - Earth_40
+  - Earth_41
+  - Earth_42
+  - Earth_43
+  - FR_50
+  - FR_51
+  - FR_52
+  - FR_53
+  - HK_55
+- name: ♻️ 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies: &id001
+  - 香港ripaojiedian
+  - 香港3ripaojiedian
+  - 香港4ripaojiedian
+  - 香港5ripaojiedian
+  - 香港6ripaojiedian
+  - 香港7ripaojiedian
+  - 日本ripaojiedian
+  - 日本2ripaojiedian
+  - 日本3ripaojiedian
+  - 韩国ripaojiedian
+  - 新加坡ripaojiedian
+  - 新加坡2ripaojiedian
+  - 新加坡3ripaojiedian
+  - 美国ripaojiedian
+  - 美国2ripaojiedian
+  - 美国3ripaojiedian
+  - 越南ripaojiedian
+  - 香港ripaojiedian
+  - 香港6ripaojiedian
+  - 香港7ripaojiedian
+  - 韩国ripaojiedian
+  - 越南ripaojiedian
+  - 防范境外势力渗透
+  - 防范境外势力渗透 1
+  - 防范境外势力渗透 2
+  - 防范境外势力渗透 3
+  - 防范境外势力渗透 4
+  - 防范境外势力渗透 5
+  - 防范境外势力渗透 6
+  - 防范境外势力渗透 7
+  - 防范境外势力渗透 8
+  - 防范境外势力渗透 9
+  - tg频道ripaojiedian
+  - 香港2ripaojiedian
+  - 香港3ripaojiedian
+  - 香港4ripaojiedian
+  - 香港5ripaojiedian
+  - 日本ripaojiedian
+  - 日本2ripaojiedian
+  - 日本3ripaojiedian
+  - 新加坡ripaojiedian
+  - 新加坡2ripaojiedian
+  - 新加坡3ripaojiedian
+  - 美国ripaojiedian
+  - 美国2ripaojiedian
+  - 美国3ripaojiedian
+  - _CN_中国-_JP_日本
+  - _CN_中国-_US_美国
+  - _MD_摩尔多瓦-_RU_俄罗斯
+  - CA-134.195.198.147-1109
+  - CA-23.162.200.227-7878
+  - CA-15.235.85.147-1214
+  - 8J2BHrPCfh6dHQi02Mi4xMDAuMjA1LjQ4LTU0NjM3D
+  - FR-57.128.189.240-5439
+  - FR-141.94.155.229-1196
+  - FR-91.134.8.93-1212
+  - RELAY-172.67.200.13-1501
+  - US-38.99.82.193-0991
+  - RELAY-172.67.200.13-1151
+  - DE-57.129.24.125-7856
+  - FR-146.59.85.226-1213
+  - BR-95.164.4.88-0792
+  - LV-216.173.69.250-0308
+  - SG-45.76.181.246-0324
+  - US-154.64.243.19-0316
+  - JP-8.211.164.215-5662
+  - CY-45.89.107.51-0331
+  - HK-47.238.78.223-5733
+  - HK-47.243.231.14-5652
+  - HK-47.238.247.69-5731
+  - HK-47.86.85.95-5736
+  - CA-51.79.102.253-0851
+  - HK-47.243.251.240-5650
+  - HK-47.243.168.211-5655
+  - MY-38.54.98.150-5737
+  - CA-51.79.102.253-1496
+  - HK-45.136.12.37-5453
+  - VN-160.30.54.67-6040
+  - HK-8.217.92.110-5527
+  - HK-8.217.209.82-5709
+  - US-209.126.84.189-0711
+  - US-209.126.84.189-0889
+  - HK-8.210.52.211-5528
+  - MY-47.250.45.234-5668
+  - HK-47.86.85.95-5734
+  - HK-47.243.168.211-5641
+  - HK-47.86.85.95-5726
+  - HK-47.239.102.115-5610
+  - HK-8.218.113.19-7815
+  - HK-8.217.158.92-5694
+  - HK-8.210.212.196-5647
+  - HK-8.218.175.64-5690
+  - MY-47.250.45.234-5669
+  - HK-47.243.39.20-5637
+  - HK-8.210.122.139-5636
+  - HK-47.239.102.115-5615
+  - HK-8.218.152.97-5602
+  - HK-47.83.174.131-5717
+  - HK-8.218.175.64-5705
+  - HK-8.218.140.27-5704
+  - HK-47.239.20.252-5616
+  - HK-47.243.231.14-5639
+  - HK-8.217.21.237-5605
+  - HK-47.243.172.177-5645
+  - HK-8.218.175.64-5697
+  - TW-83.147.13.228-5594
+  - HK-47.239.141.74-5551
+  - HK-47.239.102.115-5720
+  - HK-8.217.159.96-5698
+  - HK-8.218.71.140-5701
+  - HK-47.239.252.30-5617
+  - 8J2BHrfCfh7BISy0xNTAuMTA3LjQ2LjIxLTA0MjQ3D
+  - HK-47.243.172.177-5643
+  - RELAY-185.146.173.126-1547
+  - HK-47.86.85.95-5724
+  - HK-47.239.252.30-5608
+  - HK-47.239.20.252-5612
+  - HK-45.116.78.152-5634
+  - HK-8.217.158.92-5706
+  - github.comfreefq-美国华盛顿Cogent通信公司8
+  - github.comfreefq-美国华盛顿Cogent通信公司20
+  - github.comfreefq-英国54
+  - github.comfreefq-美国华盛顿Cogent通信公司5
+  - github.comfreefq-美国华盛顿Cogent通信公司11
+  - github.comfreefq-英国46
+  - github.comfreefq-美国华盛顿Cogent通信公司15
+  - github.comfreefq-美国华盛顿Cogent通信公司62
+  - github.comfreefq-美国华盛顿Cogent通信公司18
+  - github.comfreefq-美国华盛顿Cogent通信公司21
+  - github.comfreefq-法国39
+  - github.comfreefq-英国52
+  - github.comfreefq-英国45
+  - github.comfreefq - 美国弗吉尼亚州文特山农场OVH数据中心 9
+  - github.comfreefq-美国华盛顿Cogent通信公司17
+  - github.comfreefq-北美地区22
+  - github.comfreefq-加拿大42
+  - github.comfreefq-美国华盛顿Cogent通信公司26
+  - github.comfreefq-瑞典35
+  - github.comfreefq-法国ONLINES.A.S.数据中心66
+  - github.comfreefq-英国47
+  - github.comfreefq-美国华盛顿Cogent通信公司28
+  - github.comfreefq-英国44
+  - github.comfreefq-法国OVH机房SAS硬盘BGP主机41
+  - github.comfreefq-俄罗斯莫斯科Melbicom数据中心12
+  - github.comfreefq-英国51
+  - github.comfreefq-美国29
+  - github.comfreefq-新加坡M247网络58
+  - github.comfreefq-法国OVH机房SAS硬盘BGP主机49
+  - github.comfreefq-德国黑森州法兰克福Amazon数据中心32
+  - github.comfreefq-瑞典7
+  - github.comfreefq-美国华盛顿Cogent通信公司37
+  - github.comfreefq-塞舌尔27
+  - github.comfreefq-美国33
+  - github.comfreefq-美国华盛顿Cogent通信公司59
+  - github.comfreefq-美国31
+  - github.comfreefq-日本东京Linode数据中心68
+  - github.comfreefq-保加利亚索非亚Melbicom数据中心55
+  - github.comfreefq - 美国  19
+  - AM_1
+  - BZ_5
+  - BZ_6
+  - CA_8
+  - CN_9
+  - CN_10
+  - CN_11
+  - CN_12
+  - CN_13
+  - CN_14
+  - CN_15
+  - CN_16
+  - CN_17
+  - CN_18
+  - CN_19
+  - CN_20
+  - CN_21
+  - CN_22
+  - CN_23
+  - CN_24
+  - CN_25
+  - CY_26
+  - DE_28
+  - DE_29
+  - Earth_30
+  - Earth_31
+  - Earth_32
+  - Earth_33
+  - Earth_35
+  - Earth_36
+  - Earth_37
+  - Earth_38
+  - Earth_39
+  - Earth_40
+  - Earth_41
+  - Earth_42
+  - Earth_43
+  - FR_50
+  - FR_51
+  - FR_52
+  - FR_53
+  - HK_55
+- name: 🔮 负载均衡
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies: *id001
+- name: 🎯 全球直连
+  type: select
+  proxies:
+  - DIRECT
+- name: 🛑 全球拦截
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 🐟 漏网之鱼
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - ♻️ 自动选择
+rules:
+- DOMAIN-SUFFIX,local,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,172.16.0.0/12,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT
+- IP-CIDR,10.0.0.0/8,DIRECT
+- IP-CIDR,17.0.0.0/8,DIRECT
+- IP-CIDR,100.64.0.0/10,DIRECT
+- DOMAIN-SUFFIX,google.com,🚀 节点选择
+- DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
+- DOMAIN-SUFFIX,googleusercontent.com,🚀 节点选择
+- DOMAIN-SUFFIX,youtube.com,🚀 节点选择
+- DOMAIN-SUFFIX,ytimg.com,🚀 节点选择
+- DOMAIN-SUFFIX,twitter.com,🚀 节点选择
+- DOMAIN-SUFFIX,facebook.com,🚀 节点选择
+- DOMAIN-SUFFIX,instagram.com,🚀 节点选择
+- DOMAIN-SUFFIX,telegram.org,🚀 节点选择
+- DOMAIN-SUFFIX,github.com,🚀 节点选择
+- DOMAIN-SUFFIX,githubusercontent.com,🚀 节点选择
+- GEOIP,CN,🎯 全球直连
+- MATCH,🐟 漏网之鱼
