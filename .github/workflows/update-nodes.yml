@@ -672,24 +672,43 @@ jobs:
       - name: 清理旧版本（保留最近10次）
         run: |
           # 检出 gh-pages 分支
-          git fetch origin gh-pages
-          git checkout gh-pages
+          git fetch origin gh-pages || echo "gh-pages 分支不存在，跳过清理"
           
-          # 删除超过10次的旧版本
-          cd history
-          ls -t | tail -n +11 | xargs -r rm -rf
-          
-          # 提交清理后的内容
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          
-          if [ -n "$(git status --porcelain)" ]; then
-            git add .
-            git commit -m "🧹 清理旧版本（保留最近10次）"
-            git push origin gh-pages
+          # 尝试切换到 gh-pages 分支
+          if git show-ref --verify --quiet refs/remotes/origin/gh-pages; then
+            git checkout -B gh-pages origin/gh-pages
+            
+            # 检查 history 目录是否存在
+            if [ -d "history" ]; then
+              cd history
+              
+              # 获取目录数量
+              DIR_COUNT=$(ls -1 | wc -l)
+              echo "当前历史版本数：$DIR_COUNT"
+              
+              # 只有超过10个时才清理
+              if [ "$DIR_COUNT" -gt 10 ]; then
+                echo "开始清理旧版本..."
+                ls -t | tail -n +11 | xargs -r rm -rf
+                cd ..
+                
+                # 提交清理后的内容
+                git config --local user.email "github-actions[bot]@users.noreply.github.com"
+                git config --local user.name "github-actions[bot]"
+                
+                git add .
+                git commit -m "🧹 清理旧版本（保留最近10次）"
+                git push origin gh-pages
+                echo "✅ 已清理旧版本"
+              else
+                echo "版本数未超过10个，无需清理"
+              fi
+            else
+              echo "history 目录不存在，跳过清理"
+            fi
+          else
+            echo "gh-pages 分支不存在，这是第一次部署，跳过清理"
           fi
-          
-          echo "✅ 已清理旧版本"
       
       - name: 上传产物
         uses: actions/upload-artifact@v4
