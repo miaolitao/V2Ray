@@ -270,40 +270,8 @@ jobs:
                   </div>
                   
                   <div class="links">
-                      <h2>📱 订阅链接</h2>
-                      <div class="link-item">
-                          <div>
-                              <div class="link-name">Base64 通用订阅</div>
-                              <div class="link-url" id="base64-url"></div>
-                          </div>
-                          <button class="copy-btn" onclick="copyLink('base64')">复制</button>
-                      </div>
-                      <div class="link-item">
-                          <div>
-                              <div class="link-name">Clash 订阅</div>
-                              <div class="link-url" id="clash-url"></div>
-                          </div>
-                          <button class="copy-btn" onclick="copyLink('clash')">复制</button>
-                      </div>
-                      <div class="link-item">
-                          <div>
-                              <div class="link-name">Surge 订阅</div>
-                              <div class="link-url" id="surge-url"></div>
-                          </div>
-                          <button class="copy-btn" onclick="copyLink('surge')">复制</button>
-                      </div>
-                      <div class="link-item">
-                          <div>
-                              <div class="link-name">Quantumult X 订阅</div>
-                              <div class="link-url" id="quantumult-url"></div>
-                          </div>
-                          <button class="copy-btn" onclick="copyLink('quantumult')">复制</button>
-                      </div>
-                  </div>
-                  
-                  <div class="links">
                       <h2>📜 历史版本</h2>
-                      <div id="history-list" style="max-height: 400px; overflow-y: auto;">
+                      <div id="history-list" style="max-height: 600px; overflow-y: auto;">
                           <p style="text-align: center; color: #999; padding: 20px;">加载中...</p>
                       </div>
                   </div>
@@ -320,20 +288,6 @@ jobs:
               </div>
               
               <script>
-                  const baseUrl = window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '');
-                  
-                  const links = {
-                      base64: baseUrl + '/nodes.txt',
-                      clash: baseUrl + '/clash.yaml',
-                      surge: baseUrl + '/surge.conf',
-                      quantumult: baseUrl + '/quantumult.conf'
-                  };
-                  
-                  document.getElementById('base64-url').textContent = links.base64;
-                  document.getElementById('clash-url').textContent = links.clash;
-                  document.getElementById('surge-url').textContent = links.surge;
-                  document.getElementById('quantumult-url').textContent = links.quantumult;
-                  
                   fetch('./stats.json')
                       .then(res => res.json())
                       .then(data => {
@@ -396,16 +350,6 @@ jobs:
                           console.error('加载历史版本失败:', err);
                           document.getElementById('history-list').innerHTML = '<p style="text-align: center; color: #999; padding: 20px;">加载失败</p>';
                       });
-                  
-                  function copyLink(type) {
-                      const link = links[type];
-                      navigator.clipboard.writeText(link).then(() => {
-                          alert('✅ 链接已复制到剪贴板！\n' + link);
-                      }).catch(err => {
-                          console.error('复制失败:', err);
-                          alert('❌ 复制失败，请手动复制');
-                      });
-                  }
               </script>
           </body>
           </html>
