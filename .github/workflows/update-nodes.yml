@@ -671,6 +671,10 @@ jobs:
       
       - name: 清理旧版本（保留最近10次）
         run: |
+          # 清理工作区
+          git reset --hard HEAD
+          git clean -fd
+          
           # 检出 gh-pages 分支
           git fetch origin gh-pages || echo "gh-pages 分支不存在，跳过清理"
           
