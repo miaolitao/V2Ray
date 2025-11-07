@@ -543,13 +543,16 @@ jobs:
                   const urlParams = new URLSearchParams(window.location.search);
                   const version = urlParams.get('v');
                   
+                  // 定义链接对象（全局作用域）
+                  let links = {};
+                  
                   if (!version) {
                       document.getElementById('version-time').textContent = '未指定版本';
                   } else {
                       const baseUrl = window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '');
                       const versionPath = `${baseUrl}/history/${version}`;
                       
-                      const links = {
+                      links = {
                           base64: `${versionPath}/nodes.txt`,
                           clash: `${versionPath}/clash.yaml`,
                           surge: `${versionPath}/surge.conf`,
@@ -584,16 +587,21 @@ jobs:
                               console.error('加载统计信息失败:', err);
                               document.getElementById('version-time').textContent = '加载失败';
                           });
-                      
-                      function copyLink(type) {
-                          const link = links[type];
-                          navigator.clipboard.writeText(link).then(() => {
-                              alert('✅ 链接已复制到剪贴板！\n' + link);
-                          }).catch(err => {
-                              console.error('复制失败:', err);
-                              alert('❌ 复制失败，请手动复制');
-                          });
+                  }
+                  
+                  // 复制函数（全局作用域）
+                  function copyLink(type) {
+                      if (!version || !links[type]) {
+                          alert('❌ 无法复制链接：未指定版本');
+                          return;
                       }
+                      const link = links[type];
+                      navigator.clipboard.writeText(link).then(() => {
+                          alert('✅ 链接已复制到剪贴板！\n' + link);
+                      }).catch(err => {
+                          console.error('复制失败:', err);
+                          alert('❌ 复制失败，请手动复制');
+                      });
                   }
               </script>
           </body>
