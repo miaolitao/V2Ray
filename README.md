@@ -382,7 +382,8 @@ filter:
 
 - 项目地址：https://github.com/miaolitao/V2Ray
 - Issue 反馈：https://github.com/miaolitao/V2Ray/issues
-
+- 参考项目：https://github.com/free-nodes/v2rayfree
+- 参考项目：https://github.com/ermaozi/get_subscribe
 ---
 
 **注意**：本项目收集的节点均来自互联网公开资源，节点质量和可用性无法保证。建议仅用于测试和学习目的。
