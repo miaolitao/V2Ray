@@ -76,7 +76,7 @@ jobs:
           
           # 获取当前时间戳（北京时间）
           TIMESTAMP=$(TZ='Asia/Shanghai' date '+%Y-%m-%d_%H-%M-%S')
-          echo "TIMESTAMP=$TIMESTAMP" >> $GITHUB_ENV
+          echo "当前时间戳: $TIMESTAMP"
           
           # 复制最新的输出文件到 gh-pages 根目录
           cp -r output/latest/* gh-pages/
@@ -91,7 +91,7 @@ jobs:
           git checkout main
           
           # 更新 history.json（保留最近10次）
-          python3 << 'PYTHON_SCRIPT'
+          python3 << PYTHON_SCRIPT
           import json
           from datetime import datetime
           
@@ -109,8 +109,8 @@ jobs:
           except:
               stats = {}
           
-          import os
-          timestamp = os.environ.get('TIMESTAMP', '')
+          # 使用传入的时间戳
+          timestamp = "$TIMESTAMP"
           
           # 添加新版本
           new_version = {
@@ -131,6 +131,7 @@ jobs:
               json.dump(history, f, ensure_ascii=False, indent=2)
           
           print(f"✅ 历史记录已更新，当前版本数：{len(history['versions'])}")
+          print(f"✅ 时间戳：{timestamp}")
           PYTHON_SCRIPT
           
           # 创建一个简单的 index.html
