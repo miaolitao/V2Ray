@@ -194,18 +194,8 @@
             .then(data => {
                 document.getElementById('total').textContent = data.total_nodes || 0;
                 document.getElementById('valid').textContent = data.valid_nodes || 0;
-                if (data.update_time) {
-                    // 转换为北京时间（东八区 UTC+8）显示
-                    document.getElementById('update-time').textContent = new Date(data.update_time).toLocaleString('zh-CN', {
-                        timeZone: 'Asia/Shanghai',
-                        year: 'numeric',
-                        month: '2-digit',
-                        day: '2-digit',
-                        hour: '2-digit',
-                        minute: '2-digit',
-                        second: '2-digit',
-                        hour12: false
-                    });
+                if (data.last_update) {
+                    document.getElementById('update-time').textContent = new Date(data.last_update).toLocaleString('zh-CN');
                 }
             })
             .catch(err => console.error('加载统计信息失败:', err));
