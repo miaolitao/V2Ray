@@ -194,8 +194,8 @@
             .then(data => {
                 document.getElementById('total').textContent = data.total_nodes || 0;
                 document.getElementById('valid').textContent = data.valid_nodes || 0;
-                if (data.last_update) {
-                    document.getElementById('update-time').textContent = new Date(data.last_update).toLocaleString('zh-CN');
+                if (data.update_time) {
+                    document.getElementById('update-time').textContent = new Date(data.update_time).toLocaleString('zh-CN');
                 }
             })
             .catch(err => console.error('加载统计信息失败:', err));
