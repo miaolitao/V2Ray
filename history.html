@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>V2Ray 免费节点订阅</title>
+    <title>历史版本详情 - V2Ray 免费节点订阅</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -29,6 +29,16 @@
             color: #666;
             margin-bottom: 30px;
             font-size: 16px;
+        }
+        .back-btn {
+            display: inline-block;
+            color: #667eea;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        .back-btn:hover {
+            text-decoration: underline;
         }
         .stats {
             display: grid;
@@ -108,17 +118,14 @@
             padding-top: 20px;
             border-top: 1px solid #e0e0e0;
         }
-        .update-time {
-            color: #999;
-            font-size: 13px;
-            margin-top: 20px;
-        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🚀 V2Ray 免费节点订阅</h1>
-        <p class="subtitle">每 6 小时自动更新 | 多种客户端支持</p>
+        <a href="./" class="back-btn">← 返回首页</a>
+        
+        <h1>📜 历史版本详情</h1>
+        <p class="subtitle" id="version-time">加载中...</p>
         
         <div class="stats" id="stats">
             <div class="stat-card">
@@ -163,16 +170,8 @@
             </div>
         </div>
         
-        <div class="links">
-            <h2>📜 历史版本</h2>
-            <div id="history-list" style="max-height: 400px; overflow-y: auto;">
-                <p style="text-align: center; color: #999; padding: 20px;">加载中...</p>
-            </div>
-        </div>
-        
         <div class="footer">
             <p>⚠️ 免费节点仅供学习测试使用，请勿用于非法用途</p>
-            <p class="update-time">更新时间：<span id="update-time">-</span></p>
             <p style="margin-top: 10px;">
                 <a href="https://github.com/miaolitao/V2Ray" target="_blank" style="color: #667eea; text-decoration: none;">
                     ⭐ GitHub 项目地址
@@ -182,91 +181,60 @@
     </div>
     
     <script>
-        const baseUrl = window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '');
+        const urlParams = new URLSearchParams(window.location.search);
+        const version = urlParams.get('v');
         
-        const links = {
-            base64: baseUrl + '/nodes.txt',
-            clash: baseUrl + '/clash.yaml',
-            surge: baseUrl + '/surge.conf',
-            quantumult: baseUrl + '/quantumult.conf'
-        };
-        
-        document.getElementById('base64-url').textContent = links.base64;
-        document.getElementById('clash-url').textContent = links.clash;
-        document.getElementById('surge-url').textContent = links.surge;
-        document.getElementById('quantumult-url').textContent = links.quantumult;
-        
-        fetch('./stats.json')
-            .then(res => res.json())
-            .then(data => {
-                document.getElementById('total').textContent = data.total_nodes || 0;
-                document.getElementById('valid').textContent = data.valid_nodes || 0;
-                if (data.update_time) {
-                    document.getElementById('update-time').textContent = new Date(data.update_time).toLocaleString('zh-CN', {
-                        timeZone: 'Asia/Shanghai',
-                        year: 'numeric',
-                        month: '2-digit',
-                        day: '2-digit',
-                        hour: '2-digit',
-                        minute: '2-digit',
-                        second: '2-digit',
-                        hour12: false
-                    });
-                }
-            })
-            .catch(err => console.error('加载统计信息失败:', err));
-        
-        // 加载历史版本
-        fetch('./history.json')
-            .then(res => res.json())
-            .then(history => {
-                const historyList = document.getElementById('history-list');
-                if (!history.versions || history.versions.length === 0) {
-                    historyList.innerHTML = '<p style="text-align: center; color: #999; padding: 20px;">暂无历史记录</p>';
-                    return;
-                }
-                
-                historyList.innerHTML = history.versions.map((version, index) => {
-                    const updateTime = version.update_time ? new Date(version.update_time).toLocaleString('zh-CN', {
-                        timeZone: 'Asia/Shanghai',
-                        year: 'numeric',
-                        month: '2-digit',
-                        day: '2-digit',
-                        hour: '2-digit',
-                        minute: '2-digit',
-                        hour12: false
-                    }) : '-';
-                    
-                    const badge = index === 0 ? '<span style="background: #667eea; color: white; padding: 2px 8px; border-radius: 3px; font-size: 12px; margin-left: 10px;">最新</span>' : '';
-                    
-                    return `
-                        <div class="link-item" style="cursor: pointer;" onclick="window.location.href='./history.html?v=${version.timestamp}'">
-                            <div style="flex: 1;">
-                                <div class="link-name">
-                                    ${updateTime} ${badge}
-                                </div>
-                                <div style="font-size: 13px; color: #999; margin-top: 5px;">
-                                    总节点: ${version.total_nodes} | 有效: ${version.valid_nodes}
-                                </div>
-                            </div>
-                            <button class="copy-btn" onclick="event.stopPropagation(); window.location.href='./history/${version.timestamp}/nodes.txt'">查看</button>
-                        </div>
-                    `;
-                }).join('');
-            })
-            .catch(err => {
-                console.error('加载历史版本失败:', err);
-                document.getElementById('history-list').innerHTML = '<p style="text-align: center; color: #999; padding: 20px;">加载失败</p>';
-            });
-        
-        function copyLink(type) {
-            const link = links[type];
-            navigator.clipboard.writeText(link).then(() => {
-                alert('✅ 链接已复制到剪贴板！\n' + link);
-            }).catch(err => {
-                console.error('复制失败:', err);
-                alert('❌ 复制失败，请手动复制');
-            });
+        if (!version) {
+            document.getElementById('version-time').textContent = '未指定版本';
+        } else {
+            const baseUrl = window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '');
+            const versionPath = `${baseUrl}/history/${version}`;
+            
+            const links = {
+                base64: `${versionPath}/nodes.txt`,
+                clash: `${versionPath}/clash.yaml`,
+                surge: `${versionPath}/surge.conf`,
+                quantumult: `${versionPath}/quantumult.conf`
+            };
+            
+            document.getElementById('base64-url').textContent = links.base64;
+            document.getElementById('clash-url').textContent = links.clash;
+            document.getElementById('surge-url').textContent = links.surge;
+            document.getElementById('quantumult-url').textContent = links.quantumult;
+            
+            // 加载该版本的统计信息
+            fetch(`./history/${version}/stats.json`)
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementById('total').textContent = data.total_nodes || 0;
+                    document.getElementById('valid').textContent = data.valid_nodes || 0;
+                    if (data.update_time) {
+                        document.getElementById('version-time').textContent = '更新时间：' + new Date(data.update_time).toLocaleString('zh-CN', {
+                            timeZone: 'Asia/Shanghai',
+                            year: 'numeric',
+                            month: '2-digit',
+                            day: '2-digit',
+                            hour: '2-digit',
+                            minute: '2-digit',
+                            second: '2-digit',
+                            hour12: false
+                        });
+                    }
+                })
+                .catch(err => {
+                    console.error('加载统计信息失败:', err);
+                    document.getElementById('version-time').textContent = '加载失败';
+                });
+            
+            function copyLink(type) {
+                const link = links[type];
+                navigator.clipboard.writeText(link).then(() => {
+                    alert('✅ 链接已复制到剪贴板！\n' + link);
+                }).catch(err => {
+                    console.error('复制失败:', err);
+                    alert('❌ 复制失败，请手动复制');
+                });
+            }
         }
     </script>
 </body>
