@@ -229,7 +229,7 @@ async def main():
             protocol_stats[node.protocol] = protocol_stats.get(node.protocol, 0) + 1
         
         stats = {
-            'update_time': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+            'update_time': datetime.utcnow().strftime('%Y-%m-%d %H:%M:%SZ'),
             'total_nodes': len(nodes),
             'protocols': protocol_stats,
         }
