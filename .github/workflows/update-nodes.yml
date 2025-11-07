@@ -386,7 +386,7 @@ jobs:
                                               总节点: ${version.total_nodes} | 有效: ${version.valid_nodes}
                                           </div>
                                       </div>
-                                      <button class="copy-btn" onclick="event.stopPropagation(); window.location.href='./history/${version.timestamp}/nodes.txt'">查看</button>
+                                      <button class="copy-btn" onclick="event.stopPropagation(); window.location.href='./history.html?v=${version.timestamp}'">查看详情</button>
                                   </div>
                               `;
                           }).join('');
