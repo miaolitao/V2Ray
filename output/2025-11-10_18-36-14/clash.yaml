@@ -5,7 +5,15 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: CA-23.162.200.227-7814
+- name: US_speednode_0029
+  type: vless
+  server: 104.167.199.50
+  port: 443
+  uuid: b25e3c62-f4eb-45df-adda-eb738959b845
+  flow: xtls-rprx-vision-udp443
+  tls: true
+  servername: bit-site.ru
+- name: CA-23.162.200.227-7844
   type: vmess
   server: 23.162.200.227
   port: 443
@@ -18,7 +26,7 @@ proxies:
     headers:
       Host: ''
   tls: true
-- name: CA-15.235.85.147-1235
+- name: CA-15.235.85.147-1217
   type: vmess
   server: 15.235.85.147
   port: 443
@@ -31,33 +39,7 @@ proxies:
     headers:
       Host: pelang.org
   tls: true
-- name: CA-134.195.198.147-1130
-  type: vmess
-  server: 134.195.198.147
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: inna.cfd
-  tls: true
-- name: US-38.99.82.193-1012
-  type: vmess
-  server: 38.99.82.193
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: tilebani.com
-  tls: true
-- name: RELAY-172.67.200.13-1172
+- name: RELAY-172.67.200.13-1154
   type: vmess
   server: 172.67.200.13
   port: 443
@@ -70,6 +52,31 @@ proxies:
     headers:
       Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
   tls: true
+- name: US-38.99.82.193-0994
+  type: vmess
+  server: 38.99.82.193
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: tilebani.com
+  tls: true
+- name: RELAY-104.18.240.238-1513
+  type: vmess
+  server: 104.18.240.238
+  port: 80
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
 - name: AM_1
   type: vmess
   server: 185.162.228.229
@@ -294,18 +301,6 @@ proxies:
     headers:
       Host: lg1.zhujicn2.com
   tls: true
-- name: github.comfreefq - 美国CloudFlare公司CDN节点 31
-  type: vmess
-  server: shopify.com
-  port: 80
-  uuid: 4397d066-f753-4300-e7ed-44797ddfcd24
-  alterId: '0'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /aries
-    headers:
-      Host: linode.cloudflare.quest
 - name: github.comfreefq - 美国CloudFlare节点 33
   type: vmess
   server: 172.64.155.200
@@ -319,18 +314,6 @@ proxies:
     headers:
       Host: lg4.zhujicn2.com
   tls: true
-- name: github.comfreefq - 美国CloudFlare公司CDN节点 35
-  type: vmess
-  server: shopify.com
-  port: 80
-  uuid: 36bd9969-bb96-4bdd-a6df-960bbd8e4439
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /aries
-    headers:
-      Host: tguk.cloudflare.quest
 - name: github.comfreefq - 美国CloudFlare节点 46
   type: vmess
   server: 172.67.218.162
@@ -369,6 +352,30 @@ proxies:
   port: 2087
   password: wb6368
   sni: hsdgbuys.pages.dev
+- name: 美国 002
+  type: vmess
+  server: seribus.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 1
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: seribus.org
+- name: 比利时 001
+  type: vmess
+  server: pelang.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: pelang.org
 - name: 美国 003
   type: vmess
   server: 172.67.234.68
@@ -393,30 +400,18 @@ proxies:
     path: linkvws
     headers:
       Host: serkat.org
-- name: 美国 021
+- name: 比利时 003
   type: vmess
-  server: ebc.zoom.us
-  port: 8443
-  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: node4.rtxconfigz.com
-- name: 美国 023
-  type: vmess
-  server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+  server: kampong.org
   port: 443
-  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
-    path: /azumase.ren
+    path: linkvws
     headers:
-      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+      Host: kampong.org
 - name: 美国 024
   type: vmess
   server: 15.235.85.156
@@ -435,18 +430,18 @@ proxies:
   port: 2096
   uuid: 12345678-1234-1234-1234-123456789123
   network: ws
-- name: 美国 027
+- name: 美国 028
   type: vmess
-  server: 15.235.50.172
+  server: masjide.org
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
-    path: /linkvws
+    path: linkvws
     headers:
-      Host: baradiha.com
+      Host: masjide.org
 - name: 美国 031
   type: vless
   server: 198.202.211.61
@@ -482,12 +477,6 @@ proxies:
   server: 104.21.36.57
   port: 443
   uuid: 0cc731b9-0375-4590-aeaa-7e2611a149fe
-  network: ws
-- name: 美国 040
-  type: vless
-  server: ovhwuxian.pai50288.uk
-  port: 8443
-  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
   network: ws
 - name: 美国 046
   type: vmess
@@ -725,6 +714,18 @@ proxies:
   port: 80
   uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
   network: ws
+- name: 美国 116
+  type: vless
+  server: cf.090227.xyz
+  port: 443
+  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
+  network: ws
+- name: 美国 117
+  type: vless
+  server: cf.090227.xyz
+  port: 80
+  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
+  network: ws
 - name: 安圭拉 001
   type: vless
   server: 209.94.90.87
@@ -767,6 +768,18 @@ proxies:
   port: 8443
   uuid: 8d5911d9-f9f9-484f-8f67-5729ab5fd1af
   network: ws
+- name: 比利时 044
+  type: vmess
+  server: jamekk.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: jamekk.org
 - name: 美国 142
   type: vmess
   server: 40.160.16.219
@@ -779,18 +792,6 @@ proxies:
     path: linkvws
     headers:
       Host: serkat.org
-- name: 美国 143
-  type: vmess
-  server: 15.235.83.227
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: mankadmu.com
 - name: 美国 144
   type: vmess
   server: 148.113.153.113
@@ -803,6 +804,13 @@ proxies:
     path: linkvws
     headers:
       Host: serkat.org
+- name: 美国 145
+  type: trojan
+  server: creativecommons.org
+  port: 2053
+  password: YwuvGJk36B
+  sni: kotlet.arshiacomplus.dpdns.org
+  skip-cert-verify: true
 - name: 美国 146
   type: vmess
   server: 158.51.121.63
@@ -815,18 +823,6 @@ proxies:
     path: linkvws
     headers:
       Host: seribus.org
-- name: 美国 150
-  type: vmess
-  server: 148.113.153.109
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: yichueng.org
 - name: 澳大利亚 003
   type: vless
   server: 43.159.99.26
@@ -911,6 +907,12 @@ proxies:
   port: 443
   uuid: 0c0537c3-f0fb-40e6-bd59-f5038e1855ed
   network: ws
+- name: 美国 166
+  type: vless
+  server: economist.com
+  port: 443
+  uuid: 7d18fc67-1994-4f7e-8ff8-c024223f33bb
+  network: ws
 - name: 美国 173
   type: vless
   server: 104.26.3.186
@@ -935,12 +937,6 @@ proxies:
   port: 443
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
   network: grpc
-- name: 美国 190
-  type: trojan
-  server: nop-55q.pages.dev
-  port: 2053
-  password: T@_WvT8Ho@LW%w_,
-  sni: NOp-55q.pAgEs.dEv
 - name: 美国 192
   type: vmess
   server: 104.17.148.22
@@ -965,37 +961,9 @@ proxies:
     path: /us.kkp.me.eu.org/aa
     headers:
       Host: farid.1.berozha.ir
-- name: 美国 202
-  type: trojan
-  server: log.bpminecraft.com
-  port: 443
-  password: vip
-  sni: heihu880.pages.dev
-  skip-cert-verify: true
 - name: 美国 203
   type: trojan
   server: 104.18.42.163
-  port: 443
-  password: vip
-  sni: heihu880.pages.dev
-  skip-cert-verify: true
-- name: 美国 204
-  type: trojan
-  server: www.visa.com.sg
-  port: 8443
-  password: trojan
-  sni: pangpi.pages.dev
-  skip-cert-verify: true
-- name: 美国 205
-  type: trojan
-  server: www.iplocation.net
-  port: 443
-  password: vip
-  sni: heihu880.pages.dev
-  skip-cert-verify: true
-- name: 美国 206
-  type: trojan
-  server: whatismyipaddress.com
   port: 443
   password: vip
   sni: heihu880.pages.dev
@@ -1006,13 +974,6 @@ proxies:
   port: 8443
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: 美国 209
-  type: trojan
-  server: dcf741e8.epeius-2gy.pages.dev
-  port: 443
-  password: auto
-  sni: dcf741e8.epeius-2gy.pages.dev
   skip-cert-verify: true
 - name: 美国 216
   type: trojan
@@ -1028,6 +989,20 @@ proxies:
   password: '123456'
   sni: top-azx.pages.dev
   skip-cert-verify: true
+- name: 美国 219
+  type: trojan
+  server: koma-yt.pages.dev
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 美国 220
+  type: trojan
+  server: time.is
+  port: 2087
+  password: vip
+  sni: heihu880.pages.dev
+  skip-cert-verify: true
 - name: 美国 221
   type: trojan
   server: 172.66.46.254
@@ -1035,12 +1010,26 @@ proxies:
   password: auto
   sni: dcf741e8.epeius-2gy.pages.dev
   skip-cert-verify: true
+- name: 美国 223
+  type: trojan
+  server: www.udemy.com
+  port: 443
+  password: vip
+  sni: heihu880.pages.dev
+  skip-cert-verify: true
 - name: 美国 225
   type: trojan
   server: 104.17.148.22
   port: 443
   password: redfree8
   sni: redfree8-p1.pooriashop.ir
+  skip-cert-verify: true
+- name: 美国 226
+  type: trojan
+  server: www.wto.org
+  port: 443
+  password: vip
+  sni: heihu880.pages.dev
   skip-cert-verify: true
 - name: 美国 227
   type: trojan
@@ -1101,29 +1090,11 @@ proxies:
   port: 8080
   uuid: 3639fbba-e6ac-4447-9518-e1176466f6bb
   network: ws
-- name: 美国 244
-  type: vless
-  server: www.speedtest.net
-  port: 8080
-  uuid: 451b78be-abfc-4a46-b2e3-9c3357b21a56
-  network: ws
 - name: 美国 245
   type: vless
   server: 172.67.65.158
   port: 8880
   uuid: e9979910-79d1-4621-a93c-b2a579c44ba7
-  network: ws
-- name: 美国 246
-  type: vless
-  server: www.bankonbasak.com
-  port: 443
-  uuid: 30f2d443-af46-4dd6-83c9-b5e17299ebd2
-  network: ws
-- name: 美国 248
-  type: vless
-  server: privasi.turah.my.id
-  port: 443
-  uuid: 0fbf4f81-2598-4b6a-a623-0ead4cb9efa8
   network: ws
 - name: 美国 249
   type: vless
@@ -1142,19 +1113,6 @@ proxies:
   server: 104.26.1.108
   port: 443
   uuid: 3d7dd548-5456-4f28-8019-393fbfab3312
-  network: ws
-- name: 美国 252
-  type: vless
-  server: cumhuriyet.com.tr
-  port: 80
-  uuid: 58186ddc-be2e-4148-a680-ccd546994988
-  flow: xtls-rprx-vision
-  network: ws
-- name: 美国 253
-  type: vless
-  server: www.speedtest.net
-  port: 8443
-  uuid: ccbe6b7c-9264-40c4-8bc1-ef8f6205d7a4
   network: ws
 - name: 美国 254
   type: vless
@@ -1179,18 +1137,6 @@ proxies:
   server: 104.16.104.151
   port: 80
   uuid: 1f431db3-1918-4e7b-a855-c93485e11694
-  network: ws
-- name: 美国 258
-  type: vless
-  server: www.speedtest.net
-  port: 443
-  uuid: fc264e2f-753b-43fd-878c-c8f82b4bc502
-  network: ws
-- name: 美国 259
-  type: vless
-  server: www.speedtest.net
-  port: 2086
-  uuid: a7a6f432-903c-4e92-a107-4b559b8c176b
   network: ws
 - name: 美国 261
   type: vless
@@ -1217,12 +1163,6 @@ proxies:
   uuid: c53d41d1-7d56-43ce-9994-408780c6476a
   alterId: 0
   cipher: auto
-- name: 美国 265
-  type: vless
-  server: mstr.fastly80.hosting-ip.com
-  port: 80
-  uuid: 031fe63c-f7da-40b7-960d-1101df6eda60
-  network: ws
 - name: 美国 266
   type: vmess
   server: bbbbbbbbb.222769.xyz
@@ -1235,18 +1175,6 @@ proxies:
     path: /f6taOMcOSZb9TPR
     headers:
       Host: bbbbbbbbb.222769.xyz
-- name: 美国 274
-  type: vmess
-  server: 154.19.185.240
-  port: 80
-  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /download
-    headers:
-      Host: download.windowsupdate.com
 - name: 美国 300
   type: vless
   server: www.speedtest.net
@@ -1277,6 +1205,48 @@ proxies:
   port: 2096
   uuid: 563608cd-f135-4e64-938d-d9eb3be1ba77
   network: ws
+- name: 美国 302
+  type: vmess
+  server: sgcft01.xqc.best
+  port: 443
+  uuid: e9ce293d-5a2a-48f1-bb6e-32bf7ed108e6
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /stream
+    headers:
+      Host: d16henb377mok4.cloudfront.net
+  tls: true
+  servername: d16henb377mok4.cloudfront.net
+- name: 美国 303
+  type: vmess
+  server: jpcft01.xqc.best
+  port: 443
+  uuid: 326b11fd-f8e0-4cb9-b51d-6fd84aee81d4
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /stream
+    headers:
+      Host: d17ttua58dfmz.cloudfront.net
+  tls: true
+  servername: d17ttua58dfmz.cloudfront.net
+- name: 美国 304
+  type: vmess
+  server: hkcft01.xqc.best
+  port: 443
+  uuid: 3228e6e4-e6fd-4574-a6df-b8762489b682
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /stream?ed=2048
+    headers:
+      Host: d1th2ch215a6xr.cloudfront.net
+  tls: true
+  servername: d1th2ch215a6xr.cloudfront.net
 - name: 澳大利亚 011
   type: vmess
   server: 1.1.1.5
@@ -1360,9 +1330,33 @@ proxies:
   port: 80
   uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
   network: ws
+- name: 美国 310
+  type: vless
+  server: www.digitalocean.com
+  port: 80
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  network: ws
 - name: 美国 311
   type: vless
   server: www.udemy.com
+  port: 80
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  network: ws
+- name: 美国 314
+  type: vless
+  server: www.visa.com.hk
+  port: 80
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  network: ws
+- name: 美国 316
+  type: vless
+  server: www.zsu.gov.ua
+  port: 80
+  uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
+  network: ws
+- name: 美国 317
+  type: vless
+  server: www.gov.se
   port: 80
   uuid: ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa
   network: ws
@@ -1378,6 +1372,12 @@ proxies:
   port: 8080
   uuid: Parsashonam-Bot-21
   network: grpc
+- name: 美国 320
+  type: vless
+  server: www.speedtest.net
+  port: 2052
+  uuid: '...mahanvpn..+'
+  network: httpupgrade
 - name: 美国 321
   type: vless
   server: 172.67.160.192
@@ -1408,23 +1408,11 @@ proxies:
   port: 2087
   uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
   network: ws
-- name: 美国 330
-  type: vless
-  server: hajlab.ucdavis.edu
-  port: 80
-  uuid: 01ff38cf-2e52-435b-8deb-eb01df69767a
-  network: ws
 - name: 美国 331
   type: vless
   server: 104.16.69.64
   port: 8880
   uuid: 02811288-9ef3-42ef-86db-d9b1399c1a59
-  network: ws
-- name: 美国 332
-  type: vless
-  server: 104.21.32.1
-  port: 443
-  uuid: 0503fa3c-f914-4421-a1e5-72c1f8d781a2
   network: ws
 - name: 美国 334
   type: vless
@@ -1498,6 +1486,36 @@ proxies:
   port: 8443
   uuid: 1526c286-123e-48b5-8c1f-ceb8ac28496b
   network: ws
+- name: 美国 349
+  type: vless
+  server: wedrdeersed.hulkirani.shop
+  port: 80
+  uuid: 154ff81e-1deb-40d8-b3cb-42f61ec1222a
+  network: xhttp
+- name: 美国 351
+  type: vless
+  server: test.fast.hosting-ip.com
+  port: 80
+  uuid: 158dd22f-e10e-4905-930a-6d32a133c2dc
+  network: xhttp
+- name: 美国 352
+  type: vless
+  server: record.persianmizban.com
+  port: 443
+  uuid: 160cc7e4-1e11-44e8-71fd-b162fbb1c83e
+  network: ws
+- name: 美国 354
+  type: vless
+  server: www.speedtest.net
+  port: 2096
+  uuid: 186c95f5-9814-4082-83f8-948a426f5eac
+  network: xhttp
+- name: 美国 357
+  type: vless
+  server: chat.openai.com
+  port: 8080
+  uuid: 1efab776-c694-4652-f89e-45ffffe49ef6
+  network: ws
 - name: 美国 358
   type: vless
   server: 104.21.112.1
@@ -1522,6 +1540,12 @@ proxies:
   port: 8080
   uuid: 206aee35-4001-4001-9e93-c35589eaf2a0
   network: ws
+- name: 美国 362
+  type: vless
+  server: speedtestcustom.com
+  port: 80
+  uuid: 240b8e0e-56b3-4b7a-a9e5-7ad323b3e52e
+  network: xhttp
 - name: 荷兰 046
   type: vless
   server: 185.193.31.253
@@ -1540,24 +1564,6 @@ proxies:
   port: 2096
   uuid: 2456f90c-5183-476d-b069-16ae74ce120f
   network: ws
-- name: 美国 363
-  type: vless
-  server: 172.66.40.99
-  port: 8880
-  uuid: 2569eda8-7022-46f2-8099-4e239cae9a7c
-  network: ws
-- name: 美国 364
-  type: vless
-  server: 104.16.34.128
-  port: 443
-  uuid: 267613d7-f53f-4005-b642-d6f1f687b7cf
-  network: ws
-- name: 美国 366
-  type: vless
-  server: 151.101.64.155
-  port: 80
-  uuid: 26ad6098-1015-4cd5-bac0-a3fbcc3cb729
-  network: ws
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -1565,11 +1571,12 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 负载均衡
   - DIRECT
-  - CA-23.162.200.227-7814
-  - CA-15.235.85.147-1235
-  - CA-134.195.198.147-1130
-  - US-38.99.82.193-1012
-  - RELAY-172.67.200.13-1172
+  - US_speednode_0029
+  - CA-23.162.200.227-7844
+  - CA-15.235.85.147-1217
+  - RELAY-172.67.200.13-1154
+  - US-38.99.82.193-0994
+  - RELAY-104.18.240.238-1513
   - AM_1
   - BZ_5
   - BZ_6
@@ -1587,26 +1594,24 @@ proxy-groups:
   - github.comfreefq - 美国CloudFlare节点 25
   - github.comfreefq - 美国CloudFlare节点 26
   - github.comfreefq - 美国CloudFlare节点 29
-  - github.comfreefq - 美国CloudFlare公司CDN节点 31
   - github.comfreefq - 美国CloudFlare节点 33
-  - github.comfreefq - 美国CloudFlare公司CDN节点 35
   - github.comfreefq - 美国CloudFlare节点 46
   - github.comfreefq - 美国CloudFlare节点 47
   - 美国 001
   - 俄罗斯 001
+  - 美国 002
+  - 比利时 001
   - 美国 003
   - 美国 011
-  - 美国 021
-  - 美国 023
+  - 比利时 003
   - 美国 024
   - 卢森堡 001
-  - 美国 027
+  - 美国 028
   - 美国 031
   - 美国 032
   - 美国 035
   - 美国 037
   - 美国 039
-  - 美国 040
   - 美国 046
   - 美国 047
   - 美国 048
@@ -1645,6 +1650,8 @@ proxy-groups:
   - 加拿大 002
   - 美国 104
   - 美国 105
+  - 美国 116
+  - 美国 117
   - 安圭拉 001
   - 美国 126
   - 美国 127
@@ -1652,11 +1659,11 @@ proxy-groups:
   - 美国 130
   - 美国 133
   - 中国 038
+  - 比利时 044
   - 美国 142
-  - 美国 143
   - 美国 144
+  - 美国 145
   - 美国 146
-  - 美国 150
   - 澳大利亚 003
   - 美国 158
   - 斯洛文尼亚 001
@@ -1670,24 +1677,23 @@ proxy-groups:
   - 美国 163
   - 美国 164
   - 美国 165
+  - 美国 166
   - 美国 173
   - 荷兰 041
   - 美国 182
   - 美国 184
-  - 美国 190
   - 美国 192
   - 美国 199
-  - 美国 202
   - 美国 203
-  - 美国 204
-  - 美国 205
-  - 美国 206
   - 美国 207
-  - 美国 209
   - 美国 216
   - 美国 218
+  - 美国 219
+  - 美国 220
   - 美国 221
+  - 美国 223
   - 美国 225
+  - 美国 226
   - 美国 227
   - 美国 229
   - 美国 234
@@ -1697,33 +1703,27 @@ proxy-groups:
   - 巴西 002
   - 美国 241
   - 美国 243
-  - 美国 244
   - 美国 245
-  - 美国 246
-  - 美国 248
   - 美国 249
   - 美国 250
   - 美国 251
-  - 美国 252
-  - 美国 253
   - 美国 254
   - 美国 255
   - 美国 256
   - 美国 257
-  - 美国 258
-  - 美国 259
   - 美国 261
   - 美国 262
   - 巴西 003
   - 美国 263
-  - 美国 265
   - 美国 266
-  - 美国 274
   - 美国 300
   - 德国 034
   - 英国 008
   - 美国 301
   - 俄罗斯 041
+  - 美国 302
+  - 美国 303
+  - 美国 304
   - 澳大利亚 011
   - 澳大利亚 012
   - 澳大利亚 013
@@ -1732,17 +1732,20 @@ proxy-groups:
   - 美国 305
   - 美国 306
   - 美国 308
+  - 美国 310
   - 美国 311
+  - 美国 314
+  - 美国 316
+  - 美国 317
   - 瑞典 003
   - 美国 318
+  - 美国 320
   - 美国 321
   - 美国 322
   - 美国 323
   - 中国 067
   - 俄罗斯 042
-  - 美国 330
   - 美国 331
-  - 美国 332
   - 美国 334
   - 美国 335
   - 美国 337
@@ -1755,26 +1758,30 @@ proxy-groups:
   - 美国 346
   - 美国 347
   - 美国 348
+  - 美国 349
+  - 美国 351
+  - 美国 352
+  - 美国 354
+  - 美国 357
   - 美国 358
   - 美国 359
   - 荷兰 045
   - 美国 360
+  - 美国 362
   - 荷兰 046
   - 西班牙 003
   - 荷兰 047
-  - 美国 363
-  - 美国 364
-  - 美国 366
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: &id001
-  - CA-23.162.200.227-7814
-  - CA-15.235.85.147-1235
-  - CA-134.195.198.147-1130
-  - US-38.99.82.193-1012
-  - RELAY-172.67.200.13-1172
+  - US_speednode_0029
+  - CA-23.162.200.227-7844
+  - CA-15.235.85.147-1217
+  - RELAY-172.67.200.13-1154
+  - US-38.99.82.193-0994
+  - RELAY-104.18.240.238-1513
   - AM_1
   - BZ_5
   - BZ_6
@@ -1792,26 +1799,24 @@ proxy-groups:
   - github.comfreefq - 美国CloudFlare节点 25
   - github.comfreefq - 美国CloudFlare节点 26
   - github.comfreefq - 美国CloudFlare节点 29
-  - github.comfreefq - 美国CloudFlare公司CDN节点 31
   - github.comfreefq - 美国CloudFlare节点 33
-  - github.comfreefq - 美国CloudFlare公司CDN节点 35
   - github.comfreefq - 美国CloudFlare节点 46
   - github.comfreefq - 美国CloudFlare节点 47
   - 美国 001
   - 俄罗斯 001
+  - 美国 002
+  - 比利时 001
   - 美国 003
   - 美国 011
-  - 美国 021
-  - 美国 023
+  - 比利时 003
   - 美国 024
   - 卢森堡 001
-  - 美国 027
+  - 美国 028
   - 美国 031
   - 美国 032
   - 美国 035
   - 美国 037
   - 美国 039
-  - 美国 040
   - 美国 046
   - 美国 047
   - 美国 048
@@ -1850,6 +1855,8 @@ proxy-groups:
   - 加拿大 002
   - 美国 104
   - 美国 105
+  - 美国 116
+  - 美国 117
   - 安圭拉 001
   - 美国 126
   - 美国 127
@@ -1857,11 +1864,11 @@ proxy-groups:
   - 美国 130
   - 美国 133
   - 中国 038
+  - 比利时 044
   - 美国 142
-  - 美国 143
   - 美国 144
+  - 美国 145
   - 美国 146
-  - 美国 150
   - 澳大利亚 003
   - 美国 158
   - 斯洛文尼亚 001
@@ -1875,24 +1882,23 @@ proxy-groups:
   - 美国 163
   - 美国 164
   - 美国 165
+  - 美国 166
   - 美国 173
   - 荷兰 041
   - 美国 182
   - 美国 184
-  - 美国 190
   - 美国 192
   - 美国 199
-  - 美国 202
   - 美国 203
-  - 美国 204
-  - 美国 205
-  - 美国 206
   - 美国 207
-  - 美国 209
   - 美国 216
   - 美国 218
+  - 美国 219
+  - 美国 220
   - 美国 221
+  - 美国 223
   - 美国 225
+  - 美国 226
   - 美国 227
   - 美国 229
   - 美国 234
@@ -1902,33 +1908,27 @@ proxy-groups:
   - 巴西 002
   - 美国 241
   - 美国 243
-  - 美国 244
   - 美国 245
-  - 美国 246
-  - 美国 248
   - 美国 249
   - 美国 250
   - 美国 251
-  - 美国 252
-  - 美国 253
   - 美国 254
   - 美国 255
   - 美国 256
   - 美国 257
-  - 美国 258
-  - 美国 259
   - 美国 261
   - 美国 262
   - 巴西 003
   - 美国 263
-  - 美国 265
   - 美国 266
-  - 美国 274
   - 美国 300
   - 德国 034
   - 英国 008
   - 美国 301
   - 俄罗斯 041
+  - 美国 302
+  - 美国 303
+  - 美国 304
   - 澳大利亚 011
   - 澳大利亚 012
   - 澳大利亚 013
@@ -1937,17 +1937,20 @@ proxy-groups:
   - 美国 305
   - 美国 306
   - 美国 308
+  - 美国 310
   - 美国 311
+  - 美国 314
+  - 美国 316
+  - 美国 317
   - 瑞典 003
   - 美国 318
+  - 美国 320
   - 美国 321
   - 美国 322
   - 美国 323
   - 中国 067
   - 俄罗斯 042
-  - 美国 330
   - 美国 331
-  - 美国 332
   - 美国 334
   - 美国 335
   - 美国 337
@@ -1960,16 +1963,19 @@ proxy-groups:
   - 美国 346
   - 美国 347
   - 美国 348
+  - 美国 349
+  - 美国 351
+  - 美国 352
+  - 美国 354
+  - 美国 357
   - 美国 358
   - 美国 359
   - 荷兰 045
   - 美国 360
+  - 美国 362
   - 荷兰 046
   - 西班牙 003
   - 荷兰 047
-  - 美国 363
-  - 美国 364
-  - 美国 366
 - name: 🔮 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
