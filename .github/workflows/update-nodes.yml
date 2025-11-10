@@ -85,10 +85,10 @@ jobs:
           mkdir -p gh-pages/history/$TIMESTAMP
           cp -r output/latest/* gh-pages/history/$TIMESTAMP/
           
-          # 检出 gh-pages 分支获取历史记录
-          git fetch origin gh-pages || true
-          git checkout gh-pages -- history.json 2>/dev/null || echo '{"versions":[]}' > history.json
-          git checkout main
+          # 从 GitHub Pages 下载现有的 history.json
+          echo "尝试下载现有的 history.json..."
+          curl -f https://miaolitao.github.io/V2Ray/history.json -o history.json || echo '{"versions":[]}' > history.json
+          echo "history.json 下载完成"
           
           # 更新 history.json（保留最近10次）
           python3 << PYTHON_SCRIPT
