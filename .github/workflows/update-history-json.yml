@@ -1,0 +1,149 @@
+name: 更新 history.json
+
+on:
+  workflow_dispatch:  # 手动触发
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+      
+      - name: 更新 history.json
+        run: |
+          cat > history.json << 'EOF'
+          {
+            "versions": [
+              {
+                "timestamp": "2025-11-10_02-45-19",
+                "update_time": "2025-11-09 18:45:19Z",
+                "total_nodes": 200,
+                "valid_nodes": 0,
+                "protocols": {
+                  "vmess": 46,
+                  "vless": 129,
+                  "trojan": 25
+                }
+              },
+              {
+                "timestamp": "2025-11-09_20-59-03",
+                "update_time": "2025-11-09 12:59:03Z",
+                "total_nodes": 200,
+                "valid_nodes": 0,
+                "protocols": {
+                  "vless": 134,
+                  "vmess": 48,
+                  "trojan": 18
+                }
+              },
+              {
+                "timestamp": "2025-11-09_14-48-03",
+                "update_time": "2025-11-09 06:48:03Z",
+                "total_nodes": 200,
+                "valid_nodes": 0,
+                "protocols": {
+                  "vmess": 31,
+                  "trojan": 13,
+                  "vless": 156
+                }
+              },
+              {
+                "timestamp": "2025-11-09_10-14-28",
+                "update_time": "2025-11-09 02:14:28Z",
+                "total_nodes": 200,
+                "valid_nodes": 0,
+                "protocols": {
+                  "vless": 122,
+                  "vmess": 55,
+                  "trojan": 23
+                }
+              },
+              {
+                "timestamp": "2025-11-09_02-46-01",
+                "update_time": "2025-11-08 18:46:01Z",
+                "total_nodes": 200,
+                "valid_nodes": 0,
+                "protocols": {
+                  "vmess": 44,
+                  "ssr": 1,
+                  "vless": 134,
+                  "trojan": 21
+                }
+              },
+              {
+                "timestamp": "2025-11-08_20-58-37",
+                "update_time": "2025-11-08 12:58:37Z",
+                "total_nodes": 200,
+                "valid_nodes": 0,
+                "protocols": {
+                  "vmess": 50,
+                  "vless": 128,
+                  "trojan": 22
+                }
+              },
+              {
+                "timestamp": "2025-11-08_14-47-27",
+                "update_time": "2025-11-08 06:47:27Z",
+                "total_nodes": 200,
+                "valid_nodes": 0,
+                "protocols": {
+                  "vmess": 48,
+                  "vless": 134,
+                  "trojan": 18
+                }
+              },
+              {
+                "timestamp": "2025-11-08_10-04-13",
+                "update_time": "2025-11-08 02:04:13Z",
+                "total_nodes": 200,
+                "valid_nodes": 0,
+                "protocols": {
+                  "vmess": 56,
+                  "vless": 127,
+                  "trojan": 17
+                }
+              },
+              {
+                "timestamp": "2025-11-08_02-47-55",
+                "update_time": "2025-11-07 18:47:55Z",
+                "total_nodes": 200,
+                "valid_nodes": 0,
+                "protocols": {
+                  "vmess": 54,
+                  "vless": 127,
+                  "trojan": 19
+                }
+              },
+              {
+                "timestamp": "2025-11-07_21-05-18",
+                "update_time": "2025-11-07 13:05:18Z",
+                "total_nodes": 200,
+                "valid_nodes": 0,
+                "protocols": {
+                  "vmess": 50,
+                  "vless": 132,
+                  "trojan": 18
+                }
+              }
+            ]
+          }
+          EOF
+          
+          echo "✅ history.json 已更新"
+          echo "版本数: $(jq '.versions | length' history.json)"
+      
+      - name: 提交更改
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          git add history.json
+          git commit -m "📝 重建 history.json：添加所有 10 个历史版本记录"
+          git push
+          
+          echo "✅ 已推送到 gh-pages 分支"
+
