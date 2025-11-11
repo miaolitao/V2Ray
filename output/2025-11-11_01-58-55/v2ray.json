@@ -18,7 +18,95 @@
   ],
   "outbounds": [
     {
-      "tag": "RELAY-172.67.200.13-1172",
+      "tag": "US_speednode_0029",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.167.199.50",
+            "port": 443,
+            "users": [
+              {
+                "id": "b25e3c62-f4eb-45df-adda-eb738959b845",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision-udp443"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "CA-23.162.200.227-7844",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "23.162.200.227",
+            "port": 443,
+            "users": [
+              {
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/linkvws",
+          "headers": {
+            "Host": ""
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "CA-15.235.85.147-1217",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "15.235.85.147",
+            "port": 443,
+            "users": [
+              {
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "linkvws",
+          "headers": {
+            "Host": "pelang.org"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "RELAY-172.67.200.13-1154",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -51,44 +139,16 @@
       }
     },
     {
-      "tag": "US-154.64.243.19-0297",
+      "tag": "CA-134.195.198.147-5601",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "154.64.243.19",
-            "port": 38533,
-            "users": [
-              {
-                "id": "9bc23ccf-4769-4e9a-b278-2dfa8d9ef425",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": ""
-          }
-        }
-      }
-    },
-    {
-      "tag": "RELAY-104.21.86.21-1564",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "azerb.net",
+            "address": "134.195.198.147",
             "port": 443,
             "users": [
               {
-                "id": "5f726fe3-d82e-4da5-a711-8af0cbb2b682",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -99,9 +159,9 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/azumase.ren#TM(@AZARBAYJAB1)/TM(@AZARBAYJAB1)/?ed=2560",
+          "path": "/linkvws",
           "headers": {
-            "Host": "1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top"
+            "Host": ""
           }
         },
         "security": "tls",
@@ -112,17 +172,17 @@
       }
     },
     {
-      "tag": "github.comfreefq - 美国弗吉尼亚州文特山农场OVH数据中心 9",
+      "tag": "CA-134.195.198.147-1112",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "51.81.223.22",
+            "address": "134.195.198.147",
             "port": 443,
             "users": [
               {
-                "id": "c0156451-4efb-45e2-84fc-8d315c4650db",
-                "alterId": "32",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "alterId": 0,
                 "security": "auto"
               }
             ]
@@ -130,7 +190,163 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp"
+        "network": "ws",
+        "wsSettings": {
+          "path": "/linkvws",
+          "headers": {
+            "Host": "inna.cfd"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "US-38.99.82.193-0994",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "38.99.82.193",
+            "port": 443,
+            "users": [
+              {
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/linkvws",
+          "headers": {
+            "Host": "tilebani.com"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "CA-51.79.102.253-0854",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.79.102.253",
+            "port": 80,
+            "users": [
+              {
+                "id": "58fe1542-5290-40ad-815a-77707a81afe5",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/IOebhLMhl1CTbFHbL95myfRX2",
+          "headers": {
+            "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+          }
+        }
+      }
+    },
+    {
+      "tag": "CA-51.79.102.253-1482",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.79.102.253",
+            "port": 80,
+            "users": [
+              {
+                "id": "58fe1542-5290-40ad-815a-77707a81afe5",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/IOebhLMhl1CTbFHbL95myfRX2",
+          "headers": {
+            "Host": ""
+          }
+        }
+      }
+    },
+    {
+      "tag": "US-209.126.84.189-0714",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "209.126.84.189",
+            "port": 443,
+            "users": [
+              {
+                "id": "2c981164-9b93-4bca-94ff-b78d3f8498d7",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/vmessws",
+          "headers": {
+            "Host": "209.126.84.189"
+          }
+        }
+      }
+    },
+    {
+      "tag": "RELAY-104.18.240.238-1513",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.18.240.238",
+            "port": 80,
+            "users": [
+              {
+                "id": "d967ffca-de90-4daa-bd00-d527e5bae11f",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)",
+          "headers": {
+            "Host": "google.whatsapp.snapp.torob.basalam.leoshopping77.ir."
+          }
+        }
       }
     },
     {
@@ -464,17 +680,17 @@
       }
     },
     {
-      "tag": "US_81",
+      "tag": "US_98",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "51.81.223.22",
+            "address": "news.microsoft.com",
             "port": 443,
             "users": [
               {
-                "id": "c0156451-4efb-45e2-84fc-8d315c4650db",
-                "alterId": 32,
+                "id": "615a1285-5848-42a1-9859-d4cb37b1fbd8",
+                "alterId": 0,
                 "security": "auto"
               }
             ]
@@ -482,7 +698,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp"
+        "network": "ws",
+        "wsSettings": {
+          "path": "",
+          "headers": {
+            "Host": ""
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "us.awsbest.com",
+          "allowInsecure": false
+        }
       }
     },
     {
@@ -734,34 +961,6 @@
       }
     },
     {
-      "tag": "github.comfreefq - 美国CloudFlare公司CDN节点 35",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "shopify.com",
-            "port": 80,
-            "users": [
-              {
-                "id": "36bd9969-bb96-4bdd-a6df-960bbd8e4439",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/aries",
-          "headers": {
-            "Host": "tguk.cloudflare.quest"
-          }
-        }
-      }
-    },
-    {
       "tag": "github.comfreefq - 美国CloudFlare节点 46",
       "protocol": "vmess",
       "settings": {
@@ -898,16 +1097,16 @@
       }
     },
     {
-      "tag": "美国 004",
+      "tag": "美国 011",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "165.140.216.141",
+            "address": "148.113.153.112",
             "port": 443,
             "users": [
               {
-                "id": "e7d72a8d-26f2-4b54-b366-0c43e0bcba7d",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -916,16 +1115,50 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp"
+        "network": "ws",
+        "wsSettings": {
+          "path": "linkvws",
+          "headers": {
+            "Host": "serkat.org"
+          }
+        }
       }
     },
     {
-      "tag": "美国 007",
+      "tag": "美国 022",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "15.204.64.211",
+            "address": "209.126.84.189",
+            "port": 443,
+            "users": [
+              {
+                "id": "2c981164-9b93-4bca-94ff-b78d3f8498d7",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/vmessws",
+          "headers": {
+            "Host": "209.126.84.189"
+          }
+        }
+      }
+    },
+    {
+      "tag": "美国 024",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "15.235.85.156",
             "port": 443,
             "users": [
               {
@@ -945,112 +1178,6 @@
             "Host": "kampong.org"
           }
         }
-      }
-    },
-    {
-      "tag": "美国 008",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "15.204.64.214",
-            "port": 443,
-            "users": [
-              {
-                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "linkvws",
-          "headers": {
-            "Host": "yichueng.org"
-          }
-        }
-      }
-    },
-    {
-      "tag": "美国 021",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "ebc.zoom.us",
-            "port": 8443,
-            "users": [
-              {
-                "id": "44e57485-eccc-46ef-808f-cd17ac810018",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "node4.rtxconfigz.com"
-          }
-        }
-      }
-    },
-    {
-      "tag": "美国 023",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top",
-            "port": 443,
-            "users": [
-              {
-                "id": "5f726fe3-d82e-4da5-a711-8af0cbb2b682",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/azumase.ren",
-          "headers": {
-            "Host": "1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top"
-          }
-        }
-      }
-    },
-    {
-      "tag": "加拿大 001",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "142.171.192.140",
-            "port": 10001,
-            "users": [
-              {
-                "id": "b65f4df7-f6af-42b2-877a-cef33f21675e",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
       }
     },
     {
@@ -1076,12 +1203,12 @@
       }
     },
     {
-      "tag": "美国 026",
+      "tag": "美国 027",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "15.204.103.7",
+            "address": "15.235.50.172",
             "port": 443,
             "users": [
               {
@@ -1096,33 +1223,11 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "linkvws",
+          "path": "/linkvws",
           "headers": {
-            "Host": "lammaland.org"
+            "Host": "baradiha.com"
           }
         }
-      }
-    },
-    {
-      "tag": "美国 029",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "38.12.83.217",
-            "port": 30002,
-            "users": [
-              {
-                "id": "418048af-a293-4b99-9b0c-98ca3580dd24",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
       }
     },
     {
@@ -1261,27 +1366,6 @@
       },
       "streamSettings": {
         "network": "tcp"
-      }
-    },
-    {
-      "tag": "美国 042",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "158.101.11.204",
-            "port": 15805,
-            "password": "iwangjie"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "nodes.830901.xyz",
-          "allowInsecure": true
-        }
       }
     },
     {
@@ -1975,16 +2059,104 @@
       }
     },
     {
-      "tag": "美国 100",
+      "tag": "日本 043",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "170.106.152.78",
-            "port": 443,
+            "address": "103.35.189.137",
+            "port": 8880,
             "users": [
               {
-                "id": "8d5911d9-f9f9-484f-8f67-5729ab5fd1af",
+                "id": "df0680ca-e43c-498d-ed86-8e196eedd012",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "日本 044",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "103.35.189.146",
+            "port": 8880,
+            "users": [
+              {
+                "id": "df0680ca-e43c-498d-ed86-8e196eedd012",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "日本 045",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "103.35.190.4",
+            "port": 8880,
+            "users": [
+              {
+                "id": "df0680ca-e43c-498d-ed86-8e196eedd012",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "日本 046",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "103.35.190.193",
+            "port": 8880,
+            "users": [
+              {
+                "id": "df0680ca-e43c-498d-ed86-8e196eedd012",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "加拿大 002",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.79.29.172",
+            "port": 33801,
+            "users": [
+              {
+                "id": "13c10b21-6211-4d43-856f-2e54ef2ac2e2",
                 "encryption": "none",
                 "flow": ""
               }
@@ -2151,16 +2323,16 @@
       }
     },
     {
-      "tag": "美国 153",
+      "tag": "美国 136",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "45.45.218.166",
-            "port": 21275,
+            "address": "medium.com",
+            "port": 443,
             "users": [
               {
-                "id": "678a8311-6184-4a1f-a651-84be3cc82e37",
+                "id": "f2a73750-3087-48ff-a763-1348c15dce68",
                 "encryption": "none",
                 "flow": ""
               }
@@ -2170,6 +2342,146 @@
       },
       "streamSettings": {
         "network": "tcp"
+      }
+    },
+    {
+      "tag": "美国 142",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "40.160.16.219",
+            "port": 443,
+            "users": [
+              {
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "linkvws",
+          "headers": {
+            "Host": "serkat.org"
+          }
+        }
+      }
+    },
+    {
+      "tag": "美国 143",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "15.235.83.227",
+            "port": 443,
+            "users": [
+              {
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/linkvws",
+          "headers": {
+            "Host": "mankadmu.com"
+          }
+        }
+      }
+    },
+    {
+      "tag": "美国 144",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "148.113.153.113",
+            "port": 443,
+            "users": [
+              {
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "linkvws",
+          "headers": {
+            "Host": "serkat.org"
+          }
+        }
+      }
+    },
+    {
+      "tag": "美国 146",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "158.51.121.63",
+            "port": 443,
+            "users": [
+              {
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "linkvws",
+          "headers": {
+            "Host": "seribus.org"
+          }
+        }
+      }
+    },
+    {
+      "tag": "美国 150",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "148.113.153.109",
+            "port": 443,
+            "users": [
+              {
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "linkvws",
+          "headers": {
+            "Host": "yichueng.org"
+          }
+        }
       }
     },
     {
@@ -2355,6 +2667,28 @@
       }
     },
     {
+      "tag": "美国 162",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.82.251.92",
+            "port": 8880,
+            "users": [
+              {
+                "id": "e4824193-4f54-453b-d037-88368e85ef0e",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
       "tag": "英国 005",
       "protocol": "vless",
       "settings": {
@@ -2431,6 +2765,28 @@
             "users": [
               {
                 "id": "0c0537c3-f0fb-40e6-bd59-f5038e1855ed",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "美国 166",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "economist.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "7d18fc67-1994-4f7e-8ff8-c024223f33bb",
                 "encryption": "none",
                 "flow": ""
               }
@@ -2531,24 +2887,25 @@
       }
     },
     {
-      "tag": "美国 190",
-      "protocol": "trojan",
+      "tag": "美国 187",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "nop-55q.pages.dev",
-            "port": 2053,
-            "password": "T@_WvT8Ho@LW%w_,"
+            "address": "nkang2replace.airlineshoma.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "b754b53a-aaf5-475c-eeed-46806c2aa63f",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "NOp-55q.pAgEs.dEv",
-          "allowInsecure": false
-        }
+        "network": "tcp"
       }
     },
     {
@@ -2580,16 +2937,16 @@
       }
     },
     {
-      "tag": "美国 197",
+      "tag": "加拿大 003",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "lt.fxlcn.com",
-            "port": 45417,
+            "address": "51.79.102.253",
+            "port": 80,
             "users": [
               {
-                "id": "469e0b31-30c3-4dab-800d-711232634ce1",
+                "id": "58fe1542-5290-40ad-815a-77707a81afe5",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -2598,73 +2955,13 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "美国 198",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "lt.fxlcn.com",
-            "port": 45235,
-            "users": [
-              {
-                "id": "469e0b31-30c3-4dab-800d-711232634ce1",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
+        "network": "ws",
+        "wsSettings": {
+          "path": "/IOebhLMhl1CTbFHbL95myfRX2",
+          "headers": {
+            "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
           }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "美国 200",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "lt.fxlcn.com",
-            "port": 45291,
-            "users": [
-              {
-                "id": "469e0b31-30c3-4dab-800d-711232634ce1",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "美国 201",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "lt.fxlcn.com",
-            "port": 45233,
-            "users": [
-              {
-                "id": "469e0b31-30c3-4dab-800d-711232634ce1",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
+        }
       }
     },
     {
@@ -2705,6 +3002,27 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "Koma-YT.PAGeS.Dev",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "丹麦 001",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "www.csgo.com",
+            "port": 443,
+            "password": "vip"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "heihu880.pages.dev",
           "allowInsecure": true
         }
       }
@@ -2752,6 +3070,48 @@
       }
     },
     {
+      "tag": "美国 219",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "koma-yt.pages.dev",
+            "port": 8443,
+            "password": "8r%3C%5B9%27l6hAO%238ZQi"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "Koma-YT.PAGeS.Dev",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "美国 220",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "time.is",
+            "port": 2087,
+            "password": "vip"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "heihu880.pages.dev",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
       "tag": "美国 221",
       "protocol": "trojan",
       "settings": {
@@ -2768,6 +3128,48 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "dcf741e8.epeius-2gy.pages.dev",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "美国 223",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "www.udemy.com",
+            "port": 443,
+            "password": "vip"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "heihu880.pages.dev",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "美国 224",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "singapore.com",
+            "port": 443,
+            "password": "vip"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "heihu880.pages.dev",
           "allowInsecure": true
         }
       }
@@ -2821,6 +3223,27 @@
         "servers": [
           {
             "address": "104.18.27.94",
+            "port": 443,
+            "password": "vip"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "heihu880.pages.dev",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "美国 230",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "www.pcmag.com",
             "port": 443,
             "password": "vip"
           }
@@ -2987,28 +3410,6 @@
       }
     },
     {
-      "tag": "美国 244",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "www.speedtest.net",
-            "port": 8080,
-            "users": [
-              {
-                "id": "451b78be-abfc-4a46-b2e3-9c3357b21a56",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
       "tag": "美国 245",
       "protocol": "vless",
       "settings": {
@@ -3019,28 +3420,6 @@
             "users": [
               {
                 "id": "e9979910-79d1-4621-a93c-b2a579c44ba7",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "美国 247",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "speedtest.net",
-            "port": 80,
-            "users": [
-              {
-                "id": "b1f58d90-e65f-4566-91f3-1b96e9a68614",
                 "encryption": "none",
                 "flow": ""
               }
@@ -3107,28 +3486,6 @@
             "users": [
               {
                 "id": "3d7dd548-5456-4f28-8019-393fbfab3312",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "美国 253",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "www.speedtest.net",
-            "port": 8443,
-            "users": [
-              {
-                "id": "ccbe6b7c-9264-40c4-8bc1-ef8f6205d7a4",
                 "encryption": "none",
                 "flow": ""
               }
@@ -3229,50 +3586,6 @@
       }
     },
     {
-      "tag": "美国 258",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "www.speedtest.net",
-            "port": 443,
-            "users": [
-              {
-                "id": "fc264e2f-753b-43fd-878c-c8f82b4bc502",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "美国 259",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "www.speedtest.net",
-            "port": 2086,
-            "users": [
-              {
-                "id": "a7a6f432-903c-4e92-a107-4b559b8c176b",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
       "tag": "美国 261",
       "protocol": "vless",
       "settings": {
@@ -3358,34 +3671,6 @@
       },
       "streamSettings": {
         "network": "tcp"
-      }
-    },
-    {
-      "tag": "美国 274",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "154.19.185.240",
-            "port": 80,
-            "users": [
-              {
-                "id": "efb748ec-c921-42a1-ac9e-1d5485d6c447",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/download",
-          "headers": {
-            "Host": "download.windowsupdate.com"
-          }
-        }
       }
     },
     {
@@ -3686,12 +3971,12 @@
       }
     },
     {
-      "tag": "美国 306",
+      "tag": "美国 308",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "www.visa.com",
+            "address": "www.udacity.com",
             "port": 80,
             "users": [
               {
@@ -3708,12 +3993,78 @@
       }
     },
     {
-      "tag": "美国 308",
+      "tag": "丹麦 002",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "www.udacity.com",
+            "address": "www.csgo.com",
+            "port": 80,
+            "users": [
+              {
+                "id": "ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "美国 311",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "www.udemy.com",
+            "port": 80,
+            "users": [
+              {
+                "id": "ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "美国 313",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "skk.moe",
+            "port": 80,
+            "users": [
+              {
+                "id": "ca2d8658-9ed6-4e0d-8f58-eaaa021f3baa",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "美国 317",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "www.gov.se",
             "port": 80,
             "users": [
               {
@@ -4192,6 +4543,116 @@
       }
     },
     {
+      "tag": "美国 349",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "wedrdeersed.hulkirani.shop",
+            "port": 80,
+            "users": [
+              {
+                "id": "154ff81e-1deb-40d8-b3cb-42f61ec1222a",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "美国 351",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "test.fast.hosting-ip.com",
+            "port": 80,
+            "users": [
+              {
+                "id": "158dd22f-e10e-4905-930a-6d32a133c2dc",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "美国 354",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "www.speedtest.net",
+            "port": 2096,
+            "users": [
+              {
+                "id": "186c95f5-9814-4082-83f8-948a426f5eac",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "美国 356",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "cafearz.com",
+            "port": 8080,
+            "users": [
+              {
+                "id": "1efab776-c694-4652-f89e-45ffffe49ef6",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "美国 357",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "chat.openai.com",
+            "port": 8080,
+            "users": [
+              {
+                "id": "1efab776-c694-4652-f89e-45ffffe49ef6",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
       "tag": "美国 358",
       "protocol": "vless",
       "settings": {
@@ -4378,380 +4839,6 @@
             "users": [
               {
                 "id": "267613d7-f53f-4005-b642-d6f1f687b7cf",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "美国 366",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "151.101.64.155",
-            "port": 80,
-            "users": [
-              {
-                "id": "26ad6098-1015-4cd5-bac0-a3fbcc3cb729",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "美国 368",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "140.248.128.69",
-            "port": 443,
-            "users": [
-              {
-                "id": "26b63e3a-60f9-4630-b180-fde6c4339602",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "美国 369",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "151.101.2.133",
-            "port": 80,
-            "users": [
-              {
-                "id": "275d87d1-221a-4e47-96b1-9a6f76a7daba",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "瑞典 005",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.146.173.117",
-            "port": 2095,
-            "users": [
-              {
-                "id": "2799735a-d009-4959-a966-4bfa286afb3b",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "美国 370",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.20.17.252",
-            "port": 443,
-            "users": [
-              {
-                "id": "2928d83a-ca75-4d52-b437-fa78c7601378",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "美国 372",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "108.162.195.148",
-            "port": 443,
-            "users": [
-              {
-                "id": "2928d83a-ca75-4d52-b437-fa78c7601378",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "美国 373",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "108.162.195.159",
-            "port": 443,
-            "users": [
-              {
-                "id": "2928d83a-ca75-4d52-b437-fa78c7601378",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "美国 374",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "162.159.44.148",
-            "port": 443,
-            "users": [
-              {
-                "id": "2928d83a-ca75-4d52-b437-fa78c7601378",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "美国 375",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.64.35.173",
-            "port": 443,
-            "users": [
-              {
-                "id": "2928d83a-ca75-4d52-b437-fa78c7601378",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "美国 376",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.67.174.190",
-            "port": 443,
-            "users": [
-              {
-                "id": "29f8ad12-ea84-431b-bf32-9d3fb5cf2aa2",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "美国 377",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.26.11.194",
-            "port": 80,
-            "users": [
-              {
-                "id": "2c102887-2209-42c3-ffb1-35a5ddd831a9",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "美国 381",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.67.188.18",
-            "port": 80,
-            "users": [
-              {
-                "id": "2cf5523e-c4e2-4e97-be1f-b9b7d356c140",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "美国 383",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.21.67.12",
-            "port": 443,
-            "users": [
-              {
-                "id": "30f2d443-af46-4dd6-83c9-b5e17299ebd2",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "美国 384",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.26.15.69",
-            "port": 2096,
-            "users": [
-              {
-                "id": "30f2d443-af46-4dd6-83c9-b5e17299ebd2",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "荷兰 048",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "160.153.0.32",
-            "port": 443,
-            "users": [
-              {
-                "id": "30f2d443-af46-4dd6-83c9-b5e17299ebd2",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "美国 386",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "sourceforge.net",
-            "port": 443,
-            "users": [
-              {
-                "id": "3498b967-319f-436a-9edd-12f6ede84572",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "美国 387",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "63.141.128.2",
-            "port": 80,
-            "users": [
-              {
-                "id": "36f05f97-4dce-4cb6-9d88-c8dfc7b2d30e",
                 "encryption": "none",
                 "flow": ""
               }
