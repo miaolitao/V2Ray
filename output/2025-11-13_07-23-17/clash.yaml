@@ -1,0 +1,247 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+proxies:
+- name: 香港ripaojiedian
+  type: vmess
+  server: v9.heduian.link
+  port: 30809
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /oooo
+    headers:
+      Host: baidu.com
+- name: 香港3ripaojiedian
+  type: trojan
+  server: 58.152.110.9
+  port: 443
+  password: 2274c52572e721086f8bd8f88984643c
+  sni: www.nintendogames.net
+- name: 香港4ripaojiedian
+  type: trojan
+  server: 203.198.122.97
+  port: 443
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: 香港5ripaojiedian
+  type: trojan
+  server: 219.77.239.35
+  port: 443
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: 香港6ripaojiedian
+  type: trojan
+  server: 118.253.166.237
+  port: 49213
+  password: 50a99183-2543-40bd-98a2-12bbc6ecf882
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: 日本ripaojiedian
+  type: trojan
+  server: 36.150.215.246
+  port: 2145
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: 日本2ripaojiedian
+  type: trojan
+  server: 160.16.204.136
+  port: 1334
+  password: 2274c52572e721086f8bd8f88984643c
+  sni: www.nintendogames.net
+- name: 日本3ripaojiedian
+  type: trojan
+  server: 160.16.214.6
+  port: 4095
+  password: 2274c52572e721086f8bd8f88984643c
+  sni: www.nintendogames.net
+- name: 日本4ripaojiedian
+  type: vmess
+  server: 175.29.22.101
+  port: 28016
+  uuid: d2540325-9ad6-33d7-be86-259b5bba4ef8
+  alterId: 0
+  cipher: auto
+- name: 新加坡ripaojiedian
+  type: trojan
+  server: 160.16.106.144
+  port: 2760
+  password: 2274c52572e721086f8bd8f88984643c
+  sni: www.nintendogames.net
+- name: 新加坡2ripaojiedian
+  type: trojan
+  server: 160.16.106.144
+  port: 127
+  password: 2274c52572e721086f8bd8f88984643c
+  sni: www.nintendogames.net
+- name: 新加坡3ripaojiedian
+  type: trojan
+  server: 116.49.237.130
+  port: 2753
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: 美国ripaojiedian
+  type: trojan
+  server: 160.16.68.250
+  port: 2890
+  password: 2274c52572e721086f8bd8f88984643c
+  sni: www.nintendogames.net
+- name: 美国2ripaojiedian
+  type: trojan
+  server: 117.172.176.25
+  port: 4054
+  password: 2274c52572e721086f8bd8f88984643c
+  sni: www.nintendogames.net
+  skip-cert-verify: true
+- name: 美国3ripaojiedian
+  type: trojan
+  server: 36.150.215.243
+  port: 19220
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: HK_speednode_0004
+  type: trojan
+  server: 116.49.237.130
+  port: 4569
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: NL_speednode_0006
+  type: trojan
+  server: 194.147.115.149
+  port: 443
+  password: c2d6a850-7e35-44f5-ab9f-8299f6f8c72b
+  sni: joss.dus.biz.id
+- name: PL_speednode_0007
+  type: trojan
+  server: 45.144.48.158
+  port: 8443
+  password: 49d416e1-4cec-41e1-bff6-3748c466f275
+  sni: joss.dus.biz.id
+- name: RU_speednode_0008
+  type: vless
+  server: cdn.cloudconvert.top
+  port: 10012
+  uuid: 258a5f07-d07e-4de4-90b6-69a0ca34bab7
+  flow: xtls-rprx-vision-udp443
+  tls: true
+  servername: cdn.cloudconvert.top
+- name: RU_speednode_0009
+  type: trojan
+  server: 213.159.208.88
+  port: 2053
+  password: 14d6efcf-b0d3-4054-9d4e-e1347e3ceaa2
+  sni: joss.dus.biz.id
+- name: US_speednode_0019
+  type: vless
+  server: 104.167.199.50
+  port: 443
+  uuid: b25e3c62-f4eb-45df-adda-eb738959b845
+  flow: xtls-rprx-vision-udp443
+  tls: true
+  servername: bit-site.ru
+proxy-groups:
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - 🔮 负载均衡
+  - DIRECT
+  - 香港ripaojiedian
+  - 香港3ripaojiedian
+  - 香港4ripaojiedian
+  - 香港5ripaojiedian
+  - 香港6ripaojiedian
+  - 日本ripaojiedian
+  - 日本2ripaojiedian
+  - 日本3ripaojiedian
+  - 日本4ripaojiedian
+  - 新加坡ripaojiedian
+  - 新加坡2ripaojiedian
+  - 新加坡3ripaojiedian
+  - 美国ripaojiedian
+  - 美国2ripaojiedian
+  - 美国3ripaojiedian
+  - HK_speednode_0004
+  - NL_speednode_0006
+  - PL_speednode_0007
+  - RU_speednode_0008
+  - RU_speednode_0009
+  - US_speednode_0019
+- name: ♻️ 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies: &id001
+  - 香港ripaojiedian
+  - 香港3ripaojiedian
+  - 香港4ripaojiedian
+  - 香港5ripaojiedian
+  - 香港6ripaojiedian
+  - 日本ripaojiedian
+  - 日本2ripaojiedian
+  - 日本3ripaojiedian
+  - 日本4ripaojiedian
+  - 新加坡ripaojiedian
+  - 新加坡2ripaojiedian
+  - 新加坡3ripaojiedian
+  - 美国ripaojiedian
+  - 美国2ripaojiedian
+  - 美国3ripaojiedian
+  - HK_speednode_0004
+  - NL_speednode_0006
+  - PL_speednode_0007
+  - RU_speednode_0008
+  - RU_speednode_0009
+  - US_speednode_0019
+- name: 🔮 负载均衡
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies: *id001
+- name: 🎯 全球直连
+  type: select
+  proxies:
+  - DIRECT
+- name: 🛑 全球拦截
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 🐟 漏网之鱼
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - ♻️ 自动选择
+rules:
+- DOMAIN-SUFFIX,local,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,172.16.0.0/12,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT
+- IP-CIDR,10.0.0.0/8,DIRECT
+- IP-CIDR,17.0.0.0/8,DIRECT
+- IP-CIDR,100.64.0.0/10,DIRECT
+- DOMAIN-SUFFIX,google.com,🚀 节点选择
+- DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
+- DOMAIN-SUFFIX,googleusercontent.com,🚀 节点选择
+- DOMAIN-SUFFIX,youtube.com,🚀 节点选择
+- DOMAIN-SUFFIX,ytimg.com,🚀 节点选择
+- DOMAIN-SUFFIX,twitter.com,🚀 节点选择
+- DOMAIN-SUFFIX,facebook.com,🚀 节点选择
+- DOMAIN-SUFFIX,instagram.com,🚀 节点选择
+- DOMAIN-SUFFIX,telegram.org,🚀 节点选择
+- DOMAIN-SUFFIX,github.com,🚀 节点选择
+- DOMAIN-SUFFIX,githubusercontent.com,🚀 节点选择
+- GEOIP,CN,🎯 全球直连
+- MATCH,🐟 漏网之鱼
