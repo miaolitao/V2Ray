@@ -1,0 +1,220 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+proxies:
+- name: US_speednode_0030
+  type: vless
+  server: www.speedtest.net
+  port: 80
+  uuid: f8f19bc7-54c1-4612-9cff-4ce3852d2bba
+  network: ws
+- name: 日本ripaojiedian
+  type: trojan
+  server: 160.16.227.93
+  port: 1924
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: 日本2ripaojiedian
+  type: trojan
+  server: 160.16.57.238
+  port: 1334
+  password: 2274c52572e721086f8bd8f88984643c
+  sni: www.nintendogames.net
+- name: 日本3ripaojiedian
+  type: trojan
+  server: 202.181.103.235
+  port: 3169
+  password: 2274c52572e721086f8bd8f88984643c
+  sni: www.nintendogames.net
+- name: 新加坡ripaojiedian
+  type: trojan
+  server: 160.16.236.32
+  port: 5552
+  password: 2274c52572e721086f8bd8f88984643c
+  sni: www.nintendogames.net
+- name: 新加坡2ripaojiedian
+  type: trojan
+  server: 153.121.51.29
+  port: 127
+  password: 2274c52572e721086f8bd8f88984643c
+  sni: www.nintendogames.net
+- name: 美国2ripaojiedian
+  type: trojan
+  server: 160.16.57.238
+  port: 4211
+  password: 2274c52572e721086f8bd8f88984643c
+  sni: www.nintendogames.net
+  skip-cert-verify: true
+- name: DE_speednode_0002
+  type: vless
+  server: 195.254.165.152
+  port: 9107
+  uuid: 774727ed-1e56-41bd-b55f-28549e21bcc8
+  tls: true
+  servername: refersion.com
+- name: DE_speednode_0004
+  type: vless
+  server: 185.161.251.24
+  port: 29973
+  uuid: a1493ccd-d1a4-4087-9041-1b3500224003
+  tls: true
+  servername: yandex.ru
+- name: RU_speednode_0016
+  type: trojan
+  server: 194.35.116.62
+  port: 11000
+  password: -4146XJHYAzJ4K8Ov6_LBQ
+  sni: f4e23c6c168f0e91.noproblemvpn.ru
+- name: RU_speednode_0017
+  type: vless
+  server: 5.129.252.60
+  port: 443
+  uuid: 56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1
+  flow: xtls-rprx-vision-udp443
+  tls: true
+  servername: cdnjs.com
+- name: US_speednode_0026
+  type: vless
+  server: autos.jykvpn.com
+  port: 443
+  uuid: 56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1
+  flow: xtls-rprx-vision-udp443
+  tls: true
+  servername: cdnjs.com
+- name: US_speednode_0028
+  type: vless
+  server: 185.177.238.80
+  port: 443
+  uuid: 1762a070-294a-4999-9c59-05aa4922feed
+  flow: xtls-rprx-vision-udp443
+  tls: true
+  servername: nl3.truservice.top
+- name: 香港3ripaojiedian
+  type: trojan
+  server: 58.152.110.216
+  port: 443
+  password: 2274c52572e721086f8bd8f88984643c
+  sni: www.nintendogames.net
+- name: 新加坡3ripaojiedian
+  type: trojan
+  server: 38.180.191.251
+  port: 443
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: RU_speednode_0015
+  type: vless
+  server: youtube.jykvpn.com
+  port: 443
+  uuid: 56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1
+  flow: xtls-rprx-vision-udp443
+  tls: true
+  servername: cdnjs.com
+- name: US_speednode_0023
+  type: vless
+  server: fis.jykvpn.com
+  port: 443
+  uuid: 56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1
+  flow: xtls-rprx-vision-udp443
+  tls: true
+  servername: cdnjs.com
+- name: 美国3ripaojiedian
+  type: trojan
+  server: us.wyau.cn
+  port: 4569
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+proxy-groups:
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - 🔮 负载均衡
+  - DIRECT
+  - US_speednode_0030
+  - 日本ripaojiedian
+  - 日本2ripaojiedian
+  - 日本3ripaojiedian
+  - 新加坡ripaojiedian
+  - 新加坡2ripaojiedian
+  - 美国2ripaojiedian
+  - DE_speednode_0002
+  - DE_speednode_0004
+  - RU_speednode_0016
+  - RU_speednode_0017
+  - US_speednode_0026
+  - US_speednode_0028
+  - 香港3ripaojiedian
+  - 新加坡3ripaojiedian
+  - RU_speednode_0015
+  - US_speednode_0023
+  - 美国3ripaojiedian
+- name: ♻️ 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies: &id001
+  - US_speednode_0030
+  - 日本ripaojiedian
+  - 日本2ripaojiedian
+  - 日本3ripaojiedian
+  - 新加坡ripaojiedian
+  - 新加坡2ripaojiedian
+  - 美国2ripaojiedian
+  - DE_speednode_0002
+  - DE_speednode_0004
+  - RU_speednode_0016
+  - RU_speednode_0017
+  - US_speednode_0026
+  - US_speednode_0028
+  - 香港3ripaojiedian
+  - 新加坡3ripaojiedian
+  - RU_speednode_0015
+  - US_speednode_0023
+  - 美国3ripaojiedian
+- name: 🔮 负载均衡
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies: *id001
+- name: 🎯 全球直连
+  type: select
+  proxies:
+  - DIRECT
+- name: 🛑 全球拦截
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 🐟 漏网之鱼
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - ♻️ 自动选择
+rules:
+- DOMAIN-SUFFIX,local,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,172.16.0.0/12,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT
+- IP-CIDR,10.0.0.0/8,DIRECT
+- IP-CIDR,17.0.0.0/8,DIRECT
+- IP-CIDR,100.64.0.0/10,DIRECT
+- DOMAIN-SUFFIX,google.com,🚀 节点选择
+- DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
+- DOMAIN-SUFFIX,googleusercontent.com,🚀 节点选择
+- DOMAIN-SUFFIX,youtube.com,🚀 节点选择
+- DOMAIN-SUFFIX,ytimg.com,🚀 节点选择
+- DOMAIN-SUFFIX,twitter.com,🚀 节点选择
+- DOMAIN-SUFFIX,facebook.com,🚀 节点选择
+- DOMAIN-SUFFIX,instagram.com,🚀 节点选择
+- DOMAIN-SUFFIX,telegram.org,🚀 节点选择
+- DOMAIN-SUFFIX,github.com,🚀 节点选择
+- DOMAIN-SUFFIX,githubusercontent.com,🚀 节点选择
+- GEOIP,CN,🎯 全球直连
+- MATCH,🐟 漏网之鱼

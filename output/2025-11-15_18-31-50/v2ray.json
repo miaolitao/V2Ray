@@ -1,0 +1,426 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "port": 1080,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    },
+    {
+      "port": 1081,
+      "protocol": "http"
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "US_speednode_0030",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "www.speedtest.net",
+            "port": 80,
+            "users": [
+              {
+                "id": "f8f19bc7-54c1-4612-9cff-4ce3852d2bba",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "日本ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "160.16.227.93",
+            "port": 1924,
+            "password": "BxceQaOe"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "t.me%2Fripaojiedian",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "日本2ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "160.16.57.238",
+            "port": 1334,
+            "password": "2274c52572e721086f8bd8f88984643c"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.nintendogames.net",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "日本3ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "202.181.103.235",
+            "port": 3169,
+            "password": "2274c52572e721086f8bd8f88984643c"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.nintendogames.net",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "新加坡ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "160.16.236.32",
+            "port": 5552,
+            "password": "2274c52572e721086f8bd8f88984643c"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.nintendogames.net",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "新加坡2ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "153.121.51.29",
+            "port": 127,
+            "password": "2274c52572e721086f8bd8f88984643c"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.nintendogames.net",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "美国2ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "160.16.57.238",
+            "port": 4211,
+            "password": "2274c52572e721086f8bd8f88984643c"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.nintendogames.net",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "DE_speednode_0002",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "195.254.165.152",
+            "port": 9107,
+            "users": [
+              {
+                "id": "774727ed-1e56-41bd-b55f-28549e21bcc8",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "DE_speednode_0004",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.161.251.24",
+            "port": 29973,
+            "users": [
+              {
+                "id": "a1493ccd-d1a4-4087-9041-1b3500224003",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "RU_speednode_0016",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "194.35.116.62",
+            "port": 11000,
+            "password": "-4146XJHYAzJ4K8Ov6_LBQ"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "f4e23c6c168f0e91.noproblemvpn.ru",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "RU_speednode_0017",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "5.129.252.60",
+            "port": 443,
+            "users": [
+              {
+                "id": "56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision-udp443"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "US_speednode_0026",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "autos.jykvpn.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision-udp443"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "US_speednode_0028",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.177.238.80",
+            "port": 443,
+            "users": [
+              {
+                "id": "1762a070-294a-4999-9c59-05aa4922feed",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision-udp443"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "香港3ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "58.152.110.216",
+            "port": 443,
+            "password": "2274c52572e721086f8bd8f88984643c"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.nintendogames.net",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "新加坡3ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "38.180.191.251",
+            "port": 443,
+            "password": "BxceQaOe"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "t.me%2Fripaojiedian",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "RU_speednode_0015",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "youtube.jykvpn.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision-udp443"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "US_speednode_0023",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "fis.jykvpn.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision-udp443"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "美国3ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "us.wyau.cn",
+            "port": 4569,
+            "password": "BxceQaOe"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "t.me%2Fripaojiedian",
+          "allowInsecure": true
+        }
+      }
+    }
+  ],
+  "routing": {
+    "domainStrategy": "IPOnDemand",
+    "rules": [
+      {
+        "type": "field",
+        "ip": [
+          "geoip:private"
+        ],
+        "outboundTag": "direct"
+      },
+      {
+        "type": "field",
+        "ip": [
+          "geoip:cn"
+        ],
+        "outboundTag": "direct"
+      }
+    ]
+  }
+}
