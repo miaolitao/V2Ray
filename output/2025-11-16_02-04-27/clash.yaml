@@ -5,105 +5,130 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: US_speednode_0019
+- name: DE_speednode_0002
   type: vless
-  server: 104.167.199.50
+  server: 195.254.165.152
+  port: 9107
+  uuid: 774727ed-1e56-41bd-b55f-28549e21bcc8
+  tls: true
+  servername: refersion.com
+- name: RU_speednode_0016
+  type: trojan
+  server: 194.35.116.62
+  port: 11000
+  password: -4146XJHYAzJ4K8Ov6_LBQ
+  sni: f4e23c6c168f0e91.noproblemvpn.ru
+- name: US_speednode_0028
+  type: vless
+  server: 185.177.238.80
   port: 443
-  uuid: b25e3c62-f4eb-45df-adda-eb738959b845
+  uuid: 1762a070-294a-4999-9c59-05aa4922feed
   flow: xtls-rprx-vision-udp443
   tls: true
-  servername: bit-site.ru
+  servername: nl3.truservice.top
+- name: 日本ripaojiedian
+  type: trojan
+  server: 160.16.227.93
+  port: 1924
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
 - name: 日本2ripaojiedian
   type: trojan
-  server: 160.16.204.136
+  server: 160.16.57.238
   port: 1334
   password: 2274c52572e721086f8bd8f88984643c
   sni: www.nintendogames.net
 - name: 日本3ripaojiedian
   type: trojan
-  server: 160.16.214.6
-  port: 4095
+  server: 202.181.103.235
+  port: 3169
   password: 2274c52572e721086f8bd8f88984643c
   sni: www.nintendogames.net
 - name: 新加坡ripaojiedian
   type: trojan
-  server: 160.16.106.144
-  port: 2760
+  server: 160.16.236.32
+  port: 5552
   password: 2274c52572e721086f8bd8f88984643c
   sni: www.nintendogames.net
 - name: 新加坡2ripaojiedian
   type: trojan
-  server: 160.16.106.144
+  server: 153.121.51.29
   port: 127
   password: 2274c52572e721086f8bd8f88984643c
   sni: www.nintendogames.net
-- name: NL_speednode_0006
+- name: 美国2ripaojiedian
   type: trojan
-  server: 194.147.115.149
+  server: 160.16.57.238
+  port: 4211
+  password: 2274c52572e721086f8bd8f88984643c
+  sni: www.nintendogames.net
+  skip-cert-verify: true
+- name: DE_speednode_0004
+  type: vless
+  server: 185.161.251.24
+  port: 29973
+  uuid: a1493ccd-d1a4-4087-9041-1b3500224003
+  tls: true
+  servername: yandex.ru
+- name: RU_speednode_0017
+  type: vless
+  server: 5.129.252.60
   port: 443
-  password: c2d6a850-7e35-44f5-ab9f-8299f6f8c72b
-  sni: joss.dus.biz.id
-- name: PL_speednode_0007
-  type: trojan
-  server: 45.144.48.158
-  port: 8443
-  password: 49d416e1-4cec-41e1-bff6-3748c466f275
-  sni: joss.dus.biz.id
-- name: RU_speednode_0009
-  type: trojan
-  server: 213.159.208.88
-  port: 2053
-  password: 14d6efcf-b0d3-4054-9d4e-e1347e3ceaa2
-  sni: joss.dus.biz.id
+  uuid: 56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1
+  flow: xtls-rprx-vision-udp443
+  tls: true
+  servername: cdnjs.com
+- name: US_speednode_0023
+  type: vless
+  server: fis.jykvpn.com
+  port: 443
+  uuid: 56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1
+  flow: xtls-rprx-vision-udp443
+  tls: true
+  servername: cdnjs.com
+- name: US_speednode_0030
+  type: vless
+  server: www.speedtest.net
+  port: 80
+  uuid: f8f19bc7-54c1-4612-9cff-4ce3852d2bba
+  network: ws
 - name: 香港3ripaojiedian
   type: trojan
-  server: 58.152.110.9
+  server: 58.152.110.216
   port: 443
   password: 2274c52572e721086f8bd8f88984643c
   sni: www.nintendogames.net
-- name: 香港4ripaojiedian
-  type: trojan
-  server: 203.198.122.97
-  port: 443
-  password: BxceQaOe
-  sni: t.me%2Fripaojiedian
-  skip-cert-verify: true
-- name: 香港5ripaojiedian
-  type: trojan
-  server: 219.77.239.35
-  port: 443
-  password: BxceQaOe
-  sni: t.me%2Fripaojiedian
-  skip-cert-verify: true
-- name: 日本4ripaojiedian
-  type: vmess
-  server: 175.29.22.101
-  port: 28016
-  uuid: d2540325-9ad6-33d7-be86-259b5bba4ef8
-  alterId: 0
-  cipher: auto
 - name: 新加坡3ripaojiedian
   type: trojan
-  server: 116.49.237.130
-  port: 2753
+  server: 38.180.191.251
+  port: 443
   password: BxceQaOe
   sni: t.me%2Fripaojiedian
   skip-cert-verify: true
-- name: HK_speednode_0004
+- name: RU_speednode_0015
+  type: vless
+  server: youtube.jykvpn.com
+  port: 443
+  uuid: 56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1
+  flow: xtls-rprx-vision-udp443
+  tls: true
+  servername: cdnjs.com
+- name: US_speednode_0026
+  type: vless
+  server: autos.jykvpn.com
+  port: 443
+  uuid: 56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1
+  flow: xtls-rprx-vision-udp443
+  tls: true
+  servername: cdnjs.com
+- name: 美国3ripaojiedian
   type: trojan
-  server: 116.49.237.130
+  server: us.wyau.cn
   port: 4569
   password: BxceQaOe
   sni: t.me%2Fripaojiedian
   skip-cert-verify: true
-- name: RU_speednode_0008
-  type: vless
-  server: cdn.cloudconvert.top
-  port: 10012
-  uuid: 258a5f07-d07e-4de4-90b6-69a0ca34bab7
-  flow: xtls-rprx-vision-udp443
-  tls: true
-  servername: cdn.cloudconvert.top
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -111,41 +136,47 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 负载均衡
   - DIRECT
-  - US_speednode_0019
+  - DE_speednode_0002
+  - RU_speednode_0016
+  - US_speednode_0028
+  - 日本ripaojiedian
   - 日本2ripaojiedian
   - 日本3ripaojiedian
   - 新加坡ripaojiedian
   - 新加坡2ripaojiedian
-  - NL_speednode_0006
-  - PL_speednode_0007
-  - RU_speednode_0009
+  - 美国2ripaojiedian
+  - DE_speednode_0004
+  - RU_speednode_0017
+  - US_speednode_0023
+  - US_speednode_0030
   - 香港3ripaojiedian
-  - 香港4ripaojiedian
-  - 香港5ripaojiedian
-  - 日本4ripaojiedian
   - 新加坡3ripaojiedian
-  - HK_speednode_0004
-  - RU_speednode_0008
+  - RU_speednode_0015
+  - US_speednode_0026
+  - 美国3ripaojiedian
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: &id001
-  - US_speednode_0019
+  - DE_speednode_0002
+  - RU_speednode_0016
+  - US_speednode_0028
+  - 日本ripaojiedian
   - 日本2ripaojiedian
   - 日本3ripaojiedian
   - 新加坡ripaojiedian
   - 新加坡2ripaojiedian
-  - NL_speednode_0006
-  - PL_speednode_0007
-  - RU_speednode_0009
+  - 美国2ripaojiedian
+  - DE_speednode_0004
+  - RU_speednode_0017
+  - US_speednode_0023
+  - US_speednode_0030
   - 香港3ripaojiedian
-  - 香港4ripaojiedian
-  - 香港5ripaojiedian
-  - 日本4ripaojiedian
   - 新加坡3ripaojiedian
-  - HK_speednode_0004
-  - RU_speednode_0008
+  - RU_speednode_0015
+  - US_speednode_0026
+  - 美国3ripaojiedian
 - name: 🔮 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
