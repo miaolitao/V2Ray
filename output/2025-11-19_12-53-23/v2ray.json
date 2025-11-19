@@ -1,0 +1,378 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "port": 1080,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    },
+    {
+      "port": 1081,
+      "protocol": "http"
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "RU_speednode_0012",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "81.161.98.228",
+            "port": 1443,
+            "users": [
+              {
+                "id": "00f02ab2-6f2d-449f-a089-d182a2fac59a",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "香港5ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "219.79.165.55",
+            "port": 443,
+            "password": "BxceQaOe"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "t.me%2Fripaojiedian",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "日本ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "153.121.65.212",
+            "port": 5156,
+            "password": "BxceQaOe"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "t.me%2Fripaojiedian",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "日本2ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "160.16.117.182",
+            "port": 1334,
+            "password": "dd2f25b4c70689de8bc0f7fa9d6591cb"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.nintendogames.net",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "日本3ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "160.16.117.182",
+            "port": 3169,
+            "password": "dd2f25b4c70689de8bc0f7fa9d6591cb"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.nintendogames.net",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "新加坡ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "160.16.117.182",
+            "port": 2760,
+            "password": "dd2f25b4c70689de8bc0f7fa9d6591cb"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.nintendogames.net",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "新加坡2ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "153.121.73.102",
+            "port": 127,
+            "password": "dd2f25b4c70689de8bc0f7fa9d6591cb"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.nintendogames.net",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "新加坡3ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "116.49.237.130",
+            "port": 3127,
+            "password": "BxceQaOe"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "t.me%2Fripaojiedian",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "美国2ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "160.16.117.182",
+            "port": 4211,
+            "password": "dd2f25b4c70689de8bc0f7fa9d6591cb"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.nintendogames.net",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "美国3ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "18.162.123.55",
+            "port": 2773,
+            "password": "BxceQaOe"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "t.me%2Fripaojiedian",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "CH_speednode_0001",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "194.87.18.124",
+            "port": 443,
+            "password": "019a8c1f-3d28-74e8-8a8e-40045d7ec77f"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.bilibili.com",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "GB_speednode_0005",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "nl.nodes.rocketnetwork.ru",
+            "port": 443,
+            "users": [
+              {
+                "id": "bccbecc9-c1d2-45d1-b3fa-771a19b9831c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision-udp443"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "US_speednode_0013",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "108.165.255.5",
+            "port": 443,
+            "password": "019a8c1f-3d28-74e8-8a8e-40045d7ec77f"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.bilibili.com",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "香港3ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "58.152.110.206",
+            "port": 443,
+            "password": "dd2f25b4c70689de8bc0f7fa9d6591cb"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.nintendogames.net",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "香港4ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "58.152.26.173",
+            "port": 443,
+            "password": "BxceQaOe"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "t.me%2Fripaojiedian",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "US_speednode_0014",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "96.126.190.132",
+            "port": 443,
+            "password": "019a8c1f-3d28-74e8-8a8e-40045d7ec77f"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.bilibili.com",
+          "allowInsecure": true
+        }
+      }
+    }
+  ],
+  "routing": {
+    "domainStrategy": "IPOnDemand",
+    "rules": [
+      {
+        "type": "field",
+        "ip": [
+          "geoip:private"
+        ],
+        "outboundTag": "direct"
+      },
+      {
+        "type": "field",
+        "ip": [
+          "geoip:cn"
+        ],
+        "outboundTag": "direct"
+      }
+    ]
+  }
+}
