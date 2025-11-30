@@ -130,6 +130,34 @@
       }
     },
     {
+      "tag": "VMESS-未知美国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-np",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "npmjs.com",
+            "port": 8080,
+            "users": [
+              {
+                "id": "6cbc9c78-1cb1-57d4-a999-e2f4e34c1e03",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/nasnet/cdn",
+          "headers": {
+            "Host": "ke7hz36ewz-4515017473.mashallahbet.com"
+          }
+        }
+      }
+    },
+    {
       "tag": "VMESS-未知美国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-10",
       "protocol": "vmess",
       "settings": {
@@ -214,19 +242,92 @@
       }
     },
     {
-      "tag": "加拿大多伦多 V2CROSS.COM",
-      "protocol": "trojan",
+      "tag": "VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-orvps2.",
+      "protocol": "vmess",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "198.57.27.27",
-            "port": 12990,
-            "password": "6pRjKQJ0CWyFtG.9"
+            "address": "orvps2.horsenma.net",
+            "port": 8443,
+            "users": [
+              {
+                "id": "57e595e6-ef54-4e0d-b8df-e96db9612b99",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "ws",
+        "wsSettings": {
+          "path": "/horsen",
+          "headers": {
+            "Host": "orvps2.horsenma.net"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "VMESS-未知韩国-NF解锁韩国地区非自制剧-ChatGPT-TikTok-YouTube-ti",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "time.is",
+            "port": 80,
+            "users": [
+              {
+                "id": "66ddd790-10ed-4a16-b334-0b7e3577b5b7",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "time.is"
+          }
+        }
+      }
+    },
+    {
+      "tag": "美国 CloudFlare节点",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "t1.620720.xyz",
+            "port": 8443,
+            "users": [
+              {
+                "id": "516d8a7a-3f0b-41d3-bad0-246116381516",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "t1.620720.xyz"
+          }
+        },
         "security": "tls",
         "tlsSettings": {
           "serverName": "",
@@ -319,16 +420,82 @@
       }
     },
     {
-      "tag": "未知 VLESS-81free-nodes",
+      "tag": "US VLESS-23free-nodes",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "ssssssss.zabc.net",
-            "port": 8443,
+            "address": "usa29.unlockmatrix.org",
+            "port": 443,
             "users": [
               {
-                "id": "692ece70-c136-4f77-8921-1e99091b9987",
+                "id": "9b0c1d6e-7f6e-4b06-96ba-b8a397a69166",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "FR VLESS-38free-nodes",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "cosmin.ns.cloudflare.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "f956952d-dde1-4bc6-861e-22a9dc4554c4",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "CA VLESS-42free-nodes",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "86.107.168.100",
+            "port": 7070,
+            "users": [
+              {
+                "id": "be32c9ad-92e1-485b-dc74-2a65e9dae480",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "US VLESS-85free-nodes",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "zorox-net.senu-zer.online",
+            "port": 443,
+            "users": [
+              {
+                "id": "224629c2-342b-4e54-bb75-b56cb7dabf30",
                 "encryption": "none",
                 "flow": ""
               }
@@ -351,6 +518,28 @@
             "users": [
               {
                 "id": "65a9530f-4a4e-4db1-9689-9213385e9dfb",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "US VLESS-89free-nodes",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "138.124.183.227",
+            "port": 8080,
+            "users": [
+              {
+                "id": "9dc11620-987c-4344-9088-f46fdfae4054",
                 "encryption": "none",
                 "flow": ""
               }
@@ -403,28 +592,6 @@
           "serverName": "diningtable.electricbanana.click",
           "allowInsecure": false
         }
-      }
-    },
-    {
-      "tag": "US VLESS-130free-nodes",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "18.205.1.138",
-            "port": 443,
-            "users": [
-              {
-                "id": "4be2d287-4212-44f2-9388-8f31de5b6437",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
       }
     },
     {
@@ -492,6 +659,27 @@
       }
     },
     {
+      "tag": "未知 TROJAN-179free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "hnm.xiaohouzi.club",
+            "port": 17106,
+            "password": "0f098bb2-9fad-3cc3-8acf-2a3268c1eb27"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "hnm.xiaohouzi.club",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
       "tag": "未知 TROJAN-192free-nodes",
       "protocol": "trojan",
       "settings": {
@@ -499,6 +687,90 @@
           {
             "address": "www.pcmag.com",
             "port": 443,
+            "password": "vip"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "heihu880.pages.dev",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "未知 TROJAN-196free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "ca-full.privateip.net",
+            "port": 443,
+            "password": "acfef609-b3c7-4e52-b292-8921d5fca90d"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "未知 TROJAN-205free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "kaizen-us-6.mielink-dns2.com",
+            "port": 443,
+            "password": "265f092f-418b-30c9-a479-4800fd44dd19mielink"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "paydiu.com",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "未知 TROJAN-216free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "gz01.xiaohouzi.club",
+            "port": 14705,
+            "password": "0f098bb2-9fad-3cc3-8acf-2a3268c1eb27"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "$$$$$$$vusig01.xiaohouzi.club",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "未知 TROJAN-222free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "time.is",
+            "port": 2087,
             "password": "vip"
           }
         ]
@@ -529,6 +801,27 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "heihu880.pages.dev",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "未知 TROJAN-257free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "jp-h1.sshub.xyz",
+            "port": 443,
+            "password": "61605c66-6d41-4b9d-a496-b9898f3f95d0"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
           "allowInsecure": false
         }
       }
@@ -597,6 +890,48 @@
       }
     },
     {
+      "tag": "未知 TROJAN-280free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "series-v1.samanehha.co",
+            "port": 443,
+            "password": "0b65bb06-6b28-487a-8e3c-820dda51e977"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "series-v1.samanehha.co",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "未知 TROJAN-290free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "hnm.xiaohouzi.club",
+            "port": 17108,
+            "password": "64de1de7-e3bb-3dc4-ab04-d1e601e18ac5"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "hnm.xiaohouzi.club",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
       "tag": "未知 TROJAN-294free-nodes",
       "protocol": "trojan",
       "settings": {
@@ -639,14 +974,14 @@
       }
     },
     {
-      "tag": "未知 TROJAN-325free-nodes",
+      "tag": "未知 TROJAN-368free-nodes",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "www.ipaddress.my",
+            "address": "download2hkt.windowsupdate.lol",
             "port": 443,
-            "password": "vip"
+            "password": "7778e684-f435-4166-bf9e-0256cb28bf10"
           }
         ]
       },
@@ -654,7 +989,49 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "heihu880.pages.dev",
+          "serverName": "",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "未知 TROJAN-373free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "download2hkt.windowsupdate.lol",
+            "port": 443,
+            "password": "af4d2493-9156-4514-9f6b-ee5d1a1e4713"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "未知 TROJAN-390free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "kaizen-tw-4.mielink-dns2.com",
+            "port": 443,
+            "password": "265f092f-418b-30c9-a479-4800fd44dd19mielink"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "paydiu.com",
           "allowInsecure": false
         }
       }
@@ -828,6 +1205,27 @@
       }
     },
     {
+      "tag": "未知 TROJAN-589free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "ip.sb",
+            "port": 8443,
+            "password": "trojan"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "fofang.pages.dev",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
       "tag": "未知 TROJAN-593free-nodes",
       "protocol": "trojan",
       "settings": {
@@ -954,16 +1352,16 @@
       }
     },
     {
-      "tag": "VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-orvps2.",
+      "tag": "法国 OVH SAS",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "orvps2.horsenma.net",
-            "port": 8443,
+            "address": "91.134.8.101",
+            "port": 443,
             "users": [
               {
-                "id": "57e595e6-ef54-4e0d-b8df-e96db9612b99",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "alterId": "0",
                 "security": "auto"
               }
@@ -974,9 +1372,9 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/horsen",
+          "path": "/linkvws",
           "headers": {
-            "Host": "orvps2.horsenma.net"
+            "Host": ""
           }
         },
         "security": "tls",
@@ -987,16 +1385,16 @@
       }
     },
     {
-      "tag": "VMESS-未知韩国-NF解锁韩国地区非自制剧-ChatGPT-TikTok-YouTube-ti",
+      "tag": "GB英国(mibei77.com 米贝节点分享)",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "time.is",
-            "port": 80,
+            "address": "82.198.246.97",
+            "port": 180,
             "users": [
               {
-                "id": "66ddd790-10ed-4a16-b334-0b7e3577b5b7",
+                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
                 "alterId": "0",
                 "security": "auto"
               }
@@ -1005,17 +1403,165 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "time.is"
-          }
-        }
+        "network": "tcp"
       }
     },
     {
-      "tag": "英国 V2CROSS.COM",
+      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "82.198.246.97",
+            "port": 180,
+            "users": [
+              {
+                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "82.198.246.97",
+            "port": 180,
+            "users": [
+              {
+                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "GB英国(mibei77.com 米贝节点分享)",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "82.198.246.97",
+            "port": 180,
+            "users": [
+              {
+                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "82.198.246.97",
+            "port": 180,
+            "users": [
+              {
+                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "82.198.246.97",
+            "port": 180,
+            "users": [
+              {
+                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "82.198.246.97",
+            "port": 180,
+            "users": [
+              {
+                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "FR法国(mibei77.com 米贝节点分享)",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "82.198.246.97",
+            "port": 180,
+            "users": [
+              {
+                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "FR法国(mibei77.com 米贝节点分享)",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -1098,16 +1644,38 @@
       }
     },
     {
-      "tag": "FR VLESS-38free-nodes",
+      "tag": "未知 VLESS-09free-nodes",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "cosmin.ns.cloudflare.com",
+            "address": "38.131.1.85",
             "port": 443,
             "users": [
               {
-                "id": "f956952d-dde1-4bc6-861e-22a9dc4554c4",
+                "id": "06909812-7bd8-4e39-aa4f-911b1ce7c45c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "未知 VLESS-35free-nodes",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "213.176.16.74",
+            "port": 443,
+            "users": [
+              {
+                "id": "d7fbe279896e40118c23d15fe537dddd",
                 "encryption": "none",
                 "flow": ""
               }
@@ -1120,16 +1688,60 @@
       }
     },
     {
-      "tag": "CA VLESS-42free-nodes",
+      "tag": "FR VLESS-37free-nodes",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "86.107.168.100",
-            "port": 7070,
+            "address": "173.212.209.56",
+            "port": 443,
             "users": [
               {
-                "id": "be32c9ad-92e1-485b-dc74-2a65e9dae480",
+                "id": "8062ddd7-fdee-485d-8948-c6e5df168fe9",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "US VLESS-48free-nodes",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "usa29.unlockmatrix.org",
+            "port": 443,
+            "users": [
+              {
+                "id": "9b0c1d6e-7f6e-4b06-96ba-b8a397a69166",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "DE VLESS-53free-nodes",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "80.253.251.121",
+            "port": 31156,
+            "users": [
+              {
+                "id": "3a69f9d8-45f6-4ab3-a96b-b5f6b17f6b07",
                 "encryption": "none",
                 "flow": ""
               }
@@ -1163,6 +1775,28 @@
       }
     },
     {
+      "tag": "FR VLESS-67free-nodes",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.193.17.80",
+            "port": 2066,
+            "users": [
+              {
+                "id": "44830663-914e-4127-a9b3-412406f59cbe",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
       "tag": "GB VLESS-69free-nodes",
       "protocol": "vless",
       "settings": {
@@ -1173,6 +1807,50 @@
             "users": [
               {
                 "id": "684ead3d-43b1-4707-904a-24e3e9e91fb1",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "未知 VLESS-78free-nodes",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "141.227.130.86",
+            "port": 53025,
+            "users": [
+              {
+                "id": "4ba7deb3-83a9-48d2-ad8a-e115183b1e6d",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "未知 VLESS-81free-nodes",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ssssssss.zabc.net",
+            "port": 8443,
+            "users": [
+              {
+                "id": "692ece70-c136-4f77-8921-1e99091b9987",
                 "encryption": "none",
                 "flow": ""
               }
@@ -1207,60 +1885,104 @@
       }
     },
     {
-      "tag": "US VLESS-85free-nodes",
+      "tag": "US VLESS-83free-nodes",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "zorox-net.senu-zer.online",
-            "port": 443,
-            "users": [
-              {
-                "id": "224629c2-342b-4e54-bb75-b56cb7dabf30",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "未知 VLESS-99free-nodes",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.136.125.214",
-            "port": 443,
-            "users": [
-              {
-                "id": "40d7798a-6c76-4298-a9d4-9e6181cd2dd7",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "US VLESS-100free-nodes",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.234.4.120",
+            "address": "92.118.230.124",
             "port": 8080,
             "users": [
               {
-                "id": "1e503e46-5ab8-4f79-8cd1-73bac4bcd102",
+                "id": "9dc11620-987c-4344-9088-f46fdfae4054",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "未知 VLESS-96free-nodes",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "212.113.109.220",
+            "port": 443,
+            "users": [
+              {
+                "id": "dc987a94-c06c-4ab2-8fd6-7681ff514926",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "DE VLESS-107free-nodes",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "www.speedtest.net",
+            "port": 443,
+            "users": [
+              {
+                "id": "88538870-5626-4cd7-9cda-1e0b6253c9ce",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "DE VLESS-119free-nodes",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "www.speedtest.net",
+            "port": 443,
+            "users": [
+              {
+                "id": "88538870-5626-4cd7-9cda-1e0b6253c9ce",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "未知 VLESS-128free-nodes",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "204.216.216.23",
+            "port": 1114,
+            "users": [
+              {
+                "id": "6ba2eac6-0ec9-44ca-a42b-a8e23aafb530",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -1270,6 +1992,27 @@
       },
       "streamSettings": {
         "network": "tcp"
+      }
+    },
+    {
+      "tag": "未知 TROJAN-144free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "91.192.102.92",
+            "port": 443,
+            "password": "8d047125-8467-4724-bb62-ef64405dca78"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "joss.gpj1.web.id",
+          "allowInsecure": false
+        }
       }
     },
     {
@@ -1294,14 +2037,14 @@
       }
     },
     {
-      "tag": "未知 TROJAN-257free-nodes",
+      "tag": "未知 TROJAN-155free-nodes",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "jp-h1.sshub.xyz",
-            "port": 443,
-            "password": "61605c66-6d41-4b9d-a496-b9898f3f95d0"
+            "address": "178.33.161.196",
+            "port": 2053,
+            "password": "be94cd60-8e91-4cd6-9c53-26ee1314edfd"
           }
         ]
       },
@@ -1309,20 +2052,20 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "",
+          "serverName": "joss.gpj1.web.id",
           "allowInsecure": false
         }
       }
     },
     {
-      "tag": "未知 TROJAN-280free-nodes",
+      "tag": "未知 TROJAN-161free-nodes",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "series-v1.samanehha.co",
+            "address": "kaizen-tw-3.mielink-dns2.com",
             "port": 443,
-            "password": "0b65bb06-6b28-487a-8e3c-820dda51e977"
+            "password": "265f092f-418b-30c9-a479-4800fd44dd19mielink"
           }
         ]
       },
@@ -1330,7 +2073,154 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "series-v1.samanehha.co",
+          "serverName": "paydiu.com",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "未知 TROJAN-167free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "45.86.229.28",
+            "port": 443,
+            "password": "9ccc3e1d-3df5-4348-aa05-738310149cc3"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "joss.gpj1.web.id",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "未知 TROJAN-175free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "86.107.197.239",
+            "port": 443,
+            "password": "e683d757-b855-44c3-b0b6-22586444914a"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "joss.gpj1.web.id",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "未知 TROJAN-237free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "34.22.190.30",
+            "port": 443,
+            "password": "29ca24a5-e8aa-4cbd-9bcb-f96aba1d6f15"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "joss.gpj1.web.id",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "未知 TROJAN-244free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "108.61.171.167",
+            "port": 443,
+            "password": "mainssh-niwrhf87"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "getgrpc.mainssh.xyz",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "未知 TROJAN-248free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "51.77.213.197",
+            "port": 443,
+            "password": "973ed2e0-c4d8-4737-a093-71629148086d"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "frt2.sshocean.net",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "未知 TROJAN-325free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "www.ipaddress.my",
+            "port": 443,
+            "password": "vip"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "heihu880.pages.dev",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "未知 TROJAN-340free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "51.158.146.183",
+            "port": 443,
+            "password": "f6a0a650-306e-11ee-b692-1239d0255272"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "Speedtest.net",
           "allowInsecure": false
         }
       }
@@ -1344,6 +2234,27 @@
             "address": "158.178.206.197",
             "port": 8443,
             "password": "c2de1269-17cb-41f6-ab97-f8c11a6f0f4f"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "joss.gpj1.web.id",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "未知 TROJAN-374free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "178.33.161.196",
+            "port": 2053,
+            "password": "be94cd60-8e91-4cd6-9c53-26ee1314edfd"
           }
         ]
       },
@@ -1378,27 +2289,6 @@
       }
     },
     {
-      "tag": "未知 TROJAN-393free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "east.eeeeeef998.buzz",
-            "port": 15006,
-            "password": "414dff55-922a-4dc8-b5d3-b6517942b25a"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "data.steamdownload.top",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
       "tag": "未知 TROJAN-437free-nodes",
       "protocol": "trojan",
       "settings": {
@@ -1420,14 +2310,14 @@
       }
     },
     {
-      "tag": "未知 TROJAN-459free-nodes",
+      "tag": "未知 TROJAN-465free-nodes",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "www.udacity.com",
-            "port": 443,
-            "password": "vip"
+            "address": "51.38.71.175",
+            "port": 80,
+            "password": "b640d791-ff83-4300-b509-c2a02f97f167"
           }
         ]
       },
@@ -1435,7 +2325,7 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "heihu880.pages.dev",
+          "serverName": "uk1.trojanvh.xyz",
           "allowInsecure": false
         }
       }
@@ -1483,6 +2373,69 @@
       }
     },
     {
+      "tag": "未知 TROJAN-523free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "158.178.206.197",
+            "port": 8443,
+            "password": "c2de1269-17cb-41f6-ab97-f8c11a6f0f4f"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "joss.gpj1.web.id",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "HK TROJAN-533free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "www.visa.com.hk",
+            "port": 8443,
+            "password": "vip"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "heihu880.pages.dev",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "未知 TROJAN-544free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "91.192.102.92",
+            "port": 443,
+            "password": "8d047125-8467-4724-bb62-ef64405dca78"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "joss.gpj1.web.id",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
       "tag": "未知 TROJAN-569free-nodes",
       "protocol": "trojan",
       "settings": {
@@ -1504,7 +2457,70 @@
       }
     },
     {
-      "tag": "未知 TROJAN-589free-nodes",
+      "tag": "未知 TROJAN-600free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "139.162.158.172",
+            "port": 443,
+            "password": "665c944d-047d-4659-80d5-3eaac70241a9"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "de2-full.privateip.net",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "未知 TROJAN-617free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "95.179.246.122",
+            "port": 443,
+            "password": "mainssh-niwrhf87"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "getgrpc.mainssh.xyz",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "未知 TROJAN-628free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "log.bpminecraft.com",
+            "port": 443,
+            "password": "vip"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "heihu880.pages.dev",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "_US_美国",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1525,14 +2541,14 @@
       }
     },
     {
-      "tag": "未知 TROJAN-625free-nodes",
+      "tag": "伊朗 V2CROSS.COM",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "www.csgo.com",
-            "port": 443,
-            "password": "vip"
+            "address": "37.202.200.19",
+            "port": 25010,
+            "password": "09e71e3b-1f9f-44ab-9a10-02e0e10e2f05"
           }
         ]
       },
@@ -1540,99 +2556,8 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "heihu880.pages.dev",
+          "serverName": "37.202.200.19",
           "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "VMESS-未知美国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-np",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "npmjs.com",
-            "port": 8080,
-            "users": [
-              {
-                "id": "6cbc9c78-1cb1-57d4-a999-e2f4e34c1e03",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/nasnet/cdn",
-          "headers": {
-            "Host": "ke7hz36ewz-4515017473.mashallahbet.com"
-          }
-        }
-      }
-    },
-    {
-      "tag": "俄罗斯 V2CROSS.COM",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "37.18.14.33",
-            "port": 443,
-            "password": "Qzy7tgpRhu"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "m.vk.com",
-          "allowInsecure": true
-        }
-      }
-    },
-    {
-      "tag": "香港 电讯盈科有限公司",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "112.120.31.179",
-            "port": 443,
-            "password": "BxceQaOe"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "t.me%2Fripaojiedian",
-          "allowInsecure": true
-        }
-      }
-    },
-    {
-      "tag": "香港4ripaojiedian",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "58.152.53.8",
-            "port": 443,
-            "password": "BxceQaOe"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "t.me%2Fripaojiedian",
-          "allowInsecure": true
         }
       }
     },
@@ -1642,8 +2567,8 @@
       "settings": {
         "servers": [
           {
-            "address": "160.16.150.99",
-            "port": 4012,
+            "address": "13.231.194.84",
+            "port": 1924,
             "password": "BxceQaOe"
           }
         ]
@@ -1663,8 +2588,8 @@
       "settings": {
         "servers": [
           {
-            "address": "160.16.117.182",
-            "port": 3093,
+            "address": "160.16.138.24",
+            "port": 3169,
             "password": "2cf6d686799e6fa95316394064f26c0a"
           }
         ]
@@ -1684,8 +2609,8 @@
       "settings": {
         "servers": [
           {
-            "address": "160.16.117.182",
-            "port": 3169,
+            "address": "160.16.136.130",
+            "port": 1331,
             "password": "2cf6d686799e6fa95316394064f26c0a"
           }
         ]
@@ -1700,34 +2625,12 @@
       }
     },
     {
-      "tag": "韩国ripaojiedian",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "152.70.92.69",
-            "port": 80,
-            "users": [
-              {
-                "id": "bb9c3993-a4b9-4dad-aeb9-ac86371ae68b",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
       "tag": "新加坡ripaojiedian",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "202.181.103.235",
+            "address": "160.16.196.59",
             "port": 2760,
             "password": "2cf6d686799e6fa95316394064f26c0a"
           }
@@ -1748,8 +2651,8 @@
       "settings": {
         "servers": [
           {
-            "address": "160.16.151.196",
-            "port": 127,
+            "address": "160.16.136.130",
+            "port": 2760,
             "password": "2cf6d686799e6fa95316394064f26c0a"
           }
         ]
@@ -1769,8 +2672,8 @@
       "settings": {
         "servers": [
           {
-            "address": "43.199.204.112",
-            "port": 3127,
+            "address": "52.199.129.13",
+            "port": 2752,
             "password": "BxceQaOe"
           }
         ]
@@ -1790,7 +2693,7 @@
       "settings": {
         "servers": [
           {
-            "address": "160.16.70.180",
+            "address": "160.16.196.59",
             "port": 4054,
             "password": "2cf6d686799e6fa95316394064f26c0a"
           }
@@ -1811,8 +2714,8 @@
       "settings": {
         "servers": [
           {
-            "address": "160.16.117.182",
-            "port": 2890,
+            "address": "160.16.136.130",
+            "port": 4054,
             "password": "2cf6d686799e6fa95316394064f26c0a"
           }
         ]
@@ -1827,7 +2730,40 @@
       }
     },
     {
-      "tag": "韩国stairnode",
+      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "hgtrojan.zabc.net",
+            "port": 2083,
+            "users": [
+              {
+                "id": "e6395c20-4571-4b34-d6b1-55a5d36e49ea",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/e6395c20",
+          "headers": {
+            "Host": "hgtrojan.zabc.net"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "US美国(mibei77.com 米贝节点分享)",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -1849,13 +2785,35 @@
       }
     },
     {
+      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dd.openaccessnode.com",
+            "port": 5230,
+            "users": [
+              {
+                "id": "77238c49-bd20-e407-f05e-0c073ad08fdb",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
       "tag": "美国2stairnode",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "160.16.117.182",
-            "port": 2890,
+            "address": "160.16.136.130",
+            "port": 4054,
             "password": "2cf6d686799e6fa95316394064f26c0a"
           }
         ]
@@ -1870,50 +2828,6 @@
       }
     },
     {
-      "tag": "未知 VLESS-08free-nodes",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "37.27.220.218",
-            "port": 42671,
-            "users": [
-              {
-                "id": "8a9f4774-c02e-4d93-90ee-b6c1765cc021",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "未知 VLESS-09free-nodes",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "38.131.1.85",
-            "port": 443,
-            "users": [
-              {
-                "id": "06909812-7bd8-4e39-aa4f-911b1ce7c45c",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
       "tag": "RU VLESS-11free-nodes",
       "protocol": "vless",
       "settings": {
@@ -1924,50 +2838,6 @@
             "users": [
               {
                 "id": "4a6de183-2ad3-456c-b420-feeac81f6257",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "DE VLESS-12free-nodes",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "91.98.38.116",
-            "port": 443,
-            "users": [
-              {
-                "id": "2ee2a715-d541-416a-8713-d66567448c2e",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "GB VLESS-14free-nodes",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "38.60.196.27",
-            "port": 443,
-            "users": [
-              {
-                "id": "e64c5bbb-a4b8-498e-b374-4462d961c8a2",
                 "encryption": "none",
                 "flow": ""
               }
@@ -2024,28 +2894,6 @@
       }
     },
     {
-      "tag": "未知 VLESS-35free-nodes",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "213.176.16.74",
-            "port": 443,
-            "users": [
-              {
-                "id": "d7fbe279896e40118c23d15fe537dddd",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
       "tag": "未知 VLESS-36free-nodes",
       "protocol": "vless",
       "settings": {
@@ -2056,50 +2904,6 @@
             "users": [
               {
                 "id": "b127d2d2-277a-491e-bf80-2e8688fa85e2",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "FR VLESS-37free-nodes",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "173.212.209.56",
-            "port": 443,
-            "users": [
-              {
-                "id": "8062ddd7-fdee-485d-8948-c6e5df168fe9",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "DE VLESS-40free-nodes",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "91.99.80.114",
-            "port": 443,
-            "users": [
-              {
-                "id": "Warpi-Free-Vpn-In-GooglePlay",
                 "encryption": "none",
                 "flow": ""
               }
@@ -2134,28 +2938,6 @@
       }
     },
     {
-      "tag": "未知 VLESS-44free-nodes",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "m61a.vip784.com",
-            "port": 33801,
-            "users": [
-              {
-                "id": "4c8659ab-e49f-4db6-9a87-d0247e98f5ec",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
       "tag": "JP VLESS-46free-nodes",
       "protocol": "vless",
       "settings": {
@@ -2168,28 +2950,6 @@
                 "id": "b127d2d2-277a-491e-bf80-2e8688fa85e2",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "DE VLESS-53free-nodes",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "80.253.251.121",
-            "port": 31156,
-            "users": [
-              {
-                "id": "3a69f9d8-45f6-4ab3-a96b-b5f6b17f6b07",
-                "encryption": "none",
-                "flow": ""
               }
             ]
           }
@@ -2244,6 +3004,27 @@
       }
     },
     {
+      "tag": "RU TROJAN-60free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "37.18.14.33",
+            "port": 443,
+            "password": "Qzy7tgpRhu"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "m.vk.com",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
       "tag": "US VLESS-61free-nodes",
       "protocol": "vless",
       "settings": {
@@ -2254,28 +3035,6 @@
             "users": [
               {
                 "id": "f61a4285-7264-4d07-9408-7b9ba1922c26",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "DE VLESS-64free-nodes",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "91.98.168.173",
-            "port": 443,
-            "users": [
-              {
-                "id": "2ee2a715-d541-416a-8713-d66567448c2e",
                 "encryption": "none",
                 "flow": ""
               }
@@ -2310,28 +3069,6 @@
       }
     },
     {
-      "tag": "FR VLESS-67free-nodes",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.193.17.80",
-            "port": 2066,
-            "users": [
-              {
-                "id": "44830663-914e-4127-a9b3-412406f59cbe",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
       "tag": "DE VLESS-68free-nodes",
       "protocol": "vless",
       "settings": {
@@ -2354,50 +3091,6 @@
       }
     },
     {
-      "tag": "DE VLESS-70free-nodes",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "m97a.vip784.com",
-            "port": 33801,
-            "users": [
-              {
-                "id": "3965b145-aa45-4425-984f-7c69d209e735",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "DE VLESS-71free-nodes",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "188.245.197.0",
-            "port": 443,
-            "users": [
-              {
-                "id": "Warpi-Free-Vpn-In-GooglePlay",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
       "tag": "DE VLESS-72free-nodes",
       "protocol": "vless",
       "settings": {
@@ -2408,6 +3101,28 @@
             "users": [
               {
                 "id": "43b20356-d68c-410b-abab-8ee2b8bd0be8",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "未知 VLESS-73free-nodes",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "91.224.74.177",
+            "port": 443,
+            "users": [
+              {
+                "id": "bca5cfe1-3d2a-45dc-b66a-96298e0051f5",
                 "encryption": "none",
                 "flow": ""
               }
@@ -2463,50 +3178,6 @@
       }
     },
     {
-      "tag": "未知 VLESS-78free-nodes",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "141.227.130.86",
-            "port": 53025,
-            "users": [
-              {
-                "id": "4ba7deb3-83a9-48d2-ad8a-e115183b1e6d",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "US VLESS-83free-nodes",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "92.118.230.124",
-            "port": 8080,
-            "users": [
-              {
-                "id": "9dc11620-987c-4344-9088-f46fdfae4054",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
       "tag": "未知 VLESS-87free-nodes",
       "protocol": "vless",
       "settings": {
@@ -2529,40 +3200,18 @@
       }
     },
     {
-      "tag": "未知 VLESS-96free-nodes",
+      "tag": "US VLESS-100free-nodes",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "212.113.109.220",
-            "port": 443,
+            "address": "104.234.4.120",
+            "port": 8080,
             "users": [
               {
-                "id": "dc987a94-c06c-4ab2-8fd6-7681ff514926",
+                "id": "1e503e46-5ab8-4f79-8cd1-73bac4bcd102",
                 "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "KR VLESS-102free-nodes",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.88.182.24",
-            "port": 25380,
-            "users": [
-              {
-                "id": "237120d4-6f8e-47de-b50c-2c8218a720df",
-                "encryption": "none",
-                "flow": ""
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
@@ -2592,27 +3241,6 @@
       },
       "streamSettings": {
         "network": "tcp"
-      }
-    },
-    {
-      "tag": "JP TROJAN-104free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "153.121.51.221",
-            "port": 1821,
-            "password": "BxceQaOe"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "t.me/ripaojiedian",
-          "allowInsecure": false
-        }
       }
     },
     {
@@ -2704,50 +3332,6 @@
       }
     },
     {
-      "tag": "DE VLESS-123free-nodes",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "91.107.139.110",
-            "port": 8880,
-            "users": [
-              {
-                "id": "cfe554a3-4cd5-4fe1-9951-e6b65fc52a74",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "未知 VLESS-128free-nodes",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "204.216.216.23",
-            "port": 1114,
-            "users": [
-              {
-                "id": "6ba2eac6-0ec9-44ca-a42b-a8e23aafb530",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
       "tag": "JP TROJAN-133free-nodes",
       "protocol": "trojan",
       "settings": {
@@ -2790,27 +3374,6 @@
       }
     },
     {
-      "tag": "未知 TROJAN-144free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "91.192.102.92",
-            "port": 443,
-            "password": "8d047125-8467-4724-bb62-ef64405dca78"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "joss.gpj1.web.id",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
       "tag": "未知 TROJAN-147free-nodes",
       "protocol": "trojan",
       "settings": {
@@ -2827,48 +3390,6 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.nintendogames.net",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "未知 TROJAN-155free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "178.33.161.196",
-            "port": 2053,
-            "password": "be94cd60-8e91-4cd6-9c53-26ee1314edfd"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "joss.gpj1.web.id",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "未知 TROJAN-161free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "kaizen-tw-3.mielink-dns2.com",
-            "port": 443,
-            "password": "265f092f-418b-30c9-a479-4800fd44dd19mielink"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "paydiu.com",
           "allowInsecure": false
         }
       }
@@ -2895,69 +3416,6 @@
       }
     },
     {
-      "tag": "未知 TROJAN-167free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "45.86.229.28",
-            "port": 443,
-            "password": "9ccc3e1d-3df5-4348-aa05-738310149cc3"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "joss.gpj1.web.id",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "未知 TROJAN-175free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "86.107.197.239",
-            "port": 443,
-            "password": "e683d757-b855-44c3-b0b6-22586444914a"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "joss.gpj1.web.id",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "未知 TROJAN-196free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "ca-full.privateip.net",
-            "port": 443,
-            "password": "acfef609-b3c7-4e52-b292-8921d5fca90d"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
       "tag": "未知 TROJAN-199free-nodes",
       "protocol": "trojan",
       "settings": {
@@ -2974,27 +3432,6 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.nintendogames.net",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "未知 TROJAN-205free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "kaizen-us-6.mielink-dns2.com",
-            "port": 443,
-            "password": "265f092f-418b-30c9-a479-4800fd44dd19mielink"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "paydiu.com",
           "allowInsecure": false
         }
       }
@@ -3042,13 +3479,13 @@
       }
     },
     {
-      "tag": "未知 TROJAN-222free-nodes",
+      "tag": "未知 TROJAN-235free-nodes",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "time.is",
-            "port": 2087,
+            "address": "www.ipget.net",
+            "port": 443,
             "password": "vip"
           }
         ]
@@ -3063,14 +3500,14 @@
       }
     },
     {
-      "tag": "未知 TROJAN-237free-nodes",
+      "tag": "未知 TROJAN-236free-nodes",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "34.22.190.30",
-            "port": 443,
-            "password": "29ca24a5-e8aa-4cbd-9bcb-f96aba1d6f15"
+            "address": "east.eeeeeef998.buzz",
+            "port": 15002,
+            "password": "414dff55-922a-4dc8-b5d3-b6517942b25a"
           }
         ]
       },
@@ -3078,70 +3515,7 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "joss.gpj1.web.id",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "未知 TROJAN-244free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "108.61.171.167",
-            "port": 443,
-            "password": "mainssh-niwrhf87"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "getgrpc.mainssh.xyz",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "未知 TROJAN-248free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "51.77.213.197",
-            "port": 443,
-            "password": "973ed2e0-c4d8-4737-a093-71629148086d"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "frt2.sshocean.net",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "未知 TROJAN-251free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "45.82.14.144",
-            "port": 2025,
-            "password": "vpn"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "dns.google.com",
+          "serverName": "data.steamdownload.top",
           "allowInsecure": false
         }
       }
@@ -3163,48 +3537,6 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "未知 TROJAN-284free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "160.16.242.183",
-            "port": 2145,
-            "password": "BxceQaOe"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "t.me%2Fripaojiedian",
-          "allowInsecure": true
-        }
-      }
-    },
-    {
-      "tag": "未知 TROJAN-289free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "16.162.87.79",
-            "port": 2173,
-            "password": "BxceQaOe"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "t.me/ripaojiedian",
           "allowInsecure": false
         }
       }
@@ -3273,27 +3605,6 @@
       }
     },
     {
-      "tag": "未知 TROJAN-335free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "112.120.31.179",
-            "port": 443,
-            "password": "BxceQaOe"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "t.me%2Fripaojiedian",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
       "tag": "未知 TROJAN-336free-nodes",
       "protocol": "trojan",
       "settings": {
@@ -3310,132 +3621,6 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.nintendogames.net",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "未知 TROJAN-337free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "160.16.82.24",
-            "port": 2145,
-            "password": "BxceQaOe"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "t.me/ripaojiedian",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "未知 TROJAN-338free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "153.121.67.215",
-            "port": 2145,
-            "password": "BxceQaOe"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "t.me/ripaojiedian",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "未知 TROJAN-340free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "51.158.146.183",
-            "port": 443,
-            "password": "f6a0a650-306e-11ee-b692-1239d0255272"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "Speedtest.net",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "未知 TROJAN-368free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "download2hkt.windowsupdate.lol",
-            "port": 443,
-            "password": "7778e684-f435-4166-bf9e-0256cb28bf10"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "未知 TROJAN-373free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "download2hkt.windowsupdate.lol",
-            "port": 443,
-            "password": "af4d2493-9156-4514-9f6b-ee5d1a1e4713"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "未知 TROJAN-374free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "178.33.161.196",
-            "port": 2053,
-            "password": "be94cd60-8e91-4cd6-9c53-26ee1314edfd"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "joss.gpj1.web.id",
           "allowInsecure": false
         }
       }
@@ -3462,14 +3647,14 @@
       }
     },
     {
-      "tag": "未知 TROJAN-387free-nodes",
+      "tag": "未知 TROJAN-393free-nodes",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "153.121.51.147",
-            "port": 5156,
-            "password": "BxceQaOe"
+            "address": "east.eeeeeef998.buzz",
+            "port": 15006,
+            "password": "414dff55-922a-4dc8-b5d3-b6517942b25a"
           }
         ]
       },
@@ -3477,18 +3662,18 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "t.me/ripaojiedian",
+          "serverName": "data.steamdownload.top",
           "allowInsecure": false
         }
       }
     },
     {
-      "tag": "未知 TROJAN-390free-nodes",
+      "tag": "未知 TROJAN-405free-nodes",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "kaizen-tw-4.mielink-dns2.com",
+            "address": "kaizen-ru-2.mielink-dns2.com",
             "port": 443,
             "password": "265f092f-418b-30c9-a479-4800fd44dd19mielink"
           }
@@ -3498,70 +3683,7 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "paydiu.com",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "未知 TROJAN-401free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "219.76.13.180",
-            "port": 443,
-            "password": "F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "stutter.freetrade.link",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "未知 TROJAN-417free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "58.152.18.95",
-            "port": 443,
-            "password": "BxceQaOe"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "t.me%2Fripaojiedian",
-          "allowInsecure": true
-        }
-      }
-    },
-    {
-      "tag": "未知 TROJAN-421free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "160.16.212.152",
-            "port": 2145,
-            "password": "BxceQaOe"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "t.me/ripaojiedian",
+          "serverName": "$paydiu.com",
           "allowInsecure": false
         }
       }
@@ -3584,27 +3706,6 @@
         "tlsSettings": {
           "serverName": "www.nintendogames.net",
           "allowInsecure": true
-        }
-      }
-    },
-    {
-      "tag": "未知 TROJAN-443free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "58.152.53.22",
-            "port": 443,
-            "password": "BxceQaOe"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "t.me/ripaojiedian",
-          "allowInsecure": false
         }
       }
     },
@@ -3672,14 +3773,14 @@
       }
     },
     {
-      "tag": "未知 TROJAN-465free-nodes",
+      "tag": "未知 TROJAN-459free-nodes",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "51.38.71.175",
-            "port": 80,
-            "password": "b640d791-ff83-4300-b509-c2a02f97f167"
+            "address": "www.udacity.com",
+            "port": 443,
+            "password": "vip"
           }
         ]
       },
@@ -3687,7 +3788,7 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "uk1.trojanvh.xyz",
+          "serverName": "heihu880.pages.dev",
           "allowInsecure": false
         }
       }
@@ -3735,27 +3836,6 @@
       }
     },
     {
-      "tag": "未知 TROJAN-489free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "creativecommons.org",
-            "port": 2053,
-            "password": "YwuvGJk36B"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "kotlet.arshiacomplus.dpdns.org",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
       "tag": "未知 TROJAN-493free-nodes",
       "protocol": "trojan",
       "settings": {
@@ -3798,27 +3878,6 @@
       }
     },
     {
-      "tag": "未知 TROJAN-523free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "158.178.206.197",
-            "port": 8443,
-            "password": "c2de1269-17cb-41f6-ab97-f8c11a6f0f4f"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "joss.gpj1.web.id",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
       "tag": "未知 TROJAN-525free-nodes",
       "protocol": "trojan",
       "settings": {
@@ -3835,48 +3894,6 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "paydiu.com",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "HK TROJAN-533free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "www.visa.com.hk",
-            "port": 8443,
-            "password": "vip"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "heihu880.pages.dev",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "未知 TROJAN-534free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "it-full.privateip.net",
-            "port": 443,
-            "password": "8d16a256-42d7-4431-8039-da1eb06cafbc"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "",
           "allowInsecure": false
         }
       }
@@ -3903,27 +3920,6 @@
       }
     },
     {
-      "tag": "未知 TROJAN-544free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "91.192.102.92",
-            "port": 443,
-            "password": "8d047125-8467-4724-bb62-ef64405dca78"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "joss.gpj1.web.id",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
       "tag": "未知 TROJAN-553free-nodes",
       "protocol": "trojan",
       "settings": {
@@ -3945,6 +3941,27 @@
       }
     },
     {
+      "tag": "未知 TROJAN-565free-nodes",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "jp2.sanfen001.pics",
+            "port": 443,
+            "password": "8800c518-e68a-4441-a45c-cd67855784c8"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "jp1.sanfen001.pics",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
       "tag": "未知 TROJAN-574free-nodes",
       "protocol": "trojan",
       "settings": {
@@ -3961,27 +3978,6 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.nintendogames.net",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "未知 TROJAN-580free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "160.16.85.138",
-            "port": 4492,
-            "password": "BxceQaOe"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "t.me/ripaojiedian",
           "allowInsecure": false
         }
       }
@@ -4029,96 +4025,12 @@
       }
     },
     {
-      "tag": "未知 TROJAN-600free-nodes",
+      "tag": "未知 TROJAN-625free-nodes",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "139.162.158.172",
-            "port": 443,
-            "password": "665c944d-047d-4659-80d5-3eaac70241a9"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "de2-full.privateip.net",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "未知 TROJAN-605free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "60.72img.xyz",
-            "port": 443,
-            "password": "81d93f62-15a2-4994-adb9-0b5d906aac7e"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "未知 TROJAN-617free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "95.179.246.122",
-            "port": 443,
-            "password": "mainssh-niwrhf87"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "getgrpc.mainssh.xyz",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "未知 TROJAN-627free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "160.16.242.183",
-            "port": 2145,
-            "password": "BxceQaOe"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "t.me/ripaojiedian",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "未知 TROJAN-628free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "log.bpminecraft.com",
+            "address": "www.csgo.com",
             "port": 443,
             "password": "vip"
           }
@@ -4129,27 +4041,6 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "heihu880.pages.dev",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "_US_美国",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "ip.sb",
-            "port": 8443,
-            "password": "trojan"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "fofang.pages.dev",
           "allowInsecure": false
         }
       }
@@ -4221,16 +4112,274 @@
       }
     },
     {
-      "tag": "HK-1.65.202.165-5028",
+      "tag": "香港 电讯盈科有限公司",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "219.79.165.186",
+            "port": 443,
+            "password": "BxceQaOe"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "t.me%252Fripaojiedian",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "香港 电讯盈科有限公司",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "58.152.18.95",
+            "port": 443,
+            "password": "BxceQaOe"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "t.me%2Fripaojiedian",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "香港 电讯盈科有限公司",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "116.49.237.130",
+            "port": 1112,
+            "password": "BxceQaOe"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "t.me%2Fripaojiedian",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "美国 Alabanza",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "580abbb4-suvds0-sv5llu-1ldl3.hk3.p5pv.com",
+            "address": "free.best-antiaging-reviews.com",
+            "port": 2053,
+            "users": [
+              {
+                "id": "095ee315-a14c-4bf7-8bcb-568392415e26",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "free.best-antiaging-reviews.com"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "香港3ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "58.152.18.192",
+            "port": 443,
+            "password": "2cf6d686799e6fa95316394064f26c0a"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.nintendogames.net",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "香港ripaojiedian",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "v10.hdacd.com",
+            "port": 30807,
+            "users": [
+              {
+                "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+                "alterId": "2",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "香港4ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "219.79.165.186",
+            "port": 443,
+            "password": "BxceQaOe"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "t.me%2Fripaojiedian",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "香港5ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "112.118.116.66",
+            "port": 443,
+            "password": "BxceQaOe"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "t.me%2Fripaojiedian",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "152.70.92.69",
             "port": 80,
             "users": [
               {
-                "id": "fd224a6c-addc-11ed-a8bf-f23c91cfbbc9",
+                "id": "bb9c3993-a4b9-4dad-aeb9-ac86371ae68b",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "us19-25.998998.best",
+            "port": 443,
+            "users": [
+              {
+                "id": "24254866-770c-41b4-9404-3f50524f425b",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/saoihgreg9384gh8934",
+          "headers": {
+            "Host": "24254866-770c-41b4-9404-3f50524f425b.mihomo.baby"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "香港stairnode",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "v10.hdacd.com",
+            "port": 30807,
+            "users": [
+              {
+                "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "HK_215",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "6bbeaaf6-sv4n40-t8tsp0-1szmi.hk3.p5pv.com",
+            "port": 80,
+            "users": [
+              {
+                "id": "ba151628-b3a2-11ef-bdb9-f23c91cfbbc9",
                 "alterId": "2",
                 "security": "auto"
               }
@@ -4243,140 +4392,65 @@
         "wsSettings": {
           "path": "/",
           "headers": {
-            "Host": "580abbb4-suvds0-sv5llu-1ldl3.hk3.p5pv.com"
+            "Host": "broadcastlv.chat.bilibili.com"
           }
         }
       }
     },
     {
-      "tag": "HK VLESS-05free-nodes",
-      "protocol": "vless",
+      "tag": "HK_101",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "156.224.78.8",
-            "port": 10001,
+            "address": "aeb50015-t02f40-t9byd7-1jfvb.hk3.p5pv.com",
+            "port": 80,
             "users": [
               {
-                "id": "9c79aceb-4649-44ea-9698-b5e9ecf6d6da",
-                "encryption": "none",
-                "flow": ""
+                "id": "06b2ac52-fcc6-11ec-bb74-f23c9164ca5d",
+                "alterId": "2",
+                "security": "auto"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "TR VLESS-10free-nodes",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "napanel.mreza1088.com",
-            "port": 31374,
-            "users": [
-              {
-                "id": "8dca3cf6-0e6d-4ca3-a5e5-cdc2efa7e5a6",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "aeb50015-t02f40-t9byd7-1jfvb.hk3.p5pv.com"
           }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "US VLESS-18free-nodes",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "167.179.27.92",
-            "port": 443,
-            "users": [
-              {
-                "id": "f61a4285-7264-4d07-9408-7b9ba1922c26",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "JP TROJAN-19free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "kuame.missionsec.us",
-            "port": 443,
-            "password": "FDIypSwe64a3DA7un2R8DFjYXZO3NS05gKZTTOC8SxO0Fy3cqYg3EaFDA3ABaEYKNx39D"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "kuame.missionsec.us",
-          "allowInsecure": false
         }
       }
     },
     {
-      "tag": "US VLESS-23free-nodes",
-      "protocol": "vless",
+      "tag": "HK_138",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "usa29.unlockmatrix.org",
-            "port": 443,
+            "address": "e0349a52-sv8cg0-t7uinf-i8ie.hk3.p5pv.com",
+            "port": 80,
             "users": [
               {
-                "id": "9b0c1d6e-7f6e-4b06-96ba-b8a397a69166",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "990e8f34-bd4f-11ef-bdb9-f23c91cfbbc9",
+                "alterId": "2",
+                "security": "auto"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "TR VLESS-41free-nodes",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.136.5.94",
-            "port": 8080,
-            "users": [
-              {
-                "id": "cbcdbba6-6b37-42a3-a3cf-04afc5497464",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "broadcastlv.chat.bilibili.com"
           }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
+        }
       }
     }
   ],
