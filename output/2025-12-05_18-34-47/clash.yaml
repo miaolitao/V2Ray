@@ -1,0 +1,1806 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+proxies:
+- name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
+  type: ssr
+  server: 107.151.182.253
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6?
+  protocol: origin
+  obfs: plain
+  protocol-param: ''
+  obfs-param: ''
+- name: SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
+  type: ssr
+  server: 79.127.233.170
+  port: 989
+  cipher: aes-256-cfb
+  password: "f8f7aCzcPKbsF8p3\x0F"
+  protocol: origin
+  obfs: plain
+  protocol-param: ''
+  obfs-param: ''
+- name: 英国 V2CROSS.COM
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: 英国 V2CROSS.COM
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: _CA_加拿大
+  type: vmess
+  server: 108.181.10.17
+  port: 80
+  uuid: 474e8680-701f-11ee-b436-205c6d5f5d78
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: _US_美国-_IN_印度_1
+  type: vmess
+  server: 104.17.18.26
+  port: 80
+  uuid: 5180444a-4756-43b4-960b-49eb9052e4e8
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: _US_美国-_IN_印度_2
+  type: vmess
+  server: 104.26.8.44
+  port: 80
+  uuid: 5180444a-4756-43b4-960b-49eb9052e4e8
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: _US_美国_5
+  type: vmess
+  server: 104.21.75.246
+  port: 80
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: 未知 VLESS-06  free-nodes
+  type: vless
+  server: cosmin.ns.cloudflare.com
+  port: 443
+  uuid: 4f590914-6d75-4f1d-a361-2fddb3cdf669
+  network: ws
+  tls: true
+  servername: 639003456256484486.giulia-amsis.info
+- name: 未知 VLESS-13  free-nodes
+  type: vless
+  server: brenna.ns.cloudflare.com
+  port: 443
+  uuid: ed159d76-80be-4e34-aa56-a5f14c28bbfc
+  network: ws
+  tls: true
+  servername: 639003543855624492.prius-amsit.info
+- name: 未知 VLESS-14  free-nodes
+  type: vless
+  server: brenna.ns.cloudflare.com
+  port: 443
+  uuid: 504f4add-e233-454c-a45d-daffaeaa6081
+  network: ws
+  tls: true
+  servername: 639003600953613625.insight-amsit.info
+- name: 未知 VLESS-15  free-nodes
+  type: vless
+  server: delilah.ns.cloudflare.com
+  port: 443
+  uuid: d350b8d9-e7cb-4e81-a189-73b15ee487a3
+  network: ws
+  tls: true
+  servername: 639003456253078972.defender-amsis.info
+- name: 未知 VLESS-16  free-nodes
+  type: vless
+  server: betty.ns.cloudflare.com
+  port: 443
+  uuid: 2b066334-ca87-4c56-9a79-2f3636ee53d1
+  network: ws
+  tls: true
+  servername: 639003456251297706.renegade-amsis.info
+- name: 未知 VLESS-20  free-nodes
+  type: vless
+  server: delilah.ns.cloudflare.com
+  port: 443
+  uuid: 04d63096-ae84-4aa0-a7a1-0b5efd56a2c7
+- name: US VLESS-22  free-nodes
+  type: vless
+  server: brenna.ns.cloudflare.com
+  port: 443
+  uuid: 1c3019a8-7bf1-498a-b7d4-f15677f06e88
+  network: ws
+  tls: true
+  servername: 639003276456417573.touareg-amsis.info
+- name: 未知 VLESS-23  free-nodes
+  type: vless
+  server: cosmin.ns.cloudflare.com
+  port: 443
+  uuid: fba8aee4-abd7-42ba-a441-460019dddb0f
+  network: ws
+  tls: true
+  servername: 639003338940169118.highlander-amsis.info
+- name: 未知 VLESS-26  free-nodes
+  type: vless
+  server: delilah.ns.cloudflare.com
+  port: 443
+  uuid: 5b687f17-0176-495e-84a1-0835f8feec91
+  network: ws
+  tls: true
+  servername: 639002592262919469.sentra-amsir.info
+- name: 未知 VLESS-27  free-nodes
+  type: vless
+  server: delilah.ns.cloudflare.com
+  port: 443
+  uuid: 134563d7-f835-4110-a36b-e0db5d262ae0
+  network: ws
+  tls: true
+  servername: 639003456253079909.defender-amsis.info
+- name: 未知 VLESS-30  free-nodes
+  type: vless
+  server: cosmin.ns.cloudflare.com
+  port: 443
+  uuid: 097712e8-666a-42e2-aebf-c03d597d8482
+  network: ws
+  tls: true
+  servername: 639002745868715407.golf-amsir.info
+- name: 未知 VLESS-48  free-nodes
+  type: vless
+  server: brenna.ns.cloudflare.com
+  port: 443
+  uuid: 53f0bca8-f170-4ef7-8031-c7d441189dbf
+  network: ws
+  tls: true
+  servername: 639000411272225027.swift-amsin.info
+- name: US VLESS-54  free-nodes
+  type: vless
+  server: 172.236.109.230
+  port: 34045
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- name: 未知 VLESS-77  free-nodes
+  type: vless
+  server: cosmin.ns.cloudflare.com
+  port: 443
+  uuid: 53f0bca8-f170-4ef7-8031-c7d441189dbf
+  network: ws
+  tls: true
+  servername: 639000411272217052.swift-amsin.info
+- name: US VLESS-82  free-nodes
+  type: vless
+  server: 64.227.93.102
+  port: 28899
+  uuid: f61d9aee-63b8-439e-bebf-afaa53c015fd
+  flow: xtls-rprx-vision
+- name: 未知 VLESS-87  free-nodes
+  type: vless
+  server: 47.251.25.74
+  port: 443
+  uuid: 18805ff3-b420-45de-af18-93be14024ae8
+- name: TR TROJAN-139  free-nodes
+  type: trojan
+  server: 38.96.254.102
+  port: 18509
+  password: .ie4rghJuMkcf0oF
+  sni: shoppingmall.electricbanana.click
+- name: 未知 TROJAN-174  free-nodes
+  type: trojan
+  server: 172.67.204.84
+  port: 443
+  password: qj1Dz1CJmFQRhWr1SP80aA
+  sni: cdn-21.gsmxreality.com
+- name: 未知 TROJAN-193  free-nodes
+  type: trojan
+  server: 104.21.80.1
+  port: 443
+  password: psycho
+  sni: PSYchO.SueX12.Ir
+- name: 未知 TROJAN-237  free-nodes
+  type: trojan
+  server: 104.21.112.1
+  port: 443
+  password: f8b7cd5e-60c4-4e95-9b7b-d561ef4eed8c
+  sni: yellow-cloud-d53f.vavovi6084.workers.dev
+- name: 未知 TROJAN-295  free-nodes
+  type: trojan
+  server: 172.67.192.215
+  port: 443
+  password: d0728e94-82c2-456b-b5d4-eeab540599df
+  sni: joss.krikkrik.xyz
+- name: 未知 TROJAN-306  free-nodes
+  type: trojan
+  server: 104.17.148.22
+  port: 80
+  password: redfree8
+  sni: redfree8-p1.pooriashop.ir
+- name: 未知 TROJAN-357  free-nodes
+  type: trojan
+  server: 104.21.79.246
+  port: 443
+  password: e35026da-e985-49ca-b43b-276062a535a6
+  sni: notdirect.howhealthyistoomajreally.homes
+- name: 未知 TROJAN-388  free-nodes
+  type: trojan
+  server: 45.63.110.20
+  port: 443
+  password: wkmY1R4EcP
+  sni: z-v2-003281.kailib.com
+- name: 未知 TROJAN-494  free-nodes
+  type: trojan
+  server: 104.21.12.87
+  port: 443
+  password: 0b65bb06-6b28-487a-8e3c-820dda51e977
+  sni: series-v1.samanehha.co
+- name: 未知 TROJAN-524  free-nodes
+  type: trojan
+  server: 104.21.12.87
+  port: 443
+  password: 0b65bb06-6b28-487a-8e3c-820dda51e977
+  sni: series-v1.samanehha.co
+- name: 未知 TROJAN-537  free-nodes
+  type: trojan
+  server: 92.243.75.49
+  port: 2087
+  password: wb6368
+  sni: hsdgbuys.pages.dev
+- name: 未知 TROJAN-573  free-nodes
+  type: trojan
+  server: 104.16.183.101
+  port: 443
+  password: a0514d9b-d109-47fd-b173-1e7f83268f21
+  sni: tws23.kallepache.store
+- name: 未知 TROJAN-592  free-nodes
+  type: trojan
+  server: 172.67.181.173
+  port: 443
+  password: f282b878-8711-45a1-8c69-5564172123c1
+  sni: vpn.stupidworld.web.id
+- name: 未知 TROJAN-593  free-nodes
+  type: trojan
+  server: 158.101.11.204
+  port: 15805
+  password: iwangjie
+  sni: nodes.830901.xyz
+- name: 未知 TROJAN-600  free-nodes
+  type: trojan
+  server: 172.67.156.25
+  port: 443
+  password: f282b878-8711-45a1-8c69-5564172123c1
+  sni: aio.zipzap.biz.id
+- name: 未知 TROJAN-706  free-nodes
+  type: trojan
+  server: 172.66.44.230
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+- name: 未知 TROJAN-749  free-nodes
+  type: trojan
+  server: 104.21.44.185
+  port: 2053
+  password: dreDeMpIQpnv
+  sni: aryanews.onetwothree123.ir
+- name: 未知 TROJAN-778  free-nodes
+  type: trojan
+  server: 23.247.137.64
+  port: 443
+  password: 3c4e10af98c30972
+  sni: n2.gladns.com
+  skip-cert-verify: true
+- name: 未知 TROJAN-792  free-nodes
+  type: trojan
+  server: 104.17.148.22
+  port: 443
+  password: redfree8
+  sni: redfree8-p1.pooriashop.ir
+- name: 未知 TROJAN-845  free-nodes
+  type: trojan
+  server: series-v1.samanehha.co
+  port: 443
+  password: 0b65bb06-6b28-487a-8e3c-820dda51e977
+  sni: series-v1.samanehha.co
+- name: 未知 TROJAN-865  free-nodes
+  type: trojan
+  server: 172.67.181.173
+  port: 443
+  password: f282b878-8711-45a1-8c69-5564172123c1
+  sni: vpn.stupidworld.web.id
+- name: 未知 TROJAN-888  free-nodes
+  type: trojan
+  server: 104.18.27.94
+  port: 443
+  password: vip
+  sni: heihu880.pages.dev
+- name: 未知 TROJAN-931  free-nodes
+  type: trojan
+  server: 23.247.137.64
+  port: 443
+  password: 3c4e10af98c30972
+  sni: n2.gladns.com
+- name: 未知 TROJAN-1061  free-nodes
+  type: trojan
+  server: 172.67.168.193
+  port: 443
+  password: 61374417-9218-4065-909b-ad1e3b50aa83
+  sni: gamang.gpj2.dpdns.org
+- name: 未知 TROJAN-1438  free-nodes
+  type: trojan
+  server: 180.131.145.161
+  port: 23274
+  password: FodSUXysuS
+- name: 未知 TROJAN-1465  free-nodes
+  type: trojan
+  server: east.eeeeeef998.buzz
+  port: 15003
+  password: 414dff55-922a-4dc8-b5d3-b6517942b25a
+  sni: data.steamdownload.top
+- name: 未知 TROJAN-1474  free-nodes
+  type: trojan
+  server: www.ipaddress.my
+  port: 443
+  password: vip
+  sni: heihu880.pages.dev
+- name: 未知 TROJAN-1720  free-nodes
+  type: trojan
+  server: 172.66.46.254
+  port: 443
+  password: auto
+  sni: dcf741e8.epeius-2gy.pages.dev
+- name: 未知 TROJAN-1924  free-nodes
+  type: trojan
+  server: 104.21.70.241
+  port: 443
+  password: abd16f44-12ca-4078-8345-11bcb4cd0fbd
+  sni: gamang.gpj2.dpdns.org
+- name: VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-15
+  type: vmess
+  server: 15.235.41.200
+  port: 80
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+    headers:
+      Host: ''
+- name: VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51
+  type: vmess
+  server: 51.79.102.253
+  port: 80
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+    headers:
+      Host: ''
+- name: 加拿大多伦多 V2CROSS.COM
+  type: trojan
+  server: 198.57.27.27
+  port: 12990
+  password: 6pRjKQJ0CWyFtG.9
+  sni: diningtable.electricbanana.click
+- name: US VLESS-21  free-nodes
+  type: vless
+  server: norman.ns.cloudflare.com
+  port: 443
+  uuid: e9db60cd-83df-430a-960e-b77c56dc6ede
+  network: ws
+  tls: true
+  servername: 639003456258253450.mustang-amsit.info
+- name: 未知 VLESS-28  free-nodes
+  type: vless
+  server: norman.ns.cloudflare.com
+  port: 443
+  uuid: 53f0bca8-f170-4ef7-8031-c7d441189dbf
+  network: ws
+  tls: true
+  servername: 639001966536690941.prius-amsiq.info
+- name: US VLESS-57  free-nodes
+  type: vless
+  server: 137.184.218.169
+  port: 36925
+  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
+- name: US VLESS-65  free-nodes
+  type: vless
+  server: 139.144.199.41
+  port: 33873
+  uuid: ffb5a850-edbc-4831-ad0b-e29483949ea8
+  flow: xtls-rprx-vision
+- name: DE VLESS-116  free-nodes
+  type: vless
+  server: us1.candyfans.win
+  port: 443
+  uuid: d82baa81-c138-49fc-b81e-7ef0eb7ff063
+  network: ws
+  tls: true
+  servername: us1.candyfans.win
+- name: 未知 TROJAN-146  free-nodes
+  type: trojan
+  server: 148.113.141.99
+  port: 443
+  password: HdsUZmsHQW
+- name: 未知 TROJAN-175  free-nodes
+  type: trojan
+  server: singapore.com
+  port: 443
+  password: vip
+  sni: heihu880.pages.dev
+- name: 未知 TROJAN-199  free-nodes
+  type: trojan
+  server: 135.148.148.4
+  port: 80
+  password: 892c4f6e-732b-4f71-ad04-6e77344f2d0e
+  sni: us3.trojanvh.xyz
+- name: 未知 TROJAN-262  free-nodes
+  type: trojan
+  server: 138.124.183.226
+  port: 443
+  password: xxoo
+- name: 未知 TROJAN-265  free-nodes
+  type: trojan
+  server: 135.148.148.4
+  port: 80
+  password: 800eb26c-cd0c-4269-aae7-e63d75de4edd
+  sni: us3.trojanvh.xyz
+- name: 未知 TROJAN-343  free-nodes
+  type: trojan
+  server: www.ipget.net
+  port: 443
+  password: vip
+  sni: heihu880.pages.dev
+- name: 未知 TROJAN-495  free-nodes
+  type: trojan
+  server: kaizen-tw-1.mielink-dns2.com
+  port: 443
+  password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
+  sni: paydiu.com
+- name: 未知 TROJAN-642  free-nodes
+  type: trojan
+  server: 31.72img.xyz
+  port: 443
+  password: 81d93f62-15a2-4994-adb9-0b5d906aac7e
+- name: 未知 TROJAN-680  free-nodes
+  type: trojan
+  server: www.csgo.com
+  port: 443
+  password: vip
+  sni: heihu880.pages.dev
+- name: 未知 TROJAN-717  free-nodes
+  type: trojan
+  server: koma-yt.pages.dev
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+- name: 未知 TROJAN-898  free-nodes
+  type: trojan
+  server: iplocation.io
+  port: 443
+  password: vip
+  sni: heihu880.pages.dev
+- name: 未知 TROJAN-1325  free-nodes
+  type: trojan
+  server: sh.xiaohouzi.club
+  port: 12468
+  password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5
+  sni: $$sh.xiaohouzi.club
+- name: 未知 TROJAN-1335  free-nodes
+  type: trojan
+  server: 69.28.82.253
+  port: 443
+  password: 8001fbf7-4b59-4415-a4bd-8bfded02c9c6
+  sni: joss.gpj1.web.id
+- name: 未知 TROJAN-1388  free-nodes
+  type: trojan
+  server: 135.148.148.4
+  port: 80
+  password: ee2bccd3-0f30-42d4-86d6-3d393ad230bd
+  sni: us3.trojanvh.xyz
+- name: 未知 TROJAN-1419  free-nodes
+  type: trojan
+  server: kaizen-us-6.mielink-dns2.com
+  port: 443
+  password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
+  sni: paydiu.com
+- name: 未知 TROJAN-1445  free-nodes
+  type: trojan
+  server: www.udemy.com
+  port: 443
+  password: vip
+  sni: heihu880.pages.dev
+- name: VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720
+  type: vmess
+  server: t1.620720.xyz
+  port: 8443
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: t1.620720.xyz
+  tls: true
+- name: VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
+  type: vmess
+  server: support.zoom.us
+  port: 8080
+  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /@Malinda6104
+    headers:
+      Host: support.zoom.us
+- name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-209.126.8
+  type: vmess
+  server: 209.126.84.189
+  port: 443
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmessws
+    headers:
+      Host: 209.126.84.189
+- name: VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
+  type: vmess
+  server: sy4.620720.xyz
+  port: 443
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sy4.620720.xyz
+  tls: true
+- name: 香港4ripaojiedian
+  type: trojan
+  server: 219.79.186.107
+  port: 443
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: 香港5ripaojiedian
+  type: trojan
+  server: 58.152.25.242
+  port: 443
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: 香港6ripaojiedian
+  type: vmess
+  server: fe3a9432-sv0xs0-sywkhi-1o4kv.hk3.p5pv.com
+  port: 80
+  uuid: 87b31a02-172e-11ee-a11f-f23c913c8d2b
+  alterId: '2'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fe3a9432-sv0xs0-sywkhi-1o4kv.hk3.p5pv.com
+- name: 日本2ripaojiedian
+  type: trojan
+  server: 160.16.70.180
+  port: 1331
+  password: 79314e99f0a473fe86efc7827942ad00
+  sni: www.nintendogames.net
+- name: 日本3ripaojiedian
+  type: trojan
+  server: 160.16.130.66
+  port: 3093
+  password: 79314e99f0a473fe86efc7827942ad00
+  sni: www.nintendogames.net
+- name: 新加坡ripaojiedian
+  type: trojan
+  server: 160.16.131.243
+  port: 127
+  password: 79314e99f0a473fe86efc7827942ad00
+  sni: www.nintendogames.net
+- name: 新加坡2ripaojiedian
+  type: trojan
+  server: 160.16.68.250
+  port: 1596
+  password: 79314e99f0a473fe86efc7827942ad00
+  sni: www.nintendogames.net
+- name: 新加坡3ripaojiedian
+  type: trojan
+  server: 43.198.90.142
+  port: 2673
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: 美国ripaojiedian
+  type: trojan
+  server: 160.16.151.196
+  port: 2890
+  password: 79314e99f0a473fe86efc7827942ad00
+  sni: www.nintendogames.net
+- name: 美国2ripaojiedian
+  type: trojan
+  server: 160.16.131.243
+  port: 2890
+  password: 79314e99f0a473fe86efc7827942ad00
+  sni: www.nintendogames.net
+  skip-cert-verify: true
+- name: HK_107
+  type: vmess
+  server: 954e8f8f-sv4n40-svs488-n09f.hk3.p5pv.com
+  port: 80
+  uuid: 89b0ea8c-806b-11ed-94ba-f23c913c8d2b
+  alterId: '2'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+- name: 香港stairnode
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: '0'
+  cipher: auto
+- name: 香港6stairnode
+  type: vmess
+  server: fe3a9432-sv0xs0-sywkhi-1o4kv.hk3.p5pv.com
+  port: 80
+  uuid: 87b31a02-172e-11ee-a11f-f23c913c8d2b
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fe3a9432-sv0xs0-sywkhi-1o4kv.hk3.p5pv.com
+- name: 美国2stairnode
+  type: trojan
+  server: 160.16.131.243
+  port: 2890
+  password: 79314e99f0a473fe86efc7827942ad00
+  sni: www.nintendogames.net
+- name: HK²_52.7MBsYTX
+  type: vmess
+  server: 20fb6c47-t6r5s0-tifnix-1ro8s.hk3.p5pv.com
+  port: 80
+  uuid: a18ef18e-293a-11ef-b76e-f23c91cfbbc9
+  alterId: '2'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 20fb6c47-t6r5s0-tifnix-1ro8s.hk3.p5pv.com
+- name: 香港家宽 182
+  type: vmess
+  server: 45e91290-t6uv40-tg8syu-1nyy5.hk3.p5pv.com
+  port: 80
+  uuid: 8f7cb770-1305-11ee-b107-f23c91cfbbc9
+  alterId: '2'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+- name: HK_65
+  type: vmess
+  server: c036d21f-t15b40-tgl02u-1jr1u.hk3.p5pv.com
+  port: 80
+  uuid: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
+  alterId: '2'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+- name: 香港家宽 188
+  type: vmess
+  server: c9d5a7ad-t6uv40-t83wtx-2rrb.hk3.p5pv.com
+  port: 80
+  uuid: ba64cdc5-c79a-326d-8e63-6903be8183a1
+  alterId: '2'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+- name: _15
+  type: vmess
+  server: c92d9037-sunz40-suqjqq-1pr35.hk3.p5pv.com
+  port: 80
+  uuid: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b
+  alterId: '2'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c92d9037-sunz40-suqjqq-1pr35.hk3.p5pv.com
+- name: 未知 VLESS-07  free-nodes
+  type: vless
+  server: 89.110.68.47
+  port: 8443
+  uuid: 787ae54e-40ad-4caf-899b-ad3a19ff1103
+  flow: xtls-rprx-vision
+- name: 未知 VLESS-09  free-nodes
+  type: vless
+  server: 154.31.113.124
+  port: 443
+  uuid: b964cfbe-5f8a-47ae-9f14-4a6e36bfed2b
+  flow: xtls-rprx-vision
+- name: TR TROJAN-10  free-nodes
+  type: trojan
+  server: 47.242.225.242
+  port: 443
+  password: 92690597d6298061459918a371e8d77d
+  sni: hezijiasuqi.com
+- name: TR TROJAN-17  free-nodes
+  type: trojan
+  server: 160.16.150.76
+  port: 1596
+  password: 79314e99f0a473fe86efc7827942ad00
+  sni: www.nintendogames.net
+- name: TR TROJAN-18  free-nodes
+  type: trojan
+  server: 160.16.144.208
+  port: 3145
+  password: 79314e99f0a473fe86efc7827942ad00
+  sni: www.nintendogames.net
+- name: TR TROJAN-19  free-nodes
+  type: trojan
+  server: 58.152.30.120
+  port: 443
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+- name: 未知 VLESS-32  free-nodes
+  type: vless
+  server: 141.227.140.217
+  port: 23990
+  uuid: 5afe0624-a873-4cb8-b4eb-cea6c41a9e52
+  network: grpc
+- name: 未知 VLESS-33  free-nodes
+  type: vless
+  server: 141.227.162.151
+  port: 33919
+  uuid: 9eee43b5-6b7d-494a-a5b3-fb45b7ee4976
+  network: grpc
+- name: 未知 VLESS-36  free-nodes
+  type: vless
+  server: 89.23.113.137
+  port: 49943
+  uuid: _911331
+- name: 未知 VLESS-38  free-nodes
+  type: vless
+  server: 213.165.60.21
+  port: 443
+  uuid: f6f0191f-1edc-446b-b7d0-a90c19cf6a7a
+  flow: xtls-rprx-vision
+- name: 未知 VLESS-39  free-nodes
+  type: vless
+  server: 45.92.176.55
+  port: 1243
+  uuid: d29bde62-daa4-4804-9c69-6e23a4150006
+  flow: xtls-rprx-vision
+- name: 未知 VLESS-46  free-nodes
+  type: vless
+  server: 45.92.176.55
+  port: 2243
+  uuid: d7e2c1ec-b2ba-4a4c-a73a-c08f5bd7923b
+  flow: xtls-rprx-vision
+- name: 未知 VLESS-49  free-nodes
+  type: vless
+  server: 141.227.136.51
+  port: 25687
+  uuid: a03e540d-7fa2-4187-b0d0-5202a22cf9a0
+  network: grpc
+- name: 未知 VLESS-55  free-nodes
+  type: vless
+  server: www.speedtest.net
+  port: 443
+  uuid: 88538870-5626-4cd7-9cda-1e0b6253c9ce
+  network: ws
+  tls: true
+  servername: kalam.mrconfigur.site
+- name: DE VLESS-56  free-nodes
+  type: vless
+  server: 91.99.190.62
+  port: 443
+  uuid: 95b1344a-2b59-419f-ab7d-2ff7e5c6aa34
+  network: grpc
+- name: 未知 VLESS-59  free-nodes
+  type: vless
+  server: 194.87.221.125
+  port: 443
+  uuid: 90c9c25c-df6c-4438-83d3-ef97166a9184
+  flow: xtls-rprx-vision
+- name: DE VLESS-61  free-nodes
+  type: vless
+  server: 45.150.32.240
+  port: 37007
+  uuid: 8cde876d-7628-4587-bbb7-0535a7d177ce
+- name: 未知 VLESS-62  free-nodes
+  type: vless
+  server: 89.23.113.137
+  port: 49943
+  uuid: _911331
+- name: TR VLESS-63  free-nodes
+  type: vless
+  server: 178.171.122.65
+  port: 443
+  uuid: 0a97c5f3-68de-4d5e-bac2-c6bd94551fb6
+- name: 未知 VLESS-66  free-nodes
+  type: vless
+  server: 160.16.203.210
+  port: 443
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+- name: 未知 VLESS-68  free-nodes
+  type: vless
+  server: 152.53.162.122
+  port: 6093
+  uuid: e5603527-ac9b-4f69-906e-34bea11c5835
+  flow: xtls-rprx-vision
+- name: 未知 VLESS-69  free-nodes
+  type: vless
+  server: 72.56.69.193
+  port: 443
+  uuid: 90c9c25c-df6c-4438-83d3-ef97166a9184
+  flow: xtls-rprx-vision
+- name: 未知 VLESS-70  free-nodes
+  type: vless
+  server: 37.120.184.180
+  port: 80
+  uuid: 53fff6cc-b4ec-43e8-ade5-e0c42972fc33
+  network: ws
+- name: TR TROJAN-72  free-nodes
+  type: trojan
+  server: 58.152.25.20
+  port: 443
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: 未知 VLESS-74  free-nodes
+  type: vless
+  server: 37.120.186.241
+  port: 80
+  uuid: 53fff6cc-b4ec-43e8-ade5-e0c42972fc33
+  network: ws
+- name: 未知 VLESS-75  free-nodes
+  type: vless
+  server: m82a.vip784.com
+  port: 33801
+  uuid: 7bcfdcf8-fe22-4d40-8707-3249aeb66a5f
+- name: DE VLESS-76  free-nodes
+  type: vless
+  server: m43a.vip784.com
+  port: 33801
+  uuid: 6dd91b61-96b8-403c-856e-9b873405c3bf
+- name: US VLESS-79  free-nodes
+  type: vless
+  server: us-003.shopping-1688.com
+  port: 443
+  uuid: 60510065-6006-44df-a6e0-6c75968d739c
+  network: ws
+  tls: true
+  servername: us-003.shopping-1688.com
+- name: 未知 VLESS-83  free-nodes
+  type: vless
+  server: 72.56.73.5
+  port: 443
+  uuid: 90c9c25c-df6c-4438-83d3-ef97166a9184
+  flow: xtls-rprx-vision
+- name: DE VLESS-84  free-nodes
+  type: vless
+  server: 91.99.113.207
+  port: 443
+  uuid: 2ee2a715-d541-416a-8713-d66567448c2e
+  network: grpc
+- name: GB VLESS-88  free-nodes
+  type: vless
+  server: 144.126.196.165
+  port: 28899
+  uuid: f61d9aee-63b8-439e-bebf-afaa53c015fd
+  flow: xtls-rprx-vision
+- name: 未知 VLESS-118  free-nodes
+  type: vless
+  server: 91.98.38.116
+  port: 443
+  uuid: 2ee2a715-d541-416a-8713-d66567448c2e
+  network: grpc
+- name: 未知 VLESS-119  free-nodes
+  type: vless
+  server: 38.60.196.27
+  port: 443
+  uuid: e64c5bbb-a4b8-498e-b374-4462d961c8a2
+- name: TR TROJAN-122  free-nodes
+  type: trojan
+  server: 58.152.53.8
+  port: 443
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+- name: FR VLESS-129  free-nodes
+  type: vless
+  server: 173.212.209.56
+  port: 443
+  uuid: 8062ddd7-fdee-485d-8948-c6e5df168fe9
+- name: 未知 VLESS-130  free-nodes
+  type: vless
+  server: 86.107.168.100
+  port: 7070
+  uuid: be32c9ad-92e1-485b-dc74-2a65e9dae480
+  tls: true
+  servername: src.smnsoft.com
+- name: 未知 VLESS-131  free-nodes
+  type: vless
+  server: m61a.vip784.com
+  port: 33801
+  uuid: 4c8659ab-e49f-4db6-9a87-d0247e98f5ec
+- name: 未知 VLESS-137  free-nodes
+  type: vless
+  server: 91.98.168.173
+  port: 443
+  uuid: 2ee2a715-d541-416a-8713-d66567448c2e
+  network: grpc
+- name: 未知 VLESS-140  free-nodes
+  type: vless
+  server: 185.193.17.80
+  port: 2066
+  uuid: 44830663-914e-4127-a9b3-412406f59cbe
+- name: 未知 VLESS-142  free-nodes
+  type: vless
+  server: 194.46.59.171
+  port: 2080
+  uuid: 684ead3d-43b1-4707-904a-24e3e9e91fb1
+- name: 未知 TROJAN-148  free-nodes
+  type: trojan
+  server: kaizen-jp-11.mielink-dns2.com
+  port: 443
+  password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
+  sni: paydiu.com
+- name: 未知 TROJAN-151  free-nodes
+  type: trojan
+  server: 219.76.13.181
+  port: 443
+  password: SyOxpKxC8u5jgNa3DCZ34y3D9CRenFcaABpYATEeqI2RSaXD76zS8YF0Owl3lZ
+  sni: arbettp.freetrade.link
+- name: 未知 TROJAN-158  free-nodes
+  type: trojan
+  server: 103.176.78.153
+  port: 443
+  password: idc117okt
+- name: 未知 TROJAN-159  free-nodes
+  type: trojan
+  server: 5.182.39.57
+  port: 443
+  password: 6c7d536e-1ecf-448d-83c1-3044dd89ceac
+  sni: joss.gpj4.web.id
+- name: 未知 TROJAN-180  free-nodes
+  type: trojan
+  server: whatismyipaddress.com
+  port: 443
+  password: vip
+  sni: heihu880.pages.dev
+- name: 未知 TROJAN-181  free-nodes
+  type: trojan
+  server: 16.163.0.29
+  port: 4054
+  password: 79314e99f0a473fe86efc7827942ad00
+  sni: www.nintendogames.net
+- name: 未知 TROJAN-194  free-nodes
+  type: trojan
+  server: 160.16.63.16
+  port: 4054
+  password: 79314e99f0a473fe86efc7827942ad00
+  sni: www.nintendogames.net
+- name: 未知 TROJAN-200  free-nodes
+  type: trojan
+  server: east.eeeeeef998.buzz
+  port: 15005
+  password: 414dff55-922a-4dc8-b5d3-b6517942b25a
+  sni: data.steamdownload.top
+- name: 未知 TROJAN-207  free-nodes
+  type: trojan
+  server: download2hkt.windowsupdate.lol
+  port: 443
+  password: 7778e684-f435-4166-bf9e-0256cb28bf10
+- name: 未知 TROJAN-210  free-nodes
+  type: trojan
+  server: 160.16.214.6
+  port: 2760
+  password: 79314e99f0a473fe86efc7827942ad00
+  sni: www.nintendogames.net
+- name: 未知 TROJAN-227  free-nodes
+  type: trojan
+  server: 51.38.99.96
+  port: 443
+  password: b8808043-6566-4923-9195-e66bfb553d57
+  sni: ba24.ir
+- name: 未知 TROJAN-238  free-nodes
+  type: trojan
+  server: 160.16.124.55
+  port: 4054
+  password: 79314e99f0a473fe86efc7827942ad00
+  sni: www.nintendogames.net
+- name: 未知 TROJAN-260  free-nodes
+  type: trojan
+  server: 209.250.236.93
+  port: 443
+  password: Cl150MQWlG
+  sni: irancell-ir-4.mmdruby13.store
+- name: 未知 TROJAN-264  free-nodes
+  type: trojan
+  server: 58.152.30.120
+  port: 443
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: 未知 TROJAN-271  free-nodes
+  type: trojan
+  server: 51.38.65.155
+  port: 443
+  password: 255a0a50-3f10-11f0-b0d6-1239d0255272
+- name: 未知 TROJAN-285  free-nodes
+  type: trojan
+  server: 60.72img.xyz
+  port: 443
+  password: 81d93f62-15a2-4994-adb9-0b5d906aac7e
+- name: 未知 TROJAN-292  free-nodes
+  type: trojan
+  server: kaizen-tw-4.mielink-dns2.com
+  port: 443
+  password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
+  sni: paydiu.com
+- name: 未知 TROJAN-301  free-nodes
+  type: trojan
+  server: 51.91.11.29
+  port: 80
+  password: e0d44ae7-cb7d-4acc-a8c0-9861a6f5eaad
+  sni: akharinkhabar.ir
+- name: 未知 TROJAN-309  free-nodes
+  type: trojan
+  server: east.eeeeeef998.buzz
+  port: 15006
+  password: 414dff55-922a-4dc8-b5d3-b6517942b25a
+  sni: data.steamdownload.top
+- name: 未知 TROJAN-341  free-nodes
+  type: trojan
+  server: kaizen-hk-8.mielink-dns2.com
+  port: 443
+  password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
+  sni: paydiu.com
+- name: 未知 TROJAN-350  free-nodes
+  type: trojan
+  server: 160.16.144.208
+  port: 3093
+  password: 2cf6d686799e6fa95316394064f26c0a
+  sni: www.nintendogames.net
+- name: 未知 TROJAN-362  free-nodes
+  type: trojan
+  server: 20.187.85.198
+  port: 443
+  password: b26e31e5-eac1-45b0-9069-83830bd69521
+  sni: hkt.iamnotagoodman.com
+- name: 未知 TROJAN-367  free-nodes
+  type: trojan
+  server: 219.76.13.180
+  port: 443
+  password: F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0
+  sni: stutter.freetrade.link
+- name: 未知 TROJAN-370  free-nodes
+  type: trojan
+  server: www.udacity.com
+  port: 443
+  password: vip
+  sni: heihu880.pages.dev
+- name: 未知 TROJAN-378  free-nodes
+  type: trojan
+  server: time.is
+  port: 2087
+  password: vip
+  sni: heihu880.pages.dev
+- name: 未知 TROJAN-400  free-nodes
+  type: trojan
+  server: 86.107.197.239
+  port: 443
+  password: e683d757-b855-44c3-b0b6-22586444914a
+  sni: joss.gpj1.web.id
+- name: 未知 TROJAN-404  free-nodes
+  type: trojan
+  server: east.eeeeeef998.buzz
+  port: 15002
+  password: 414dff55-922a-4dc8-b5d3-b6517942b25a
+  sni: data.steamdownload.top
+- name: 未知 TROJAN-408  free-nodes
+  type: trojan
+  server: www.wto.org
+  port: 443
+  password: vip
+  sni: heihu880.pages.dev
+- name: 未知 TROJAN-414  free-nodes
+  type: trojan
+  server: 153.121.44.99
+  port: 3093
+  password: 2cf6d686799e6fa95316394064f26c0a
+  sni: www.nintendogames.net
+- name: 未知 TROJAN-419  free-nodes
+  type: trojan
+  server: 91.192.102.92
+  port: 443
+  password: 8d047125-8467-4724-bb62-ef64405dca78
+  sni: joss.gpj1.web.id
+- name: 未知 TROJAN-422  free-nodes
+  type: trojan
+  server: 108.61.171.167
+  port: 443
+  password: mainssh-niwrhf87
+  sni: getgrpc.mainssh.xyz
+- name: 未知 TROJAN-451  free-nodes
+  type: trojan
+  server: 51.77.213.197
+  port: 443
+  password: 973ed2e0-c4d8-4737-a093-71629148086d
+  sni: frt2.sshocean.net
+- name: 未知 TROJAN-458  free-nodes
+  type: trojan
+  server: 51.38.71.175
+  port: 80
+  password: b640d791-ff83-4300-b509-c2a02f97f167
+  sni: uk1.trojanvh.xyz
+- name: 未知 TROJAN-460  free-nodes
+  type: trojan
+  server: 178.33.161.196
+  port: 2053
+  password: be94cd60-8e91-4cd6-9c53-26ee1314edfd
+  sni: joss.gpj1.web.id
+- name: 未知 TROJAN-477  free-nodes
+  type: trojan
+  server: www.iplocation.net
+  port: 443
+  password: vip
+  sni: heihu880.pages.dev
+- name: 未知 TROJAN-517  free-nodes
+  type: trojan
+  server: fr.test3.net
+  port: 443
+  password: 9498f3a0-2992-11ee-a4c7-1239d0255272
+  sni: zula.ir
+- name: 未知 TROJAN-549  free-nodes
+  type: trojan
+  server: 158.178.206.197
+  port: 8443
+  password: c2de1269-17cb-41f6-ab97-f8c11a6f0f4f
+  sni: joss.gpj1.web.id
+- name: 未知 TROJAN-570  free-nodes
+  type: trojan
+  server: 51.83.186.142
+  port: 443
+  password: 555034c8-6420-45d0-893c-905c02342150
+  sni: pl1.trojanvh.xyz
+- name: 未知 TROJAN-639  free-nodes
+  type: trojan
+  server: 153.121.65.107
+  port: 1331
+  password: 79314e99f0a473fe86efc7827942ad00
+  sni: www.nintendogames.net
+- name: 未知 TROJAN-674  free-nodes
+  type: trojan
+  server: 51.91.11.29
+  port: 80
+  password: e0d44ae7-cb7d-4acc-a8c0-9861a6f5eaad
+  sni: fr1.trojanvh.xyz
+- name: 未知 TROJAN-675  free-nodes
+  type: trojan
+  server: 160.16.116.227
+  port: 4054
+  password: 2cf6d686799e6fa95316394064f26c0a
+  sni: www.nintendogames.net
+- name: 未知 TROJAN-690  free-nodes
+  type: trojan
+  server: 51.83.186.142
+  port: 80
+  password: 555034c8-6420-45d0-893c-905c02342150
+  sni: pl1.trojanvh.xyz
+- name: 未知 TROJAN-715  free-nodes
+  type: trojan
+  server: 185.44.76.188
+  port: 443
+  password: 8697fe6b-1lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272
+- name: 未知 TROJAN-733  free-nodes
+  type: trojan
+  server: 153.121.45.139
+  port: 3093
+  password: 2cf6d686799e6fa95316394064f26c0a
+  sni: www.nintendogames.net
+- name: 未知 TROJAN-735  free-nodes
+  type: trojan
+  server: 160.16.116.227
+  port: 127
+  password: 2cf6d686799e6fa95316394064f26c0a
+  sni: www.nintendogames.net
+- name: 未知 TROJAN-737  free-nodes
+  type: trojan
+  server: ca-full.privateip.net
+  port: 443
+  password: acfef609-b3c7-4e52-b292-8921d5fca90d
+- name: 未知 TROJAN-757  free-nodes
+  type: trojan
+  server: 51.158.146.183
+  port: 443
+  password: f6a0a650-306e-11ee-b692-1239d0255272
+  sni: Speedtest.net
+- name: 未知 TROJAN-758  free-nodes
+  type: trojan
+  server: 15.235.197.4
+  port: 80
+  password: 16bcc187-a1a0-4b8a-8b69-627f38b7cc0d
+  sni: 15.235.197.4
+- name: 未知 TROJAN-763  free-nodes
+  type: trojan
+  server: 153.121.65.107
+  port: 3169
+  password: 79314e99f0a473fe86efc7827942ad00
+  sni: www.nintendogames.net
+- name: 未知 TROJAN-770  free-nodes
+  type: trojan
+  server: 160.16.57.238
+  port: 4054
+  password: 79314e99f0a473fe86efc7827942ad00
+  sni: www.nintendogames.net
+- name: 未知 TROJAN-775  free-nodes
+  type: trojan
+  server: 108.61.171.167
+  port: 443
+  password: mainssh-niwrhf87
+  sni: getgrpc.mainssh.xyz
+proxy-groups:
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - 🔮 负载均衡
+  - DIRECT
+  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
+  - SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
+  - 英国 V2CROSS.COM
+  - 英国 V2CROSS.COM
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - FR法国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - FR法国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - _CA_加拿大
+  - _US_美国-_IN_印度_1
+  - _US_美国-_IN_印度_2
+  - _US_美国_5
+  - 未知 VLESS-06  free-nodes
+  - 未知 VLESS-13  free-nodes
+  - 未知 VLESS-14  free-nodes
+  - 未知 VLESS-15  free-nodes
+  - 未知 VLESS-16  free-nodes
+  - 未知 VLESS-20  free-nodes
+  - US VLESS-22  free-nodes
+  - 未知 VLESS-23  free-nodes
+  - 未知 VLESS-26  free-nodes
+  - 未知 VLESS-27  free-nodes
+  - 未知 VLESS-30  free-nodes
+  - 未知 VLESS-48  free-nodes
+  - US VLESS-54  free-nodes
+  - 未知 VLESS-77  free-nodes
+  - US VLESS-82  free-nodes
+  - 未知 VLESS-87  free-nodes
+  - TR TROJAN-139  free-nodes
+  - 未知 TROJAN-174  free-nodes
+  - 未知 TROJAN-193  free-nodes
+  - 未知 TROJAN-237  free-nodes
+  - 未知 TROJAN-295  free-nodes
+  - 未知 TROJAN-306  free-nodes
+  - 未知 TROJAN-357  free-nodes
+  - 未知 TROJAN-388  free-nodes
+  - 未知 TROJAN-494  free-nodes
+  - 未知 TROJAN-524  free-nodes
+  - 未知 TROJAN-537  free-nodes
+  - 未知 TROJAN-573  free-nodes
+  - 未知 TROJAN-592  free-nodes
+  - 未知 TROJAN-593  free-nodes
+  - 未知 TROJAN-600  free-nodes
+  - 未知 TROJAN-706  free-nodes
+  - 未知 TROJAN-749  free-nodes
+  - 未知 TROJAN-778  free-nodes
+  - 未知 TROJAN-792  free-nodes
+  - 未知 TROJAN-845  free-nodes
+  - 未知 TROJAN-865  free-nodes
+  - 未知 TROJAN-888  free-nodes
+  - 未知 TROJAN-931  free-nodes
+  - 未知 TROJAN-1061  free-nodes
+  - 未知 TROJAN-1438  free-nodes
+  - 未知 TROJAN-1465  free-nodes
+  - 未知 TROJAN-1474  free-nodes
+  - 未知 TROJAN-1720  free-nodes
+  - 未知 TROJAN-1924  free-nodes
+  - VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-15
+  - VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51
+  - 加拿大多伦多 V2CROSS.COM
+  - US VLESS-21  free-nodes
+  - 未知 VLESS-28  free-nodes
+  - US VLESS-57  free-nodes
+  - US VLESS-65  free-nodes
+  - DE VLESS-116  free-nodes
+  - 未知 TROJAN-146  free-nodes
+  - 未知 TROJAN-175  free-nodes
+  - 未知 TROJAN-199  free-nodes
+  - 未知 TROJAN-262  free-nodes
+  - 未知 TROJAN-265  free-nodes
+  - 未知 TROJAN-343  free-nodes
+  - 未知 TROJAN-495  free-nodes
+  - 未知 TROJAN-642  free-nodes
+  - 未知 TROJAN-680  free-nodes
+  - 未知 TROJAN-717  free-nodes
+  - 未知 TROJAN-898  free-nodes
+  - 未知 TROJAN-1325  free-nodes
+  - 未知 TROJAN-1335  free-nodes
+  - 未知 TROJAN-1388  free-nodes
+  - 未知 TROJAN-1419  free-nodes
+  - 未知 TROJAN-1445  free-nodes
+  - VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720
+  - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
+  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-209.126.8
+  - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
+  - 香港4ripaojiedian
+  - 香港5ripaojiedian
+  - 香港6ripaojiedian
+  - 日本2ripaojiedian
+  - 日本3ripaojiedian
+  - 新加坡ripaojiedian
+  - 新加坡2ripaojiedian
+  - 新加坡3ripaojiedian
+  - 美国ripaojiedian
+  - 美国2ripaojiedian
+  - HK_107
+  - 香港stairnode
+  - 香港6stairnode
+  - 美国2stairnode
+  - HK²_52.7MBsYTX
+  - 香港家宽 182
+  - HK_65
+  - 香港家宽 188
+  - _15
+  - 未知 VLESS-07  free-nodes
+  - 未知 VLESS-09  free-nodes
+  - TR TROJAN-10  free-nodes
+  - TR TROJAN-17  free-nodes
+  - TR TROJAN-18  free-nodes
+  - TR TROJAN-19  free-nodes
+  - 未知 VLESS-32  free-nodes
+  - 未知 VLESS-33  free-nodes
+  - 未知 VLESS-36  free-nodes
+  - 未知 VLESS-38  free-nodes
+  - 未知 VLESS-39  free-nodes
+  - 未知 VLESS-46  free-nodes
+  - 未知 VLESS-49  free-nodes
+  - 未知 VLESS-55  free-nodes
+  - DE VLESS-56  free-nodes
+  - 未知 VLESS-59  free-nodes
+  - DE VLESS-61  free-nodes
+  - 未知 VLESS-62  free-nodes
+  - TR VLESS-63  free-nodes
+  - 未知 VLESS-66  free-nodes
+  - 未知 VLESS-68  free-nodes
+  - 未知 VLESS-69  free-nodes
+  - 未知 VLESS-70  free-nodes
+  - TR TROJAN-72  free-nodes
+  - 未知 VLESS-74  free-nodes
+  - 未知 VLESS-75  free-nodes
+  - DE VLESS-76  free-nodes
+  - US VLESS-79  free-nodes
+  - 未知 VLESS-83  free-nodes
+  - DE VLESS-84  free-nodes
+  - GB VLESS-88  free-nodes
+  - 未知 VLESS-118  free-nodes
+  - 未知 VLESS-119  free-nodes
+  - TR TROJAN-122  free-nodes
+  - FR VLESS-129  free-nodes
+  - 未知 VLESS-130  free-nodes
+  - 未知 VLESS-131  free-nodes
+  - 未知 VLESS-137  free-nodes
+  - 未知 VLESS-140  free-nodes
+  - 未知 VLESS-142  free-nodes
+  - 未知 TROJAN-148  free-nodes
+  - 未知 TROJAN-151  free-nodes
+  - 未知 TROJAN-158  free-nodes
+  - 未知 TROJAN-159  free-nodes
+  - 未知 TROJAN-180  free-nodes
+  - 未知 TROJAN-181  free-nodes
+  - 未知 TROJAN-194  free-nodes
+  - 未知 TROJAN-200  free-nodes
+  - 未知 TROJAN-207  free-nodes
+  - 未知 TROJAN-210  free-nodes
+  - 未知 TROJAN-227  free-nodes
+  - 未知 TROJAN-238  free-nodes
+  - 未知 TROJAN-260  free-nodes
+  - 未知 TROJAN-264  free-nodes
+  - 未知 TROJAN-271  free-nodes
+  - 未知 TROJAN-285  free-nodes
+  - 未知 TROJAN-292  free-nodes
+  - 未知 TROJAN-301  free-nodes
+  - 未知 TROJAN-309  free-nodes
+  - 未知 TROJAN-341  free-nodes
+  - 未知 TROJAN-350  free-nodes
+  - 未知 TROJAN-362  free-nodes
+  - 未知 TROJAN-367  free-nodes
+  - 未知 TROJAN-370  free-nodes
+  - 未知 TROJAN-378  free-nodes
+  - 未知 TROJAN-400  free-nodes
+  - 未知 TROJAN-404  free-nodes
+  - 未知 TROJAN-408  free-nodes
+  - 未知 TROJAN-414  free-nodes
+  - 未知 TROJAN-419  free-nodes
+  - 未知 TROJAN-422  free-nodes
+  - 未知 TROJAN-451  free-nodes
+  - 未知 TROJAN-458  free-nodes
+  - 未知 TROJAN-460  free-nodes
+  - 未知 TROJAN-477  free-nodes
+  - 未知 TROJAN-517  free-nodes
+  - 未知 TROJAN-549  free-nodes
+  - 未知 TROJAN-570  free-nodes
+  - 未知 TROJAN-639  free-nodes
+  - 未知 TROJAN-674  free-nodes
+  - 未知 TROJAN-675  free-nodes
+  - 未知 TROJAN-690  free-nodes
+  - 未知 TROJAN-715  free-nodes
+  - 未知 TROJAN-733  free-nodes
+  - 未知 TROJAN-735  free-nodes
+  - 未知 TROJAN-737  free-nodes
+  - 未知 TROJAN-757  free-nodes
+  - 未知 TROJAN-758  free-nodes
+  - 未知 TROJAN-763  free-nodes
+  - 未知 TROJAN-770  free-nodes
+  - 未知 TROJAN-775  free-nodes
+- name: ♻️ 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies: &id001
+  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
+  - SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
+  - 英国 V2CROSS.COM
+  - 英国 V2CROSS.COM
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - FR法国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - FR法国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - _CA_加拿大
+  - _US_美国-_IN_印度_1
+  - _US_美国-_IN_印度_2
+  - _US_美国_5
+  - 未知 VLESS-06  free-nodes
+  - 未知 VLESS-13  free-nodes
+  - 未知 VLESS-14  free-nodes
+  - 未知 VLESS-15  free-nodes
+  - 未知 VLESS-16  free-nodes
+  - 未知 VLESS-20  free-nodes
+  - US VLESS-22  free-nodes
+  - 未知 VLESS-23  free-nodes
+  - 未知 VLESS-26  free-nodes
+  - 未知 VLESS-27  free-nodes
+  - 未知 VLESS-30  free-nodes
+  - 未知 VLESS-48  free-nodes
+  - US VLESS-54  free-nodes
+  - 未知 VLESS-77  free-nodes
+  - US VLESS-82  free-nodes
+  - 未知 VLESS-87  free-nodes
+  - TR TROJAN-139  free-nodes
+  - 未知 TROJAN-174  free-nodes
+  - 未知 TROJAN-193  free-nodes
+  - 未知 TROJAN-237  free-nodes
+  - 未知 TROJAN-295  free-nodes
+  - 未知 TROJAN-306  free-nodes
+  - 未知 TROJAN-357  free-nodes
+  - 未知 TROJAN-388  free-nodes
+  - 未知 TROJAN-494  free-nodes
+  - 未知 TROJAN-524  free-nodes
+  - 未知 TROJAN-537  free-nodes
+  - 未知 TROJAN-573  free-nodes
+  - 未知 TROJAN-592  free-nodes
+  - 未知 TROJAN-593  free-nodes
+  - 未知 TROJAN-600  free-nodes
+  - 未知 TROJAN-706  free-nodes
+  - 未知 TROJAN-749  free-nodes
+  - 未知 TROJAN-778  free-nodes
+  - 未知 TROJAN-792  free-nodes
+  - 未知 TROJAN-845  free-nodes
+  - 未知 TROJAN-865  free-nodes
+  - 未知 TROJAN-888  free-nodes
+  - 未知 TROJAN-931  free-nodes
+  - 未知 TROJAN-1061  free-nodes
+  - 未知 TROJAN-1438  free-nodes
+  - 未知 TROJAN-1465  free-nodes
+  - 未知 TROJAN-1474  free-nodes
+  - 未知 TROJAN-1720  free-nodes
+  - 未知 TROJAN-1924  free-nodes
+  - VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-15
+  - VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51
+  - 加拿大多伦多 V2CROSS.COM
+  - US VLESS-21  free-nodes
+  - 未知 VLESS-28  free-nodes
+  - US VLESS-57  free-nodes
+  - US VLESS-65  free-nodes
+  - DE VLESS-116  free-nodes
+  - 未知 TROJAN-146  free-nodes
+  - 未知 TROJAN-175  free-nodes
+  - 未知 TROJAN-199  free-nodes
+  - 未知 TROJAN-262  free-nodes
+  - 未知 TROJAN-265  free-nodes
+  - 未知 TROJAN-343  free-nodes
+  - 未知 TROJAN-495  free-nodes
+  - 未知 TROJAN-642  free-nodes
+  - 未知 TROJAN-680  free-nodes
+  - 未知 TROJAN-717  free-nodes
+  - 未知 TROJAN-898  free-nodes
+  - 未知 TROJAN-1325  free-nodes
+  - 未知 TROJAN-1335  free-nodes
+  - 未知 TROJAN-1388  free-nodes
+  - 未知 TROJAN-1419  free-nodes
+  - 未知 TROJAN-1445  free-nodes
+  - VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720
+  - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
+  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-209.126.8
+  - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
+  - 香港4ripaojiedian
+  - 香港5ripaojiedian
+  - 香港6ripaojiedian
+  - 日本2ripaojiedian
+  - 日本3ripaojiedian
+  - 新加坡ripaojiedian
+  - 新加坡2ripaojiedian
+  - 新加坡3ripaojiedian
+  - 美国ripaojiedian
+  - 美国2ripaojiedian
+  - HK_107
+  - 香港stairnode
+  - 香港6stairnode
+  - 美国2stairnode
+  - HK²_52.7MBsYTX
+  - 香港家宽 182
+  - HK_65
+  - 香港家宽 188
+  - _15
+  - 未知 VLESS-07  free-nodes
+  - 未知 VLESS-09  free-nodes
+  - TR TROJAN-10  free-nodes
+  - TR TROJAN-17  free-nodes
+  - TR TROJAN-18  free-nodes
+  - TR TROJAN-19  free-nodes
+  - 未知 VLESS-32  free-nodes
+  - 未知 VLESS-33  free-nodes
+  - 未知 VLESS-36  free-nodes
+  - 未知 VLESS-38  free-nodes
+  - 未知 VLESS-39  free-nodes
+  - 未知 VLESS-46  free-nodes
+  - 未知 VLESS-49  free-nodes
+  - 未知 VLESS-55  free-nodes
+  - DE VLESS-56  free-nodes
+  - 未知 VLESS-59  free-nodes
+  - DE VLESS-61  free-nodes
+  - 未知 VLESS-62  free-nodes
+  - TR VLESS-63  free-nodes
+  - 未知 VLESS-66  free-nodes
+  - 未知 VLESS-68  free-nodes
+  - 未知 VLESS-69  free-nodes
+  - 未知 VLESS-70  free-nodes
+  - TR TROJAN-72  free-nodes
+  - 未知 VLESS-74  free-nodes
+  - 未知 VLESS-75  free-nodes
+  - DE VLESS-76  free-nodes
+  - US VLESS-79  free-nodes
+  - 未知 VLESS-83  free-nodes
+  - DE VLESS-84  free-nodes
+  - GB VLESS-88  free-nodes
+  - 未知 VLESS-118  free-nodes
+  - 未知 VLESS-119  free-nodes
+  - TR TROJAN-122  free-nodes
+  - FR VLESS-129  free-nodes
+  - 未知 VLESS-130  free-nodes
+  - 未知 VLESS-131  free-nodes
+  - 未知 VLESS-137  free-nodes
+  - 未知 VLESS-140  free-nodes
+  - 未知 VLESS-142  free-nodes
+  - 未知 TROJAN-148  free-nodes
+  - 未知 TROJAN-151  free-nodes
+  - 未知 TROJAN-158  free-nodes
+  - 未知 TROJAN-159  free-nodes
+  - 未知 TROJAN-180  free-nodes
+  - 未知 TROJAN-181  free-nodes
+  - 未知 TROJAN-194  free-nodes
+  - 未知 TROJAN-200  free-nodes
+  - 未知 TROJAN-207  free-nodes
+  - 未知 TROJAN-210  free-nodes
+  - 未知 TROJAN-227  free-nodes
+  - 未知 TROJAN-238  free-nodes
+  - 未知 TROJAN-260  free-nodes
+  - 未知 TROJAN-264  free-nodes
+  - 未知 TROJAN-271  free-nodes
+  - 未知 TROJAN-285  free-nodes
+  - 未知 TROJAN-292  free-nodes
+  - 未知 TROJAN-301  free-nodes
+  - 未知 TROJAN-309  free-nodes
+  - 未知 TROJAN-341  free-nodes
+  - 未知 TROJAN-350  free-nodes
+  - 未知 TROJAN-362  free-nodes
+  - 未知 TROJAN-367  free-nodes
+  - 未知 TROJAN-370  free-nodes
+  - 未知 TROJAN-378  free-nodes
+  - 未知 TROJAN-400  free-nodes
+  - 未知 TROJAN-404  free-nodes
+  - 未知 TROJAN-408  free-nodes
+  - 未知 TROJAN-414  free-nodes
+  - 未知 TROJAN-419  free-nodes
+  - 未知 TROJAN-422  free-nodes
+  - 未知 TROJAN-451  free-nodes
+  - 未知 TROJAN-458  free-nodes
+  - 未知 TROJAN-460  free-nodes
+  - 未知 TROJAN-477  free-nodes
+  - 未知 TROJAN-517  free-nodes
+  - 未知 TROJAN-549  free-nodes
+  - 未知 TROJAN-570  free-nodes
+  - 未知 TROJAN-639  free-nodes
+  - 未知 TROJAN-674  free-nodes
+  - 未知 TROJAN-675  free-nodes
+  - 未知 TROJAN-690  free-nodes
+  - 未知 TROJAN-715  free-nodes
+  - 未知 TROJAN-733  free-nodes
+  - 未知 TROJAN-735  free-nodes
+  - 未知 TROJAN-737  free-nodes
+  - 未知 TROJAN-757  free-nodes
+  - 未知 TROJAN-758  free-nodes
+  - 未知 TROJAN-763  free-nodes
+  - 未知 TROJAN-770  free-nodes
+  - 未知 TROJAN-775  free-nodes
+- name: 🔮 负载均衡
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies: *id001
+- name: 🎯 全球直连
+  type: select
+  proxies:
+  - DIRECT
+- name: 🛑 全球拦截
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 🐟 漏网之鱼
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - ♻️ 自动选择
+rules:
+- DOMAIN-SUFFIX,local,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,172.16.0.0/12,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT
+- IP-CIDR,10.0.0.0/8,DIRECT
+- IP-CIDR,17.0.0.0/8,DIRECT
+- IP-CIDR,100.64.0.0/10,DIRECT
+- DOMAIN-SUFFIX,google.com,🚀 节点选择
+- DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
+- DOMAIN-SUFFIX,googleusercontent.com,🚀 节点选择
+- DOMAIN-SUFFIX,youtube.com,🚀 节点选择
+- DOMAIN-SUFFIX,ytimg.com,🚀 节点选择
+- DOMAIN-SUFFIX,twitter.com,🚀 节点选择
+- DOMAIN-SUFFIX,facebook.com,🚀 节点选择
+- DOMAIN-SUFFIX,instagram.com,🚀 节点选择
+- DOMAIN-SUFFIX,telegram.org,🚀 节点选择
+- DOMAIN-SUFFIX,github.com,🚀 节点选择
+- DOMAIN-SUFFIX,githubusercontent.com,🚀 节点选择
+- GEOIP,CN,🎯 全球直连
+- MATCH,🐟 漏网之鱼
