@@ -1,0 +1,83 @@
+2025-12-11 12:58:34 - v2ray-aggregator - INFO - ============================================================
+2025-12-11 12:58:34 - v2ray-aggregator - INFO - V2Ray 节点聚合系统启动
+2025-12-11 12:58:34 - v2ray-aggregator - INFO - ============================================================
+2025-12-11 12:58:34 - v2ray-aggregator - INFO - 加载配置文件...
+2025-12-11 12:58:34 - v2ray-aggregator - INFO - 已加载系统配置: config/settings.yaml
+2025-12-11 12:58:34 - v2ray-aggregator - INFO - 已加载节点源配置: config/sources.yaml
+2025-12-11 12:58:34 - v2ray-aggregator - INFO - 已加载 Clash 模板: config/clash_template.yaml
+2025-12-11 12:58:34 - v2ray-aggregator - INFO - 
+【步骤 1/5】收集节点
+2025-12-11 12:58:34 - v2ray-aggregator - INFO - ------------------------------------------------------------
+2025-12-11 12:58:34 - v2ray-aggregator - INFO - 开始收集节点...
+2025-12-11 12:58:34 - v2ray-aggregator - INFO - 收集订阅源: 2 个
+2025-12-11 12:58:34 - v2ray-aggregator - INFO - 正在获取订阅源: mfuu/v2ray
+2025-12-11 12:58:34 - v2ray-aggregator - INFO - 正在获取订阅源: free-nodes/v2rayfree
+2025-12-11 12:58:34 - v2ray-aggregator - INFO - 订阅源 mfuu/v2ray 获取到 84 个节点
+2025-12-11 12:58:34 - v2ray-aggregator - INFO - 订阅源 free-nodes/v2rayfree 获取到 1917 个节点
+2025-12-11 12:58:34 - v2ray-aggregator - INFO - 节点收集完成，共收集 2001 个节点
+2025-12-11 12:58:34 - v2ray-aggregator - INFO - ✓ 收集完成，共 2001 个节点
+2025-12-11 12:58:34 - v2ray-aggregator - INFO - 
+【步骤 2/5】节点去重
+2025-12-11 12:58:34 - v2ray-aggregator - INFO - ------------------------------------------------------------
+2025-12-11 12:58:34 - v2ray-aggregator - INFO - 开始去重，原始节点数: 2001
+2025-12-11 12:58:34 - v2ray-aggregator - INFO - 去重完成，移除 1199 个重复节点，剩余 802 个节点
+2025-12-11 12:58:34 - v2ray-aggregator - INFO - ✓ 去重完成，剩余 802 个节点
+2025-12-11 12:58:34 - v2ray-aggregator - INFO - 
+【步骤 3/5】节点测速
+2025-12-11 12:58:34 - v2ray-aggregator - INFO - ------------------------------------------------------------
+2025-12-11 12:58:34 - v2ray-aggregator - INFO - 开始测试 802 个节点的速度...
+2025-12-11 12:58:49 - v2ray-aggregator - INFO - 已测试 50/802 个节点
+2025-12-11 12:59:04 - v2ray-aggregator - INFO - 已测试 100/802 个节点
+2025-12-11 12:59:19 - v2ray-aggregator - INFO - 已测试 150/802 个节点
+2025-12-11 12:59:34 - v2ray-aggregator - INFO - 已测试 200/802 个节点
+2025-12-11 12:59:49 - v2ray-aggregator - INFO - 已测试 250/802 个节点
+2025-12-11 13:00:04 - v2ray-aggregator - INFO - 已测试 300/802 个节点
+2025-12-11 13:00:19 - v2ray-aggregator - INFO - 已测试 350/802 个节点
+2025-12-11 13:00:34 - v2ray-aggregator - INFO - 已测试 400/802 个节点
+2025-12-11 13:00:49 - v2ray-aggregator - INFO - 已测试 450/802 个节点
+2025-12-11 13:01:04 - v2ray-aggregator - INFO - 已测试 500/802 个节点
+2025-12-11 13:01:19 - v2ray-aggregator - INFO - 已测试 550/802 个节点
+2025-12-11 13:01:34 - v2ray-aggregator - INFO - 已测试 600/802 个节点
+2025-12-11 13:01:49 - v2ray-aggregator - INFO - 已测试 650/802 个节点
+2025-12-11 13:02:04 - v2ray-aggregator - INFO - 已测试 700/802 个节点
+2025-12-11 13:02:19 - v2ray-aggregator - INFO - 已测试 750/802 个节点
+2025-12-11 13:02:34 - v2ray-aggregator - INFO - 已测试 800/802 个节点
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - 已测试 802/802 个节点
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - 测速完成，可用节点: 309/802
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - 根据测速结果过滤，移除 504 个节点
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - ✓ 测速完成，可用节点 298 个
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - 节点数量超过限制 200，进行裁剪
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - 
+【步骤 4/5】格式转换
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - ------------------------------------------------------------
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - 输出目录: output/2025-12-11_12-58-34
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - 最新链接: output/latest -> 2025-12-11_12-58-34
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - 生成 Base64 格式，包含 200 个节点
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - 已保存到文件: output/2025-12-11_12-58-34/nodes.txt
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - ✓ 生成 Base64 格式
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - 生成 Clash 配置，包含 200 个节点
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - 已保存到文件: output/2025-12-11_12-58-34/clash.yaml
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - ✓ 生成 Clash YAML 格式
+2025-12-11 13:02:49 - v2ray-aggregator - WARNING - 不支持转换为 V2Ray 格式的协议: ssr
+2025-12-11 13:02:49 - v2ray-aggregator - WARNING - 不支持转换为 V2Ray 格式的协议: ssr
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - 生成 V2Ray JSON 配置，包含 198 个节点
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - 已保存到文件: output/2025-12-11_12-58-34/v2ray.json
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - ✓ 生成 V2Ray JSON 格式
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - 生成 Surge 配置，包含 200 个节点
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - 已保存到文件: output/2025-12-11_12-58-34/surge.conf
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - ✓ 生成 Surge 格式
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - 生成 Quantumult X 配置，包含 200 个节点
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - 已保存到文件: output/2025-12-11_12-58-34/quantumult.conf
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - ✓ 生成 Quantumult X 格式
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - 
+【步骤 5/5】生成统计信息
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - ------------------------------------------------------------
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - 总节点数: 200
+2025-12-11 13:02:49 - v2ray-aggregator - INFO -   VMESS: 19 个
+2025-12-11 13:02:49 - v2ray-aggregator - INFO -   VLESS: 65 个
+2025-12-11 13:02:49 - v2ray-aggregator - INFO -   TROJAN: 114 个
+2025-12-11 13:02:49 - v2ray-aggregator - INFO -   SSR: 2 个
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - 
+============================================================
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - ✓ 所有任务完成！
+2025-12-11 13:02:49 - v2ray-aggregator - INFO - ============================================================
