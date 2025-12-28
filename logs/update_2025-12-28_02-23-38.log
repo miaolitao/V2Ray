@@ -1,0 +1,71 @@
+2025-12-28 02:23:38 - v2ray-aggregator - INFO - ============================================================
+2025-12-28 02:23:38 - v2ray-aggregator - INFO - V2Ray 节点聚合系统启动
+2025-12-28 02:23:38 - v2ray-aggregator - INFO - ============================================================
+2025-12-28 02:23:38 - v2ray-aggregator - INFO - 加载配置文件...
+2025-12-28 02:23:38 - v2ray-aggregator - INFO - 已加载系统配置: config/settings.yaml
+2025-12-28 02:23:38 - v2ray-aggregator - INFO - 已加载节点源配置: config/sources.yaml
+2025-12-28 02:23:38 - v2ray-aggregator - INFO - 已加载 Clash 模板: config/clash_template.yaml
+2025-12-28 02:23:38 - v2ray-aggregator - INFO - 
+【步骤 1/5】收集节点
+2025-12-28 02:23:38 - v2ray-aggregator - INFO - ------------------------------------------------------------
+2025-12-28 02:23:38 - v2ray-aggregator - INFO - 开始收集节点...
+2025-12-28 02:23:38 - v2ray-aggregator - INFO - 收集订阅源: 2 个
+2025-12-28 02:23:38 - v2ray-aggregator - INFO - 正在获取订阅源: mfuu/v2ray
+2025-12-28 02:23:38 - v2ray-aggregator - INFO - 正在获取订阅源: free-nodes/v2rayfree
+2025-12-28 02:23:38 - v2ray-aggregator - INFO - 订阅源 mfuu/v2ray 获取到 184 个节点
+2025-12-28 02:23:38 - v2ray-aggregator - WARNING - URL 返回状态码 404: https://raw.githubusercontent.com/free-nodes/v2rayfree/main/v1
+2025-12-28 02:23:39 - v2ray-aggregator - WARNING - URL 返回状态码 404: https://raw.githubusercontent.com/free-nodes/v2rayfree/main/v1
+2025-12-28 02:23:40 - v2ray-aggregator - WARNING - URL 返回状态码 404: https://raw.githubusercontent.com/free-nodes/v2rayfree/main/v1
+2025-12-28 02:23:40 - v2ray-aggregator - ERROR - URL 获取失败（已重试 3 次）: https://raw.githubusercontent.com/free-nodes/v2rayfree/main/v1
+2025-12-28 02:23:40 - v2ray-aggregator - WARNING - 订阅源 free-nodes/v2rayfree 内容为空
+2025-12-28 02:23:40 - v2ray-aggregator - INFO - 节点收集完成，共收集 184 个节点
+2025-12-28 02:23:40 - v2ray-aggregator - INFO - ✓ 收集完成，共 184 个节点
+2025-12-28 02:23:40 - v2ray-aggregator - INFO - 
+【步骤 2/5】节点去重
+2025-12-28 02:23:40 - v2ray-aggregator - INFO - ------------------------------------------------------------
+2025-12-28 02:23:40 - v2ray-aggregator - INFO - 开始去重，原始节点数: 184
+2025-12-28 02:23:40 - v2ray-aggregator - INFO - 去重完成，移除 41 个重复节点，剩余 143 个节点
+2025-12-28 02:23:40 - v2ray-aggregator - INFO - ✓ 去重完成，剩余 143 个节点
+2025-12-28 02:23:40 - v2ray-aggregator - INFO - 
+【步骤 3/5】节点测速
+2025-12-28 02:23:40 - v2ray-aggregator - INFO - ------------------------------------------------------------
+2025-12-28 02:23:40 - v2ray-aggregator - INFO - 开始测试 143 个节点的速度...
+2025-12-28 02:23:55 - v2ray-aggregator - INFO - 已测试 50/143 个节点
+2025-12-28 02:24:10 - v2ray-aggregator - INFO - 已测试 100/143 个节点
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - 已测试 143/143 个节点
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - 测速完成，可用节点: 113/143
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - 根据测速结果过滤，移除 35 个节点
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - ✓ 测速完成，可用节点 108 个
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - 
+【步骤 4/5】格式转换
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - ------------------------------------------------------------
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - 输出目录: output/2025-12-28_02-23-38
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - 最新链接: output/latest -> 2025-12-28_02-23-38
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - 生成 Base64 格式，包含 108 个节点
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - 已保存到文件: output/2025-12-28_02-23-38/nodes.txt
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - ✓ 生成 Base64 格式
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - 生成 Clash 配置，包含 108 个节点
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - 已保存到文件: output/2025-12-28_02-23-38/clash.yaml
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - ✓ 生成 Clash YAML 格式
+2025-12-28 02:24:25 - v2ray-aggregator - WARNING - 不支持转换为 V2Ray 格式的协议: ssr
+2025-12-28 02:24:25 - v2ray-aggregator - WARNING - 不支持转换为 V2Ray 格式的协议: ssr
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - 生成 V2Ray JSON 配置，包含 106 个节点
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - 已保存到文件: output/2025-12-28_02-23-38/v2ray.json
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - ✓ 生成 V2Ray JSON 格式
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - 生成 Surge 配置，包含 108 个节点
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - 已保存到文件: output/2025-12-28_02-23-38/surge.conf
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - ✓ 生成 Surge 格式
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - 生成 Quantumult X 配置，包含 108 个节点
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - 已保存到文件: output/2025-12-28_02-23-38/quantumult.conf
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - ✓ 生成 Quantumult X 格式
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - 
+【步骤 5/5】生成统计信息
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - ------------------------------------------------------------
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - 总节点数: 108
+2025-12-28 02:24:25 - v2ray-aggregator - INFO -   VMESS: 69 个
+2025-12-28 02:24:25 - v2ray-aggregator - INFO -   TROJAN: 37 个
+2025-12-28 02:24:25 - v2ray-aggregator - INFO -   SSR: 2 个
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - 
+============================================================
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - ✓ 所有任务完成！
+2025-12-28 02:24:25 - v2ray-aggregator - INFO - ============================================================
