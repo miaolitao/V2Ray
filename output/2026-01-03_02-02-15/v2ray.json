@@ -18,16 +18,16 @@
   ],
   "outbounds": [
     {
-      "tag": "US_188",
+      "tag": "VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "216.238.87.47",
-            "port": 27502,
+            "address": "t1.620720.xyz",
+            "port": 8443,
             "users": [
               {
-                "id": "b8155ce4-7e08-4c40-800f-8671312b7124",
+                "id": "516d8a7a-3f0b-41d3-bad0-246116381516",
                 "alterId": "0",
                 "security": "auto"
               }
@@ -36,7 +36,18 @@
         ]
       },
       "streamSettings": {
-        "network": "none"
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "t1.620720.xyz"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
       }
     },
     {
@@ -152,57 +163,13 @@
       }
     },
     {
-      "tag": "英国 V2CROSS.COM",
+      "tag": "VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "82.198.246.97",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "美国4ripaojiedian",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "82.198.246.97",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "t1.620720.xyz",
-            "port": 8443,
+            "address": "sy4.620720.xyz",
+            "port": 443,
             "users": [
               {
                 "id": "516d8a7a-3f0b-41d3-bad0-246116381516",
@@ -218,7 +185,7 @@
         "wsSettings": {
           "path": "/",
           "headers": {
-            "Host": "t1.620720.xyz"
+            "Host": "sy4.620720.xyz"
           }
         },
         "security": "tls",
@@ -226,6 +193,28 @@
           "serverName": "",
           "allowInsecure": false
         }
+      }
+    },
+    {
+      "tag": "US_188",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "216.238.87.47",
+            "port": 27502,
+            "users": [
+              {
+                "id": "b8155ce4-7e08-4c40-800f-8671312b7124",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "none"
       }
     },
     {
@@ -285,60 +274,6 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "sy4.620720.xyz",
-            "port": 443,
-            "users": [
-              {
-                "id": "516d8a7a-3f0b-41d3-bad0-246116381516",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "sy4.620720.xyz"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "美国 华盛顿Cogent通信公司",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "38.96.254.102",
-            "port": 18509,
-            "password": ".ie4rghJuMkcf0oF"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "shoppingmall.electricbanana.click",
           "allowInsecure": false
         }
       }
@@ -476,16 +411,16 @@
       }
     },
     {
-      "tag": "香港 阿里云",
+      "tag": "尼日利亚 V2CROSS.COM",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "8.210.248.133",
-            "port": 43425,
+            "address": "160.119.196.92",
+            "port": 36334,
             "users": [
               {
-                "id": "aa10afb0-f913-4343-9c69-bc797fcba2db",
+                "id": "575ac7a3-0127-4420-a9ea-5ff3f6c02ac7",
                 "alterId": "0",
                 "security": "auto"
               }
@@ -498,13 +433,13 @@
       }
     },
     {
-      "tag": "香港 电讯盈科有限公司",
+      "tag": "日本ripaojiedian",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "203.198.84.221",
-            "port": 443,
+            "address": "54.238.144.17",
+            "port": 3194,
             "password": "BxceQaOe"
           }
         ]
@@ -513,241 +448,8 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "t.me%2Fripaojiedian",
+          "serverName": "t.me%252Fripaojiedian",
           "allowInsecure": true
-        }
-      }
-    },
-    {
-      "tag": "香港2ripaojiedian",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "8.210.248.133",
-            "port": 43307,
-            "users": [
-              {
-                "id": "f6a1f4ad-9d26-43c7-bce3-025df8dac591",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "香港3ripaojiedian",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "58.152.18.48",
-            "port": 443,
-            "password": "f36f4495b4b26cc2fe346cfa23e05b1b"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.nintendogames.net",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "香港4ripaojiedian",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "58.152.46.60",
-            "port": 443,
-            "password": "BxceQaOe"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "t.me%2Fripaojiedian",
-          "allowInsecure": true
-        }
-      }
-    },
-    {
-      "tag": "日本2ripaojiedian",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "18.177.146.37",
-            "port": 3093,
-            "password": "f36f4495b4b26cc2fe346cfa23e05b1b"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.nintendogames.net",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "日本3ripaojiedian",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "153.121.67.215",
-            "port": 3093,
-            "password": "f36f4495b4b26cc2fe346cfa23e05b1b"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.nintendogames.net",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "新加坡ripaojiedian",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "160.16.233.76",
-            "port": 3901,
-            "password": "f36f4495b4b26cc2fe346cfa23e05b1b"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.nintendogames.net",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "新加坡2ripaojiedian",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "160.16.144.208",
-            "port": 3901,
-            "password": "f36f4495b4b26cc2fe346cfa23e05b1b"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.nintendogames.net",
-          "allowInsecure": true
-        }
-      }
-    },
-    {
-      "tag": "美国ripaojiedian",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "160.16.233.76",
-            "port": 1281,
-            "password": "f36f4495b4b26cc2fe346cfa23e05b1b"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.nintendogames.net",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "美国2ripaojiedian",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "160.16.212.152",
-            "port": 1281,
-            "password": "f36f4495b4b26cc2fe346cfa23e05b1b"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.nintendogames.net",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "香港2stairnode",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "8.210.248.133",
-            "port": 43307,
-            "users": [
-              {
-                "id": "f6a1f4ad-9d26-43c7-bce3-025df8dac591",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "新加坡2stairnode",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "160.16.144.208",
-            "port": 3901,
-            "password": "f36f4495b4b26cc2fe346cfa23e05b1b"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.nintendogames.net",
-          "allowInsecure": false
         }
       }
     },
@@ -771,6 +473,48 @@
       },
       "streamSettings": {
         "network": "tcp"
+      }
+    },
+    {
+      "tag": "香港 电讯盈科有限公司",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "58.152.25.86",
+            "port": 443,
+            "password": "BxceQaOe"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "t.me%2Fripaojiedian",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "香港5ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "58.152.25.236",
+            "port": 443,
+            "password": "BxceQaOe"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "t.me%2Fripaojiedian",
+          "allowInsecure": true
+        }
       }
     },
     {
