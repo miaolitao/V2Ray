@@ -5,322 +5,6 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
-  type: ssr
-  server: 107.151.182.253
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6?
-  protocol: origin
-  obfs: plain
-  protocol-param: ''
-  obfs-param: ''
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 109.234.211.66
-  port: 2087
-  password: trojan
-  sni: store.timimi.dpdns.org
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: RU俄罗斯(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 109.234.211.66
-  port: 8443
-  password: trojan
-  sni: store.timimi.dpdns.org
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: FR法国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: FR法国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
 - name: _US_美国_2
   type: trojan
   server: kfjdi.pages.dev
@@ -351,6 +35,100 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
     headers:
       Host: ''
+- name: VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51
+  type: vmess
+  server: 51.79.102.253
+  port: 80
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+    headers:
+      Host: ''
+- name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod
+  type: vmess
+  server: v2ray.codefyinc.com
+  port: 443
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmessws
+    headers:
+      Host: v2ray.codefyinc.com
+- name: VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
+  type: vmess
+  server: support.zoom.us
+  port: 8080
+  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /@Malinda6104
+    headers:
+      Host: support.zoom.us
+- name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-209.126.8
+  type: vmess
+  server: 209.126.84.189
+  port: 443
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmessws
+    headers:
+      Host: 209.126.84.189
+- name: VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
+  type: vmess
+  server: sy4.620720.xyz
+  port: 443
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sy4.620720.xyz
+  tls: true
+- name: 加拿大多伦多 V2CROSS.COM
+  type: trojan
+  server: 198.57.27.27
+  port: 12990
+  password: 6pRjKQJ0CWyFtG.9
+- name: 西班牙(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 109.234.211.66
+  port: 8443
+  password: trojan
+  sni: store.timimi.dpdns.org
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 167.68.4.199
+  port: 2053
+  password: Aimer
+  sni: epge.muarua.filegear-sg.me
+- name: 西班牙(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 109.234.211.66
+  port: 2087
+  password: trojan
+  sni: store.timimi.dpdns.org
+- name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
+  type: ssr
+  server: 107.151.182.253
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6?
+  protocol: origin
+  obfs: plain
+  protocol-param: ''
+  obfs-param: ''
 - name: SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
   type: ssr
   server: 79.127.233.170
@@ -374,55 +152,6 @@ proxies:
     headers:
       Host: cg1c07.waimaojd.com
   tls: true
-- name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-209.126.8
-  type: vmess
-  server: 209.126.84.189
-  port: 443
-  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
-  alterId: '0'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmessws
-    headers:
-      Host: 209.126.84.189
-- name: 𝑽2_𝑴𝑶𝑫_𝑺𝑯𝑶𝑷 -
-  type: vmess
-  server: zula.ir
-  port: 8080
-  uuid: nasnet
-  alterId: '0'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nasnet-511952424.mcitel.co
-- name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod
-  type: vmess
-  server: v2ray.codefyinc.com
-  port: 443
-  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
-  alterId: '0'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmessws
-    headers:
-      Host: v2ray.codefyinc.com
-- name: VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
-  type: vmess
-  server: sy4.620720.xyz
-  port: 443
-  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-  alterId: '0'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sy4.620720.xyz
-  tls: true
 - name: VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
   type: vmess
   server: hgtrojan.zabc.net
@@ -436,6 +165,326 @@ proxies:
     headers:
       Host: hgtrojan.zabc.net
   tls: true
+- name: 美国 华盛顿Cogent通信公司
+  type: trojan
+  server: 38.96.254.102
+  port: 18509
+  password: .ie4rghJuMkcf0oF
+  sni: shoppingmall.electricbanana.click
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: SG新加坡(mibei77.com 米贝节点分享)
+  type: vmess
+  server: vc.fly.dev
+  port: 443
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  alterId: '32'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vc
+    headers:
+      Host: vc.fly.dev
+  tls: true
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 23.138.148.47
+  port: 42507
+  uuid: 4db07b13-6524-49d2-b432-1f312c0e9c7c
+  alterId: '0'
+  cipher: auto
 - name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
   type: vmess
   server: cg1c01.waimaojd.com
@@ -462,48 +511,47 @@ proxies:
     headers:
       Host: cg1c04.waimaojd.com
   tls: true
-- name: 香港 电讯盈科有限公司
-  type: trojan
-  server: 58.152.46.60
+- name: VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
+  type: vmess
+  server: cg1c14.waimaojd.com
   port: 443
-  password: BxceQaOe
-  sni: '%2B%2B%2B%2B%2B%2B%2B%5BBy%2BEbraSha%5D%2Bb2n.io%2Fv2ray-configs%2B%7C%2B160%2B'
-  skip-cert-verify: true
-- name: 香港 电讯盈科有限公司
-  type: trojan
-  server: 58.152.25.220
-  port: 443
-  password: BxceQaOe
-  sni: t.me%2Fripaojiedian
-  skip-cert-verify: true
+  uuid: be8e3136-b874-4085-bd23-ec3699300490
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      Host: cg1c14.waimaojd.com
+  tls: true
 - name: 日本2ripaojiedian
   type: trojan
-  server: 153.121.39.240
+  server: 160.16.81.84
   port: 4006
   password: 61d8077bfb174e171b8283f155a555ad
   sni: www.nintendogames.net
 - name: 日本3ripaojiedian
   type: trojan
-  server: 160.16.57.238
+  server: 160.16.89.176
   port: 4006
   password: 61d8077bfb174e171b8283f155a555ad
   sni: www.nintendogames.net
 - name: 新加坡ripaojiedian
   type: trojan
-  server: 153.121.45.139
-  port: 3901
+  server: 160.16.106.99
+  port: 3076
   password: 61d8077bfb174e171b8283f155a555ad
   sni: www.nintendogames.net
 - name: 新加坡2ripaojiedian
   type: trojan
-  server: 153.121.45.139
-  port: 3076
+  server: 160.16.106.99
+  port: 544
   password: 61d8077bfb174e171b8283f155a555ad
   sni: www.nintendogames.net
   skip-cert-verify: true
 - name: 美国ripaojiedian
   type: trojan
-  server: 160.16.81.84
+  server: 160.16.85.33
   port: 5076
   password: 61d8077bfb174e171b8283f155a555ad
   sni: www.nintendogames.net
@@ -513,39 +561,24 @@ proxies:
   port: 5076
   password: 61d8077bfb174e171b8283f155a555ad
   sni: www.nintendogames.net
-- name: SG新加坡(mibei77.com 米贝节点分享)
+- name: 新加坡2stairnode
+  type: trojan
+  server: 160.16.106.99
+  port: 544
+  password: 61d8077bfb174e171b8283f155a555ad
+  sni: www.nintendogames.net
+- name: 𝑽2_𝑴𝑶𝑫_𝑺𝑯𝑶𝑷 -
   type: vmess
-  server: vc.fly.dev
-  port: 443
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  alterId: '32'
+  server: zula.ir
+  port: 8080
+  uuid: nasnet
+  alterId: '0'
   cipher: auto
   network: ws
   ws-opts:
-    path: /vc
+    path: /
     headers:
-      Host: vc.fly.dev
-  tls: true
-- name: 香港stairnode
-  type: vmess
-  server: v10.hdacd.com
-  port: 30807
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: '0'
-  cipher: auto
-- name: 新加坡2stairnode
-  type: trojan
-  server: 153.121.45.139
-  port: 3076
-  password: 61d8077bfb174e171b8283f155a555ad
-  sni: www.nintendogames.net
-- name: _CN_中国
-  type: trojan
-  server: 58.152.46.60
-  port: 443
-  password: BxceQaOe
-  sni: '%2B%2B%2B%2B%2B%2B%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B402%2B'
-  skip-cert-verify: true
+      Host: nasnet-511952424.mcitel.co
 - name: 中国 - 香港 - PCCW IMS Limited - 45
   type: vmess
   server: 5804d996-t70f40-tonrmx-8n27.hkt.gotochinatown.net
@@ -570,117 +603,13 @@ proxies:
     path: /
     headers:
       Host: 010ece56-t6r5s0-thd0h1-1rz5s.hkt.gotochinatown.net
-- name: VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
-  type: vmess
-  server: support.zoom.us
-  port: 8080
-  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
-  alterId: '0'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /@Malinda6104
-    headers:
-      Host: support.zoom.us
-- name: 香港3ripaojiedian
+- name: 香港5ripaojiedian
   type: trojan
-  server: 112.118.116.123
+  server: 58.152.53.219
   port: 443
-  password: 61d8077bfb174e171b8283f155a555ad
-  sni: www.nintendogames.net
-- name: TW台湾(mibei77.com 米贝节点分享)
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 31102
-  password: e0e28234-f4cd-4583-922c-c97795cb6222
-  sni: green2.cdntencentmusic.com
-- name: TW台湾(mibei77.com 米贝节点分享)
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 31103
-  password: fe6eae40-94da-4c80-9f23-5e3d4402d52b
-  sni: green2.cdntencentmusic.com
-- name: TW台湾(mibei77.com 米贝节点分享)
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 31102
-  password: 40991964-b3be-4458-8bc7-5b1774552acf
-  sni: green2.cdntencentmusic.com
-- name: TW台湾(mibei77.com 米贝节点分享)
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 31103
-  password: 40991964-b3be-4458-8bc7-5b1774552acf
-  sni: green2.cdntencentmusic.com
-- name: TW台湾(mibei77.com 米贝节点分享)
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 31101
-  password: 0a10af44-d4c6-4803-aca4-abc92983bc5c
-  sni: green2.cdntencentmusic.com
-- name: TW台湾(mibei77.com 米贝节点分享)
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 31102
-  password: 1b55988c-ba9d-4203-b4fb-6afb7353c4f6
-  sni: green2.cdntencentmusic.com
-- name: TW台湾(mibei77.com 米贝节点分享)
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 31103
-  password: 459850f0-b409-4f18-95e2-440d4ebea0cd
-  sni: green2.cdntencentmusic.com
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: v30.hdacd.com
-  port: 30830
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: '0'
-  cipher: auto
-- name: TW台湾(mibei77.com 米贝节点分享)
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 31103
-  password: 1b55988c-ba9d-4203-b4fb-6afb7353c4f6
-  sni: green2.cdntencentmusic.com
-- name: TW台湾(mibei77.com 米贝节点分享)
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 31103
-  password: cde8eda2-9c2e-4fae-b308-2fed2cc33e4b
-  sni: green2.cdntencentmusic.com
-- name: TW台湾(mibei77.com 米贝节点分享)
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 31103
-  password: 0a10af44-d4c6-4803-aca4-abc92983bc5c
-  sni: green2.cdntencentmusic.com
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: v30.hdacd.com
-  port: 30830
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: '0'
-  cipher: auto
-- name: TW台湾(mibei77.com 米贝节点分享)
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 31101
-  password: f272b771-49f1-48f0-8ac4-ab7cd1a5c343
-  sni: green2.cdntencentmusic.com
-- name: TW台湾(mibei77.com 米贝节点分享)
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 31102
-  password: 3cd9679e-cd01-4aa6-9ddc-3ffd8b53f02e
-  sni: green2.cdntencentmusic.com
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: v30.hdacd.com
-  port: 30830
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: '0'
-  cipher: auto
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
 - name: US美国(mibei77.com 米贝节点分享)
   type: vmess
   server: v36.hdacd.com
@@ -691,193 +620,14 @@ proxies:
 - name: TW台湾(mibei77.com 米贝节点分享)
   type: trojan
   server: green2.cdntencentmusic.com
-  port: 31103
-  password: 7ce4327c-43d3-404b-ad66-283a9f6b6eb4
-  sni: green2.cdntencentmusic.com
-- name: HK-220.246.190.122-5034
-  type: vmess
-  server: 74ebcaaa-t70f40-t8be2y-1ryup.hkt.gotochinatown.net
-  port: 80
-  uuid: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d
-  alterId: '2'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 74ebcaaa-t70f40-t8be2y-1ryup.hkt.gotochinatown.net
-- name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limi
-  type: vmess
-  server: cd5a4e76-t70f40-t7dv8l-1szgv.hkt.gotochinatown.net
-  port: 80
-  uuid: 448aff24-b2e6-11ef-97e0-f23c9164ca5d
-  alterId: '2'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cd5a4e76-t70f40-t7dv8l-1szgv.hkt.gotochinatown.net
-- name: HK-220.246.190.122-5033
-  type: vmess
-  server: f8c38428-t6r5s0-t8jzg2-1hd7v.hkt.gotochinatown.net
-  port: 80
-  uuid: f73c64bc-9e8c-11ec-bd7c-f23c913c8d2b
-  alterId: '2'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: f8c38428-t6r5s0-t8jzg2-1hd7v.hkt.gotochinatown.net
-- name: JoinTelegramFarah_VPN
-  type: vmess
-  server: 44a1b64f-t77ts0-tb592v-4lg6.hkt.gotochinatown.net
-  port: 80
-  uuid: a4c9b7cc-a816-11ed-9f65-f23c9164ca5d
-  alterId: '2'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 44a1b64f-t77ts0-tb592v-4lg6.hkt.gotochinatown.net
-- name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limi
-  type: vmess
-  server: 84146e14-t6r5s0-tiuovf-v3c2.hkt.gotochinatown.net
-  port: 80
-  uuid: 5f091cbe-fb34-11ea-9777-f23c9164ca5d
-  alterId: '2'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 84146e14-t6r5s0-tiuovf-v3c2.hkt.gotochinatown.net
-- name: 台湾省台中市 中华电信
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 35501
-  password: 774b491c-f809-4dbd-b31c-bc3bd6ab92ac
-  sni: green2.cdntencentmusic.com
-  skip-cert-verify: true
-- name: 香港ripaojiedian
-  type: vmess
-  server: v10.hdacd.com
-  port: 30807
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: '2'
-  cipher: auto
-- name: TW台湾(mibei77.com 米贝节点分享)
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 31102
-  password: 2352a65e-aa8a-46c7-ab41-8f203e858f4a
-  sni: green2.cdntencentmusic.com
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: green2.cdntencentmusic.com
   port: 31101
-  password: fe6eae40-94da-4c80-9f23-5e3d4402d52b
+  password: d30c2d87-9541-4681-a912-e51e190bad2a
   sni: green2.cdntencentmusic.com
 - name: TW台湾(mibei77.com 米贝节点分享)
   type: trojan
   server: green2.cdntencentmusic.com
   port: 31102
-  password: 747f4d20-1ab3-4896-b255-5d4b9f587ce7
-  sni: green2.cdntencentmusic.com
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 31102
-  password: f272b771-49f1-48f0-8ac4-ab7cd1a5c343
-  sni: green2.cdntencentmusic.com
-- name: TW台湾(mibei77.com 米贝节点分享)
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 31102
-  password: cde8eda2-9c2e-4fae-b308-2fed2cc33e4b
-  sni: green2.cdntencentmusic.com
-- name: TW台湾(mibei77.com 米贝节点分享)
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 31103
-  password: 2cfd8fb6-1f17-4d33-a3b9-448b1d723723
-  sni: green2.cdntencentmusic.com
-- name: TW台湾(mibei77.com 米贝节点分享)
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 31102
-  password: fe6eae40-94da-4c80-9f23-5e3d4402d52b
-  sni: green2.cdntencentmusic.com
-- name: TW台湾(mibei77.com 米贝节点分享)
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 35501
-  password: fe6eae40-94da-4c80-9f23-5e3d4402d52b
-  sni: green2.cdntencentmusic.com
-- name: TW台湾(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 220.130.58.136
-  port: 35501
-  password: 40991964-b3be-4458-8bc7-5b1774552acf
-  sni: green2.cdntencentmusic.com
-- name: TW台湾(mibei77.com 米贝节点分享)
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 35502
-  password: fe6eae40-94da-4c80-9f23-5e3d4402d52b
-  sni: green2.cdntencentmusic.com
-- name: TW台湾(mibei77.com 米贝节点分享)
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 35502
-  password: e0e28234-f4cd-4583-922c-c97795cb6222
-  sni: green2.cdntencentmusic.com
-- name: TW台湾(mibei77.com 米贝节点分享)
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 35502
-  password: 40991964-b3be-4458-8bc7-5b1774552acf
-  sni: green2.cdntencentmusic.com
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: v33.hdacd.com
-  port: 30833
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: '2'
-  cipher: auto
-- name: FR法国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: v30.hdacd.com
-  port: 30830
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: '0'
-  cipher: auto
-- name: TW台湾(mibei77.com 米贝节点分享)
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 35501
-  password: 5de81c8b-ffbb-4542-a334-88a49413d5ea
-  sni: green2.cdntencentmusic.com
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: v30.hdacd.com
-  port: 30830
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: '0'
-  cipher: auto
-- name: TW台湾(mibei77.com 米贝节点分享)
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 35501
-  password: cde8eda2-9c2e-4fae-b308-2fed2cc33e4b
-  sni: green2.cdntencentmusic.com
-- name: TW台湾(mibei77.com 米贝节点分享)
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 35501
-  password: 1b88ad4e-20d1-4b1e-8e20-2793d0619a18
+  password: a9e2cb75-6c86-49e5-b637-10575ac31ffb
   sni: green2.cdntencentmusic.com
 - name: US美国(mibei77.com 米贝节点分享)
   type: vmess
@@ -892,6 +642,214 @@ proxies:
     headers:
       Host: aio.unlimited.biz.id
   tls: true
+- name: TW台湾(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 220.130.58.136
+  port: 31102
+  password: b7aa4e87-d990-4f2d-8880-73b206953efc
+  sni: green2.cdntencentmusic.com
+- name: TW台湾(mibei77.com 米贝节点分享)
+  type: trojan
+  server: green2.cdntencentmusic.com
+  port: 31102
+  password: d30c2d87-9541-4681-a912-e51e190bad2a
+  sni: green2.cdntencentmusic.com
+- name: TW台湾(mibei77.com 米贝节点分享)
+  type: trojan
+  server: green2.cdntencentmusic.com
+  port: 31102
+  password: f016b304-f6cf-4199-b4eb-1f6b4b48f169
+  sni: green2.cdntencentmusic.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: green2.cdntencentmusic.com
+  port: 31101
+  password: bb64f482-0dcb-46a4-b3b5-ec34bbdeeca8
+  sni: green2.cdntencentmusic.com
+- name: TW台湾(mibei77.com 米贝节点分享)
+  type: trojan
+  server: green2.cdntencentmusic.com
+  port: 31102
+  password: 9450ab5e-f86f-40c1-89b0-92dfa6679553
+  sni: green2.cdntencentmusic.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: v33.hdacd.com
+  port: 30833
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: '2'
+  cipher: auto
+- name: TW台湾(mibei77.com 米贝节点分享)
+  type: trojan
+  server: green2.cdntencentmusic.com
+  port: 31102
+  password: b7aa4e87-d990-4f2d-8880-73b206953efc
+  sni: green2.cdntencentmusic.com
+- name: TW台湾(mibei77.com 米贝节点分享)
+  type: trojan
+  server: green2.cdntencentmusic.com
+  port: 31102
+  password: aaf3a3a0-7b1b-4f56-a914-6c0115fdf7ab
+  sni: green2.cdntencentmusic.com
+- name: TW台湾(mibei77.com 米贝节点分享)
+  type: trojan
+  server: green2.cdntencentmusic.com
+  port: 31102
+  password: 9f879bc7-3ac6-4ddd-8f7d-18d9f431f6a3
+  sni: green2.cdntencentmusic.com
+- name: NL荷兰(mibei77.com 米贝节点分享)
+  type: trojan
+  server: bpbg.anguswen.top
+  port: 2053
+  password: '123456'
+  sni: Bpbg.aNGuSweN.top
+- name: DE德国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: bpbg.anguswen.top
+  port: 443
+  password: '123456'
+  sni: bPbg.aNGUSWeN.Top
+- name: JP日本(mibei77.com 米贝节点分享)
+  type: trojan
+  server: tuntro003.instconn.com
+  port: 443
+  password: 469c8135-8aea-4c7f-8ec2-c5fdfa980b48
+  sni: login-staticjpc.jasmine-douyin.top
+- name: TW台湾(mibei77.com 米贝节点分享)
+  type: trojan
+  server: green2.cdntencentmusic.com
+  port: 31102
+  password: 79196bd6-fd1b-45fc-8b60-4b25ce0a8e71
+  sni: green2.cdntencentmusic.com
+- name: NL荷兰(mibei77.com 米贝节点分享)
+  type: trojan
+  server: bpbg.anguswen.top
+  port: 443
+  password: '123456'
+  sni: Bpbg.ANGuswen.top
+- name: DE德国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: bpbg.anguswen.top
+  port: 443
+  password: '123456'
+  sni: bPbG.ANguswen.tOP
+- name: NL荷兰(mibei77.com 米贝节点分享)
+  type: trojan
+  server: bpbg.anguswen.top
+  port: 8443
+  password: '123456'
+  sni: bpbg.ANgusWeN.toP
+- name: 香港ripaojiedian
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: '2'
+  cipher: auto
+- name: TW台湾(mibei77.com 米贝节点分享)
+  type: trojan
+  server: green2.cdntencentmusic.com
+  port: 31102
+  password: 338ea804-ded7-478a-bdca-0ff7a8e75d51
+  sni: green2.cdntencentmusic.com
+- name: TW台湾(mibei77.com 米贝节点分享)
+  type: trojan
+  server: green2.cdntencentmusic.com
+  port: 31102
+  password: cccce61b-b07d-47e5-82c1-c0f1ccba1454
+  sni: green2.cdntencentmusic.com
+- name: TW台湾(mibei77.com 米贝节点分享)
+  type: trojan
+  server: cdnfire.xiaomispeed.com
+  port: 21102
+  password: a066aa1b-aaae-47fc-ae7c-0cda356809d3
+  sni: cdnfire.xiaomispeed.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: green2.cdntencentmusic.com
+  port: 31101
+  password: 4835ab8d-9e05-45e9-a3b1-f1a454429b3e
+  sni: green2.cdntencentmusic.com
+- name: TW台湾(mibei77.com 米贝节点分享)
+  type: trojan
+  server: green2.cdntencentmusic.com
+  port: 31102
+  password: bb64f482-0dcb-46a4-b3b5-ec34bbdeeca8
+  sni: green2.cdntencentmusic.com
+- name: TW台湾(mibei77.com 米贝节点分享)
+  type: trojan
+  server: green2.cdntencentmusic.com
+  port: 31102
+  password: f9fa7cb9-e07e-411a-814b-74c062f03e7e
+  sni: green2.cdntencentmusic.com
+- name: TW台湾(mibei77.com 米贝节点分享)
+  type: trojan
+  server: green2.cdntencentmusic.com
+  port: 31102
+  password: a77233e9-abe2-4246-972e-48802c4c04fa
+  sni: green2.cdntencentmusic.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: green2.cdntencentmusic.com
+  port: 35501
+  password: 9450ab5e-f86f-40c1-89b0-92dfa6679553
+  sni: green2.cdntencentmusic.com
+- name: TW台湾(mibei77.com 米贝节点分享)
+  type: trojan
+  server: green2.cdntencentmusic.com
+  port: 31103
+  password: f016b304-f6cf-4199-b4eb-1f6b4b48f169
+  sni: green2.cdntencentmusic.com
+- name: TW台湾(mibei77.com 米贝节点分享)
+  type: trojan
+  server: green2.cdntencentmusic.com
+  port: 31103
+  password: bb64f482-0dcb-46a4-b3b5-ec34bbdeeca8
+  sni: green2.cdntencentmusic.com
+- name: TW台湾(mibei77.com 米贝节点分享)
+  type: trojan
+  server: green2.cdntencentmusic.com
+  port: 31101
+  password: cccce61b-b07d-47e5-82c1-c0f1ccba1454
+  sni: green2.cdntencentmusic.com
+- name: TW台湾(mibei77.com 米贝节点分享)
+  type: trojan
+  server: green2.cdntencentmusic.com
+  port: 31103
+  password: a77233e9-abe2-4246-972e-48802c4c04fa
+  sni: green2.cdntencentmusic.com
+- name: TW台湾(mibei77.com 米贝节点分享)
+  type: trojan
+  server: green2.cdntencentmusic.com
+  port: 31102
+  password: f3b55b53-43ca-46fd-b498-ed6cc394e179
+  sni: green2.cdntencentmusic.com
+- name: 香港stairnode
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: '0'
+  cipher: auto
+- name: 香港 CDN520加速节点(BGP)数据中心
+  type: vmess
+  server: sv2.wy888.us
+  port: 443
+  uuid: cda69512-ad1b-4f85-b547-b1d545e7cc90
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: sv2.wy888.us
+  tls: true
+- name: HK香港(mibei77.com 米贝节点分享)
+  type: trojan
+  server: tuntro000.instconn.com
+  port: 443
+  password: 469c8135-8aea-4c7f-8ec2-c5fdfa980b48
+  sni: hkip5.686911.xyz
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -899,84 +857,82 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 负载均衡
   - DIRECT
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - RU俄罗斯(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - FR法国(mibei77.com 米贝节点分享)
-  - FR法国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
   - _US_美国_2
   - VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720
   - VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-15
+  - VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51
+  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod
+  - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
+  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-209.126.8
+  - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
+  - 加拿大多伦多 V2CROSS.COM
+  - 西班牙(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - 西班牙(mibei77.com 米贝节点分享)
+  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
   - SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
-  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-209.126.8
-  - 𝑽2_𝑴𝑶𝑫_𝑺𝑯𝑶𝑷 -
-  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod
-  - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
   - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
+  - 美国 华盛顿Cogent通信公司
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - SG新加坡(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - FR法国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
-  - 香港 电讯盈科有限公司
-  - 香港 电讯盈科有限公司
+  - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
   - 日本2ripaojiedian
   - 日本3ripaojiedian
   - 新加坡ripaojiedian
   - 新加坡2ripaojiedian
   - 美国ripaojiedian
   - 美国2ripaojiedian
-  - SG新加坡(mibei77.com 米贝节点分享)
-  - 香港stairnode
   - 新加坡2stairnode
-  - _CN_中国
+  - 𝑽2_𝑴𝑶𝑫_𝑺𝑯𝑶𝑷 -
   - 中国 - 香港 - PCCW IMS Limited - 45
   - HK²_232.8MBs0GPTYTXHistory[原生住宅]
-  - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
-  - 香港3ripaojiedian
-  - TW台湾(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)
+  - 香港5ripaojiedian
+  - US美国(mibei77.com 米贝节点分享)
   - TW台湾(mibei77.com 米贝节点分享)
   - TW台湾(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
@@ -985,119 +941,115 @@ proxy-groups:
   - TW台湾(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - TW台湾(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - TW台湾(mibei77.com 米贝节点分享)
-  - HK-220.246.190.122-5034
-  - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limi
-  - HK-220.246.190.122-5033
-  - JoinTelegramFarah_VPN
-  - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limi
-  - 台湾省台中市 中华电信
+  - TW台湾(mibei77.com 米贝节点分享)
+  - TW台湾(mibei77.com 米贝节点分享)
+  - NL荷兰(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - JP日本(mibei77.com 米贝节点分享)
+  - TW台湾(mibei77.com 米贝节点分享)
+  - NL荷兰(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - NL荷兰(mibei77.com 米贝节点分享)
   - 香港ripaojiedian
   - TW台湾(mibei77.com 米贝节点分享)
+  - TW台湾(mibei77.com 米贝节点分享)
+  - TW台湾(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)
   - TW台湾(mibei77.com 米贝节点分享)
   - TW台湾(mibei77.com 米贝节点分享)
   - TW台湾(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
-  - FR法国(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
   - TW台湾(mibei77.com 米贝节点分享)
   - TW台湾(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
+  - TW台湾(mibei77.com 米贝节点分享)
+  - TW台湾(mibei77.com 米贝节点分享)
+  - TW台湾(mibei77.com 米贝节点分享)
+  - 香港stairnode
+  - 香港 CDN520加速节点(BGP)数据中心
+  - HK香港(mibei77.com 米贝节点分享)
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: &id001
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - RU俄罗斯(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - FR法国(mibei77.com 米贝节点分享)
-  - FR法国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
   - _US_美国_2
   - VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720
   - VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-15
+  - VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51
+  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod
+  - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
+  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-209.126.8
+  - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
+  - 加拿大多伦多 V2CROSS.COM
+  - 西班牙(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - 西班牙(mibei77.com 米贝节点分享)
+  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
   - SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
-  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-209.126.8
-  - 𝑽2_𝑴𝑶𝑫_𝑺𝑯𝑶𝑷 -
-  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod
-  - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
   - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
+  - 美国 华盛顿Cogent通信公司
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - SG新加坡(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - FR法国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
-  - 香港 电讯盈科有限公司
-  - 香港 电讯盈科有限公司
+  - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
   - 日本2ripaojiedian
   - 日本3ripaojiedian
   - 新加坡ripaojiedian
   - 新加坡2ripaojiedian
   - 美国ripaojiedian
   - 美国2ripaojiedian
-  - SG新加坡(mibei77.com 米贝节点分享)
-  - 香港stairnode
   - 新加坡2stairnode
-  - _CN_中国
+  - 𝑽2_𝑴𝑶𝑫_𝑺𝑯𝑶𝑷 -
   - 中国 - 香港 - PCCW IMS Limited - 45
   - HK²_232.8MBs0GPTYTXHistory[原生住宅]
-  - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
-  - 香港3ripaojiedian
-  - TW台湾(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)
+  - 香港5ripaojiedian
+  - US美国(mibei77.com 米贝节点分享)
   - TW台湾(mibei77.com 米贝节点分享)
   - TW台湾(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
@@ -1106,36 +1058,34 @@ proxy-groups:
   - TW台湾(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - TW台湾(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - TW台湾(mibei77.com 米贝节点分享)
-  - HK-220.246.190.122-5034
-  - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limi
-  - HK-220.246.190.122-5033
-  - JoinTelegramFarah_VPN
-  - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limi
-  - 台湾省台中市 中华电信
+  - TW台湾(mibei77.com 米贝节点分享)
+  - TW台湾(mibei77.com 米贝节点分享)
+  - NL荷兰(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - JP日本(mibei77.com 米贝节点分享)
+  - TW台湾(mibei77.com 米贝节点分享)
+  - NL荷兰(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - NL荷兰(mibei77.com 米贝节点分享)
   - 香港ripaojiedian
   - TW台湾(mibei77.com 米贝节点分享)
+  - TW台湾(mibei77.com 米贝节点分享)
+  - TW台湾(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)
   - TW台湾(mibei77.com 米贝节点分享)
   - TW台湾(mibei77.com 米贝节点分享)
   - TW台湾(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
-  - FR法国(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
   - TW台湾(mibei77.com 米贝节点分享)
   - TW台湾(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
+  - TW台湾(mibei77.com 米贝节点分享)
+  - TW台湾(mibei77.com 米贝节点分享)
+  - TW台湾(mibei77.com 米贝节点分享)
+  - 香港stairnode
+  - 香港 CDN520加速节点(BGP)数据中心
+  - HK香港(mibei77.com 米贝节点分享)
 - name: 🔮 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
