@@ -18,6 +18,27 @@
   ],
   "outbounds": [
     {
+      "tag": "_US_美国_2",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "kfjdi.pages.dev",
+            "port": 443,
+            "password": "er668"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
       "tag": "VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720",
       "protocol": "vmess",
       "settings": {
@@ -79,34 +100,6 @@
       }
     },
     {
-      "tag": "VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "support.zoom.us",
-            "port": 8080,
-            "users": [
-              {
-                "id": "44e57485-eccc-46ef-808f-cd17ac810018",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/@Malinda6104",
-          "headers": {
-            "Host": "support.zoom.us"
-          }
-        }
-      }
-    },
-    {
       "tag": "VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-209.126.8",
       "protocol": "vmess",
       "settings": {
@@ -130,6 +123,97 @@
           "path": "/vmessws",
           "headers": {
             "Host": "209.126.84.189"
+          }
+        }
+      }
+    },
+    {
+      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "167.68.4.199",
+            "port": 2053,
+            "password": "Aimer"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "epge.muarua.filegear-sg.me",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "西班牙(mibei77.com 米贝节点分享)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "109.234.211.66",
+            "port": 2087,
+            "password": "trojan"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "store.timimi.dpdns.org",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "109.234.211.66",
+            "port": 8443,
+            "password": "trojan"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "store.timimi.dpdns.org",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "support.zoom.us",
+            "port": 8080,
+            "users": [
+              {
+                "id": "44e57485-eccc-46ef-808f-cd17ac810018",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/@Malinda6104",
+          "headers": {
+            "Host": "support.zoom.us"
           }
         }
       }
@@ -168,38 +252,17 @@
       }
     },
     {
-      "tag": "RU俄罗斯(mibei77.com 米贝节点分享)",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "109.234.211.66",
-            "port": 8443,
-            "password": "trojan"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "store.timimi.dpdns.org",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "SG新加坡(mibei77.com 米贝节点分享)",
+      "tag": "VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "vc.fly.dev",
-            "port": 443,
+            "address": "hgtrojan.zabc.net",
+            "port": 2083,
             "users": [
               {
-                "id": "35379219-6535-4f2e-a4fe-3e44f61e0eee",
-                "alterId": "32",
+                "id": "e6395c20-4571-4b34-d6b1-55a5d36e49ea",
+                "alterId": "0",
                 "security": "auto"
               }
             ]
@@ -209,9 +272,9 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/vc",
+          "path": "/e6395c20",
           "headers": {
-            "Host": "vc.fly.dev"
+            "Host": "hgtrojan.zabc.net"
           }
         },
         "security": "tls",
@@ -222,254 +285,7 @@
       }
     },
     {
-      "tag": "_US_美国_2",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "kfjdi.pages.dev",
-            "port": 443,
-            "password": "er668"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.79.102.253",
-            "port": 80,
-            "users": [
-              {
-                "id": "58fe1542-5290-40ad-815a-77707a81afe5",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/IOebhLMhl1CTbFHbL95myfRX2",
-          "headers": {
-            "Host": ""
-          }
-        }
-      }
-    },
-    {
       "tag": "US美国(mibei77.com 米贝节点分享)",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "82.198.246.97",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "US美国(mibei77.com 米贝节点分享)",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "82.198.246.97",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "GB英国(mibei77.com 米贝节点分享)",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "82.198.246.97",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "US美国(mibei77.com 米贝节点分享)",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "82.198.246.97",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "GB英国(mibei77.com 米贝节点分享)",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "82.198.246.97",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "US美国(mibei77.com 米贝节点分享)",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "82.198.246.97",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "GB英国(mibei77.com 米贝节点分享)",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "82.198.246.97",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "GB英国(mibei77.com 米贝节点分享)",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "82.198.246.97",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "GB英国(mibei77.com 米贝节点分享)",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "82.198.246.97",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "CA加拿大(mibei77.com 米贝节点分享)",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -485,6 +301,111 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "torontorm1.686911.xyz",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "NL荷兰(mibei77.com 米贝节点分享)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "bpbg.anguswen.top",
+            "port": 8443,
+            "password": "123456"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "bpbg.ANgusWeN.toP",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "DE德国(mibei77.com 米贝节点分享)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "bpbg.anguswen.top",
+            "port": 443,
+            "password": "123456"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "bPbg.aNGUSWeN.Top",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "NL荷兰(mibei77.com 米贝节点分享)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "bpbg.anguswen.top",
+            "port": 443,
+            "password": "123456"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "Bpbg.ANGuswen.top",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "DE德国(mibei77.com 米贝节点分享)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "bpbg.anguswen.top",
+            "port": 443,
+            "password": "123456"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "bPbG.ANguswen.tOP",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "NL荷兰(mibei77.com 米贝节点分享)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "bpbg.anguswen.top",
+            "port": 2053,
+            "password": "123456"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "Bpbg.aNGuSweN.top",
           "allowInsecure": false
         }
       }
@@ -579,39 +500,6 @@
       }
     },
     {
-      "tag": "VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "hgtrojan.zabc.net",
-            "port": 2083,
-            "users": [
-              {
-                "id": "e6395c20-4571-4b34-d6b1-55a5d36e49ea",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/e6395c20",
-          "headers": {
-            "Host": "hgtrojan.zabc.net"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
       "tag": "VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa",
       "protocol": "vmess",
       "settings": {
@@ -635,39 +523,6 @@
           "path": "/api/v1/graphql",
           "headers": {
             "Host": "cg1c01.waimaojd.com"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "cg1c04.waimaojd.com",
-            "port": 443,
-            "users": [
-              {
-                "id": "be8e3136-b874-4085-bd23-ec3699300490",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/api/v1/graphql",
-          "headers": {
-            "Host": "cg1c04.waimaojd.com"
           }
         },
         "security": "tls",
@@ -711,65 +566,35 @@
       }
     },
     {
-      "tag": "香港 电讯盈科有限公司",
-      "protocol": "trojan",
+      "tag": "美国 CloudFlare节点",
+      "protocol": "vmess",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "58.152.53.219",
-            "port": 443,
-            "password": "BxceQaOe"
+            "address": "c7.620720.xyz",
+            "port": 8443,
+            "users": [
+              {
+                "id": "516d8a7a-3f0b-41d3-bad0-246116381516",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "c7.620720.xyz"
+          }
+        },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "t.me%252Fripaojiedian",
+          "serverName": "",
           "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "香港 电讯盈科有限公司",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "58.152.25.130",
-            "port": 443,
-            "password": "BxceQaOe"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "t.me%252Fripaojiedian",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "香港5ripaojiedian",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "58.152.53.219",
-            "port": 443,
-            "password": "BxceQaOe"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "t.me%2Fripaojiedian",
-          "allowInsecure": true
         }
       }
     },
@@ -779,9 +604,9 @@
       "settings": {
         "servers": [
           {
-            "address": "160.16.117.182",
-            "port": 1933,
-            "password": "61d8077bfb174e171b8283f155a555ad"
+            "address": "160.16.72.205",
+            "port": 4006,
+            "password": "4843e94d205f3893f588255a591abe94"
           }
         ]
       },
@@ -800,9 +625,9 @@
       "settings": {
         "servers": [
           {
-            "address": "153.121.65.107",
+            "address": "160.16.72.205",
             "port": 1933,
-            "password": "61d8077bfb174e171b8283f155a555ad"
+            "password": "4843e94d205f3893f588255a591abe94"
           }
         ]
       },
@@ -821,9 +646,9 @@
       "settings": {
         "servers": [
           {
-            "address": "153.121.65.107",
+            "address": "160.16.124.17",
             "port": 3901,
-            "password": "61d8077bfb174e171b8283f155a555ad"
+            "password": "4843e94d205f3893f588255a591abe94"
           }
         ]
       },
@@ -842,9 +667,9 @@
       "settings": {
         "servers": [
           {
-            "address": "160.16.124.55",
+            "address": "160.16.132.38",
             "port": 544,
-            "password": "61d8077bfb174e171b8283f155a555ad"
+            "password": "4843e94d205f3893f588255a591abe94"
           }
         ]
       },
@@ -863,9 +688,9 @@
       "settings": {
         "servers": [
           {
-            "address": "160.16.124.55",
+            "address": "160.16.85.33",
             "port": 5076,
-            "password": "61d8077bfb174e171b8283f155a555ad"
+            "password": "4843e94d205f3893f588255a591abe94"
           }
         ]
       },
@@ -886,7 +711,7 @@
           {
             "address": "160.16.89.176",
             "port": 5076,
-            "password": "61d8077bfb174e171b8283f155a555ad"
+            "password": "4843e94d205f3893f588255a591abe94"
           }
         ]
       },
@@ -900,35 +725,23 @@
       }
     },
     {
-      "tag": "US美国(mibei77.com 米贝节点分享)",
-      "protocol": "vmess",
+      "tag": "美国3ripaojiedian",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "aio.unlimited.biz.id",
-            "port": 443,
-            "users": [
-              {
-                "id": "f282b878-8711-45a1-8c69-5564172123c1",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
+            "address": "13.192.183.185",
+            "port": 2173,
+            "password": "BxceQaOe"
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/aioproxybot/129.150.49.58-18650",
-          "headers": {
-            "Host": "aio.unlimited.biz.id"
-          }
-        },
+        "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "",
-          "allowInsecure": false
+          "serverName": "t.me%2Fripaojiedian",
+          "allowInsecure": true
         }
       }
     },
@@ -938,9 +751,9 @@
       "settings": {
         "servers": [
           {
-            "address": "160.16.124.55",
+            "address": "160.16.132.38",
             "port": 544,
-            "password": "61d8077bfb174e171b8283f155a555ad"
+            "password": "4843e94d205f3893f588255a591abe94"
           }
         ]
       },
@@ -1010,14 +823,47 @@
       }
     },
     {
+      "tag": "VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "cg1c04.waimaojd.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "be8e3136-b874-4085-bd23-ec3699300490",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/api/v1/graphql",
+          "headers": {
+            "Host": "cg1c04.waimaojd.com"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
       "tag": "香港3ripaojiedian",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "112.118.116.123",
+            "address": "58.152.110.111",
             "port": 443,
-            "password": "61d8077bfb174e171b8283f155a555ad"
+            "password": "4843e94d205f3893f588255a591abe94"
           }
         ]
       },
@@ -1031,12 +877,12 @@
       }
     },
     {
-      "tag": "香港4ripaojiedian",
+      "tag": "香港5ripaojiedian",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "58.152.25.130",
+            "address": "58.152.53.219",
             "port": 443,
             "password": "BxceQaOe"
           }
@@ -1052,122 +898,17 @@
       }
     },
     {
-      "tag": "HK香港(mibei77.com 米贝节点分享)",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "green2.cdntencentmusic.com",
-            "port": 31103,
-            "password": "cde8eda2-9c2e-4fae-b308-2fed2cc33e4b"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "green2.cdntencentmusic.com",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "HK香港(mibei77.com 米贝节点分享)",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "green2.cdntencentmusic.com",
-            "port": 31102,
-            "password": "cde8eda2-9c2e-4fae-b308-2fed2cc33e4b"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "green2.cdntencentmusic.com",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "HK香港(mibei77.com 米贝节点分享)",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "green2.cdntencentmusic.com",
-            "port": 31102,
-            "password": "747f4d20-1ab3-4896-b255-5d4b9f587ce7"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "green2.cdntencentmusic.com",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "HK香港(mibei77.com 米贝节点分享)",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "green2.cdntencentmusic.com",
-            "port": 31102,
-            "password": "e0e28234-f4cd-4583-922c-c97795cb6222"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "green2.cdntencentmusic.com",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "TW台湾(mibei77.com 米贝节点分享)",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "green2.cdntencentmusic.com",
-            "port": 31102,
-            "password": "4086953f-b761-43aa-a8f5-a7ab4704014a"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "green2.cdntencentmusic.com",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
       "tag": "US美国(mibei77.com 米贝节点分享)",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "v36.hdacd.com",
-            "port": 30836,
+            "address": "aio.unlimited.biz.id",
+            "port": 443,
             "users": [
               {
-                "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-                "alterId": "2",
+                "id": "f282b878-8711-45a1-8c69-5564172123c1",
+                "alterId": "0",
                 "security": "auto"
               }
             ]
@@ -1175,7 +916,93 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp"
+        "network": "ws",
+        "wsSettings": {
+          "path": "/aioproxybot/129.150.49.58-18650",
+          "headers": {
+            "Host": "aio.unlimited.biz.id"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "JP日本(mibei77.com 米贝节点分享)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "tuntro003.instconn.com",
+            "port": 443,
+            "password": "469c8135-8aea-4c7f-8ec2-c5fdfa980b48"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "login-staticjpc.jasmine-douyin.top",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "HK香港(mibei77.com 米贝节点分享)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "220.130.58.136",
+            "port": 31102,
+            "password": "b7aa4e87-d990-4f2d-8880-73b206953efc"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "green2.cdntencentmusic.com",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "SG新加坡(mibei77.com 米贝节点分享)",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vc.fly.dev",
+            "port": 443,
+            "users": [
+              {
+                "id": "35379219-6535-4f2e-a4fe-3e44f61e0eee",
+                "alterId": "32",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/vc",
+          "headers": {
+            "Host": "vc.fly.dev"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
       }
     },
     {
@@ -1201,27 +1028,6 @@
       }
     },
     {
-      "tag": "_CN_中国",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "58.152.46.60",
-            "port": 443,
-            "password": "BxceQaOe"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "%2B%2B%2B%2B%2B%2B%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B402%2B",
-          "allowInsecure": true
-        }
-      }
-    },
-    {
       "tag": "香港ripaojiedian",
       "protocol": "vmess",
       "settings": {
@@ -1244,14 +1050,98 @@
       }
     },
     {
+      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "bpbg.anguswen.top",
+            "port": 8443,
+            "password": "123456"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "BPbG.AnguSWEN.Top",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
       "tag": "TW台湾(mibei77.com 米贝节点分享)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "green2.cdntencentmusic.com",
+            "port": 31103,
+            "password": "9f879bc7-3ac6-4ddd-8f7d-18d9f431f6a3"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "green2.cdntencentmusic.com",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "HK香港(mibei77.com 米贝节点分享)",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
             "address": "green2.cdntencentmusic.com",
             "port": 31102,
-            "password": "dad5dc05-63be-4245-8cd2-f1de0d515b02"
+            "password": "9f879bc7-3ac6-4ddd-8f7d-18d9f431f6a3"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "green2.cdntencentmusic.com",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "tuntro000.instconn.com",
+            "port": 443,
+            "password": "469c8135-8aea-4c7f-8ec2-c5fdfa980b48"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "hkip5.686911.xyz",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "HK香港(mibei77.com 米贝节点分享)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "green2.cdntencentmusic.com",
+            "port": 31102,
+            "password": "f3b55b53-43ca-46fd-b498-ed6cc394e179"
           }
         ]
       },
@@ -1271,8 +1161,8 @@
         "servers": [
           {
             "address": "green2.cdntencentmusic.com",
-            "port": 35501,
-            "password": "cde8eda2-9c2e-4fae-b308-2fed2cc33e4b"
+            "port": 31102,
+            "password": "b7aa4e87-d990-4f2d-8880-73b206953efc"
           }
         ]
       },
@@ -1286,14 +1176,14 @@
       }
     },
     {
-      "tag": "HK香港(mibei77.com 米贝节点分享)",
+      "tag": "US美国(mibei77.com 米贝节点分享)",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "green2.cdntencentmusic.com",
-            "port": 35502,
-            "password": "e0e28234-f4cd-4583-922c-c97795cb6222"
+            "address": "blackshadow.dpdns.org",
+            "port": 443,
+            "password": "2bcfbfba-b446-4ad5-93ad-72af9e008f61"
           }
         ]
       },
@@ -1301,72 +1191,31 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "green2.cdntencentmusic.com",
+          "serverName": "blackshadow.dpdns.org",
           "allowInsecure": false
         }
       }
     },
     {
-      "tag": "TW台湾(mibei77.com 米贝节点分享)",
-      "protocol": "trojan",
+      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "vmess",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "green2.cdntencentmusic.com",
-            "port": 35502,
-            "password": "747f4d20-1ab3-4896-b255-5d4b9f587ce7"
+            "address": "v36.hdacd.com",
+            "port": 30836,
+            "users": [
+              {
+                "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+                "alterId": "2",
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "green2.cdntencentmusic.com",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "TW台湾(mibei77.com 米贝节点分享)",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "green2.cdntencentmusic.com",
-            "port": 35502,
-            "password": "4e0d0293-3d1b-4c73-a2d1-701a0e85e1a5"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "green2.cdntencentmusic.com",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "TW台湾(mibei77.com 米贝节点分享)",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "green2.cdntencentmusic.com",
-            "port": 35502,
-            "password": "774b491c-f809-4dbd-b31c-bc3bd6ab92ac"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "green2.cdntencentmusic.com",
-          "allowInsecure": false
-        }
+        "network": "tcp"
       }
     }
   ],
