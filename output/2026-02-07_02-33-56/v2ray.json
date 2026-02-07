@@ -51,34 +51,6 @@
       }
     },
     {
-      "tag": "VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-15",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "15.235.41.200",
-            "port": 80,
-            "users": [
-              {
-                "id": "58fe1542-5290-40ad-815a-77707a81afe5",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/IOebhLMhl1CTbFHbL95myfRX2",
-          "headers": {
-            "Host": ""
-          }
-        }
-      }
-    },
-    {
       "tag": "VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51",
       "protocol": "vmess",
       "settings": {
@@ -107,34 +79,6 @@
       }
     },
     {
-      "tag": "VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "support.zoom.us",
-            "port": 8080,
-            "users": [
-              {
-                "id": "44e57485-eccc-46ef-808f-cd17ac810018",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/@Malinda6104",
-          "headers": {
-            "Host": "support.zoom.us"
-          }
-        }
-      }
-    },
-    {
       "tag": "VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-209.126.8",
       "protocol": "vmess",
       "settings": {
@@ -158,6 +102,195 @@
           "path": "/vmessws",
           "headers": {
             "Host": "209.126.84.189"
+          }
+        }
+      }
+    },
+    {
+      "tag": "美国 CloudFlare节点",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "172.67.204.84",
+            "port": 8080,
+            "users": [
+              {
+                "id": "nasnet",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/nasnet/cdn",
+          "headers": {
+            "Host": "nasnet-511952424.mcitel.co"
+          }
+        }
+      }
+    },
+    {
+      "tag": "巴西圣保罗 CloudFlare节点",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.114.98.0",
+            "port": 8080,
+            "users": [
+              {
+                "id": "nasnet",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/nasnet/cdn?ed=2560",
+          "headers": {
+            "Host": "nasnet-162191099.sharghdaily.co"
+          }
+        }
+      }
+    },
+    {
+      "tag": "美国 CloudFlare节点",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "172.64.149.182",
+            "port": 8080,
+            "users": [
+              {
+                "id": "nasnet",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/nasnet/cdn",
+          "headers": {
+            "Host": "nasnet-5712964102.sharghdaily.co"
+          }
+        }
+      }
+    },
+    {
+      "tag": "美国 CloudFlare节点",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.69.44",
+            "port": 8080,
+            "users": [
+              {
+                "id": "nasnet",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/nasnet/cdn",
+          "headers": {
+            "Host": "nasnet-511952424.mcitel.co"
+          }
+        }
+      }
+    },
+    {
+      "tag": "_US_美国",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "216.24.57.250",
+            "port": 443,
+            "password": "5027e2a4-c4d2-463a-9508-83a2c7d1ad83"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "afrcloud1.mmv.kr",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "v2ray.codefyinc.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "2c981164-9b93-4bca-94ff-b78d3f8498d7",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/vmessws",
+          "headers": {
+            "Host": "v2ray.codefyinc.com"
+          }
+        }
+      }
+    },
+    {
+      "tag": "VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "support.zoom.us",
+            "port": 8080,
+            "users": [
+              {
+                "id": "44e57485-eccc-46ef-808f-cd17ac810018",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/@Malinda6104",
+          "headers": {
+            "Host": "support.zoom.us"
           }
         }
       }
@@ -196,16 +329,49 @@
       }
     },
     {
+      "tag": "VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "hgtrojan.zabc.net",
+            "port": 2083,
+            "users": [
+              {
+                "id": "e6395c20-4571-4b34-d6b1-55a5d36e49ea",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/e6395c20",
+          "headers": {
+            "Host": "hgtrojan.zabc.net"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
       "tag": "美国 CloudFlare节点",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "172.67.204.84",
-            "port": 8080,
+            "address": "nnnmko.0890604.xyz",
+            "port": 80,
             "users": [
               {
-                "id": "nasnet",
+                "id": "827beb2a-f97a-4b23-b733-adef30c98e17",
                 "alterId": "0",
                 "security": "auto"
               }
@@ -216,176 +382,15 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/nasnet/cdn",
+          "path": "/HISLfofvqzd3a3izxYyZXOF",
           "headers": {
-            "Host": "nasnet-511952424.mcitel.co"
+            "Host": "nnnmko.0890604.xyz"
           }
         }
       }
     },
     {
-      "tag": "美国 CloudFlare节点",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.21.69.44",
-            "port": 8080,
-            "users": [
-              {
-                "id": "nasnet",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/nasnet/cdn",
-          "headers": {
-            "Host": "nasnet-511952424.mcitel.co"
-          }
-        }
-      }
-    },
-    {
-      "tag": "美國",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "172.66.44.230",
-            "port": 8443,
-            "password": "8r%3C%5B9%27l6hAO%238ZQi"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "Koma-YT.PAGeS.Dev",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "美国 37",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "154.83.2.156",
-            "port": 2086,
-            "users": [
-              {
-                "id": "92373ed1-78a8-4cbe-aa06-54af1edd0471",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "v205.19740822.xyz"
-          }
-        }
-      }
-    },
-    {
-      "tag": "SG_4   5.1MBs",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.18.1.196",
-            "port": 443,
-            "password": "a9570330-769d-11ef-90dc-1577c1651679"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "sg-trojan.andfree.my.id",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "_US_美国",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "216.24.57.250",
-            "port": 443,
-            "password": "5027e2a4-c4d2-463a-9508-83a2c7d1ad83"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "afrcloud1.mmv.kr",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "冰岛 V2CROSS.COM",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "37.235.49.209",
-            "port": 28099,
-            "password": "qmBSKnAl6LYi9=z23Rs.Z"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "celestialcorset.crystalhamster.click",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "美国ripaojiedian",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "38.180.193.194",
-            "port": 443,
-            "password": "c1d83c0c7d57cead4379ba14a82df69b"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.nintendogames.net",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "Relay_GB-US_72 204.35Mb",
+      "tag": "英国 V2CROSS.COM",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -407,58 +412,16 @@
       }
     },
     {
-      "tag": "美國",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "205.185.115.223",
-            "port": 19258,
-            "password": "iWnFtzMiac"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "cloudflare.com",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "httpst.mezyzzzoao",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "tuntro006.instconn.com",
-            "port": 443,
-            "password": "63b21d86-a49c-4936-a634-0b5af3e30433"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "torontorm1.686911.xyz",
-          "allowInsecure": true
-        }
-      }
-    },
-    {
-      "tag": "VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod",
+      "tag": "美国 CloudFlare节点",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "v2ray.codefyinc.com",
-            "port": 443,
+            "address": "digitalocean.com",
+            "port": 8080,
             "users": [
               {
-                "id": "2c981164-9b93-4bca-94ff-b78d3f8498d7",
+                "id": "nasnet",
                 "alterId": "0",
                 "security": "auto"
               }
@@ -469,9 +432,37 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/vmessws",
+          "path": "/NASNET/cdn?ed=2560",
           "headers": {
-            "Host": "v2ray.codefyinc.com"
+            "Host": "nasnet-571299667.rahavard365.co"
+          }
+        }
+      }
+    },
+    {
+      "tag": "VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-15",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "15.235.41.200",
+            "port": 80,
+            "users": [
+              {
+                "id": "58fe1542-5290-40ad-815a-77707a81afe5",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/IOebhLMhl1CTbFHbL95myfRX2",
+          "headers": {
+            "Host": ""
           }
         }
       }
@@ -500,39 +491,6 @@
           "path": "/api/v1/graphql",
           "headers": {
             "Host": "cg1c07.waimaojd.com"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "hgtrojan.zabc.net",
-            "port": 2083,
-            "users": [
-              {
-                "id": "e6395c20-4571-4b34-d6b1-55a5d36e49ea",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/e6395c20",
-          "headers": {
-            "Host": "hgtrojan.zabc.net"
           }
         },
         "security": "tls",
@@ -642,14 +600,136 @@
       }
     },
     {
-      "tag": "挪威 V2CROSS.COM",
+      "tag": "美国 CloudFlare节点",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vVVbNHj.191288.xYz",
+            "port": 80,
+            "users": [
+              {
+                "id": "5cccb4da-8aee-4b01-be84-2056265e52dc",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "VvVBnHj.191288.XYZ"
+          }
+        }
+      }
+    },
+    {
+      "tag": "美国 CloudFlare节点",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "rrrgt.2030.pp.ua",
+            "port": 80,
+            "users": [
+              {
+                "id": "fc3704d6-8e5e-443a-bd5b-20ec7cfbe990",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/eszjp4nTT8TxDHFepMpfNkCk8",
+          "headers": {
+            "Host": "rrrgt.2030.pp.ua"
+          }
+        }
+      }
+    },
+    {
+      "tag": "美国 CloudFlare节点",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "jjjk.191268.xyz",
+            "port": 443,
+            "users": [
+              {
+                "id": "5cccb4da-8aee-4b01-be84-2056265e52dc",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "jjjk.191268.xyz"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "美国 CloudFlare节点",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "NmK.288288.SHop",
+            "port": 443,
+            "users": [
+              {
+                "id": "5cccb4da-8aee-4b01-be84-2056265e52dc",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "NMk.288288.shoP"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "日本ripaojiedian",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "83.143.87.9",
-            "port": 18581,
-            "password": "RPyW62_b9aH.ztJKeArou"
+            "address": "52.194.222.6",
+            "port": 26378,
+            "password": "BxceQaOe"
           }
         ]
       },
@@ -657,20 +737,20 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "83.143.87.9",
-          "allowInsecure": false
+          "serverName": "t.me%252Fripaojiedian",
+          "allowInsecure": true
         }
       }
     },
     {
-      "tag": "新加坡ripaojiedian",
+      "tag": "日本2ripaojiedian",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "160.16.87.174",
-            "port": 390,
-            "password": "c1d83c0c7d57cead4379ba14a82df69b"
+            "address": "160.16.124.55",
+            "port": 3423,
+            "password": "5fb072e0ddd631cf66cf752b09210480"
           }
         ]
       },
@@ -684,14 +764,14 @@
       }
     },
     {
-      "tag": "新加坡3ripaojiedian",
+      "tag": "日本3ripaojiedian",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "18.182.62.89",
-            "port": 3579,
-            "password": "BxceQaOe"
+            "address": "160.16.116.227",
+            "port": 3423,
+            "password": "5fb072e0ddd631cf66cf752b09210480"
           }
         ]
       },
@@ -699,106 +779,20 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "t.me%252Fripaojiedian",
-          "allowInsecure": true
+          "serverName": "www.nintendogames.net",
+          "allowInsecure": false
         }
       }
     },
     {
-      "tag": "美国3ripaojiedian",
+      "tag": "新加坡ripaojiedian",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "18.182.62.89",
-            "port": 1221,
-            "password": "BxceQaOe"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "t.me%2Fripaojiedian",
-          "allowInsecure": true
-        }
-      }
-    },
-    {
-      "tag": "美国 华盛顿Cogent通信公司",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "38.180.190.4",
-            "port": 10994,
-            "users": [
-              {
-                "id": "1bdbb154-219b-4f77-c0b7-4f260ad007d1",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "none"
-      }
-    },
-    {
-      "tag": "美国 华盛顿Cogent通信公司",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "38.180.190.4",
-            "port": 20594,
-            "users": [
-              {
-                "id": "2c47bb18-de80-4416-b493-2673355d37ab",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "none"
-      }
-    },
-    {
-      "tag": "香港 电讯盈科有限公司",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "58.152.53.45",
-            "port": 443,
-            "password": "BxceQaOe"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "t.me%252Fripaojiedian",
-          "allowInsecure": true
-        }
-      }
-    },
-    {
-      "tag": "香港3ripaojiedian",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "203.198.84.150",
-            "port": 443,
-            "password": "c1d83c0c7d57cead4379ba14a82df69b"
+            "address": "160.16.89.176",
+            "port": 3076,
+            "password": "5fb072e0ddd631cf66cf752b09210480"
           }
         ]
       },
@@ -817,9 +811,9 @@
       "settings": {
         "servers": [
           {
-            "address": "152.42.254.150",
-            "port": 443,
-            "password": "c1d83c0c7d57cead4379ba14a82df69b"
+            "address": "160.16.236.32",
+            "port": 3901,
+            "password": "5fb072e0ddd631cf66cf752b09210480"
           }
         ]
       },
@@ -833,16 +827,58 @@
       }
     },
     {
-      "tag": "SG_236  2.05Mb",
+      "tag": "美国ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "160.16.231.103",
+            "port": 1276,
+            "password": "5fb072e0ddd631cf66cf752b09210480"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.nintendogames.net",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "新加坡2stairnode",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "160.16.236.32",
+            "port": 3901,
+            "password": "5fb072e0ddd631cf66cf752b09210480"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.nintendogames.net",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "日本 V2CROSS.COM",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "8.217.13.74",
-            "port": 31769,
+            "address": "160.191.245.48",
+            "port": 58623,
             "users": [
               {
-                "id": "cf1ad6c7-5987-4314-82bb-b4399040d047",
+                "id": "8d74803e-aa74-47ef-e3ae-23eeaa96f89d",
                 "alterId": "0",
                 "security": "auto"
               }
@@ -855,12 +891,34 @@
       }
     },
     {
-      "tag": "香港",
+      "tag": "香港 阿里云",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "47.242.192.233",
+            "port": 52190,
+            "users": [
+              {
+                "id": "98689724-deb2-4a3d-b83b-602221995baf",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "none"
+      }
+    },
+    {
+      "tag": "香港 电讯盈科有限公司",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "219.76.135.98",
+            "address": "112.120.31.36",
             "port": 443,
             "password": "BxceQaOe"
           }
@@ -871,59 +929,17 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "t.me%252Fripaojiedian",
-          "allowInsecure": true
+          "allowInsecure": false
         }
       }
     },
     {
-      "tag": "香港",
+      "tag": "香港5ripaojiedian",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "58.152.53.45",
-            "port": 443,
-            "password": "BxceQaOe"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "",
-          "allowInsecure": true
-        }
-      }
-    },
-    {
-      "tag": "香港",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "58.152.53.45",
-            "port": 443,
-            "password": "BxceQaOe"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "58.152.53.45",
-          "allowInsecure": true
-        }
-      }
-    },
-    {
-      "tag": "香港",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "58.152.53.45",
+            "address": "112.120.31.36",
             "port": 443,
             "password": "BxceQaOe"
           }
@@ -935,112 +951,6 @@
         "tlsSettings": {
           "serverName": "t.me%2Fripaojiedian",
           "allowInsecure": true
-        }
-      }
-    },
-    {
-      "tag": "香港stairnode",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "v10.hdacd.com",
-            "port": 30807,
-            "users": [
-              {
-                "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "新加坡2stairnode",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "152.42.254.150",
-            "port": 443,
-            "password": "c1d83c0c7d57cead4379ba14a82df69b"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.nintendogames.net",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "加拿大 V2CROSS.COM",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "167.17.185.172",
-            "port": 10889,
-            "password": "cTv.9PDdCt-wybBrG1qlxI5UJuaEj"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "web.max.ru",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "台湾省台中市 中华电信",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "green2.cdntencentmusic.com",
-            "port": 31101,
-            "password": "f3582fb3-6a0e-482b-a560-8c19dd40cce9"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "green2.cdntencentmusic.com",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "台湾省台中市 中华电信",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "220.130.58.136",
-            "port": 35501,
-            "password": "223c2f69-6b95-4555-9f68-14b14d72b7ea"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "green2.cdntencentmusic.com",
-          "allowInsecure": false
         }
       }
     },
@@ -1067,17 +977,17 @@
       }
     },
     {
-      "tag": "香港2ripaojiedian",
+      "tag": "香港stairnode",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "609a8c34-t9w4g0-thiwul-1gcq2.hkt.gotochinatown.net",
-            "port": 80,
+            "address": "v10.hdacd.com",
+            "port": 30807,
             "users": [
               {
-                "id": "759bf004-6137-11ec-bd7c-f23c913c8d2b",
-                "alterId": "2",
+                "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+                "alterId": "0",
                 "security": "auto"
               }
             ]
@@ -1085,47 +995,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "broadcastlv.chat.bilibili.com"
-          }
-        }
+        "network": "tcp"
       }
     },
     {
-      "tag": "HK TROJAN-25  free-nodes",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "58.152.53.45",
-            "port": 443,
-            "password": "BxceQaOe"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "t.me/ripaojiedian",
-          "allowInsecure": true
-        }
-      }
-    },
-    {
-      "tag": "香港2stairnode",
+      "tag": "美国 CloudFlare节点",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "609a8c34-t9w4g0-thiwul-1gcq2.hkt.gotochinatown.net",
-            "port": 80,
+            "address": "tttyu.2030.pp.ua",
+            "port": 443,
             "users": [
               {
-                "id": "759bf004-6137-11ec-bd7c-f23c913c8d2b",
+                "id": "fc3704d6-8e5e-443a-bd5b-20ec7cfbe990",
                 "alterId": "0",
                 "security": "auto"
               }
@@ -1136,10 +1019,15 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/",
+          "path": "/eszjp4nTT8TxDHFepMpfNkCk8",
           "headers": {
-            "Host": "broadcastlv.chat.bilibili.com"
+            "Host": "tttyu.2030.pp.ua"
           }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
         }
       }
     }
