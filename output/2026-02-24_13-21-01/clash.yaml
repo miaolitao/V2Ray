@@ -79,9 +79,9 @@ proxies:
     headers:
       Host: cg1c01.waimaojd.com
   tls: true
-- name: VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
+- name: VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
   type: vmess
-  server: cg1c04.waimaojd.com
+  server: cg1c14.waimaojd.com
   port: 443
   uuid: be8e3136-b874-4085-bd23-ec3699300490
   alterId: '0'
@@ -90,7 +90,7 @@ proxies:
   ws-opts:
     path: /api/v1/graphql
     headers:
-      Host: cg1c04.waimaojd.com
+      Host: cg1c14.waimaojd.com
   tls: true
 - name: 英国 V2CROSS.COM
   type: vmess
@@ -99,6 +99,56 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: '0'
   cipher: auto
+- name: 美国 CloudFlare节点
+  type: vmess
+  server: 104.17.77.77
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+  tls: true
+- name: 美国 CloudFlare节点
+  type: vmess
+  server: 104.26.14.137
+  port: 80
+  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tr1-smart.adelping.com.
+- name: 美国 CloudFlare节点
+  type: vmess
+  server: 104.26.14.137
+  port: 80
+  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
+    headers:
+      Host: tr1-smart.adelping.com.
+- name: 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司
+  type: vmess
+  server: 198.71.191.199
+  port: 443
+  uuid: f08369d1-5ee7-4b16-d786-30bce12fc33c
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+  tls: true
 - name: _US_美国
   type: trojan
   server: 216.24.57.250
@@ -129,21 +179,9 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
     headers:
       Host: ''
-- name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-209.126.8
+- name: VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
   type: vmess
-  server: 209.126.84.189
-  port: 443
-  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
-  alterId: '0'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmessws
-    headers:
-      Host: 209.126.84.189
-- name: VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
-  type: vmess
-  server: cg1c14.waimaojd.com
+  server: cg1c04.waimaojd.com
   port: 443
   uuid: be8e3136-b874-4085-bd23-ec3699300490
   alterId: '0'
@@ -152,8 +190,40 @@ proxies:
   ws-opts:
     path: /api/v1/graphql
     headers:
-      Host: cg1c14.waimaojd.com
+      Host: cg1c04.waimaojd.com
   tls: true
+- name: 美国 CloudFlare节点
+  type: vmess
+  server: turk1.net.net
+  port: 80
+  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tr1-smart.adelping.com.
+- name: 日本ripaojiedian
+  type: trojan
+  server: 54.250.16.92
+  port: 2595
+  password: BxceQaOe
+  sni: t.me%252Fripaojiedian
+  skip-cert-verify: true
+- name: 日本3ripaojiedian
+  type: trojan
+  server: 153.121.45.139
+  port: 3423
+  password: 64a59181551b5773e390bd717a7b7c06
+  sni: www.nintendogames.net
+- name: 新加坡2ripaojiedian
+  type: trojan
+  server: 160.16.132.38
+  port: 3419
+  password: 64a59181551b5773e390bd717a7b7c06
+  sni: www.nintendogames.net
+  skip-cert-verify: true
 - name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod
   type: vmess
   server: v2ray.codefyinc.com
@@ -179,68 +249,6 @@ proxies:
     headers:
       Host: cg1c07.waimaojd.com
   tls: true
-- name: 台湾省台中市 中华电信
-  type: trojan
-  server: 220.130.58.136
-  port: 31101
-  password: 4250b3bb-d1ae-4e77-bf71-4069e0d2c383
-  sni: green2.cdntencentmusic.com
-- name: 美国 CloudFlare节点
-  type: vmess
-  server: nhj.1jj.ccwu.cc
-  port: 443
-  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  alterId: '0'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /iSRWSKUJKNuXvVzsYHmsMrnO
-    headers:
-      Host: nhj.1jj.ccwu.cc
-  tls: true
-- name: 冰岛 V2CROSS.COM
-  type: trojan
-  server: 37.235.49.209
-  port: 28099
-  password: qmBSKnAl6LYi9=z23Rs.Z
-  sni: celestialcorset.crystalhamster.click
-- name: 西班牙 V2CROSS.COM
-  type: trojan
-  server: 80.173.231.254
-  port: 12420
-  password: wp9IsiY82uQhcmgNC1eoBM
-  sni: www.semanticstaplegun.click
-- name: 日本2ripaojiedian
-  type: trojan
-  server: 160.16.144.208
-  port: 3423
-  password: 64a59181551b5773e390bd717a7b7c06
-  sni: www.nintendogames.net
-- name: 日本3ripaojiedian
-  type: trojan
-  server: 153.121.39.240
-  port: 193
-  password: 64a59181551b5773e390bd717a7b7c06
-  sni: www.nintendogames.net
-- name: 美国 V2CROSS.COM
-  type: vmess
-  server: dll.avaaaal.ir
-  port: 8443
-  uuid: 725f5fcd-721d-40a0-ba6b-3c7477633110
-  alterId: '0'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdge.avaaaal.ir
-  tls: true
-- name: 台湾省台中市 中华电信
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 31103
-  password: 4250b3bb-d1ae-4e77-bf71-4069e0d2c383
-  sni: green2.cdntencentmusic.com
 - name: 香港ripaojiedian
   type: vmess
   server: v10.hdacd.com
@@ -250,17 +258,24 @@ proxies:
   cipher: auto
 - name: 美国 CloudFlare节点
   type: vmess
-  server: bnj.0nn.ccwu.cc
+  server: njmk.dddc.de5.net
   port: 443
-  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+  uuid: 34778794-72e8-4862-b1e7-6e6c3ba894be
   alterId: '0'
   cipher: auto
   network: ws
   ws-opts:
-    path: /iSRWSKUJKNuXvVzsYHmsMrnO
+    path: /qlWiWOdPkCVqBXYWmzP5D1vsO
     headers:
-      Host: bnj.0nn.ccwu.cc
+      Host: njmk.dddc.de5.net
   tls: true
+- name: 台湾省台中市 中华电信
+  type: trojan
+  server: green2.cdntencentmusic.com
+  port: 35502
+  password: 415e1712-0170-42dd-a4cd-5e95bef256db
+  sni: green2.cdntencentmusic.com
+  skip-cert-verify: true
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -274,25 +289,25 @@ proxy-groups:
   - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
   - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
-  - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
+  - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
   - 英国 V2CROSS.COM
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点
+  - 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司
   - _US_美国
   - VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-15
   - VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51
-  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-209.126.8
-  - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
+  - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
+  - 美国 CloudFlare节点
+  - 日本ripaojiedian
+  - 日本3ripaojiedian
+  - 新加坡2ripaojiedian
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
-  - 台湾省台中市 中华电信
-  - 美国 CloudFlare节点
-  - 冰岛 V2CROSS.COM
-  - 西班牙 V2CROSS.COM
-  - 日本2ripaojiedian
-  - 日本3ripaojiedian
-  - 美国 V2CROSS.COM
-  - 台湾省台中市 中华电信
   - 香港ripaojiedian
   - 美国 CloudFlare节点
+  - 台湾省台中市 中华电信
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -304,25 +319,25 @@ proxy-groups:
   - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
   - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
-  - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
+  - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
   - 英国 V2CROSS.COM
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点
+  - 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司
   - _US_美国
   - VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-15
   - VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51
-  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-209.126.8
-  - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
+  - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
+  - 美国 CloudFlare节点
+  - 日本ripaojiedian
+  - 日本3ripaojiedian
+  - 新加坡2ripaojiedian
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
-  - 台湾省台中市 中华电信
-  - 美国 CloudFlare节点
-  - 冰岛 V2CROSS.COM
-  - 西班牙 V2CROSS.COM
-  - 日本2ripaojiedian
-  - 日本3ripaojiedian
-  - 美国 V2CROSS.COM
-  - 台湾省台中市 中华电信
   - 香港ripaojiedian
   - 美国 CloudFlare节点
+  - 台湾省台中市 中华电信
 - name: 🔮 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
