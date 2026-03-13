@@ -18,18 +18,6 @@ proxies:
     headers:
       Host: t1.620720.xyz
   tls: true
-- name: VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-15
-  type: vmess
-  server: 15.235.41.200
-  port: 80
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  alterId: '0'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /IOebhLMhl1CTbFHbL95myfRX2
-    headers:
-      Host: ''
 - name: VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51
   type: vmess
   server: 51.79.102.253
@@ -42,6 +30,28 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
     headers:
       Host: ''
+- name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
+  type: ssr
+  server: 107.151.182.253
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6?
+  protocol: origin
+  obfs: plain
+  protocol-param: ''
+  obfs-param: ''
+- name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod
+  type: vmess
+  server: v2ray.codefyinc.com
+  port: 443
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmessws
+    headers:
+      Host: v2ray.codefyinc.com
 - name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-209.126.8
   type: vmess
   server: 209.126.84.189
@@ -73,28 +83,18 @@ proxies:
   port: 443
   password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
   sni: afrcloud1.mmv.kr
-- name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
-  type: ssr
-  server: 107.151.182.253
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6?
-  protocol: origin
-  obfs: plain
-  protocol-param: ''
-  obfs-param: ''
-- name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod
+- name: VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-15
   type: vmess
-  server: v2ray.codefyinc.com
-  port: 443
-  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  server: 15.235.41.200
+  port: 80
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
   alterId: '0'
   cipher: auto
   network: ws
   ws-opts:
-    path: /vmessws
+    path: /IOebhLMhl1CTbFHbL95myfRX2
     headers:
-      Host: v2ray.codefyinc.com
+      Host: ''
 - name: SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
   type: ssr
   server: 79.127.233.170
@@ -105,37 +105,6 @@ proxies:
   obfs: plain
   protocol-param: ''
   obfs-param: ''
-- name: VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
-  type: vmess
-  server: support.zoom.us
-  port: 8080
-  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
-  alterId: '0'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /@Malinda6104
-    headers:
-      Host: support.zoom.us
-- name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
-  type: vmess
-  server: cg1c01.waimaojd.com
-  port: 443
-  uuid: be8e3136-b874-4085-bd23-ec3699300490
-  alterId: '0'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /api/v1/graphql
-    headers:
-      Host: cg1c01.waimaojd.com
-  tls: true
-- name: 西班牙 V2CROSS.COM
-  type: trojan
-  server: 80.173.230.196
-  port: 26279
-  password: a5inYFE=JGV89+hjxIqgDp1tcWBd6
-  sni: io.ozone.ru
 - name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
   type: vmess
   server: cg1c07.waimaojd.com
@@ -149,6 +118,18 @@ proxies:
     headers:
       Host: cg1c07.waimaojd.com
   tls: true
+- name: VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
+  type: vmess
+  server: support.zoom.us
+  port: 8080
+  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /@Malinda6104
+    headers:
+      Host: support.zoom.us
 - name: VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
   type: vmess
   server: hgtrojan.zabc.net
@@ -161,6 +142,19 @@ proxies:
     path: /e6395c20
     headers:
       Host: hgtrojan.zabc.net
+  tls: true
+- name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
+  type: vmess
+  server: cg1c01.waimaojd.com
+  port: 443
+  uuid: be8e3136-b874-4085-bd23-ec3699300490
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      Host: cg1c01.waimaojd.com
   tls: true
 - name: VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
   type: vmess
@@ -188,48 +182,50 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
   tls: true
+- name: 英国 V2CROSS.COM
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: 西班牙 V2CROSS.COM
+  type: trojan
+  server: 80.173.230.196
+  port: 26279
+  password: a5inYFE=JGV89+hjxIqgDp1tcWBd6
+  sni: io.ozone.ru
 - name: 日本2ripaojiedian
   type: trojan
-  server: 160.16.214.104
-  port: 2001
+  server: 153.121.38.213
+  port: 34818
   password: f389ed926e512e15f382dc3804029474
   sni: www.nintendogames.net
 - name: 日本3ripaojiedian
   type: trojan
-  server: 160.16.214.104
+  server: 160.16.85.33
   port: 4937
   password: f389ed926e512e15f382dc3804029474
   sni: www.nintendogames.net
 - name: 新加坡ripaojiedian
   type: trojan
-  server: 160.16.214.104
+  server: 160.16.85.33
   port: 3419
   password: f7dbed8b1ca85124e793ba6c0bcfd0db
   sni: www.nintendogames.net
 - name: 新加坡2ripaojiedian
   type: trojan
-  server: 160.16.214.104
+  server: 160.16.85.33
   port: 4674
   password: f389ed926e512e15f382dc3804029474
   sni: www.nintendogames.net
-- name: 美国ripaojiedian
-  type: trojan
-  server: 160.16.214.104
-  port: 3057
-  password: f389ed926e512e15f382dc3804029474
-  sni: www.nintendogames.net
-- name: 加拿大 V2CROSS.COM
-  type: trojan
-  server: 167.17.185.152
-  port: 10889
-  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-  sni: ozon.ru
-- name: 加拿大 V2CROSS.COM
-  type: trojan
-  server: 167.17.185.228
-  port: 10889
-  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-  sni: web.max
+- name: 广东省广州市 电信
+  type: vmess
+  server: pub.ap20260228.com
+  port: 64018
+  uuid: a739e782-1682-38a5-9153-aad09d779ae9
+  alterId: '0'
+  cipher: auto
 - name: 香港ripaojiedian
   type: vmess
   server: v10.hdacd.com
@@ -237,6 +233,31 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: '2'
   cipher: auto
+- name: 广东省广州市 移动
+  type: trojan
+  server: jp05.stimaysmhy8.com
+  port: 35203
+  password: d5fa43f9-1ace-4b8f-b865-627e67b1fe37
+  sni: jsygouer.weixin-baidu-qq.com
+- name: 广东省广州市 移动
+  type: trojan
+  server: sg03.stimaysmhy8.com
+  port: 35902
+  password: d5fa43f9-1ace-4b8f-b865-627e67b1fe37
+  sni: jsygouer.weixin-baidu-qq.com
+  skip-cert-verify: true
+- name: 广东省江门市 移动
+  type: trojan
+  server: tw05.stimaysmhy8.com
+  port: 31500
+  password: d5fa43f9-1ace-4b8f-b865-627e67b1fe37
+  sni: jsygouer.weixin-baidu-qq.com
+- name: 四川省广元市 移动
+  type: trojan
+  server: my01.jsylianjie6.com
+  port: 45720
+  password: d5fa43f9-1ace-4b8f-b865-627e67b1fe37
+  sni: jsygouer.weixin-baidu-qq.com
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -245,58 +266,64 @@ proxy-groups:
   - 🔮 负载均衡
   - DIRECT
   - VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720
-  - VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-15
   - VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51
+  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
+  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-209.126.8
   - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
   - _US_美国
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
-  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod
+  - VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-15
   - SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
-  - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
-  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
-  - 西班牙 V2CROSS.COM
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
+  - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
   - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
+  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
+  - 英国 V2CROSS.COM
+  - 西班牙 V2CROSS.COM
   - 日本2ripaojiedian
   - 日本3ripaojiedian
   - 新加坡ripaojiedian
   - 新加坡2ripaojiedian
-  - 美国ripaojiedian
-  - 加拿大 V2CROSS.COM
-  - 加拿大 V2CROSS.COM
+  - 广东省广州市 电信
   - 香港ripaojiedian
+  - 广东省广州市 移动
+  - 广东省广州市 移动
+  - 广东省江门市 移动
+  - 四川省广元市 移动
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: &id001
   - VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720
-  - VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-15
   - VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51
+  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
+  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-209.126.8
   - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
   - _US_美国
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
-  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod
+  - VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-15
   - SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
-  - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
-  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
-  - 西班牙 V2CROSS.COM
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
+  - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
   - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
+  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
+  - 英国 V2CROSS.COM
+  - 西班牙 V2CROSS.COM
   - 日本2ripaojiedian
   - 日本3ripaojiedian
   - 新加坡ripaojiedian
   - 新加坡2ripaojiedian
-  - 美国ripaojiedian
-  - 加拿大 V2CROSS.COM
-  - 加拿大 V2CROSS.COM
+  - 广东省广州市 电信
   - 香港ripaojiedian
+  - 广东省广州市 移动
+  - 广东省广州市 移动
+  - 广东省江门市 移动
+  - 四川省广元市 移动
 - name: 🔮 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
