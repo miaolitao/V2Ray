@@ -93,31 +93,6 @@ proxies:
     headers:
       Host: sy4.620720.xyz
   tls: true
-- name: VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
-  type: vmess
-  server: hgtrojan.zabc.net
-  port: 2083
-  uuid: e6395c20-4571-4b34-d6b1-55a5d36e49ea
-  alterId: '0'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /e6395c20
-    headers:
-      Host: hgtrojan.zabc.net
-  tls: true
-- name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod
-  type: vmess
-  server: v2ray.codefyinc.com
-  port: 443
-  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
-  alterId: '0'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmessws
-    headers:
-      Host: v2ray.codefyinc.com
 - name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
   type: vmess
   server: cg1c07.waimaojd.com
@@ -143,6 +118,19 @@ proxies:
     path: /vmessws
     headers:
       Host: 209.126.84.189
+- name: VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
+  type: vmess
+  server: hgtrojan.zabc.net
+  port: 2083
+  uuid: e6395c20-4571-4b34-d6b1-55a5d36e49ea
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /e6395c20
+    headers:
+      Host: hgtrojan.zabc.net
+  tls: true
 - name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
   type: vmess
   server: cg1c01.waimaojd.com
@@ -156,50 +144,6 @@ proxies:
     headers:
       Host: cg1c01.waimaojd.com
   tls: true
-- name: 法国 V2CROSS.COM
-  type: vmess
-  server: 141.11.21.219
-  port: 50521
-  uuid: 7b4c6795-3be5-4a4e-b234-07a46f580c45
-  alterId: '0'
-  cipher: auto
-  tls: true
-- name: 西班牙 V2CROSS.COM
-  type: trojan
-  server: 80.173.230.196
-  port: 26279
-  password: a5inYFE=JGV89+hjxIqgDp1tcWBd6
-  sni: io.ozone.ru
-- name: 日本2ripaojiedian
-  type: trojan
-  server: 160.16.214.104
-  port: 2001
-  password: f389ed926e512e15f382dc3804029474
-  sni: www.nintendogames.net
-- name: 日本3ripaojiedian
-  type: trojan
-  server: 160.16.214.104
-  port: 4937
-  password: f389ed926e512e15f382dc3804029474
-  sni: www.nintendogames.net
-- name: 新加坡ripaojiedian
-  type: trojan
-  server: 160.16.214.104
-  port: 3419
-  password: f7dbed8b1ca85124e793ba6c0bcfd0db
-  sni: www.nintendogames.net
-- name: 新加坡2ripaojiedian
-  type: trojan
-  server: 160.16.214.104
-  port: 4674
-  password: f389ed926e512e15f382dc3804029474
-  sni: www.nintendogames.net
-- name: 美国ripaojiedian
-  type: trojan
-  server: 160.16.214.104
-  port: 3057
-  password: f389ed926e512e15f382dc3804029474
-  sni: www.nintendogames.net
 - name: VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
   type: vmess
   server: cg1c04.waimaojd.com
@@ -226,18 +170,67 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
   tls: true
+- name: 保加利亚 V2CROSS.COM
+  type: trojan
+  server: 78.159.131.12
+  port: 28259
+  password: MeaDiUmPlkWbZJ2BON8tz
+  sni: ads.x5.ru
 - name: 加拿大 V2CROSS.COM
   type: trojan
-  server: 167.17.185.152
+  server: 167.17.185.172
   port: 10889
   password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-  sni: ozon.ru
-- name: 加拿大 V2CROSS.COM
+  sni: web.max.ru
+- name: 美国 华盛顿Cogent通信公司
+  type: vmess
+  server: 38.55.194.138
+  port: 443
+  uuid: 462d9694-62b5-4781-a287-61a422b920e8
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vvip
+    headers:
+      Host: mn1ray.jagoanvip.xyz
+  tls: true
+- name: 日本2ripaojiedian
   type: trojan
-  server: 167.17.185.228
-  port: 10889
-  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-  sni: web.max
+  server: 153.121.38.213
+  port: 34818
+  password: f389ed926e512e15f382dc3804029474
+  sni: www.nintendogames.net
+- name: 日本3ripaojiedian
+  type: trojan
+  server: 160.16.85.33
+  port: 4937
+  password: f389ed926e512e15f382dc3804029474
+  sni: www.nintendogames.net
+- name: 新加坡ripaojiedian
+  type: trojan
+  server: 160.16.85.33
+  port: 3419
+  password: f7dbed8b1ca85124e793ba6c0bcfd0db
+  sni: www.nintendogames.net
+- name: 新加坡2ripaojiedian
+  type: trojan
+  server: 160.16.85.33
+  port: 4674
+  password: f389ed926e512e15f382dc3804029474
+  sni: www.nintendogames.net
+- name: 英国 V2CROSS.COM
+  type: vmess
+  server: t.cnmjcn.cyou
+  port: 16617
+  uuid: 38207de1-de96-4f78-867b-7be6b41ef1dd
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 3dfc06a29f8ae09dec34988159d21bee.mobgslb.tbcache.com
 - name: 香港ripaojiedian
   type: vmess
   server: v10.hdacd.com
@@ -260,22 +253,20 @@ proxy-groups:
   - VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720
   - SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
   - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
-  - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
-  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-209.126.8
+  - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
-  - 法国 V2CROSS.COM
-  - 西班牙 V2CROSS.COM
+  - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
+  - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
+  - 保加利亚 V2CROSS.COM
+  - 加拿大 V2CROSS.COM
+  - 美国 华盛顿Cogent通信公司
   - 日本2ripaojiedian
   - 日本3ripaojiedian
   - 新加坡ripaojiedian
   - 新加坡2ripaojiedian
-  - 美国ripaojiedian
-  - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
-  - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
-  - 加拿大 V2CROSS.COM
-  - 加拿大 V2CROSS.COM
+  - 英国 V2CROSS.COM
   - 香港ripaojiedian
 - name: ♻️ 自动选择
   type: url-test
@@ -290,22 +281,20 @@ proxy-groups:
   - VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720
   - SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
   - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
-  - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
-  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-209.126.8
+  - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
-  - 法国 V2CROSS.COM
-  - 西班牙 V2CROSS.COM
+  - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
+  - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
+  - 保加利亚 V2CROSS.COM
+  - 加拿大 V2CROSS.COM
+  - 美国 华盛顿Cogent通信公司
   - 日本2ripaojiedian
   - 日本3ripaojiedian
   - 新加坡ripaojiedian
   - 新加坡2ripaojiedian
-  - 美国ripaojiedian
-  - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
-  - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
-  - 加拿大 V2CROSS.COM
-  - 加拿大 V2CROSS.COM
+  - 英国 V2CROSS.COM
   - 香港ripaojiedian
 - name: 🔮 负载均衡
   type: load-balance

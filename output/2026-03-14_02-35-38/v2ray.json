@@ -189,67 +189,6 @@
       }
     },
     {
-      "tag": "VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "hgtrojan.zabc.net",
-            "port": 2083,
-            "users": [
-              {
-                "id": "e6395c20-4571-4b34-d6b1-55a5d36e49ea",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/e6395c20",
-          "headers": {
-            "Host": "hgtrojan.zabc.net"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "v2ray.codefyinc.com",
-            "port": 443,
-            "users": [
-              {
-                "id": "2c981164-9b93-4bca-94ff-b78d3f8498d7",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/vmessws",
-          "headers": {
-            "Host": "v2ray.codefyinc.com"
-          }
-        }
-      }
-    },
-    {
       "tag": "VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa",
       "protocol": "vmess",
       "settings": {
@@ -311,6 +250,39 @@
       }
     },
     {
+      "tag": "VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "hgtrojan.zabc.net",
+            "port": 2083,
+            "users": [
+              {
+                "id": "e6395c20-4571-4b34-d6b1-55a5d36e49ea",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/e6395c20",
+          "headers": {
+            "Host": "hgtrojan.zabc.net"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
       "tag": "VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa",
       "protocol": "vmess",
       "settings": {
@@ -339,159 +311,6 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "法国 V2CROSS.COM",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "141.11.21.219",
-            "port": 50521,
-            "users": [
-              {
-                "id": "7b4c6795-3be5-4a4e-b234-07a46f580c45",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "西班牙 V2CROSS.COM",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "80.173.230.196",
-            "port": 26279,
-            "password": "a5inYFE=JGV89+hjxIqgDp1tcWBd6"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "io.ozone.ru",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "日本2ripaojiedian",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "160.16.214.104",
-            "port": 2001,
-            "password": "f389ed926e512e15f382dc3804029474"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.nintendogames.net",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "日本3ripaojiedian",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "160.16.214.104",
-            "port": 4937,
-            "password": "f389ed926e512e15f382dc3804029474"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.nintendogames.net",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "新加坡ripaojiedian",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "160.16.214.104",
-            "port": 3419,
-            "password": "f7dbed8b1ca85124e793ba6c0bcfd0db"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.nintendogames.net",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "新加坡2ripaojiedian",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "160.16.214.104",
-            "port": 4674,
-            "password": "f389ed926e512e15f382dc3804029474"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.nintendogames.net",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "美国ripaojiedian",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "160.16.214.104",
-            "port": 3057,
-            "password": "f389ed926e512e15f382dc3804029474"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.nintendogames.net",
           "allowInsecure": false
         }
       }
@@ -563,14 +382,14 @@
       }
     },
     {
-      "tag": "加拿大 V2CROSS.COM",
+      "tag": "保加利亚 V2CROSS.COM",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "167.17.185.152",
-            "port": 10889,
-            "password": "cTv.9PDdCt-wybBrG1qlxI5UJuaEj"
+            "address": "78.159.131.12",
+            "port": 28259,
+            "password": "MeaDiUmPlkWbZJ2BON8tz"
           }
         ]
       },
@@ -578,7 +397,7 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "ozon.ru",
+          "serverName": "ads.x5.ru",
           "allowInsecure": false
         }
       }
@@ -589,7 +408,7 @@
       "settings": {
         "servers": [
           {
-            "address": "167.17.185.228",
+            "address": "167.17.185.172",
             "port": 10889,
             "password": "cTv.9PDdCt-wybBrG1qlxI5UJuaEj"
           }
@@ -599,8 +418,153 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "web.max",
+          "serverName": "web.max.ru",
           "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "美国 华盛顿Cogent通信公司",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "38.55.194.138",
+            "port": 443,
+            "users": [
+              {
+                "id": "462d9694-62b5-4781-a287-61a422b920e8",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/vvip",
+          "headers": {
+            "Host": "mn1ray.jagoanvip.xyz"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "日本2ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "153.121.38.213",
+            "port": 34818,
+            "password": "f389ed926e512e15f382dc3804029474"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.nintendogames.net",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "日本3ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "160.16.85.33",
+            "port": 4937,
+            "password": "f389ed926e512e15f382dc3804029474"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.nintendogames.net",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "新加坡ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "160.16.85.33",
+            "port": 3419,
+            "password": "f7dbed8b1ca85124e793ba6c0bcfd0db"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.nintendogames.net",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "新加坡2ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "160.16.85.33",
+            "port": 4674,
+            "password": "f389ed926e512e15f382dc3804029474"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.nintendogames.net",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "英国 V2CROSS.COM",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "t.cnmjcn.cyou",
+            "port": 16617,
+            "users": [
+              {
+                "id": "38207de1-de96-4f78-867b-7be6b41ef1dd",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "3dfc06a29f8ae09dec34988159d21bee.mobgslb.tbcache.com"
+          }
         }
       }
     },
