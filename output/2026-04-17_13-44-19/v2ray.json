@@ -51,34 +51,6 @@
       }
     },
     {
-      "tag": "VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "v2ray.codefyinc.com",
-            "port": 443,
-            "users": [
-              {
-                "id": "2c981164-9b93-4bca-94ff-b78d3f8498d7",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/vmessws",
-          "headers": {
-            "Host": "v2ray.codefyinc.com"
-          }
-        }
-      }
-    },
-    {
       "tag": "VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su",
       "protocol": "vmess",
       "settings": {
@@ -107,34 +79,6 @@
       }
     },
     {
-      "tag": "VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-209.126.8",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "209.126.84.189",
-            "port": 443,
-            "users": [
-              {
-                "id": "2c981164-9b93-4bca-94ff-b78d3f8498d7",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/vmessws",
-          "headers": {
-            "Host": "209.126.84.189"
-          }
-        }
-      }
-    },
-    {
       "tag": "VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s",
       "protocol": "vmess",
       "settings": {
@@ -158,104 +102,6 @@
           "path": "/",
           "headers": {
             "Host": "sy4.620720.xyz"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "_US_美国",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "216.24.57.250",
-            "port": 443,
-            "password": "5027e2a4-c4d2-463a-9508-83a2c7d1ad83"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "afrcloud1.mmv.kr",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "英国 V2CROSS.COM",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "82.198.246.46",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "英国 V2CROSS.COM",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "82.198.246.97",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "cg1c07.waimaojd.com",
-            "port": 443,
-            "users": [
-              {
-                "id": "be8e3136-b874-4085-bd23-ec3699300490",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/api/v1/graphql",
-          "headers": {
-            "Host": "cg1c07.waimaojd.com"
           }
         },
         "security": "tls",
@@ -299,6 +145,88 @@
       }
     },
     {
+      "tag": "_US_美国",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "216.24.57.250",
+            "port": 443,
+            "password": "5027e2a4-c4d2-463a-9508-83a2c7d1ad83"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "afrcloud1.mmv.kr",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "cg1c07.waimaojd.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "be8e3136-b874-4085-bd23-ec3699300490",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/api/v1/graphql",
+          "headers": {
+            "Host": "cg1c07.waimaojd.com"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-209.126.8",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "209.126.84.189",
+            "port": 443,
+            "users": [
+              {
+                "id": "2c981164-9b93-4bca-94ff-b78d3f8498d7",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/vmessws",
+          "headers": {
+            "Host": "209.126.84.189"
+          }
+        }
+      }
+    },
+    {
       "tag": "VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa",
       "protocol": "vmess",
       "settings": {
@@ -328,6 +256,78 @@
         "tlsSettings": {
           "serverName": "",
           "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "英国 V2CROSS.COM",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "82.198.246.250",
+            "port": 180,
+            "users": [
+              {
+                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "英国 V2CROSS.COM",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "82.198.246.46",
+            "port": 180,
+            "users": [
+              {
+                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "v2ray.codefyinc.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "2c981164-9b93-4bca-94ff-b78d3f8498d7",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/vmessws",
+          "headers": {
+            "Host": "v2ray.codefyinc.com"
+          }
         }
       }
     },
@@ -398,14 +398,14 @@
       }
     },
     {
-      "tag": "英国 伦敦Virgin Media",
+      "tag": "日本3ripaojiedian",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "82.26.155.3",
-            "port": 10369,
-            "password": "n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj"
+            "address": "160.16.85.33",
+            "port": 4380,
+            "password": "868ecdaf6aed618ec98cf78585672b2b"
           }
         ]
       },
@@ -413,20 +413,20 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "fra34.chasem2026sud.com",
+          "serverName": "www.nintendogames.net",
           "allowInsecure": false
         }
       }
     },
     {
-      "tag": "俄罗斯 V2CROSS.COM",
+      "tag": "美国2ripaojiedian",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "194.87.10.31",
-            "port": 23357,
-            "password": "fQmMJwOLMlqHednu2SVED8gi-+H-db9kbg"
+            "address": "160.16.132.38",
+            "port": 4019,
+            "password": "868ecdaf6aed618ec98cf78585672b2b"
           }
         ]
       },
@@ -434,23 +434,23 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "sgp9.node-resource.click",
+          "serverName": "www.nintendogames.net",
           "allowInsecure": false
         }
       }
     },
     {
-      "tag": "香港 电讯盈科有限公司",
+      "tag": "香港ripaojiedian",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "efan.dnsefan04881.com",
-            "port": 7754,
+            "address": "v10.hdacd.com",
+            "port": 30807,
             "users": [
               {
-                "id": "009e558d-3cf4-49d8-b5e4-82c9e14fe1a4",
-                "alterId": "0",
+                "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+                "alterId": "2",
                 "security": "auto"
               }
             ]
