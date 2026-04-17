@@ -112,6 +112,34 @@
       }
     },
     {
+      "tag": "VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-209.126.8",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "209.126.84.189",
+            "port": 443,
+            "users": [
+              {
+                "id": "2c981164-9b93-4bca-94ff-b78d3f8498d7",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/vmessws",
+          "headers": {
+            "Host": "209.126.84.189"
+          }
+        }
+      }
+    },
+    {
       "tag": "VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s",
       "protocol": "vmess",
       "settings": {
@@ -244,12 +272,45 @@
       }
     },
     {
+      "tag": "VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "cg1c14.waimaojd.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "be8e3136-b874-4085-bd23-ec3699300490",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/api/v1/graphql",
+          "headers": {
+            "Host": "cg1c14.waimaojd.com"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
       "tag": "英国 V2CROSS.COM",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "82.198.246.46",
+            "address": "82.198.246.250",
             "port": 180,
             "users": [
               {
@@ -285,48 +346,6 @@
       },
       "streamSettings": {
         "network": "tcp"
-      }
-    },
-    {
-      "tag": "US美国(mibei77.com 米贝节点分享)",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "167.68.4.199",
-            "port": 2053,
-            "password": "Aimer"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "epge.muarua.filegear-sg.me",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "HK香港(mibei77.com 米贝节点分享)",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "109.234.211.66",
-            "port": 2087,
-            "password": "trojan"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "store.timimi.dpdns.org",
-          "allowInsecure": false
-        }
       }
     },
     {
@@ -379,42 +398,14 @@
       }
     },
     {
-      "tag": "VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-209.126.8",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "209.126.84.189",
-            "port": 443,
-            "users": [
-              {
-                "id": "2c981164-9b93-4bca-94ff-b78d3f8498d7",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/vmessws",
-          "headers": {
-            "Host": "209.126.84.189"
-          }
-        }
-      }
-    },
-    {
-      "tag": "西班牙 V2CROSS.COM",
+      "tag": "日本3ripaojiedian",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "80.173.230.196",
-            "port": 26279,
-            "password": "a5inYFE=JGV89+hjxIqgDp1tcWBd6"
+            "address": "160.16.85.33",
+            "port": 4380,
+            "password": "868ecdaf6aed618ec98cf78585672b2b"
           }
         ]
       },
@@ -422,20 +413,20 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "",
+          "serverName": "www.nintendogames.net",
           "allowInsecure": false
         }
       }
     },
     {
-      "tag": "保加利亚 V2CROSS.COM",
+      "tag": "美国2ripaojiedian",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "78.159.131.12",
-            "port": 28259,
-            "password": "MeaDiUmPlkWbZJ2BON8tz"
+            "address": "160.16.132.38",
+            "port": 4019,
+            "password": "868ecdaf6aed618ec98cf78585672b2b"
           }
         ]
       },
@@ -443,91 +434,7 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "ads.x5.ru",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "US美国(mibei77.com 米贝节点分享)",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "152.53.200.98",
-            "port": 8444,
-            "password": "trojan"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "jflsjlaf.pages.dev",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "DE德国(mibei77.com 米贝节点分享)",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "152.53.45.251",
-            "port": 8888,
-            "password": "trojan"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "jflsjlaf.pages.dev",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "US美国(mibei77.com 米贝节点分享)",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "152.53.200.167",
-            "port": 8444,
-            "password": "trojan"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "jflsjlaf.pages.dev",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "DE德国(mibei77.com 米贝节点分享)",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "152.53.60.198",
-            "port": 8444,
-            "password": "trojan"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "jflsjlaf.pages.dev",
+          "serverName": "www.nintendogames.net",
           "allowInsecure": false
         }
       }
@@ -544,50 +451,6 @@
               {
                 "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
                 "alterId": "2",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "英国 V2CROSS.COM",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "v30.hdacd.com",
-            "port": 30830,
-            "users": [
-              {
-                "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "英国 V2CROSS.COM",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "v12.hdacd.com",
-            "port": 30812,
-            "users": [
-              {
-                "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-                "alterId": "0",
                 "security": "auto"
               }
             ]
