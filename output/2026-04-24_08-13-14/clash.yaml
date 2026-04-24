@@ -31,6 +31,19 @@ proxies:
     headers:
       Host: sy4.620720.xyz
   tls: true
+- name: VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
+  type: vmess
+  server: hgtrojan.zabc.net
+  port: 2083
+  uuid: e6395c20-4571-4b34-d6b1-55a5d36e49ea
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /e6395c20
+    headers:
+      Host: hgtrojan.zabc.net
+  tls: true
 - name: _US_美国
   type: trojan
   server: 216.24.57.250
@@ -47,6 +60,18 @@ proxies:
   obfs: plain
   protocol-param: ''
   obfs-param: ''
+- name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod
+  type: vmess
+  server: v2ray.codefyinc.com
+  port: 443
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmessws
+    headers:
+      Host: v2ray.codefyinc.com
 - name: SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
   type: ssr
   server: 79.127.233.170
@@ -90,6 +115,20 @@ proxies:
   cipher: auto
 - name: 英国 V2CROSS.COM
   type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: 英国 V2CROSS.COM
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: 英国 V2CROSS.COM
+  type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
@@ -97,65 +136,11 @@ proxies:
   cipher: auto
 - name: 英国 V2CROSS.COM
   type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: 英国 V2CROSS.COM
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: 英国 V2CROSS.COM
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: 英国 CCZZUU.TOP
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: 英国 CCZZUU.TOP 2
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: 英国 CCZZUU.TOP 3
-  type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: '0'
   cipher: auto
-- name: 英国 CCZZUU.TOP 6
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod
-  type: vmess
-  server: v2ray.codefyinc.com
-  port: 443
-  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
-  alterId: '0'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmessws
-    headers:
-      Host: v2ray.codefyinc.com
 - name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
   type: vmess
   server: cg1c07.waimaojd.com
@@ -168,19 +153,6 @@ proxies:
     path: /api/v1/graphql
     headers:
       Host: cg1c07.waimaojd.com
-  tls: true
-- name: VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
-  type: vmess
-  server: hgtrojan.zabc.net
-  port: 2083
-  uuid: e6395c20-4571-4b34-d6b1-55a5d36e49ea
-  alterId: '0'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /e6395c20
-    headers:
-      Host: hgtrojan.zabc.net
   tls: true
 - name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
   type: vmess
@@ -221,38 +193,38 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
   tls: true
-- name: 美国2ripaojiedian
-  type: trojan
-  server: 160.16.72.205
-  port: 4019
-  password: 1774240c00db2b77d5a99f6540c47b69
-  sni: www.nintendogames.net
-- name: 西班牙 CCZZUU.TOP
+- name: 西班牙 V2CROSS.COM
   type: trojan
   server: 80.173.230.196
   port: 26279
   password: a5inYFE=JGV89+hjxIqgDp1tcWBd6
   skip-cert-verify: true
-- name: 俄罗斯 V2CROSS.COM
+- name: 新加坡2ripaojiedian
   type: trojan
-  server: 194.87.10.31
-  port: 23357
-  password: fQmMJwOLMlqHednu2SVED8gi-+H-db9kbg
-  sni: sgp9.node-resource.click
+  server: 160.16.132.38
+  port: 32876
+  password: 1774240c00db2b77d5a99f6540c47b69
+  sni: www.nintendogames.net
 - name: 英国 伦敦Virgin Media
   type: trojan
-  server: 82.26.155.20
+  server: 82.26.155.121
   port: 10369
   password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-  sni: fra35.chasem2026sud.com
-  skip-cert-verify: true
-- name: 俄罗斯 CCZZUU.TOP
+  sni: fra33.chasem2026sud.com
+- name: 英国 伦敦Virgin Media
   type: trojan
-  server: 194.87.10.31
-  port: 23357
-  password: fQmMJwOLMlqHednu2SVED8gi-+H-db9kbg
-  sni: sgp9.node-resource.click
+  server: 82.26.155.121
+  port: 10369
+  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
+  sni: fra33.chasem2026sud.com
   skip-cert-verify: true
+- name: 香港 电讯盈科有限公司
+  type: vmess
+  server: efan.dnsefan04881.com
+  port: 7754
+  uuid: 7cd96dbe-ecec-4937-9e05-87ab70af2f30
+  alterId: '0'
+  cipher: auto
 - name: 香港ripaojiedian
   type: vmess
   server: v10.hdacd.com
@@ -260,26 +232,6 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: '2'
   cipher: auto
-- name: 美国 V2CROSS.COM
-  type: trojan
-  server: 166.88.197.60
-  port: 26650
-  password: UNWA6USASAb6=uAAZeZMFd+2uKB4.d5KOm
-  sni: sea9.firewallcontract.click
-- name: 香港 电讯盈科有限公司
-  type: vmess
-  server: efan.dnsefan04881.com
-  port: 7754
-  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-  alterId: '0'
-  cipher: auto
-- name: 美国 CCZZUU.TOP
-  type: trojan
-  server: 166.88.197.60
-  port: 26650
-  password: UNWA6USASAb6=uAAZeZMFd+2uKB4.d5KOm
-  sni: sea9.firewallcontract.click
-  skip-cert-verify: true
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -289,8 +241,10 @@ proxy-groups:
   - DIRECT
   - VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720
   - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
+  - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
   - _US_美国
   - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
+  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod
   - SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
   - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-209.126.8
@@ -299,25 +253,16 @@ proxy-groups:
   - 英国 V2CROSS.COM
   - 英国 V2CROSS.COM
   - 英国 V2CROSS.COM
-  - 英国 CCZZUU.TOP
-  - 英国 CCZZUU.TOP 2
-  - 英国 CCZZUU.TOP 3
-  - 英国 CCZZUU.TOP 6
-  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
-  - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
-  - 美国2ripaojiedian
-  - 西班牙 CCZZUU.TOP
-  - 俄罗斯 V2CROSS.COM
+  - 西班牙 V2CROSS.COM
+  - 新加坡2ripaojiedian
   - 英国 伦敦Virgin Media
-  - 俄罗斯 CCZZUU.TOP
-  - 香港ripaojiedian
-  - 美国 V2CROSS.COM
+  - 英国 伦敦Virgin Media
   - 香港 电讯盈科有限公司
-  - 美国 CCZZUU.TOP
+  - 香港ripaojiedian
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -325,8 +270,10 @@ proxy-groups:
   proxies: &id001
   - VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720
   - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
+  - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
   - _US_美国
   - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
+  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod
   - SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
   - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-209.126.8
@@ -335,25 +282,16 @@ proxy-groups:
   - 英国 V2CROSS.COM
   - 英国 V2CROSS.COM
   - 英国 V2CROSS.COM
-  - 英国 CCZZUU.TOP
-  - 英国 CCZZUU.TOP 2
-  - 英国 CCZZUU.TOP 3
-  - 英国 CCZZUU.TOP 6
-  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.cod
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
-  - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
-  - 美国2ripaojiedian
-  - 西班牙 CCZZUU.TOP
-  - 俄罗斯 V2CROSS.COM
+  - 西班牙 V2CROSS.COM
+  - 新加坡2ripaojiedian
   - 英国 伦敦Virgin Media
-  - 俄罗斯 CCZZUU.TOP
-  - 香港ripaojiedian
-  - 美国 V2CROSS.COM
+  - 英国 伦敦Virgin Media
   - 香港 电讯盈科有限公司
-  - 美国 CCZZUU.TOP
+  - 香港ripaojiedian
 - name: 🔮 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
