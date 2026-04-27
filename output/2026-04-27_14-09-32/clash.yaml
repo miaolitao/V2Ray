@@ -5,118 +5,6 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
-  type: ssr
-  server: 107.151.182.253
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6?
-  protocol: origin
-  obfs: plain
-  protocol-param: ''
-  obfs-param: ''
-- name: 英国 V2CROSS.COM
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: 英国 V2CROSS.COM
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: 英国 V2CROSS.COM
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: 英国 V2CROSS.COM
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: 英國
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 德國
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 英國節點
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 英國
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 美國丨yoyapai.comr
-  type: trojan
-  server: 172.66.44.230
-  port: 8443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: 美國丨yoyapai.comr
-  type: trojan
-  server: 167.68.4.199
-  port: 2053
-  password: Aimer
-  sni: epge.muarua.filegear-sg.me
-  skip-cert-verify: true
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 38.60.89.136
-  port: 50000
-  password: trojan
-  sni: jflsjlaf.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 167.68.4.199
-  port: 2053
-  password: Aimer
-  sni: epge.muarua.filegear-sg.me
-- name: 英国 CCZZUU.TOP 4
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: 英国 CCZZUU.TOP 5
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: _US_美国
-  type: trojan
-  server: 216.24.57.250
-  port: 443
-  password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
-  sni: afrcloud1.mmv.kr
 - name: VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720
   type: vmess
   server: t1.620720.xyz
@@ -130,41 +18,6 @@ proxies:
     headers:
       Host: t1.620720.xyz
   tls: true
-- name: SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
-  type: ssr
-  server: 79.127.233.170
-  port: 989
-  cipher: aes-256-cfb
-  password: "f8f7aCzcPKbsF8p3\x0F"
-  protocol: origin
-  obfs: plain
-  protocol-param: ''
-  obfs-param: ''
-- name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
-  type: vmess
-  server: cg1c07.waimaojd.com
-  port: 443
-  uuid: be8e3136-b874-4085-bd23-ec3699300490
-  alterId: '0'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /api/v1/graphql
-    headers:
-      Host: cg1c07.waimaojd.com
-  tls: true
-- name: VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
-  type: vmess
-  server: support.zoom.us
-  port: 8080
-  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
-  alterId: '0'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /@Malinda6104
-    headers:
-      Host: support.zoom.us
 - name: VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
   type: vmess
   server: sy4.620720.xyz
@@ -178,6 +31,50 @@ proxies:
     headers:
       Host: sy4.620720.xyz
   tls: true
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 167.68.4.199
+  port: 2053
+  password: Aimer
+  sni: epge.muarua.filegear-sg.me
+- name: _US_美国
+  type: trojan
+  server: 216.24.57.250
+  port: 443
+  password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
+  sni: afrcloud1.mmv.kr
+- name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
+  type: ssr
+  server: 107.151.182.253
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6?
+  protocol: origin
+  obfs: plain
+  protocol-param: ''
+  obfs-param: ''
+- name: SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
+  type: ssr
+  server: 79.127.233.170
+  port: 989
+  cipher: aes-256-cfb
+  password: "f8f7aCzcPKbsF8p3\x0F"
+  protocol: origin
+  obfs: plain
+  protocol-param: ''
+  obfs-param: ''
+- name: VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
+  type: vmess
+  server: support.zoom.us
+  port: 8080
+  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /@Malinda6104
+    headers:
+      Host: support.zoom.us
 - name: VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
   type: vmess
   server: hgtrojan.zabc.net
@@ -203,6 +100,364 @@ proxies:
     path: /api/v1/graphql
     headers:
       Host: cg1c01.waimaojd.com
+  tls: true
+- name: 英国 V2CROSS.COM
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: 保加利亚 V2CROSS.COM
+  type: trojan
+  server: 78.159.131.12
+  port: 28259
+  password: MeaDiUmPlkWbZJ2BON8tz
+  sni: ads.x5.ru
+- name: 英国 V2CROSS.COM
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: 英国 V2CROSS.COM
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: 英国 V2CROSS.COM
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: 英国 V2CROSS.COM
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 152.53.228.86
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 158.101.190.78
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 194.87.77.91
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 138.124.240.36
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 86.110.36.87
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 2.27.120.108
+  port: 8443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 94.141.123.243
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 144.31.216.160
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 144.31.98.216
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: DE德国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 144.31.218.10
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: DE德国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 188.245.161.141
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 159.195.5.181
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 77.239.127.77
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: DE德国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 178.17.48.170
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 84.200.192.87
+  port: 2053
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: DE德国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 143.20.160.200
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 138.124.230.45
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 138.124.28.78
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 152.53.119.132
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 213.176.78.192
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 94.125.101.103
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.128.139.68
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 144.31.118.170
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 144.31.116.8
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: DE德国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 64.188.70.233
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 103.109.234.64
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 152.53.118.28
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 64.188.105.7
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: DE德国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 152.53.227.239
+  port: 8443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 138.124.87.163
+  port: 8443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 93.123.84.194
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 148.253.215.61
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 185.219.84.221
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 89.169.9.177
+  port: 2053
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 159.195.79.8
+  port: 8443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 64.188.115.82
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 159.195.44.151
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 138.124.32.120
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: DE德国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 148.253.210.141
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 138.124.32.121
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 80.253.249.66
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: DE德国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 84.200.192.87
+  port: 8443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: DE德国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 195.133.94.19
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: AU澳大利亚(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 103.109.234.41
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: DE德国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 152.53.236.205
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: DE德国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 77.110.116.7
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: 英国 CCZZUU.TOP
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: 英国 CCZZUU.TOP 2
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: 英国 CCZZUU.TOP 3
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: 英国 CCZZUU.TOP 4
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
+  type: vmess
+  server: cg1c07.waimaojd.com
+  port: 443
+  uuid: be8e3136-b874-4085-bd23-ec3699300490
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      Host: cg1c07.waimaojd.com
   tls: true
 - name: VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
   type: vmess
@@ -230,445 +485,21 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
   tls: true
-- name: 英国 伦敦Virgin Media
-  type: trojan
-  server: 82.26.155.105
-  port: 10369
-  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-  sni: fra32.chasem2026sud.com
-- name: 英国 伦敦Virgin Media
-  type: trojan
-  server: 82.26.155.20
-  port: 10369
-  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-  sni: fra35.chasem2026sud.com
-- name: 新加坡2ripaojiedian
-  type: trojan
-  server: 160.16.132.38
-  port: 32876
-  password: 1774240c00db2b77d5a99f6540c47b69
-  sni: www.nintendogames.net
-- name: 俄羅斯丨yoyapai.comr
-  type: trojan
-  server: 194.87.77.91
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: true
-- name: 美國丨yoyapai.comr
-  type: trojan
-  server: bpbg.anguswen.top
-  port: 8443
-  password: '123456'
-  sni: BPbG.AnguSWEN.Top
-  skip-cert-verify: true
-- name: 瑞士節點丨yoyapai.comr
-  type: trojan
-  server: 138.124.28.173
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: true
-- name: 俄羅斯丨yoyapai.comr
-  type: trojan
-  server: 92.246.137.150
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: true
-- name: 美國r
-  type: trojan
-  server: 103.109.234.64
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: true
-- name: 美國丨yoyapai.comr
-  type: trojan
-  server: 152.53.119.132
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: true
-- name: 奧地利丨yoyapai.comr
-  type: trojan
-  server: 152.53.138.238
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: true
-- name: 奧地利丨yoyapai.comr
-  type: trojan
-  server: 152.53.227.239
-  port: 8443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: true
-- name: 美國丨yoyapai.comr
-  type: trojan
-  server: 138.124.34.36
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: true
-- name: 美國丨yoyapai.comr
-  type: trojan
-  server: 152.53.118.28
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: true
-- name: 美國丨yoyapai.comr
-  type: trojan
-  server: 64.188.89.147
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: true
-- name: 奧地利丨yoyapai.comr
-  type: trojan
-  server: 152.53.228.86
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: true
-- name: 美國丨yoyapai.comr
-  type: trojan
-  server: 77.110.96.220
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: true
-- name: 意大利丨yoyapai.comr
-  type: trojan
-  server: 109.70.74.67
-  port: 8443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: true
-- name: 美國r
-  type: trojan
-  server: 202.61.226.121
-  port: 2053
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: true
-- name: 美國丨yoyapai.comr
-  type: trojan
-  server: 109.70.74.67
-  port: 2053
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: true
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 148.253.215.61
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
 - name: US美国(mibei77.com 米贝节点分享)
   type: trojan
   server: 109.120.134.104
   port: 443
   password: '1234567890'
   sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 104.128.139.68
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 64.188.70.233
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
 - name: DE德国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 94.125.101.103
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: DE德国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 152.53.118.28
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 185.219.84.221
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: 奥地利(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 77.110.116.7
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 138.124.32.121
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: DE德国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 86.110.36.87
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 77.239.127.77
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 144.31.116.8
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: DE德国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 138.124.229.34
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 87.251.88.215
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 178.17.48.170
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 138.124.32.120
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 84.200.192.87
-  port: 8443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 64.188.115.82
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 194.87.77.91
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 144.31.216.160
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 144.31.188.6
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 2.27.120.108
-  port: 8443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: DE德国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 144.31.218.10
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 94.141.123.243
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 138.124.230.45
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 109.70.74.67
-  port: 2053
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 95.85.233.44
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 152.53.119.132
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 95.85.233.224
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 95.85.232.148
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 138.124.28.78
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 185.170.153.115
-  port: 8443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 64.188.89.147
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: DE德国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 193.23.218.192
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: DE德国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 64.188.105.7
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 103.109.234.64
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 45.9.116.160
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 95.164.123.131
-  port: 8443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: TW台湾(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 104.128.139.249
-  port: 8443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 144.31.118.170
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 89.169.9.177
-  port: 2053
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 138.124.34.36
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 93.123.84.194
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 138.124.87.163
-  port: 8443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 143.20.160.200
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: DE德国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 144.31.191.159
-  port: 8443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 144.31.98.216
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: 奥地利(mibei77.com 米贝节点分享)
   type: trojan
   server: 152.53.138.238
   port: 443
   password: '1234567890'
   sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
+- name: DE德国(mibei77.com 米贝节点分享)
   type: trojan
-  server: 159.195.44.151
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: 奥地利(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 152.53.228.86
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 159.195.5.181
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 138.124.240.36
+  server: 31.58.85.103
   port: 443
   password: '1234567890'
   sni: kfm-bn0.pages.dev
@@ -678,22 +509,28 @@ proxies:
   port: 443
   password: '1234567890'
   sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 202.61.226.121
-  port: 2053
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
+- name: 伊拉克(mibei77.com 米贝节点分享)
   type: trojan
   server: 178.17.48.78
   port: 443
   password: '1234567890'
   sni: kfm-bn0.pages.dev
-- name: 奥地利(mibei77.com 米贝节点分享)
+- name: DE德国(mibei77.com 米贝节点分享)
   type: trojan
-  server: 152.53.227.239
+  server: 138.124.32.78
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 2.27.35.199
   port: 8443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 194.87.77.2
+  port: 443
   password: '1234567890'
   sni: kfm-bn0.pages.dev
 - name: US美国(mibei77.com 米贝节点分享)
@@ -704,14 +541,14 @@ proxies:
   sni: kfm-bn0.pages.dev
 - name: US美国(mibei77.com 米贝节点分享)
   type: trojan
-  server: 202.61.195.167
-  port: 443
+  server: 64.188.89.147
+  port: 8443
   password: '1234567890'
   sni: kfm-bn0.pages.dev
 - name: US美国(mibei77.com 米贝节点分享)
   type: trojan
-  server: 138.124.32.78
-  port: 443
+  server: 185.170.153.115
+  port: 8443
   password: '1234567890'
   sni: kfm-bn0.pages.dev
 - name: US美国(mibei77.com 米贝节点分享)
@@ -723,18 +560,12 @@ proxies:
 - name: US美国(mibei77.com 米贝节点分享)
   type: trojan
   server: 64.188.89.147
-  port: 8443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 64.188.118.193
   port: 443
   password: '1234567890'
   sni: kfm-bn0.pages.dev
 - name: US美国(mibei77.com 米贝节点分享)
   type: trojan
-  server: 150.241.105.185
+  server: 144.31.51.34
   port: 443
   password: '1234567890'
   sni: kfm-bn0.pages.dev
@@ -744,58 +575,186 @@ proxies:
   port: 443
   password: '1234567890'
   sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 143.20.175.77
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 77.110.96.220
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: DE德国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 158.101.190.78
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 80.253.249.66
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: 奥地利(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 152.53.236.205
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: DE德国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 159.195.79.8
-  port: 8443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-- name: DE德国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 23.251.50.142
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
 - name: DE德国(mibei77.com 米贝节点分享)
   type: trojan
   server: 80.244.13.157
   port: 443
   password: '1234567890'
   sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 138.124.49.137
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
 - name: DE德国(mibei77.com 米贝节点分享)
   type: trojan
-  server: 144.31.62.181
+  server: 138.124.34.36
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: DE德国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 193.23.218.192
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 131.143.125.183
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 202.61.195.167
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 202.61.226.121
+  port: 2053
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: DE德国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 94.156.114.13
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 144.31.191.159
   port: 8443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 64.188.118.193
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: DE德国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 91.107.220.103
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 194.164.198.156
+  port: 8443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: 英国 伦敦Virgin Media 2
+  type: trojan
+  server: 82.26.155.121
+  port: 10369
+  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
+  sni: fra33.chasem2026sud.com
+  skip-cert-verify: true
+- name: 英国 伦敦Virgin Media 3
+  type: trojan
+  server: 82.26.155.199
+  port: 10369
+  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
+  sni: fra4.chasem2026sud.com
+  skip-cert-verify: true
+- name: 英国 伦敦Virgin Media
+  type: trojan
+  server: 82.26.155.3
+  port: 10369
+  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
+  sni: fra34.chasem2026sud.com
+- name: 日本2ripaojiedian
+  type: trojan
+  server: 43.198.79.128
+  port: 9201
+  password: 69ecb45889d99f31b8ccc10bf8f76a72
+  sni: www.nintendogames.net
+- name: DE德国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 143.20.175.77
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: KR韩国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 220.87.152.138
+  port: 30005
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: KR韩国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 220.124.181.77
+  port: 18081
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: KR韩国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 14.57.222.213
+  port: 20880
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: KR韩国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 220.77.18.195
+  port: 36814
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: KR韩国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 220.122.102.26
+  port: 30017
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: KR韩国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 221.168.213.173
+  port: 32677
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: KR韩国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 183.106.76.116
+  port: 30005
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: KR韩国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 220.72.90.235
+  port: 10554
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: KR韩国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 222.113.18.213
+  port: 14265
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: KR韩国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 14.53.107.138
+  port: 29999
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: KR韩国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 222.121.232.215
+  port: 22335
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 23.251.50.142
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: KR韩国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 220.93.106.4
+  port: 12345
   password: '1234567890'
   sni: kfm-bn0.pages.dev
 - name: 英国 伦敦Virgin Media
@@ -805,52 +764,18 @@ proxies:
   password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
   sni: fra5.chasem2026sud.com
   skip-cert-verify: true
-- name: 英国 伦敦Virgin Media 2
-  type: trojan
-  server: 82.26.155.105
-  port: 10369
-  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-  sni: fra32.chasem2026sud.com
-  skip-cert-verify: true
-- name: 香港 电讯盈科有限公司 2
+- name: 广东省广州市 电信IDC机房
   type: vmess
-  server: efan.dnsefan04881.com
-  port: 7754
-  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-  alterId: '0'
-  cipher: auto
-- name: 美国 CCZZUU.TOP
-  type: vmess
-  server: jp01.a0a.xyz
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  server: 76c3.earthdraft.onezz.top
+  port: 22013
+  uuid: 7d81d7ed-03f4-331a-ab0d-e9a7425f05e0
   alterId: '0'
   cipher: auto
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: jp01.a0a.xyz
-- name: HK香港(mibei77.com 米贝节点分享)
-  type: vmess
-  server: efan.dnsefan04881.com
-  port: 7754
-  uuid: 7cd96dbe-ecec-4937-9e05-87ab70af2f30
-  alterId: '0'
-  cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: jp2-8sb.6121999.dpdns.org
-  port: 24534
-  password: e136d465-0558-43b9-b50c-b1f45d4cb2c2
-  sni: jp2-8sb.6121999.dpdns.org
-- name: 香港 电讯盈科有限公司
-  type: vmess
-  server: efan.dnsefan04881.com
-  port: 7754
-  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-  alterId: '0'
-  cipher: auto
+      Host: ithome.com
 - name: 香港ripaojiedian
   type: vmess
   server: v10.hdacd.com
@@ -858,14 +783,33 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: '2'
   cipher: auto
-- name: HK香港(mibei77.com 米贝节点分享)
+- name: DE德国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 167.17.182.98
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: KR韩国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 118.47.197.17
+  port: 10088
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+- name: 8元老牌专线机场cczzuu.top
   type: vmess
-  server: vm51544542.dns8656815.com
+  server: efan.dnsefan04881.com
   port: 7754
   uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
   alterId: '0'
   cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
+- name: 香港 电讯盈科有限公司
+  type: vmess
+  server: efan.dnsefan04881.com
+  port: 7754
+  uuid: 7cd96dbe-ecec-4937-9e05-87ab70af2f30
+  alterId: '0'
+  cipher: auto
+- name: 香港 电讯盈科有限公司 2
   type: vmess
   server: vm51544542.dns8656815.com
   port: 7754
@@ -879,54 +823,27 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: '0'
   cipher: auto
-- name: FR法国(mibei77.com 米贝节点分享)
+- name: 香港 电讯盈科有限公司
   type: vmess
-  server: planb.mojcn.com
-  port: 16622
-  uuid: 033db0ca-703e-4484-a717-77b8900acd7b
+  server: efan.dnsefan04881.com
+  port: 7754
+  uuid: 7cd96dbe-ecec-4937-9e05-87ab70af2f30
   alterId: '0'
   cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5f34ddd3745456d7ab987287b3f66a2c.mobgslb.tbcache.com
-- name: FR法国(mibei77.com 米贝节点分享)
+- name: 香港 电讯盈科有限公司
   type: vmess
-  server: planb.mojcn.com
-  port: 16616
-  uuid: 033db0ca-703e-4484-a717-77b8900acd7b
+  server: vm51544542.dns8656815.com
+  port: 7754
+  uuid: 7cd96dbe-ecec-4937-9e05-87ab70af2f30
   alterId: '0'
   cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5f34ddd3745456d7ab987287b3f66a2c.mobgslb.tbcache.com
-- name: FR法国(mibei77.com 米贝节点分享)
+- name: 英国 CCZZUU.TOP 5
   type: vmess
-  server: planb.mojcn.com
-  port: 16632
-  uuid: 255456b5-4b3e-449f-8dd1-99fd7d21415a
+  server: v30.hdacd.com
+  port: 30830
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: '0'
   cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 37461892546988f67a6acfbe937e161b.mobgslb.tbcache.com
-- name: FR法国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: planb.mojcn.com
-  port: 16645
-  uuid: 033db0ca-703e-4484-a717-77b8900acd7b
-  alterId: '0'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5f34ddd3745456d7ab987287b3f66a2c.mobgslb.tbcache.com
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -934,62 +851,79 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 负载均衡
   - DIRECT
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
-  - 英国 V2CROSS.COM
-  - 英国 V2CROSS.COM
-  - 英国 V2CROSS.COM
-  - 英国 V2CROSS.COM
-  - 英國
-  - 德國
-  - 英國節點
-  - 英國
-  - 美國丨yoyapai.comr
-  - 美國丨yoyapai.comr
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - 英国 CCZZUU.TOP 4
-  - 英国 CCZZUU.TOP 5
-  - _US_美国
   - VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720
-  - SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
-  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
-  - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
   - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
+  - US美国(mibei77.com 米贝节点分享)
+  - _US_美国
+  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
+  - SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
+  - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
   - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
+  - 英国 V2CROSS.COM
+  - 保加利亚 V2CROSS.COM
+  - 英国 V2CROSS.COM
+  - 英国 V2CROSS.COM
+  - 英国 V2CROSS.COM
+  - 英国 V2CROSS.COM
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - AU澳大利亚(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - 英国 CCZZUU.TOP
+  - 英国 CCZZUU.TOP 2
+  - 英国 CCZZUU.TOP 3
+  - 英国 CCZZUU.TOP 4
+  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
-  - 英国 伦敦Virgin Media
-  - 英国 伦敦Virgin Media
-  - 新加坡2ripaojiedian
-  - 俄羅斯丨yoyapai.comr
-  - 美國丨yoyapai.comr
-  - 瑞士節點丨yoyapai.comr
-  - 俄羅斯丨yoyapai.comr
-  - 美國r
-  - 美國丨yoyapai.comr
-  - 奧地利丨yoyapai.comr
-  - 奧地利丨yoyapai.comr
-  - 美國丨yoyapai.comr
-  - 美國丨yoyapai.comr
-  - 美國丨yoyapai.comr
-  - 奧地利丨yoyapai.comr
-  - 美國丨yoyapai.comr
-  - 意大利丨yoyapai.comr
-  - 美國r
-  - 美國丨yoyapai.comr
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
-  - 奥地利(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - DE德国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
+  - 伊拉克(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
@@ -1002,131 +936,124 @@ proxy-groups:
   - US美国(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
-  - 奥地利(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - 奥地利(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - 奥地利(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - DE德国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - 奥地利(mibei77.com 米贝节点分享)
-  - DE德国(mibei77.com 米贝节点分享)
-  - DE德国(mibei77.com 米贝节点分享)
-  - DE德国(mibei77.com 米贝节点分享)
-  - DE德国(mibei77.com 米贝节点分享)
-  - 英国 伦敦Virgin Media
   - 英国 伦敦Virgin Media 2
-  - 香港 电讯盈科有限公司 2
-  - 美国 CCZZUU.TOP
-  - HK香港(mibei77.com 米贝节点分享)
+  - 英国 伦敦Virgin Media 3
+  - 英国 伦敦Virgin Media
+  - 日本2ripaojiedian
+  - DE德国(mibei77.com 米贝节点分享)
+  - KR韩国(mibei77.com 米贝节点分享)
+  - KR韩国(mibei77.com 米贝节点分享)
+  - KR韩国(mibei77.com 米贝节点分享)
+  - KR韩国(mibei77.com 米贝节点分享)
+  - KR韩国(mibei77.com 米贝节点分享)
+  - KR韩国(mibei77.com 米贝节点分享)
+  - KR韩国(mibei77.com 米贝节点分享)
+  - KR韩国(mibei77.com 米贝节点分享)
+  - KR韩国(mibei77.com 米贝节点分享)
+  - KR韩国(mibei77.com 米贝节点分享)
+  - KR韩国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
-  - 香港 电讯盈科有限公司
+  - KR韩国(mibei77.com 米贝节点分享)
+  - 英国 伦敦Virgin Media
+  - 广东省广州市 电信IDC机房
   - 香港ripaojiedian
-  - HK香港(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - KR韩国(mibei77.com 米贝节点分享)
+  - 8元老牌专线机场cczzuu.top
+  - 香港 电讯盈科有限公司
+  - 香港 电讯盈科有限公司 2
   - 英国 V2CROSS.COM
-  - FR法国(mibei77.com 米贝节点分享)
-  - FR法国(mibei77.com 米贝节点分享)
-  - FR法国(mibei77.com 米贝节点分享)
-  - FR法国(mibei77.com 米贝节点分享)
+  - 香港 电讯盈科有限公司
+  - 香港 电讯盈科有限公司
+  - 英国 CCZZUU.TOP 5
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: &id001
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
-  - 英国 V2CROSS.COM
-  - 英国 V2CROSS.COM
-  - 英国 V2CROSS.COM
-  - 英国 V2CROSS.COM
-  - 英國
-  - 德國
-  - 英國節點
-  - 英國
-  - 美國丨yoyapai.comr
-  - 美國丨yoyapai.comr
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - 英国 CCZZUU.TOP 4
-  - 英国 CCZZUU.TOP 5
-  - _US_美国
   - VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720
-  - SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
-  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
-  - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
   - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
+  - US美国(mibei77.com 米贝节点分享)
+  - _US_美国
+  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
+  - SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
+  - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
   - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
+  - 英国 V2CROSS.COM
+  - 保加利亚 V2CROSS.COM
+  - 英国 V2CROSS.COM
+  - 英国 V2CROSS.COM
+  - 英国 V2CROSS.COM
+  - 英国 V2CROSS.COM
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - AU澳大利亚(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - 英国 CCZZUU.TOP
+  - 英国 CCZZUU.TOP 2
+  - 英国 CCZZUU.TOP 3
+  - 英国 CCZZUU.TOP 4
+  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
-  - 英国 伦敦Virgin Media
-  - 英国 伦敦Virgin Media
-  - 新加坡2ripaojiedian
-  - 俄羅斯丨yoyapai.comr
-  - 美國丨yoyapai.comr
-  - 瑞士節點丨yoyapai.comr
-  - 俄羅斯丨yoyapai.comr
-  - 美國r
-  - 美國丨yoyapai.comr
-  - 奧地利丨yoyapai.comr
-  - 奧地利丨yoyapai.comr
-  - 美國丨yoyapai.comr
-  - 美國丨yoyapai.comr
-  - 美國丨yoyapai.comr
-  - 奧地利丨yoyapai.comr
-  - 美國丨yoyapai.comr
-  - 意大利丨yoyapai.comr
-  - 美國r
-  - 美國丨yoyapai.comr
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
-  - 奥地利(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - DE德国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
+  - 伊拉克(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
@@ -1139,70 +1066,46 @@ proxy-groups:
   - US美国(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
-  - 奥地利(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - 奥地利(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - 奥地利(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - DE德国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - 奥地利(mibei77.com 米贝节点分享)
-  - DE德国(mibei77.com 米贝节点分享)
-  - DE德国(mibei77.com 米贝节点分享)
-  - DE德国(mibei77.com 米贝节点分享)
-  - DE德国(mibei77.com 米贝节点分享)
-  - 英国 伦敦Virgin Media
   - 英国 伦敦Virgin Media 2
-  - 香港 电讯盈科有限公司 2
-  - 美国 CCZZUU.TOP
-  - HK香港(mibei77.com 米贝节点分享)
+  - 英国 伦敦Virgin Media 3
+  - 英国 伦敦Virgin Media
+  - 日本2ripaojiedian
+  - DE德国(mibei77.com 米贝节点分享)
+  - KR韩国(mibei77.com 米贝节点分享)
+  - KR韩国(mibei77.com 米贝节点分享)
+  - KR韩国(mibei77.com 米贝节点分享)
+  - KR韩国(mibei77.com 米贝节点分享)
+  - KR韩国(mibei77.com 米贝节点分享)
+  - KR韩国(mibei77.com 米贝节点分享)
+  - KR韩国(mibei77.com 米贝节点分享)
+  - KR韩国(mibei77.com 米贝节点分享)
+  - KR韩国(mibei77.com 米贝节点分享)
+  - KR韩国(mibei77.com 米贝节点分享)
+  - KR韩国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
-  - 香港 电讯盈科有限公司
+  - KR韩国(mibei77.com 米贝节点分享)
+  - 英国 伦敦Virgin Media
+  - 广东省广州市 电信IDC机房
   - 香港ripaojiedian
-  - HK香港(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - KR韩国(mibei77.com 米贝节点分享)
+  - 8元老牌专线机场cczzuu.top
+  - 香港 电讯盈科有限公司
+  - 香港 电讯盈科有限公司 2
   - 英国 V2CROSS.COM
-  - FR法国(mibei77.com 米贝节点分享)
-  - FR法国(mibei77.com 米贝节点分享)
-  - FR法国(mibei77.com 米贝节点分享)
-  - FR法国(mibei77.com 米贝节点分享)
+  - 香港 电讯盈科有限公司
+  - 香港 电讯盈科有限公司
+  - 英国 CCZZUU.TOP 5
 - name: 🔮 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
