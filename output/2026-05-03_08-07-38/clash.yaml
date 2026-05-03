@@ -18,25 +18,6 @@ proxies:
     headers:
       Host: t1.620720.xyz
   tls: true
-- name: VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
-  type: vmess
-  server: sy4.620720.xyz
-  port: 443
-  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-  alterId: '0'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sy4.620720.xyz
-  tls: true
-- name: _US_美国
-  type: trojan
-  server: 216.24.57.250
-  port: 443
-  password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
-  sni: afrcloud1.mmv.kr
 - name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
   type: ssr
   server: 107.151.182.253
@@ -57,19 +38,6 @@ proxies:
   obfs: plain
   protocol-param: ''
   obfs-param: ''
-- name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
-  type: vmess
-  server: cg1c07.waimaojd.com
-  port: 443
-  uuid: be8e3136-b874-4085-bd23-ec3699300490
-  alterId: '0'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /api/v1/graphql
-    headers:
-      Host: cg1c07.waimaojd.com
-  tls: true
 - name: VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
   type: vmess
   server: support.zoom.us
@@ -82,6 +50,19 @@ proxies:
     path: /@Malinda6104
     headers:
       Host: support.zoom.us
+- name: VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
+  type: vmess
+  server: sy4.620720.xyz
+  port: 443
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sy4.620720.xyz
+  tls: true
 - name: VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
   type: vmess
   server: hgtrojan.zabc.net
@@ -94,6 +75,19 @@ proxies:
     path: /e6395c20
     headers:
       Host: hgtrojan.zabc.net
+  tls: true
+- name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
+  type: vmess
+  server: cg1c01.waimaojd.com
+  port: 443
+  uuid: be8e3136-b874-4085-bd23-ec3699300490
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      Host: cg1c01.waimaojd.com
   tls: true
 - name: VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
   type: vmess
@@ -108,19 +102,33 @@ proxies:
     headers:
       Host: cg1c04.waimaojd.com
   tls: true
+- name: VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
+  type: vmess
+  server: cg1c14.waimaojd.com
+  port: 443
+  uuid: be8e3136-b874-4085-bd23-ec3699300490
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      Host: cg1c14.waimaojd.com
+  tls: true
 - name: 英国 V2CROSS.COM
   type: vmess
-  server: 82.198.246.9
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: '0'
   cipher: auto
-- name: 保加利亚 V2CROSS.COM
-  type: trojan
-  server: 78.159.131.12
-  port: 28259
-  password: MeaDiUmPlkWbZJ2BON8tz
-  sni: ads.x5.ru
+- name: 英国 V2CROSS.COM
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
 - name: 英国 V2CROSS.COM
   type: vmess
   server: 82.198.246.9
@@ -137,7 +145,7 @@ proxies:
   cipher: auto
 - name: 英国 V2CROSS.COM
   type: vmess
-  server: 82.198.246.214
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: '0'
@@ -156,13 +164,41 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: '0'
   cipher: auto
-- name: 美国5ripaojiedian
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.18.11.110
+  port: 443
+  password: humanity
+  sni: www.multiplydose.com
+- name: US美国(mibei77.com 米贝节点分享)
   type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
+  server: vc.fly.dev
+  port: 443
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  alterId: '32'
   cipher: auto
+  network: ws
+  ws-opts:
+    path: /vc
+    headers:
+      Host: vc.fly.dev
+  tls: true
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 167.68.4.199
+  port: 2053
+  password: Aimer
+  sni: epge.muarua.filegear-sg.me
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: svip-us.xiaobaivpn.icu
+  port: 28811
+  password: c842b5b3-54f0-4adc-9d48-3202a137b361
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: svip-us.xiaobaivpn.icu
+  port: 28812
+  password: c842b5b3-54f0-4adc-9d48-3202a137b361
 - name: 英国 CCZZUU.TOP 2
   type: vmess
   server: 82.198.246.97
@@ -170,23 +206,15 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: '0'
   cipher: auto
-- name: 英国 CCZZUU.TOP 3
+- name: _US_美国
+  type: trojan
+  server: 216.24.57.250
+  port: 443
+  password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
+  sni: afrcloud1.mmv.kr
+- name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
   type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: 英国 CCZZUU.TOP 10
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
-  type: vmess
-  server: cg1c01.waimaojd.com
+  server: cg1c07.waimaojd.com
   port: 443
   uuid: be8e3136-b874-4085-bd23-ec3699300490
   alterId: '0'
@@ -195,28 +223,39 @@ proxies:
   ws-opts:
     path: /api/v1/graphql
     headers:
-      Host: cg1c01.waimaojd.com
-  tls: true
-- name: VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
-  type: vmess
-  server: cg1c14.waimaojd.com
-  port: 443
-  uuid: be8e3136-b874-4085-bd23-ec3699300490
-  alterId: '0'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /api/v1/graphql
-    headers:
-      Host: cg1c14.waimaojd.com
+      Host: cg1c07.waimaojd.com
   tls: true
 - name: 日本ripaojiedian
   type: trojan
-  server: 18.183.75.181
-  port: 16919
+  server: 116.80.80.121
+  port: 443
   password: BxceQaOe
   sni: t.me%252Fripaojiedian
   skip-cert-verify: true
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: hl-freedom-1.undef.network
+  port: 443
+  password: JaFKnqNcvnBT63t3rquidGsln
+  sni: HL-FREEDOM-1.UNDEF.NETWORK
+- name: DE德国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: mfa.gov.ua
+  port: 443
+  password: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  sni: vless.lrdxw.club
+- name: DE德国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: hl-freedom-1.undef.network
+  port: 443
+  password: GZOof2R1ej4yML1NxajR2frGQ
+  sni: HL-FREEDOM-1.UNDEF.NETWORK
+- name: NL荷兰(mibei77.com 米贝节点分享)
+  type: trojan
+  server: hl-freedom-1.undef.network
+  port: 443
+  password: GZOof2R1ej4yML1NxajR2frGQ
+  sni: hl-freedom-1.undef.network
 - name: 香港ripaojiedian
   type: vmess
   server: v10.hdacd.com
@@ -224,12 +263,26 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: '2'
   cipher: auto
-- name: 英国 CCZZUU.TOP 9
+- name: US美国(mibei77.com 米贝节点分享)
   type: vmess
-  server: v30.hdacd.com
-  port: 30830
+  server: v24.hdacd.com
+  port: 30824
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: '2'
+  cipher: auto
+- name: 8元老牌专线机场cczzuu.top
+  type: vmess
+  server: efan.dnsefan04881.com
+  port: 7754
+  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
   alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: v29.hdacd.com
+  port: 30829
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: '2'
   cipher: auto
 proxy-groups:
 - name: 🚀 节点选择
@@ -239,60 +292,76 @@ proxy-groups:
   - 🔮 负载均衡
   - DIRECT
   - VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720
-  - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
-  - _US_美国
   - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
   - SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
-  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
   - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
+  - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
   - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
+  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
+  - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
   - 英国 V2CROSS.COM
-  - 保加利亚 V2CROSS.COM
+  - 英国 V2CROSS.COM
   - 英国 V2CROSS.COM
   - 英国 V2CROSS.COM
   - 英国 V2CROSS.COM
   - 英国 V2CROSS.COM
   - 美国4ripaojiedian
-  - 美国5ripaojiedian
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
   - 英国 CCZZUU.TOP 2
-  - 英国 CCZZUU.TOP 3
-  - 英国 CCZZUU.TOP 10
-  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
-  - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
+  - _US_美国
+  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
   - 日本ripaojiedian
+  - US美国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - NL荷兰(mibei77.com 米贝节点分享)
   - 香港ripaojiedian
-  - 英国 CCZZUU.TOP 9
+  - US美国(mibei77.com 米贝节点分享)
+  - 8元老牌专线机场cczzuu.top
+  - US美国(mibei77.com 米贝节点分享)
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: &id001
   - VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720
-  - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
-  - _US_美国
   - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
   - SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
-  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
   - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
+  - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
   - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
+  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
+  - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
   - 英国 V2CROSS.COM
-  - 保加利亚 V2CROSS.COM
+  - 英国 V2CROSS.COM
   - 英国 V2CROSS.COM
   - 英国 V2CROSS.COM
   - 英国 V2CROSS.COM
   - 英国 V2CROSS.COM
   - 美国4ripaojiedian
-  - 美国5ripaojiedian
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
   - 英国 CCZZUU.TOP 2
-  - 英国 CCZZUU.TOP 3
-  - 英国 CCZZUU.TOP 10
-  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
-  - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
+  - _US_美国
+  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
   - 日本ripaojiedian
+  - US美国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - NL荷兰(mibei77.com 米贝节点分享)
   - 香港ripaojiedian
-  - 英国 CCZZUU.TOP 9
+  - US美国(mibei77.com 米贝节点分享)
+  - 8元老牌专线机场cczzuu.top
+  - US美国(mibei77.com 米贝节点分享)
 - name: 🔮 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
