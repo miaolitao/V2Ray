@@ -5,26 +5,19 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
-  type: ssr
-  server: 107.151.182.253
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6?
-  protocol: origin
-  obfs: plain
-  protocol-param: ''
-  obfs-param: ''
-- name: SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
-  type: ssr
-  server: 79.127.233.170
-  port: 989
-  cipher: aes-256-cfb
-  password: "f8f7aCzcPKbsF8p3\x0F"
-  protocol: origin
-  obfs: plain
-  protocol-param: ''
-  obfs-param: ''
+- name: VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720
+  type: vmess
+  server: t1.620720.xyz
+  port: 8443
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: t1.620720.xyz
+  tls: true
 - name: VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
   type: vmess
   server: support.zoom.us
@@ -63,6 +56,98 @@ proxies:
     headers:
       Host: hgtrojan.zabc.net
   tls: true
+- name: 美国 V2CROSS.COM
+  type: trojan
+  server: 205.172.57.218
+  port: 2053
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+- name: 挪威 V2CROSS.COM
+  type: trojan
+  server: 138.124.60.93
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+- name: 美國丨yoyapai.comr
+  type: trojan
+  server: 172.66.44.230
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 185.18.250.252
+  port: 443
+  password: humanity
+  sni: www.gossipglove.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 167.68.4.199
+  port: 2053
+  password: Aimer
+  sni: epge.muarua.filegear-sg.me
+- name: 美国 纽约市DigitalOcean云公司
+  type: trojan
+  server: 104.131.172.195
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 荷兰 CCZZUU.TOP
+  type: trojan
+  server: 160.153.168.253
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 美国 CCZZUU.TOP 2
+  type: trojan
+  server: 184.174.80.253
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 美国 CCZZUU.TOP 3
+  type: trojan
+  server: 192.169.220.253
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 美国 DigitalOcean数据中心
+  type: trojan
+  server: 159.65.240.40
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: _US_美国
+  type: trojan
+  server: 216.24.57.250
+  port: 443
+  password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
+  sni: afrcloud1.mmv.kr
+- name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
+  type: ssr
+  server: 107.151.182.253
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6?
+  protocol: origin
+  obfs: plain
+  protocol-param: ''
+  obfs-param: ''
+- name: SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
+  type: ssr
+  server: 79.127.233.170
+  port: 989
+  cipher: aes-256-cfb
+  password: "f8f7aCzcPKbsF8p3\x0F"
+  protocol: origin
+  obfs: plain
+  protocol-param: ''
+  obfs-param: ''
 - name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
   type: vmess
   server: cg1c01.waimaojd.com
@@ -78,294 +163,49 @@ proxies:
   tls: true
 - name: 英国 V2CROSS.COM
   type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: 英国 V2CROSS.COM
-  type: vmess
   server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: '0'
   cipher: auto
-- name: 英国 V2CROSS.COM
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: 英国 V2CROSS.COM
+- name: 美国4ripaojiedian
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: '0'
   cipher: auto
-- name: 英國
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 美國
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: aes-128-gcm
-- name: GB英國節點
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 英國節點
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: GB英國節點
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: GB英國節點
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: GB英國節點
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: GB英國節點
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: GB英國節點
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 英國
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: GB英國節點
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 德國
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US美國節點
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: GB英國節點
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: GB英國節點
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: GB英國節點
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 英國
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 英國
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 美國節點
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: GB英國節點
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: GB英國節點
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 英國
+- name: 美国5ripaojiedian
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
+  alterId: '0'
   cipher: auto
-- name: 英國
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 英國
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 英國
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 英國
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US美國節點
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 美國
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: aes-128-gcm
-- name: 英國
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 英國
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 美國節點
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: aes-128-gcm
-- name: GB英國
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 英國節點
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 英國
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 美國丨yoyapai.comr
+- name: NL荷蘭丨yoyapai.comr
   type: trojan
-  server: 172.66.44.230
+  server: 91.221.191.120
   port: 8443
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
-- name: US美國節點
+- name: NL荷蘭丨yoyapai.comr
+  type: trojan
+  server: 185.52.0.84
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 英國
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US美國節點
+- name: 美國
   type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: GB英國節點
-  type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -377,16 +217,16 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: GB英國
+- name: 英國
   type: vmess
-  server: 82.198.246.9
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 美國節點
+- name: 美國
   type: vmess
-  server: 82.198.246.214
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -398,522 +238,963 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
+- name: 英國
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
+  alterId: 0
   cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
+- name: 英國
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US美國
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
+  alterId: 0
   cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
+- name: 英國節點
   type: vmess
   server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
+  alterId: 0
   cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
+- name: 英國
   type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
+  alterId: 0
   cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
+- name: US美國節點
   type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
+  alterId: 0
   cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
+- name: 美國節點
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 美國節點
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+- name: 英國
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 英國
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 英國
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: GB英國
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: GB英国
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
+  alterId: 0
   cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
+- name: 英國節點
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
+  alterId: 0
   cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
+- name: 英國
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
+  alterId: 0
   cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: DE德国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
+- name: 英國
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
+  alterId: 0
   cipher: auto
-- name: DE德国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
+- name: GB英國
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
+  alterId: 0
   cipher: auto
-- name: DE德国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
+- name: 美國節點
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: DE德国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: DE德国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: DE德国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: GB英国(mibei77.com 米贝节点分享)
+  alterId: 0
+  cipher: aes-128-gcm
+- name: 美國
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: DE德国(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: JP日本(mibei77.com 米贝节点分享)
+  alterId: 0
+  cipher: aes-128-gcm
+- name: 瑞士節點丨yoyapai.comr
   type: trojan
-  server: cdns.doon.eu.org
+  server: 91.192.102.55
   port: 443
-  password: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-  sni: cloudflare-proxy-1jk.pages.dev
-- name: 英国 CCZZUU.TOP 2
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 英國
   type: vmess
-  server: 82.198.246.9
+  server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
+  alterId: 0
   cipher: auto
-- name: 英国 CCZZUU.TOP 3
+- name: NL荷蘭丨yoyapai.comr
+  type: trojan
+  server: 144.31.122.162
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: NL荷蘭丨yoyapai.comr
+  type: trojan
+  server: 38.180.70.111
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: NL荷蘭丨yoyapai.comr
+  type: trojan
+  server: 38.180.96.40
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 英國
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: NL荷蘭丨yoyapai.comr
+  type: trojan
+  server: 91.221.190.80
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: NL荷蘭丨yoyapai.comr
+  type: trojan
+  server: 95.169.192.234
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 瑞士節點丨yoyapai.comr
+  type: trojan
+  server: 140.238.208.240
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 西班牙節點ES丨yoyapai.comr
+  type: trojan
+  server: 172.233.97.34
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 瑞典丨yoyapai.comr
+  type: trojan
+  server: 16.16.45.85
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 丹麥節點DK丨yoyapai.comr
+  type: trojan
+  server: 77.37.96.247
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: NL荷蘭丨yoyapai.comr
+  type: trojan
+  server: 38.180.233.61
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: NL荷蘭丨yoyapai.comr
+  type: trojan
+  server: 2.59.183.210
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: NL荷蘭丨yoyapai.comr
+  type: trojan
+  server: 45.145.171.206
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 法國節點丨yoyapai.comr
+  type: trojan
+  server: 138.124.81.204
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 荷蘭節點丨yoyapai.comr
+  type: trojan
+  server: 31.15.17.129
+  port: 2053
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 瑞士節點丨yoyapai.comr
+  type: trojan
+  server: 38.180.84.86
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 意大利節點IT丨yoyapai.comr
+  type: trojan
+  server: 151.241.215.148
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: DK丹麥丨yoyapai.comr
+  type: trojan
+  server: 77.37.96.132
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: NL荷蘭丨yoyapai.comr
+  type: trojan
+  server: 31.15.18.58
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: NL荷蘭丨yoyapai.comr
+  type: trojan
+  server: 185.162.9.60
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: FR法國丨yoyapai.comr
+  type: trojan
+  server: 109.61.110.241
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: GB英国(mibei77.com 米贝节点分享)
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: '0'
   cipher: auto
-- name: 英国 CCZZUU.TOP 4
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: www.ignitelimit.com
+  port: 443
+  password: humanity
+- name: DE德国(mibei77.com 米贝节点分享)
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: '0'
   cipher: auto
-- name: _US_美国
-  type: trojan
-  server: 216.24.57.250
-  port: 443
-  password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
-  sni: afrcloud1.mmv.kr
+- name: DE德国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: DE德国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: DE德国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: DE德国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: DE德国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: DE德国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
 - name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
   type: vmess
   server: cg1c07.waimaojd.com
@@ -953,245 +1234,37 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
   tls: true
-- name: SG新加坡(mibei77.com 米贝节点分享)
+- name: 日本 东京Digital VM
   type: trojan
-  server: mfa.gov.ua
-  port: 443
-  password: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-  sni: cloudflare-proxy-1jk.pages.dev
-- name: HK香港(mibei77.com 米贝节点分享)
-  type: trojan
-  server: cf.008500.xyz
-  port: 443
-  password: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-  sni: cloudflare-proxy-1jk.pages.dev
-- name: 日本ripaojiedian
-  type: trojan
-  server: 116.80.61.236
-  port: 443
-  password: BxceQaOe
-  sni: t.me%252Fripaojiedian
-  skip-cert-verify: true
-- name: KR韓國丨yoyapai.comr
-  type: trojan
-  server: 14.50.59.154
-  port: 10243
+  server: 45.11.1.118
+  port: 44004
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
-- name: KR韓國丨yoyapai.comr
+- name: 美国 加利福尼亚
   type: trojan
-  server: 121.167.94.122
-  port: 25448
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: KR韓國丨yoyapai.comr
-  type: trojan
-  server: 118.39.136.248
-  port: 20002
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: SG新加坡丨yoyapai.comr
-  type: trojan
-  server: 66.42.61.215
+  server: 64.176.36.61
   port: 443
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
-- name: KR韓國丨yoyapai.comr
+- name: 伊朗 V2CROSS.COM
   type: trojan
-  server: 123.99.111.135
-  port: 19461
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: NL荷蘭丨yoyapai.comr
-  type: trojan
-  server: 185.162.9.60
+  server: 83.147.255.67
   port: 8443
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
-- name: NL荷蘭丨yoyapai.comr
+- name: 日本东京 Oracle Cloud
   type: trojan
-  server: 144.31.122.162
-  port: 8443
+  server: 138.2.23.80
+  port: 21044
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
-- name: NL荷蘭丨yoyapai.comr
+- name: CH臺灣丨yoyapai.comr
   type: trojan
-  server: 45.145.171.206
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: NL荷蘭丨yoyapai.comr
-  type: trojan
-  server: 95.169.192.234
-  port: 8443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: 荷蘭節點丨yoyapai.comr
-  type: trojan
-  server: 31.15.17.129
-  port: 2053
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: NL荷蘭丨yoyapai.comr
-  type: trojan
-  server: 185.31.200.184
-  port: 2053
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: BE比利時丨yoyapai.comr
-  type: trojan
-  server: 95.164.62.196
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: 奧地利節點丨yoyapai.comr
-  type: trojan
-  server: 46.102.156.144
-  port: 2053
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: 意大利節點IT丨yoyapai.comr
-  type: trojan
-  server: 151.241.215.148
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: NL荷蘭丨yoyapai.comr
-  type: trojan
-  server: 2.59.183.210
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: NL荷蘭丨yoyapai.comr
-  type: trojan
-  server: 38.180.96.40
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: 泰國節點丨yoyapai.comr
-  type: trojan
-  server: 43.249.33.117
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: KR韓國丨yoyapai.comr
-  type: trojan
-  server: 220.118.248.123
-  port: 18001
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: KR韓國丨yoyapai.comr
-  type: trojan
-  server: 59.12.232.18
-  port: 12345
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: 丹麥節點DK丨yoyapai.comr
-  type: trojan
-  server: 77.37.96.247
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: LT立陶宛丨yoyapai.comr
-  type: trojan
-  server: 185.80.128.115
-  port: 8443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: 瑞士節點丨yoyapai.comr
-  type: trojan
-  server: 140.238.208.240
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: KR韓國丨yoyapai.comr
-  type: trojan
-  server: 183.102.55.197
-  port: 10003
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: KR韓國丨yoyapai.comr
-  type: trojan
-  server: 59.0.95.106
-  port: 32773
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: 瑞士節點丨yoyapai.comr
-  type: trojan
-  server: 38.180.84.86
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: NL荷蘭丨yoyapai.comr
-  type: trojan
-  server: 185.52.0.84
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: 奧地利節點丨yoyapai.comr
-  type: trojan
-  server: 38.180.143.51
-  port: 2053
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: NL荷蘭丨yoyapai.comr
-  type: trojan
-  server: 31.15.18.58
-  port: 8443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: KR韓國丨yoyapai.comr
-  type: trojan
-  server: 61.72.208.162
-  port: 32768
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: 瑞典節點丨yoyapai.comr
-  type: trojan
-  server: 83.147.254.243
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: RO羅馬尼亞節點丨yoyapai.comr
-  type: trojan
-  server: 45.67.34.89
-  port: 8443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: 泰國節點丨yoyapai.comr
-  type: trojan
-  server: 45.150.128.181
+  server: 146.70.71.157
   port: 443
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
@@ -1203,10 +1276,24 @@ proxies:
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
-- name: KR韓國丨yoyapai.comr
+- name: 荷蘭節點丨yoyapai.comr
   type: trojan
-  server: 183.107.78.213
-  port: 20880
+  server: 77.110.103.243
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: LT立陶宛丨yoyapai.comr
+  type: trojan
+  server: 185.80.128.115
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 奧地利節點丨yoyapai.comr
+  type: trojan
+  server: 38.180.143.51
+  port: 2053
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
@@ -1217,149 +1304,9 @@ proxies:
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
-- name: 瑞士節點丨yoyapai.comr
-  type: trojan
-  server: 91.192.102.55
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: 拉脫維亞丨yoyapai.comr
-  type: trojan
-  server: 146.19.84.236
-  port: 2053
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: 瑞典節點丨yoyapai.comr
-  type: trojan
-  server: 185.104.151.181
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: SE瑞典節點丨yoyapai.comr
-  type: trojan
-  server: 77.110.121.125
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: NL荷蘭丨yoyapai.comr
-  type: trojan
-  server: 38.180.70.111
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: NL荷蘭丨yoyapai.comr
-  type: trojan
-  server: 91.221.191.120
-  port: 8443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: SE瑞典丨yoyapai.comr
-  type: trojan
-  server: 176.125.240.63
-  port: 2053
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: CH臺灣丨yoyapai.comr
-  type: trojan
-  server: 146.70.71.157
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
 - name: 瑞典節點丨yoyapai.comr
   type: trojan
   server: 64.112.127.151
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: 荷蘭節點丨yoyapai.comr
-  type: trojan
-  server: 77.110.103.243
-  port: 8443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: 瑞典節點丨yoyapai.comr
-  type: trojan
-  server: 176.125.240.147
-  port: 2053
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: SE瑞典節點丨yoyapai.comr
-  type: trojan
-  server: 45.153.187.209
-  port: 8443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: NL荷蘭丨yoyapai.comr
-  type: trojan
-  server: 38.180.233.61
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: 瑞典丨yoyapai.comr
-  type: trojan
-  server: 16.16.45.85
-  port: 8443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: DK丹麥丨yoyapai.comr
-  type: trojan
-  server: 77.37.96.132
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: 俄羅斯節點丨yoyapai.comr
-  type: trojan
-  server: 82.97.249.34
-  port: 2053
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: 匈牙利節點丨yoyapai.comr
-  type: trojan
-  server: 180.149.37.38
-  port: 8443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: NL荷蘭丨yoyapai.comr
-  type: trojan
-  server: 152.53.200.164
-  port: 8443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: 意大利丨yoyapai.comr
-  type: trojan
-  server: 38.180.194.222
-  port: 2053
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: SE瑞典節點丨yoyapai.comr
-  type: trojan
-  server: 83.147.254.168
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: RO羅馬尼亞節點丨yoyapai.comr
-  type: trojan
-  server: 38.180.35.88
   port: 443
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
@@ -1371,17 +1318,31 @@ proxies:
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
-- name: 俄羅斯節點丨yoyapai.comr
+- name: RO羅馬尼亞節點丨yoyapai.comr
   type: trojan
-  server: 95.213.226.60
+  server: 38.180.205.71
   port: 443
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
-- name: 立陶宛節點LT丨yoyapai.comr
+- name: RO羅馬尼亞節點丨yoyapai.comr
   type: trojan
-  server: 46.29.234.91
-  port: 8443
+  server: 38.180.35.88
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 拉脫維亞丨yoyapai.comr
+  type: trojan
+  server: 146.19.84.236
+  port: 2053
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 俄羅斯節點丨yoyapai.comr
+  type: trojan
+  server: 95.213.226.60
+  port: 443
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
@@ -1392,30 +1353,79 @@ proxies:
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
-- name: RO羅馬尼亞節點丨yoyapai.comr
-  type: trojan
-  server: 38.180.205.71
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
 - name: NL荷蘭丨yoyapai.comr
   type: trojan
-  server: 91.221.190.80
+  server: 152.53.200.164
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 瑞典節點丨yoyapai.comr
+  type: trojan
+  server: 176.125.240.147
+  port: 2053
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 意大利丨yoyapai.comr
+  type: trojan
+  server: 38.180.194.222
+  port: 2053
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 瑞典節點丨yoyapai.comr
+  type: trojan
+  server: 83.147.254.243
   port: 443
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
-- name: 西班牙節點ES丨yoyapai.comr
+- name: 匈牙利節點丨yoyapai.comr
   type: trojan
-  server: 172.233.97.34
+  server: 180.149.37.38
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 立陶宛節點LT丨yoyapai.comr
+  type: trojan
+  server: 46.29.234.91
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 瑞典節點丨yoyapai.comr
+  type: trojan
+  server: 185.104.151.181
   port: 443
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
-- name: FR法國丨yoyapai.comr
+- name: 奧地利節點丨yoyapai.comr
   type: trojan
-  server: 109.61.110.241
+  server: 46.102.156.144
+  port: 2053
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: SE瑞典丨yoyapai.comr
+  type: trojan
+  server: 176.125.240.63
+  port: 2053
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: SE瑞典節點丨yoyapai.comr
+  type: trojan
+  server: 45.153.187.209
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: BE比利時丨yoyapai.comr
+  type: trojan
+  server: 95.164.62.196
   port: 443
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
@@ -1427,9 +1437,9 @@ proxies:
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
-- name: 法國節點丨yoyapai.comr
+- name: SE瑞典節點丨yoyapai.comr
   type: trojan
-  server: 138.124.81.204
+  server: 83.147.254.168
   port: 443
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
@@ -1441,12 +1451,6 @@ proxies:
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
-- name: JP日本(mibei77.com 米贝节点分享)
-  type: trojan
-  server: store.ubi.com
-  port: 443
-  password: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-  sni: cloudflare-proxy-1jk.pages.dev
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -1454,411 +1458,411 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 负载均衡
   - DIRECT
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
-  - SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
+  - VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720
   - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
   - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
   - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
+  - 美国 V2CROSS.COM
+  - 挪威 V2CROSS.COM
+  - 美國丨yoyapai.comr
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - 美国 纽约市DigitalOcean云公司
+  - 荷兰 CCZZUU.TOP
+  - 美国 CCZZUU.TOP 2
+  - 美国 CCZZUU.TOP 3
+  - 美国 DigitalOcean数据中心
+  - _US_美国
+  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
+  - SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
   - 英国 V2CROSS.COM
-  - 英国 V2CROSS.COM
-  - 英国 V2CROSS.COM
-  - 英国 V2CROSS.COM
+  - 美国4ripaojiedian
+  - 美国5ripaojiedian
+  - NL荷蘭丨yoyapai.comr
+  - NL荷蘭丨yoyapai.comr
   - 英國
   - 美國
-  - GB英國節點
-  - 英國節點
-  - GB英國節點
-  - GB英國節點
-  - GB英國節點
-  - GB英國節點
-  - GB英國節點
-  - 英國
-  - GB英國節點
-  - 德國
-  - US美國節點
-  - GB英國節點
-  - GB英國節點
-  - GB英國節點
   - 英國
   - 英國
-  - 美國節點
-  - GB英國節點
-  - GB英國節點
-  - 英國
-  - 英國
-  - 英國
-  - 英國
-  - 英國
-  - US美國節點
   - 美國
   - 英國
   - 英國
-  - 美國節點
-  - GB英國
+  - 英國
+  - US美國
   - 英國節點
   - 英國
-  - 美國丨yoyapai.comr
   - US美國節點
-  - US美國節點
-  - GB英國節點
+  - 美國節點
+  - 美國節點
+  - 英國
+  - 英國
+  - 英國
+  - GB英國
+  - GB英国
+  - 英國節點
+  - 英國
   - 英國
   - GB英國
   - 美國節點
+  - 美國
+  - 瑞士節點丨yoyapai.comr
   - 英國
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
+  - NL荷蘭丨yoyapai.comr
+  - NL荷蘭丨yoyapai.comr
+  - NL荷蘭丨yoyapai.comr
+  - 英國
+  - NL荷蘭丨yoyapai.comr
+  - NL荷蘭丨yoyapai.comr
+  - 瑞士節點丨yoyapai.comr
+  - 西班牙節點ES丨yoyapai.comr
+  - 瑞典丨yoyapai.comr
+  - 丹麥節點DK丨yoyapai.comr
+  - NL荷蘭丨yoyapai.comr
+  - NL荷蘭丨yoyapai.comr
+  - NL荷蘭丨yoyapai.comr
+  - 法國節點丨yoyapai.comr
+  - 荷蘭節點丨yoyapai.comr
+  - 瑞士節點丨yoyapai.comr
+  - 意大利節點IT丨yoyapai.comr
+  - DK丹麥丨yoyapai.comr
+  - NL荷蘭丨yoyapai.comr
+  - NL荷蘭丨yoyapai.comr
+  - FR法國丨yoyapai.comr
   - GB英国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - DE德国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - DE德国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - DE德国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)
-  - JP日本(mibei77.com 米贝节点分享)
-  - 英国 CCZZUU.TOP 2
-  - 英国 CCZZUU.TOP 3
-  - 英国 CCZZUU.TOP 4
-  - _US_美国
+  - DE德国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - FR法国(mibei77.com 米贝节点分享)
+  - FR法国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
-  - SG新加坡(mibei77.com 米贝节点分享)
-  - HK香港(mibei77.com 米贝节点分享)
-  - 日本ripaojiedian
-  - KR韓國丨yoyapai.comr
-  - KR韓國丨yoyapai.comr
-  - KR韓國丨yoyapai.comr
-  - SG新加坡丨yoyapai.comr
-  - KR韓國丨yoyapai.comr
-  - NL荷蘭丨yoyapai.comr
-  - NL荷蘭丨yoyapai.comr
-  - NL荷蘭丨yoyapai.comr
-  - NL荷蘭丨yoyapai.comr
-  - 荷蘭節點丨yoyapai.comr
-  - NL荷蘭丨yoyapai.comr
-  - BE比利時丨yoyapai.comr
-  - 奧地利節點丨yoyapai.comr
-  - 意大利節點IT丨yoyapai.comr
-  - NL荷蘭丨yoyapai.comr
-  - NL荷蘭丨yoyapai.comr
-  - 泰國節點丨yoyapai.comr
-  - KR韓國丨yoyapai.comr
-  - KR韓國丨yoyapai.comr
-  - 丹麥節點DK丨yoyapai.comr
-  - LT立陶宛丨yoyapai.comr
-  - 瑞士節點丨yoyapai.comr
-  - KR韓國丨yoyapai.comr
-  - KR韓國丨yoyapai.comr
-  - 瑞士節點丨yoyapai.comr
-  - NL荷蘭丨yoyapai.comr
-  - 奧地利節點丨yoyapai.comr
-  - NL荷蘭丨yoyapai.comr
-  - KR韓國丨yoyapai.comr
-  - 瑞典節點丨yoyapai.comr
-  - RO羅馬尼亞節點丨yoyapai.comr
-  - 泰國節點丨yoyapai.comr
-  - LV拉脫維亞節點丨yoyapai.comr
-  - KR韓國丨yoyapai.comr
-  - RU俄羅斯丨yoyapai.comr
-  - 瑞士節點丨yoyapai.comr
-  - 拉脫維亞丨yoyapai.comr
-  - 瑞典節點丨yoyapai.comr
-  - SE瑞典節點丨yoyapai.comr
-  - NL荷蘭丨yoyapai.comr
-  - NL荷蘭丨yoyapai.comr
-  - SE瑞典丨yoyapai.comr
+  - 日本 东京Digital VM
+  - 美国 加利福尼亚
+  - 伊朗 V2CROSS.COM
+  - 日本东京 Oracle Cloud
   - CH臺灣丨yoyapai.comr
-  - 瑞典節點丨yoyapai.comr
+  - LV拉脫維亞節點丨yoyapai.comr
   - 荷蘭節點丨yoyapai.comr
+  - LT立陶宛丨yoyapai.comr
+  - 奧地利節點丨yoyapai.comr
+  - RU俄羅斯丨yoyapai.comr
   - 瑞典節點丨yoyapai.comr
-  - SE瑞典節點丨yoyapai.comr
-  - NL荷蘭丨yoyapai.comr
-  - 瑞典丨yoyapai.comr
-  - DK丹麥丨yoyapai.comr
-  - 俄羅斯節點丨yoyapai.comr
-  - 匈牙利節點丨yoyapai.comr
-  - NL荷蘭丨yoyapai.comr
-  - 意大利丨yoyapai.comr
-  - SE瑞典節點丨yoyapai.comr
-  - RO羅馬尼亞節點丨yoyapai.comr
   - 捷克節點丨yoyapai.comr
-  - 俄羅斯節點丨yoyapai.comr
-  - 立陶宛節點LT丨yoyapai.comr
-  - 俄羅斯節點丨yoyapai.comr
   - RO羅馬尼亞節點丨yoyapai.comr
+  - RO羅馬尼亞節點丨yoyapai.comr
+  - 拉脫維亞丨yoyapai.comr
+  - 俄羅斯節點丨yoyapai.comr
+  - 俄羅斯節點丨yoyapai.comr
   - NL荷蘭丨yoyapai.comr
-  - 西班牙節點ES丨yoyapai.comr
-  - FR法國丨yoyapai.comr
+  - 瑞典節點丨yoyapai.comr
+  - 意大利丨yoyapai.comr
+  - 瑞典節點丨yoyapai.comr
+  - 匈牙利節點丨yoyapai.comr
+  - 立陶宛節點LT丨yoyapai.comr
+  - 瑞典節點丨yoyapai.comr
+  - 奧地利節點丨yoyapai.comr
+  - SE瑞典丨yoyapai.comr
+  - SE瑞典節點丨yoyapai.comr
+  - BE比利時丨yoyapai.comr
   - 荷蘭節點丨yoyapai.comr
-  - 法國節點丨yoyapai.comr
+  - SE瑞典節點丨yoyapai.comr
   - EE愛沙尼亞丨yoyapai.comr
-  - JP日本(mibei77.com 米贝节点分享)
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: &id001
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
-  - SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
+  - VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720
   - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
   - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
   - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
+  - 美国 V2CROSS.COM
+  - 挪威 V2CROSS.COM
+  - 美國丨yoyapai.comr
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - 美国 纽约市DigitalOcean云公司
+  - 荷兰 CCZZUU.TOP
+  - 美国 CCZZUU.TOP 2
+  - 美国 CCZZUU.TOP 3
+  - 美国 DigitalOcean数据中心
+  - _US_美国
+  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
+  - SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
   - 英国 V2CROSS.COM
-  - 英国 V2CROSS.COM
-  - 英国 V2CROSS.COM
-  - 英国 V2CROSS.COM
+  - 美国4ripaojiedian
+  - 美国5ripaojiedian
+  - NL荷蘭丨yoyapai.comr
+  - NL荷蘭丨yoyapai.comr
   - 英國
   - 美國
-  - GB英國節點
-  - 英國節點
-  - GB英國節點
-  - GB英國節點
-  - GB英國節點
-  - GB英國節點
-  - GB英國節點
-  - 英國
-  - GB英國節點
-  - 德國
-  - US美國節點
-  - GB英國節點
-  - GB英國節點
-  - GB英國節點
   - 英國
   - 英國
-  - 美國節點
-  - GB英國節點
-  - GB英國節點
-  - 英國
-  - 英國
-  - 英國
-  - 英國
-  - 英國
-  - US美國節點
   - 美國
   - 英國
   - 英國
-  - 美國節點
-  - GB英國
+  - 英國
+  - US美國
   - 英國節點
   - 英國
-  - 美國丨yoyapai.comr
   - US美國節點
-  - US美國節點
-  - GB英國節點
+  - 美國節點
+  - 美國節點
+  - 英國
+  - 英國
+  - 英國
+  - GB英國
+  - GB英国
+  - 英國節點
+  - 英國
   - 英國
   - GB英國
   - 美國節點
+  - 美國
+  - 瑞士節點丨yoyapai.comr
   - 英國
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
+  - NL荷蘭丨yoyapai.comr
+  - NL荷蘭丨yoyapai.comr
+  - NL荷蘭丨yoyapai.comr
+  - 英國
+  - NL荷蘭丨yoyapai.comr
+  - NL荷蘭丨yoyapai.comr
+  - 瑞士節點丨yoyapai.comr
+  - 西班牙節點ES丨yoyapai.comr
+  - 瑞典丨yoyapai.comr
+  - 丹麥節點DK丨yoyapai.comr
+  - NL荷蘭丨yoyapai.comr
+  - NL荷蘭丨yoyapai.comr
+  - NL荷蘭丨yoyapai.comr
+  - 法國節點丨yoyapai.comr
+  - 荷蘭節點丨yoyapai.comr
+  - 瑞士節點丨yoyapai.comr
+  - 意大利節點IT丨yoyapai.comr
+  - DK丹麥丨yoyapai.comr
+  - NL荷蘭丨yoyapai.comr
+  - NL荷蘭丨yoyapai.comr
+  - FR法國丨yoyapai.comr
   - GB英国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - DE德国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - DE德国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - DE德国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)
-  - JP日本(mibei77.com 米贝节点分享)
-  - 英国 CCZZUU.TOP 2
-  - 英国 CCZZUU.TOP 3
-  - 英国 CCZZUU.TOP 4
-  - _US_美国
+  - DE德国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)
+  - FR法国(mibei77.com 米贝节点分享)
+  - FR法国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
-  - SG新加坡(mibei77.com 米贝节点分享)
-  - HK香港(mibei77.com 米贝节点分享)
-  - 日本ripaojiedian
-  - KR韓國丨yoyapai.comr
-  - KR韓國丨yoyapai.comr
-  - KR韓國丨yoyapai.comr
-  - SG新加坡丨yoyapai.comr
-  - KR韓國丨yoyapai.comr
-  - NL荷蘭丨yoyapai.comr
-  - NL荷蘭丨yoyapai.comr
-  - NL荷蘭丨yoyapai.comr
-  - NL荷蘭丨yoyapai.comr
-  - 荷蘭節點丨yoyapai.comr
-  - NL荷蘭丨yoyapai.comr
-  - BE比利時丨yoyapai.comr
-  - 奧地利節點丨yoyapai.comr
-  - 意大利節點IT丨yoyapai.comr
-  - NL荷蘭丨yoyapai.comr
-  - NL荷蘭丨yoyapai.comr
-  - 泰國節點丨yoyapai.comr
-  - KR韓國丨yoyapai.comr
-  - KR韓國丨yoyapai.comr
-  - 丹麥節點DK丨yoyapai.comr
-  - LT立陶宛丨yoyapai.comr
-  - 瑞士節點丨yoyapai.comr
-  - KR韓國丨yoyapai.comr
-  - KR韓國丨yoyapai.comr
-  - 瑞士節點丨yoyapai.comr
-  - NL荷蘭丨yoyapai.comr
-  - 奧地利節點丨yoyapai.comr
-  - NL荷蘭丨yoyapai.comr
-  - KR韓國丨yoyapai.comr
-  - 瑞典節點丨yoyapai.comr
-  - RO羅馬尼亞節點丨yoyapai.comr
-  - 泰國節點丨yoyapai.comr
-  - LV拉脫維亞節點丨yoyapai.comr
-  - KR韓國丨yoyapai.comr
-  - RU俄羅斯丨yoyapai.comr
-  - 瑞士節點丨yoyapai.comr
-  - 拉脫維亞丨yoyapai.comr
-  - 瑞典節點丨yoyapai.comr
-  - SE瑞典節點丨yoyapai.comr
-  - NL荷蘭丨yoyapai.comr
-  - NL荷蘭丨yoyapai.comr
-  - SE瑞典丨yoyapai.comr
+  - 日本 东京Digital VM
+  - 美国 加利福尼亚
+  - 伊朗 V2CROSS.COM
+  - 日本东京 Oracle Cloud
   - CH臺灣丨yoyapai.comr
-  - 瑞典節點丨yoyapai.comr
+  - LV拉脫維亞節點丨yoyapai.comr
   - 荷蘭節點丨yoyapai.comr
+  - LT立陶宛丨yoyapai.comr
+  - 奧地利節點丨yoyapai.comr
+  - RU俄羅斯丨yoyapai.comr
   - 瑞典節點丨yoyapai.comr
-  - SE瑞典節點丨yoyapai.comr
-  - NL荷蘭丨yoyapai.comr
-  - 瑞典丨yoyapai.comr
-  - DK丹麥丨yoyapai.comr
-  - 俄羅斯節點丨yoyapai.comr
-  - 匈牙利節點丨yoyapai.comr
-  - NL荷蘭丨yoyapai.comr
-  - 意大利丨yoyapai.comr
-  - SE瑞典節點丨yoyapai.comr
-  - RO羅馬尼亞節點丨yoyapai.comr
   - 捷克節點丨yoyapai.comr
-  - 俄羅斯節點丨yoyapai.comr
-  - 立陶宛節點LT丨yoyapai.comr
-  - 俄羅斯節點丨yoyapai.comr
   - RO羅馬尼亞節點丨yoyapai.comr
+  - RO羅馬尼亞節點丨yoyapai.comr
+  - 拉脫維亞丨yoyapai.comr
+  - 俄羅斯節點丨yoyapai.comr
+  - 俄羅斯節點丨yoyapai.comr
   - NL荷蘭丨yoyapai.comr
-  - 西班牙節點ES丨yoyapai.comr
-  - FR法國丨yoyapai.comr
+  - 瑞典節點丨yoyapai.comr
+  - 意大利丨yoyapai.comr
+  - 瑞典節點丨yoyapai.comr
+  - 匈牙利節點丨yoyapai.comr
+  - 立陶宛節點LT丨yoyapai.comr
+  - 瑞典節點丨yoyapai.comr
+  - 奧地利節點丨yoyapai.comr
+  - SE瑞典丨yoyapai.comr
+  - SE瑞典節點丨yoyapai.comr
+  - BE比利時丨yoyapai.comr
   - 荷蘭節點丨yoyapai.comr
-  - 法國節點丨yoyapai.comr
+  - SE瑞典節點丨yoyapai.comr
   - EE愛沙尼亞丨yoyapai.comr
-  - JP日本(mibei77.com 米贝节点分享)
 - name: 🔮 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
