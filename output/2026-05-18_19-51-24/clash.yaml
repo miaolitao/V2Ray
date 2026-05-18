@@ -18,18 +18,16 @@ proxies:
     headers:
       Host: t1.620720.xyz
   tls: true
-- name: VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
-  type: vmess
-  server: support.zoom.us
+- name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
+  type: ssr
+  server: 107.151.182.253
   port: 8080
-  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
-  alterId: '0'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /@Malinda6104
-    headers:
-      Host: support.zoom.us
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6?
+  protocol: origin
+  obfs: plain
+  protocol-param: ''
+  obfs-param: ''
 - name: VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
   type: vmess
   server: sy4.620720.xyz
@@ -43,60 +41,53 @@ proxies:
     headers:
       Host: sy4.620720.xyz
   tls: true
-- name: 北美地区 V2CROSS.COM
-  type: trojan
-  server: 104.207.145.249
-  port: 8443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-- name: 美国 V2CROSS.COM
-  type: trojan
-  server: 162.251.82.253
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: 美国 V2CROSS.COM
-  type: trojan
-  server: 4.236.130.132
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: 挪威 CCZZUU.TOP
-  type: trojan
-  server: 138.124.60.93
-  port: 8443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
 - name: 美国 CloudFlare节点
   type: trojan
   server: 104.20.6.134
   port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: 美国 CloudFlare节点 2
+  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  sni: sni.111000.dynv6.net
+- name: 亚太地区 V2CROSS.COM
   type: trojan
-  server: 108.162.192.253
+  server: 103.116.7.253
   port: 443
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
-- name: 美国 CCZZUU.TOP
+- name: 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司
   type: trojan
-  server: 63.141.128.253
+  server: 72.167.230.253
   port: 443
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
-- name: 美国 CCZZUU.TOP 2
+- name: 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司 2
   type: trojan
-  server: 205.172.57.218
-  port: 2053
+  server: 198.71.189.253
+  port: 443
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司 3
+  type: trojan
+  server: 166.62.112.253
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 美国 CCZZUU.TOP 3
+  type: trojan
+  server: 198.12.145.253
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 美国 CloudFlare节点 3
+  type: trojan
+  server: 104.18.12.149
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
   skip-cert-verify: true
 - name: _US_美国
   type: trojan
@@ -104,16 +95,6 @@ proxies:
   port: 443
   password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
   sni: afrcloud1.mmv.kr
-- name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
-  type: ssr
-  server: 107.151.182.253
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6?
-  protocol: origin
-  obfs: plain
-  protocol-param: ''
-  obfs-param: ''
 - name: SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
   type: ssr
   server: 79.127.233.170
@@ -124,6 +105,18 @@ proxies:
   obfs: plain
   protocol-param: ''
   obfs-param: ''
+- name: VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
+  type: vmess
+  server: support.zoom.us
+  port: 8080
+  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /@Malinda6104
+    headers:
+      Host: support.zoom.us
 - name: VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
   type: vmess
   server: hgtrojan.zabc.net
@@ -150,23 +143,29 @@ proxies:
     headers:
       Host: cg1c01.waimaojd.com
   tls: true
-- name: 美国 新泽西州伯灵顿县月桂山乡Comcast有线通信股份有限公司
+- name: 波兰 V2CROSS.COM
   type: trojan
-  server: 69.143.174.201
-  port: 8443
+  server: 91.149.239.206
+  port: 443
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
 - name: 英国 V2CROSS.COM
   type: vmess
-  server: 82.198.246.214
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: '0'
   cipher: auto
-- name: 美国4ripaojiedian
+- name: 美国 3COM公司企业网
+  type: trojan
+  server: 152.67.225.124
+  port: 2096
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+- name: 英国 V2CROSS.COM
   type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: '0'
@@ -178,24 +177,17 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: '0'
   cipher: auto
-- name: 伊朗 CCZZUU.TOP
+- name: 美国 亚利桑那州凤凰城Oracle云计算数据中心
   type: trojan
-  server: 31.58.50.114
-  port: 8443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: 伊朗 CCZZUU.TOP 2
-  type: trojan
-  server: 31.58.50.23
-  port: 2053
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: 美国 加州
-  type: trojan
-  server: 64.23.220.49
+  server: 129.146.46.164
   port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 加拿大 Bell
+  type: trojan
+  server: 142.171.21.164
+  port: 8443
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
@@ -238,38 +230,72 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
   tls: true
-- name: 日本 V2CROSS.COM
+- name: 乌克兰 V2CROSS.COM
   type: trojan
-  server: 43.165.190.11
-  port: 42841
+  server: 2.56.91.49
+  port: 2053
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
-- name: 北美地区 V2CROSS.COM
+- name: 美国 加利福尼亚
   type: trojan
-  server: 23.175.201.2
+  server: 64.188.98.29
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 日本东京 Oracle Cloud
+  type: trojan
+  server: 138.2.23.80
+  port: 21044
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 美国 CloudFlare节点 2
+  type: trojan
+  server: www.calmlunch.com
+  port: 443
+  password: humanity
+  skip-cert-verify: true
+- name: 奥地利 CCZZUU.TOP
+  type: trojan
+  server: 78.40.211.147
+  port: 2053
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 拉脱维亚 CCZZUU.TOP
+  type: trojan
+  server: 195.123.209.189
+  port: 8443
+  password: '162534'
+  sni: cchh2.pages.dev
+  skip-cert-verify: true
+- name: 美国 V2CROSS.COM
+  type: trojan
+  server: 146.190.102.51
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 新加坡 DigitalOcean数据中心
+  type: trojan
+  server: 209.97.170.177
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+- name: 乌克兰 V2CROSS.COM
+  type: trojan
+  server: 188.239.21.47
   port: 8443
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
-- name: 韩国 KT电信
+- name: 加拿大 CCZZUU.TOP
   type: trojan
-  server: 183.107.78.213
-  port: 20880
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: 新加坡 Digital Ocean数据中心
-  type: trojan
-  server: 178.128.97.53
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: 中国 阿里云
-  type: trojan
-  server: 8.223.63.150
-  port: 443
+  server: 192.131.142.161
+  port: 46639
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
@@ -280,6 +306,13 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: '2'
   cipher: auto
+- name: 美国 CloudFlare节点 4
+  type: trojan
+  server: v1.dabache.top
+  port: 443
+  password: humanity
+  sni: www.multiplydose.com
+  skip-cert-verify: true
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -288,74 +321,84 @@ proxy-groups:
   - 🔮 负载均衡
   - DIRECT
   - VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720
-  - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
-  - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
-  - 北美地区 V2CROSS.COM
-  - 美国 V2CROSS.COM
-  - 美国 V2CROSS.COM
-  - 挪威 CCZZUU.TOP
-  - 美国 CloudFlare节点
-  - 美国 CloudFlare节点 2
-  - 美国 CCZZUU.TOP
-  - 美国 CCZZUU.TOP 2
-  - _US_美国
   - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
+  - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
+  - 美国 CloudFlare节点
+  - 亚太地区 V2CROSS.COM
+  - 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司
+  - 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司 2
+  - 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司 3
+  - 美国 CCZZUU.TOP 3
+  - 美国 CloudFlare节点 3
+  - _US_美国
   - SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
+  - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
   - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
-  - 美国 新泽西州伯灵顿县月桂山乡Comcast有线通信股份有限公司
+  - 波兰 V2CROSS.COM
   - 英国 V2CROSS.COM
-  - 美国4ripaojiedian
+  - 美国 3COM公司企业网
+  - 英国 V2CROSS.COM
   - 美国5ripaojiedian
-  - 伊朗 CCZZUU.TOP
-  - 伊朗 CCZZUU.TOP 2
-  - 美国 加州
+  - 美国 亚利桑那州凤凰城Oracle云计算数据中心
+  - 加拿大 Bell
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
-  - 日本 V2CROSS.COM
-  - 北美地区 V2CROSS.COM
-  - 韩国 KT电信
-  - 新加坡 Digital Ocean数据中心
-  - 中国 阿里云
+  - 乌克兰 V2CROSS.COM
+  - 美国 加利福尼亚
+  - 日本东京 Oracle Cloud
+  - 美国 CloudFlare节点 2
+  - 奥地利 CCZZUU.TOP
+  - 拉脱维亚 CCZZUU.TOP
+  - 美国 V2CROSS.COM
+  - 新加坡 DigitalOcean数据中心
+  - 乌克兰 V2CROSS.COM
+  - 加拿大 CCZZUU.TOP
   - 香港ripaojiedian
+  - 美国 CloudFlare节点 4
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: &id001
   - VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720
-  - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
-  - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
-  - 北美地区 V2CROSS.COM
-  - 美国 V2CROSS.COM
-  - 美国 V2CROSS.COM
-  - 挪威 CCZZUU.TOP
-  - 美国 CloudFlare节点
-  - 美国 CloudFlare节点 2
-  - 美国 CCZZUU.TOP
-  - 美国 CCZZUU.TOP 2
-  - _US_美国
   - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
+  - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
+  - 美国 CloudFlare节点
+  - 亚太地区 V2CROSS.COM
+  - 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司
+  - 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司 2
+  - 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司 3
+  - 美国 CCZZUU.TOP 3
+  - 美国 CloudFlare节点 3
+  - _US_美国
   - SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.12
+  - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
   - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
-  - 美国 新泽西州伯灵顿县月桂山乡Comcast有线通信股份有限公司
+  - 波兰 V2CROSS.COM
   - 英国 V2CROSS.COM
-  - 美国4ripaojiedian
+  - 美国 3COM公司企业网
+  - 英国 V2CROSS.COM
   - 美国5ripaojiedian
-  - 伊朗 CCZZUU.TOP
-  - 伊朗 CCZZUU.TOP 2
-  - 美国 加州
+  - 美国 亚利桑那州凤凰城Oracle云计算数据中心
+  - 加拿大 Bell
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
-  - 日本 V2CROSS.COM
-  - 北美地区 V2CROSS.COM
-  - 韩国 KT电信
-  - 新加坡 Digital Ocean数据中心
-  - 中国 阿里云
+  - 乌克兰 V2CROSS.COM
+  - 美国 加利福尼亚
+  - 日本东京 Oracle Cloud
+  - 美国 CloudFlare节点 2
+  - 奥地利 CCZZUU.TOP
+  - 拉脱维亚 CCZZUU.TOP
+  - 美国 V2CROSS.COM
+  - 新加坡 DigitalOcean数据中心
+  - 乌克兰 V2CROSS.COM
+  - 加拿大 CCZZUU.TOP
   - 香港ripaojiedian
+  - 美国 CloudFlare节点 4
 - name: 🔮 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
