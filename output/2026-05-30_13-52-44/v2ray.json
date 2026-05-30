@@ -51,6 +51,34 @@
       }
     },
     {
+      "tag": "VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "support.zoom.us",
+            "port": 8080,
+            "users": [
+              {
+                "id": "44e57485-eccc-46ef-808f-cd17ac810018",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/@Malinda6104",
+          "headers": {
+            "Host": "support.zoom.us"
+          }
+        }
+      }
+    },
+    {
       "tag": "VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s",
       "protocol": "vmess",
       "settings": {
@@ -117,14 +145,14 @@
       }
     },
     {
-      "tag": "美国 starcorenode.com 2",
+      "tag": "北美地区 V2CROSS.COM",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "167.68.4.199",
-            "port": 2053,
-            "password": "Aimer"
+            "address": "23.227.193.173",
+            "port": 443,
+            "password": "AZWY=WAZk5TeVYmMUudr2xmeb00I3ymeMQ"
           }
         ]
       },
@@ -132,7 +160,28 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "epge.muarua.filegear-sg.me",
+          "serverName": "www.dataset-logger.click",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "美国 CloudFlare节点",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.16.147.104",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.creationlong.org",
           "allowInsecure": false
         }
       }
@@ -159,16 +208,16 @@
       }
     },
     {
-      "tag": "VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su",
+      "tag": "VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "support.zoom.us",
-            "port": 8080,
+            "address": "cg1c07.waimaojd.com",
+            "port": 443,
             "users": [
               {
-                "id": "44e57485-eccc-46ef-808f-cd17ac810018",
+                "id": "be8e3136-b874-4085-bd23-ec3699300490",
                 "alterId": "0",
                 "security": "auto"
               }
@@ -179,10 +228,15 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/@Malinda6104",
+          "path": "/api/v1/graphql",
           "headers": {
-            "Host": "support.zoom.us"
+            "Host": "cg1c07.waimaojd.com"
           }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
         }
       }
     },
@@ -220,12 +274,12 @@
       }
     },
     {
-      "tag": "VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c",
+      "tag": "VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "cg1c04.waimaojd.com",
+            "address": "cg1c14.waimaojd.com",
             "port": 443,
             "users": [
               {
@@ -242,7 +296,7 @@
         "wsSettings": {
           "path": "/api/v1/graphql",
           "headers": {
-            "Host": "cg1c04.waimaojd.com"
+            "Host": "cg1c14.waimaojd.com"
           }
         },
         "security": "tls",
@@ -250,28 +304,6 @@
           "serverName": "",
           "allowInsecure": false
         }
-      }
-    },
-    {
-      "tag": "英国 V2CROSS.COM",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "82.198.246.214",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
       }
     },
     {
@@ -319,34 +351,12 @@
       }
     },
     {
-      "tag": "英国 starcorenode.com",
+      "tag": "VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "82.198.246.214",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "cg1c07.waimaojd.com",
+            "address": "cg1c04.waimaojd.com",
             "port": 443,
             "users": [
               {
@@ -363,7 +373,7 @@
         "wsSettings": {
           "path": "/api/v1/graphql",
           "headers": {
-            "Host": "cg1c07.waimaojd.com"
+            "Host": "cg1c04.waimaojd.com"
           }
         },
         "security": "tls",
@@ -374,50 +384,81 @@
       }
     },
     {
-      "tag": "VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c",
+      "tag": "台湾省 V2CROSS.COM",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "211.76.176.98",
+            "port": 19128,
+            "password": "gcuCpQfaiVeDBdWG"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "yazhou10.dynu.net",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "美国 V2CROSS.COM",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "cg1c14.waimaojd.com",
+            "address": "gtm-sg-cc54q7d1q01.365cloud0285.com",
+            "port": 6001,
+            "users": [
+              {
+                "id": "a030842a-d29a-4ea9-a776-14fc4b9e102d",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "罗马尼亚 starcorenode.com",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "185.137.157.254",
             "port": 443,
-            "users": [
-              {
-                "id": "be8e3136-b874-4085-bd23-ec3699300490",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
+            "password": "hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd"
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/api/v1/graphql",
-          "headers": {
-            "Host": "cg1c14.waimaojd.com"
-          }
-        },
+        "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "",
+          "serverName": "www.directorypipeline.click",
           "allowInsecure": false
         }
       }
     },
     {
-      "tag": "香港ripaojiedian",
+      "tag": "美国 starcorenode.com 2",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "v10.hdacd.com",
-            "port": 30807,
+            "address": "gtm-sg-cc54q7d1q01.365cloud0285.com",
+            "port": 6003,
             "users": [
               {
-                "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-                "alterId": "2",
+                "id": "a030842a-d29a-4ea9-a776-14fc4b9e102d",
+                "alterId": "0",
                 "security": "auto"
               }
             ]
@@ -429,16 +470,16 @@
       }
     },
     {
-      "tag": "美国 加利福尼亚州圣何塞IKGlobal",
+      "tag": "美国 starcorenode.com 3",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "103.127.243.59",
-            "port": 56738,
+            "address": "gtm-sg-cc54q7d1q01.365cloud0285.com",
+            "port": 6004,
             "users": [
               {
-                "id": "5f49c80e-7770-4bd1-9c86-43c2068a3a26",
+                "id": "a030842a-d29a-4ea9-a776-14fc4b9e102d",
                 "alterId": "0",
                 "security": "auto"
               }
@@ -448,6 +489,27 @@
       },
       "streamSettings": {
         "network": "tcp"
+      }
+    },
+    {
+      "tag": "美国 V2CROSS.COM",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "65.20.90.225",
+            "port": 443,
+            "password": "Tu1fZjElnkRg0ECRj0sI0u54PY8ptUmATg"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.sandbox-cloud.click",
+          "allowInsecure": false
+        }
       }
     }
   ],
