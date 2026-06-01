@@ -112,16 +112,58 @@
       }
     },
     {
-      "tag": "VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa",
+      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "172.64.152.23",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.calmlunch.com",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "_US_美国",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "216.24.57.250",
+            "port": 443,
+            "password": "5027e2a4-c4d2-463a-9508-83a2c7d1ad83"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "afrcloud1.mmv.kr",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "cg1c01.waimaojd.com",
-            "port": 443,
+            "address": "hgtrojan.zabc.net",
+            "port": 2083,
             "users": [
               {
-                "id": "be8e3136-b874-4085-bd23-ec3699300490",
+                "id": "e6395c20-4571-4b34-d6b1-55a5d36e49ea",
                 "alterId": "0",
                 "security": "auto"
               }
@@ -132,9 +174,9 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/api/v1/graphql",
+          "path": "/e6395c20",
           "headers": {
-            "Host": "cg1c01.waimaojd.com"
+            "Host": "hgtrojan.zabc.net"
           }
         },
         "security": "tls",
@@ -178,35 +220,36 @@
       }
     },
     {
-      "tag": "美国 CloudFlare节点",
-      "protocol": "trojan",
+      "tag": "英国 V2CROSS.COM",
+      "protocol": "vmess",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "172.64.147.24",
-            "port": 443,
-            "password": "humanity"
+            "address": "82.198.246.214",
+            "port": 180,
+            "users": [
+              {
+                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.gossipglove.com",
-          "allowInsecure": true
-        }
+        "network": "tcp"
       }
     },
     {
-      "tag": "美国 得克萨斯州达拉斯Cloudflare Warp节点",
+      "tag": "美国 Akamai科技公司CDN网络节点",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "8.6.112.0",
+            "address": "172.235.63.252",
             "port": 443,
-            "password": "humanity"
+            "password": "bX_lNHWoW6ywq82mI=KUr+8i__VSp0Hs_E"
           }
         ]
       },
@@ -214,7 +257,7 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "www.calmloud.com",
+          "serverName": "172.235.63.252",
           "allowInsecure": true
         }
       }
@@ -264,14 +307,14 @@
       }
     },
     {
-      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "tag": "GB英国(mibei77.com 米贝节点分享)",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "104.21.40.34",
-            "port": 443,
-            "password": "humanity"
+            "address": "103.45.245.208",
+            "port": 2053,
+            "password": "rYuChHcwQZskq9E0zdoR"
           }
         ]
       },
@@ -279,40 +322,18 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "www.gossipglove.com",
+          "serverName": "vpn5.rnmcnm.com",
           "allowInsecure": false
         }
       }
     },
     {
-      "tag": "KR韩国(mibei77.com 米贝节点分享)",
+      "tag": "US美国(mibei77.com 米贝节点分享)",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
             "address": "82.198.246.37",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "KR韩国(mibei77.com 米贝节点分享)",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "82.198.246.214",
             "port": 180,
             "users": [
               {
@@ -532,7 +553,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "82.198.246.37",
+            "address": "82.198.246.250",
             "port": 180,
             "users": [
               {
@@ -576,7 +597,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "82.198.246.250",
+            "address": "82.198.246.37",
             "port": 180,
             "users": [
               {
@@ -643,6 +664,204 @@
         "vnext": [
           {
             "address": "82.198.246.250",
+            "port": 180,
+            "users": [
+              {
+                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "GB英国(mibei77.com 米贝节点分享)",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "82.198.246.214",
+            "port": 180,
+            "users": [
+              {
+                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "GB英国(mibei77.com 米贝节点分享)",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "82.198.246.250",
+            "port": 180,
+            "users": [
+              {
+                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "GB英国(mibei77.com 米贝节点分享)",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "82.198.246.250",
+            "port": 180,
+            "users": [
+              {
+                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "GB英国(mibei77.com 米贝节点分享)",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "82.198.246.250",
+            "port": 180,
+            "users": [
+              {
+                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "GB英国(mibei77.com 米贝节点分享)",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "82.198.246.250",
+            "port": 180,
+            "users": [
+              {
+                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "GB英国(mibei77.com 米贝节点分享)",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "82.198.246.214",
+            "port": 180,
+            "users": [
+              {
+                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "GB英国(mibei77.com 米贝节点分享)",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "82.198.246.214",
+            "port": 180,
+            "users": [
+              {
+                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "GB英国(mibei77.com 米贝节点分享)",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "82.198.246.214",
+            "port": 180,
+            "users": [
+              {
+                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "GB英国(mibei77.com 米贝节点分享)",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "82.198.246.214",
             "port": 180,
             "users": [
               {
@@ -730,28 +949,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "82.198.246.250",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "GB英国(mibei77.com 米贝节点分享)",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
             "address": "82.198.246.214",
             "port": 180,
             "users": [
@@ -775,50 +972,6 @@
         "vnext": [
           {
             "address": "82.198.246.250",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "GB英国(mibei77.com 米贝节点分享)",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "82.198.246.214",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "GB英国(mibei77.com 米贝节点分享)",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "82.198.246.214",
             "port": 180,
             "users": [
               {
@@ -862,72 +1015,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "82.198.246.214",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "GB英国(mibei77.com 米贝节点分享)",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "82.198.246.250",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "GB英国(mibei77.com 米贝节点分享)",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "82.198.246.250",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "GB英国(mibei77.com 米贝节点分享)",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
             "address": "82.198.246.250",
             "port": 180,
             "users": [
@@ -964,114 +1051,6 @@
       },
       "streamSettings": {
         "network": "tcp"
-      }
-    },
-    {
-      "tag": "GB英国(mibei77.com 米贝节点分享)",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "82.198.246.214",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "GB英国(mibei77.com 米贝节点分享)",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "82.198.246.250",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "GB英国(mibei77.com 米贝节点分享)",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "82.198.246.214",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "美国 CloudFlare节点",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.20.6.134",
-            "port": 443,
-            "password": "humanity"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.calmloud.com",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "_US_美国",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "216.24.57.250",
-            "port": 443,
-            "password": "5027e2a4-c4d2-463a-9508-83a2c7d1ad83"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "afrcloud1.mmv.kr",
-          "allowInsecure": false
-        }
       }
     },
     {
@@ -1108,16 +1087,16 @@
       }
     },
     {
-      "tag": "VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja",
+      "tag": "VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "hgtrojan.zabc.net",
-            "port": 2083,
+            "address": "cg1c01.waimaojd.com",
+            "port": 443,
             "users": [
               {
-                "id": "e6395c20-4571-4b34-d6b1-55a5d36e49ea",
+                "id": "be8e3136-b874-4085-bd23-ec3699300490",
                 "alterId": "0",
                 "security": "auto"
               }
@@ -1128,9 +1107,9 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/e6395c20",
+          "path": "/api/v1/graphql",
           "headers": {
-            "Host": "hgtrojan.zabc.net"
+            "Host": "cg1c01.waimaojd.com"
           }
         },
         "security": "tls",
@@ -1174,14 +1153,35 @@
       }
     },
     {
+      "tag": "美国 Versaweb",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.143.0.117",
+            "port": 8443,
+            "password": "433e785b-2077-47f7-a43d-985f63dd18d1"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vpn.rnmcnm.com",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
       "tag": "US美国(mibei77.com 米贝节点分享)",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "www.gossipglove.com",
+            "address": "193.180.209.21",
             "port": 443,
-            "password": "humanity"
+            "password": "rYuChHcwQZskq9E0zdoR"
           }
         ]
       },
@@ -1189,20 +1189,20 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "",
+          "serverName": "vpn5.rnmcnm.com",
           "allowInsecure": false
         }
       }
     },
     {
-      "tag": "KR韩国(mibei77.com 米贝节点分享)",
+      "tag": "挪威(mibei77.com 米贝节点分享)",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "121.178.83.161",
-            "port": 26214,
-            "password": "GKHWMe2R4qwNcNxu6l3KMkdd"
+            "address": "125.7.24.251",
+            "port": 443,
+            "password": "rYuChHcwQZskq9E0zdoR"
           }
         ]
       },
@@ -1210,20 +1210,20 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "vpn1.rnmcnm.com",
+          "serverName": "vpn5.rnmcnm.com",
           "allowInsecure": false
         }
       }
     },
     {
-      "tag": "KR韩国(mibei77.com 米贝节点分享)",
+      "tag": "美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司 2",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "121.180.171.43",
-            "port": 11310,
-            "password": "GKHWMe2R4qwNcNxu6l3KMkdd"
+            "address": "130.94.107.171",
+            "port": 443,
+            "password": "s.wRSE4ANZp4=4h.=B_9Qbetw6XUc0V1SV"
           }
         ]
       },
@@ -1231,28 +1231,7 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "vpn1.rnmcnm.com",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "US美国(mibei77.com 米贝节点分享)",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "211.76.176.98",
-            "port": 19128,
-            "password": "gcuCpQfaiVeDBdWG"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "yazhou10.dynu.net",
+          "serverName": "www.logger-guard.click",
           "allowInsecure": false
         }
       }
@@ -1263,11 +1242,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "gtm-sg-cc54q7d1q01.365cloud0285.com",
-            "port": 6004,
+            "address": "skk.moe",
+            "port": 80,
             "users": [
               {
-                "id": "a030842a-d29a-4ea9-a776-14fc4b9e102d",
+                "id": "65b17c0b-0a52-4b54-9bc9-60e31397b841",
                 "alterId": "0",
                 "security": "auto"
               }
@@ -1276,11 +1255,38 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp"
+        "network": "ws",
+        "wsSettings": {
+          "path": "/65b17c0b-0a52-4b54-9bc9-60e31397b841-vmess",
+          "headers": {
+            "Host": "accklsj.bufu.us.ci"
+          }
+        }
       }
     },
     {
-      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "tag": "美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "130.94.65.52",
+            "port": 443,
+            "password": "IbezlLAYfrLRwFn9.mHn5FDwk1asLi599U"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.static-cast.click",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "美国 V2CROSS.COM",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -1302,37 +1308,16 @@
       }
     },
     {
-      "tag": "US美国(mibei77.com 米贝节点分享)",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "jpbgp.netvigor.cc",
-            "port": 19128,
-            "password": "gcuCpQfaiVeDBdWG"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "yazhou10.dynu.net",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "8元老牌专线机场cczzuu.top",
+      "tag": "美国 V2CROSS.COM",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "efan.dnsefan04881.com",
-            "port": 7754,
+            "address": "gtm-sg-cc54q7d1q01.365cloud0285.com",
+            "port": 6004,
             "users": [
               {
-                "id": "009e558d-3cf4-49d8-b5e4-82c9e14fe1a4",
+                "id": "a030842a-d29a-4ea9-a776-14fc4b9e102d",
                 "alterId": "0",
                 "security": "auto"
               }
@@ -1372,9 +1357,9 @@
       "settings": {
         "servers": [
           {
-            "address": "v1.dabache.top",
-            "port": 443,
-            "password": "humanity"
+            "address": "jpbgp.netvigor.cc",
+            "port": 19128,
+            "password": "gcuCpQfaiVeDBdWG"
           }
         ]
       },
@@ -1382,7 +1367,7 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "www.multiplydose.com",
+          "serverName": "yazhou10.dynu.net",
           "allowInsecure": false
         }
       }
@@ -1393,8 +1378,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "v4.hdacd.com",
-            "port": 30804,
+            "address": "v33.hdacd.com",
+            "port": 30833,
             "users": [
               {
                 "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
@@ -1415,8 +1400,108 @@
       "settings": {
         "vnext": [
           {
-            "address": "v24.hdacd.com",
-            "port": 30824,
+            "address": "gtm-sg-cc54q7d1q01.365cloud0285.com",
+            "port": 6003,
+            "users": [
+              {
+                "id": "a030842a-d29a-4ea9-a776-14fc4b9e102d",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "1b267619c4812cc46ee281747884ca50.qos.onl",
+            "port": 10034,
+            "users": [
+              {
+                "id": "52f9cbfb-5bb3-3dd3-b947-725e365c59f3",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "v2pr9feoh0z86anj2gz9onnjg9viuev0j.mobgslb.tbcache.com"
+          }
+        }
+      }
+    },
+    {
+      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "6654c734ccab8f440ff0825eb443dc7f.qos.onl",
+            "port": 10034,
+            "users": [
+              {
+                "id": "52f9cbfb-5bb3-3dd3-b947-725e365c59f3",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "v2pr9feoh0z86anj2gz9onnjg9viuev0j.mobgslb.tbcache.com"
+          }
+        }
+      }
+    },
+    {
+      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "v29.hdacd.com",
+            "port": 30829,
+            "users": [
+              {
+                "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+                "alterId": "2",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "v4.hdacd.com",
+            "port": 30804,
             "users": [
               {
                 "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
@@ -1459,8 +1544,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "v36.hdacd.com",
-            "port": 30836,
+            "address": "v24.hdacd.com",
+            "port": 30824,
             "users": [
               {
                 "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
@@ -1481,8 +1566,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "v29.hdacd.com",
-            "port": 30829,
+            "address": "v36.hdacd.com",
+            "port": 30836,
             "users": [
               {
                 "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
@@ -1517,6 +1602,56 @@
       },
       "streamSettings": {
         "network": "tcp"
+      }
+    },
+    {
+      "tag": "8元老牌专线机场cczzuu.top",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "efan.dnsefan04881.com",
+            "port": 7754,
+            "users": [
+              {
+                "id": "009e558d-3cf4-49d8-b5e4-82c9e14fe1a4",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "亚太地区 starcorenode.com 2",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "6654c734ccab8f440ff0825eb443dc7f.qos.onl",
+            "port": 10004,
+            "users": [
+              {
+                "id": "52f9cbfb-5bb3-3dd3-b947-725e365c59f3",
+                "alterId": "0",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "v2pr9feoh0z86anj2gz9onnjg9viuev0j.mobgslb.tbcache.com"
+          }
+        }
       }
     }
   ],
