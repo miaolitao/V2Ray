@@ -18,29 +18,6 @@ proxies:
     headers:
       Host: t1.620720.xyz
   tls: true
-- name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
-  type: ssr
-  server: 107.151.182.253
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6?
-  protocol: origin
-  obfs: plain
-  protocol-param: ''
-  obfs-param: ''
-- name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
-  type: vmess
-  server: cg1c07.waimaojd.com
-  port: 443
-  uuid: be8e3136-b874-4085-bd23-ec3699300490
-  alterId: '0'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /api/v1/graphql
-    headers:
-      Host: cg1c07.waimaojd.com
-  tls: true
 - name: VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
   type: vmess
   server: support.zoom.us
@@ -66,6 +43,46 @@ proxies:
     headers:
       Host: sy4.620720.xyz
   tls: true
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 172.64.152.23
+  port: 443
+  password: humanity
+  sni: www.creationlong.org
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 172.64.152.23
+  port: 443
+  password: humanity
+  sni: www.calmlunch.com
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 172.64.152.23
+  port: 443
+  password: humanity
+  sni: www.gossipglove.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.16.174.22
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国 Akamai科技公司CDN网络节点
+  type: trojan
+  server: 172.237.145.189
+  port: 443
+  password: A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM
+  sni: 172.237.145.189
+- name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
+  type: ssr
+  server: 107.151.182.253
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6?
+  protocol: origin
+  obfs: plain
+  protocol-param: ''
+  obfs-param: ''
 - name: VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
   type: vmess
   server: hgtrojan.zabc.net
@@ -78,6 +95,79 @@ proxies:
     path: /e6395c20
     headers:
       Host: hgtrojan.zabc.net
+  tls: true
+- name: 罗马尼亚 V2CROSS.COM
+  type: trojan
+  server: 185.137.157.254
+  port: 443
+  password: hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd
+  sni: www.directorypipeline.click
+- name: 美国 V2CROSS.COM
+  type: trojan
+  server: 149.104.87.182
+  port: 443
+  password: PtRV8to08i8FMsY.Uw7=yMuIaR3eVTGmvA
+  sni: www.jewelapp.click
+  skip-cert-verify: true
+- name: 美国 Akamai科技公司CDN网络节点
+  type: trojan
+  server: 172.238.120.124
+  port: 443
+  password: r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ
+  sni: 172.238.120.124
+- name: 英国 V2CROSS.COM
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: 美国4ripaojiedian
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: '0'
+  cipher: auto
+- name: 德国 starcorenode.com
+  type: trojan
+  server: 91.233.8.25
+  port: 443
+  password: I1vtf6pjYsAu-nFnraWAMjKTy90AHitdAz
+  sni: fra34.tracker-ws.click
+- name: _US_美国
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: _US_美国
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: _US_美国
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
+  type: vmess
+  server: cg1c07.waimaojd.com
+  port: 443
+  uuid: be8e3136-b874-4085-bd23-ec3699300490
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      Host: cg1c07.waimaojd.com
   tls: true
 - name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
   type: vmess
@@ -118,76 +208,12 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
   tls: true
-- name: 英国 V2CROSS.COM
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: '0'
-  cipher: auto
-- name: 美国 CloudFlare节点
-  type: trojan
-  server: 104.18.152.133
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国 Akamai科技公司CDN网络节点
-  type: trojan
-  server: 172.235.63.252
-  port: 443
-  password: bX_lNHWoW6ywq82mI=KUr+8i__VSp0Hs_E
-- name: _US_美国
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: _US_美国
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: _US_美国
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
 - name: 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
   type: trojan
-  server: 130.94.107.171
+  server: 130.94.104.210
   port: 443
-  password: s.wRSE4ANZp4=4h.=B_9Qbetw6XUc0V1SV
-  sni: www.logger-guard.click
-- name: 美国 Akamai科技公司CDN网络节点
-  type: trojan
-  server: 172.238.120.124
-  port: 443
-  password: r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ
-- name: 美国 Akamai科技公司CDN网络节点
-  type: trojan
-  server: 172.236.220.10
-  port: 443
-  password: s_WEN9lMmufG+qDIsn-4C7JOVAnDdbS3Ui
-  sni: 172.236.220.10
-- name: 日本2ripaojiedian
-  type: trojan
-  server: 43.207.82.19
-  port: 31351
-  password: d84665c37878196ecf983cf6910e3b44
-  sni: www.nintendogames.net
-  skip-cert-verify: true
-- name: 新加坡3ripaojiedian
-  type: trojan
-  server: 43.199.217.71
-  port: 19465
-  password: BxceQaOe
-  sni: t.me%252Fripaojiedian
-  skip-cert-verify: true
+  password: lTs6OZOMoqYAkDEbK10t-tE8KMjuREBW3m
+  sni: www.cdn-structure.click
 - name: 美国 加利福尼亚
   type: trojan
   server: 64.176.65.85
@@ -207,26 +233,6 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
-- name: _US_美国-_SG_新加坡
-  type: vmess
-  server: gtm-sg-cc54q7d1q01.365cloud0285.com
-  port: 6004
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-  alterId: 0
-  cipher: auto
-- name: _HK_中国香港
-  type: vmess
-  server: 8.210.239.58
-  port: 443
-  uuid: 5fdc6ab1-8347-411c-9bbf-fbc3ea853d2f
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8.210.239.58
-  tls: true
 - name: _HK_中国香港
   type: vmess
   server: 47.244.120.197
@@ -239,12 +245,6 @@ proxies:
     path: /arki?ed=2048
     headers:
       Host: 47.244.120.197
-- name: 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
-  type: trojan
-  server: 130.94.97.11
-  port: 443
-  password: Z3_=ewk_+l1U4OT4usQ5=o2vFfk95yfy1V
-  sni: www.selectnet.click
 - name: 香港ripaojiedian
   type: vmess
   server: v10.hdacd.com
@@ -252,18 +252,39 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: '2'
   cipher: auto
-- name: 台湾省 starcorenode.com
+- name: US美国(mibei77.com 米贝节点分享)
   type: trojan
   server: jpbgp.netvigor.cc
   port: 19128
   password: gcuCpQfaiVeDBdWG
   sni: yazhou10.dynu.net
+- name: 8元老牌专线机场cczzuu.top
+  type: vmess
+  server: efan.dnsefan04881.com
+  port: 7754
+  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
+  alterId: '0'
+  cipher: auto
 - name: _TW_中国台湾-_SG_新加坡
   type: trojan
   server: jpbgp.netvigor.cc
   port: 19128
   password: gcuCpQfaiVeDBdWG
   sni: yazhou10.dynu.net
+  skip-cert-verify: true
+- name: _MY_马来西亚-_JP_日本
+  type: vmess
+  server: v6.hdacd.com
+  port: 30806
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+- name: _US_美国-_DE_德国
+  type: trojan
+  server: 90081bb25c.node.tro.cac.cab
+  port: 46424
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: de.01.naiun.bilibili.com
   skip-cert-verify: true
 - name: _ID_印度尼西亚-_GB_英国
   type: vmess
@@ -286,13 +307,6 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
-- name: _US_美国-_DE_德国
-  type: trojan
-  server: 90081bb25c.node.tro.cac.cab
-  port: 46424
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: de.01.naiun.bilibili.com
-  skip-cert-verify: true
 - name: _HK_中国香港-_TW_中国台湾
   type: vmess
   server: world.t.51guangtaobao.com
@@ -314,13 +328,6 @@ proxies:
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   sni: is.01.naiun.bilibili.com
   skip-cert-verify: true
-- name: _MY_马来西亚-_JP_日本
-  type: vmess
-  server: v6.hdacd.com
-  port: 30806
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
 - name: _US_美国-_CH_瑞士
   type: trojan
   server: 90081bb25c.node.tro.cac.cab
@@ -336,43 +343,45 @@ proxy-groups:
   - 🔮 负载均衡
   - DIRECT
   - VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
-  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
   - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
   - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - 美国 Akamai科技公司CDN网络节点
+  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
   - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
+  - 罗马尼亚 V2CROSS.COM
+  - 美国 V2CROSS.COM
+  - 美国 Akamai科技公司CDN网络节点
+  - 英国 V2CROSS.COM
+  - 美国4ripaojiedian
+  - 德国 starcorenode.com
+  - _US_美国
+  - _US_美国
+  - _US_美国
+  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
-  - 英国 V2CROSS.COM
-  - 美国 CloudFlare节点
-  - 美国 Akamai科技公司CDN网络节点
-  - _US_美国
-  - _US_美国
-  - _US_美国
   - 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
-  - 美国 Akamai科技公司CDN网络节点
-  - 美国 Akamai科技公司CDN网络节点
-  - 日本2ripaojiedian
-  - 新加坡3ripaojiedian
   - 美国 加利福尼亚
   - _TW_中国台湾-_SG_新加坡
   - _HK_中国香港
-  - _US_美国-_SG_新加坡
   - _HK_中国香港
-  - _HK_中国香港
-  - 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
   - 香港ripaojiedian
-  - 台湾省 starcorenode.com
+  - US美国(mibei77.com 米贝节点分享)
+  - 8元老牌专线机场cczzuu.top
   - _TW_中国台湾-_SG_新加坡
+  - _MY_马来西亚-_JP_日本
+  - _US_美国-_DE_德国
   - _ID_印度尼西亚-_GB_英国
   - _ID_印度尼西亚-_US_美国
   - _ID_印度尼西亚-_HK_中国香港
-  - _US_美国-_DE_德国
   - _HK_中国香港-_TW_中国台湾
   - _CA_加拿大-_AZ_阿塞拜疆
   - _US_美国-_IS_冰岛
-  - _MY_马来西亚-_JP_日本
   - _US_美国-_CH_瑞士
 - name: ♻️ 自动选择
   type: url-test
@@ -380,43 +389,45 @@ proxy-groups:
   interval: 300
   proxies: &id001
   - VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
-  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
   - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
   - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - GB英国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - 美国 Akamai科技公司CDN网络节点
+  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
   - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
+  - 罗马尼亚 V2CROSS.COM
+  - 美国 V2CROSS.COM
+  - 美国 Akamai科技公司CDN网络节点
+  - 英国 V2CROSS.COM
+  - 美国4ripaojiedian
+  - 德国 starcorenode.com
+  - _US_美国
+  - _US_美国
+  - _US_美国
+  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
-  - 英国 V2CROSS.COM
-  - 美国 CloudFlare节点
-  - 美国 Akamai科技公司CDN网络节点
-  - _US_美国
-  - _US_美国
-  - _US_美国
   - 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
-  - 美国 Akamai科技公司CDN网络节点
-  - 美国 Akamai科技公司CDN网络节点
-  - 日本2ripaojiedian
-  - 新加坡3ripaojiedian
   - 美国 加利福尼亚
   - _TW_中国台湾-_SG_新加坡
   - _HK_中国香港
-  - _US_美国-_SG_新加坡
   - _HK_中国香港
-  - _HK_中国香港
-  - 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
   - 香港ripaojiedian
-  - 台湾省 starcorenode.com
+  - US美国(mibei77.com 米贝节点分享)
+  - 8元老牌专线机场cczzuu.top
   - _TW_中国台湾-_SG_新加坡
+  - _MY_马来西亚-_JP_日本
+  - _US_美国-_DE_德国
   - _ID_印度尼西亚-_GB_英国
   - _ID_印度尼西亚-_US_美国
   - _ID_印度尼西亚-_HK_中国香港
-  - _US_美国-_DE_德国
   - _HK_中国香港-_TW_中国台湾
   - _CA_加拿大-_AZ_阿塞拜疆
   - _US_美国-_IS_冰岛
-  - _MY_马来西亚-_JP_日本
   - _US_美国-_CH_瑞士
 - name: 🔮 负载均衡
   type: load-balance
