@@ -66,47 +66,19 @@ proxies:
     headers:
       Host: sy4.620720.xyz
   tls: true
-- name: VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
+- name: VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
   type: vmess
-  server: cg1c14.waimaojd.com
-  port: 443
-  uuid: be8e3136-b874-4085-bd23-ec3699300490
+  server: hgtrojan.zabc.net
+  port: 2083
+  uuid: e6395c20-4571-4b34-d6b1-55a5d36e49ea
   alterId: '0'
   cipher: auto
   network: ws
   ws-opts:
-    path: /api/v1/graphql
+    path: /e6395c20
     headers:
-      Host: cg1c14.waimaojd.com
+      Host: hgtrojan.zabc.net
   tls: true
-- name: 巴西圣保罗 CloudFlare节点
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: humanity
-  sni: www.calmloud.com
-  skip-cert-verify: true
-- name: _US_美国
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: _US_美国
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: _US_美国
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
 - name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
   type: vmess
   server: cg1c01.waimaojd.com
@@ -133,36 +105,105 @@ proxies:
     headers:
       Host: cg1c04.waimaojd.com
   tls: true
-- name: 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
-  type: trojan
-  server: 130.94.78.17
+- name: VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
+  type: vmess
+  server: cg1c14.waimaojd.com
   port: 443
-  password: PoSQBShqwNV9wKX4WHxDoLxbvp4eQYnD8v
-- name: _HK_中国香港
-  type: vmess
-  server: 47.244.120.197
-  port: 36703
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /arki?ed=2048
-    headers:
-      Host: 47.244.120.197
-- name: VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
-  type: vmess
-  server: hgtrojan.zabc.net
-  port: 2083
-  uuid: e6395c20-4571-4b34-d6b1-55a5d36e49ea
+  uuid: be8e3136-b874-4085-bd23-ec3699300490
   alterId: '0'
   cipher: auto
   network: ws
   ws-opts:
-    path: /e6395c20
+    path: /api/v1/graphql
     headers:
-      Host: hgtrojan.zabc.net
+      Host: cg1c14.waimaojd.com
   tls: true
+- name: 美国 V2CROSS.COM
+  type: vmess
+  server: 69.84.182.49
+  port: 80
+  uuid: f8975871-a7a0-4906-8835-a23c1258ca1e
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
+- name: _US_美国
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: _US_美国
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: _US_美国
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+  type: trojan
+  server: 130.94.94.15
+  port: 443
+  password: tUtK5TKdjxsPnOyritLtv8OQWHAK8f8yNR
+  sni: 130.94.94.15
+- name: 亚太地区 V2CROSS.COM
+  type: trojan
+  server: 103.125.219.70
+  port: 443
+  password: s75Gtmy56sptTA39hmBH965YYx4ZgfQR_I
+  sni: 103.125.219.70
+- name: 香港3ripaojiedian
+  type: trojan
+  server: 43.198.206.201
+  port: 2008
+  password: e0195c73018d597b1c2f0ea89d8676ae
+  sni: www.nintendogames.net
+  skip-cert-verify: true
+- name: 日本2ripaojiedian
+  type: trojan
+  server: 43.198.206.201
+  port: 37973
+  password: e0195c73018d597b1c2f0ea89d8676ae
+  sni: www.nintendogames.net
+  skip-cert-verify: true
+- name: 新加坡ripaojiedian
+  type: trojan
+  server: 35.77.34.38
+  port: 29642
+  password: e0195c73018d597b1c2f0ea89d8676ae
+  sni: www.nintendogames.net
+  skip-cert-verify: true
+- name: 新加坡3ripaojiedian
+  type: trojan
+  server: 18.162.50.252
+  port: 9149
+  password: BxceQaOe
+  sni: t.me%252Fripaojiedian
+  skip-cert-verify: true
+- name: 美国ripaojiedian
+  type: trojan
+  server: 35.77.34.38
+  port: 49277
+  password: e0195c73018d597b1c2f0ea89d8676ae
+  sni: www.nintendogames.net
+  skip-cert-verify: true
+- name: _TW_中国台湾
+  type: ss
+  server: r3mrcg001286ek2.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 - name: 香港ripaojiedian
   type: vmess
   server: v10.hdacd.com
@@ -177,16 +218,24 @@ proxies:
   password: gcuCpQfaiVeDBdWG
   sni: yazhou10.dynu.net
   skip-cert-verify: true
-- name: _TW_中国台湾
-  type: ss
-  server: r3mrcg001286ek2.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 - name: _ID_印度尼西亚-_GB_英国
   type: vmess
   server: v36.hdacd.com
   port: 30836
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+- name: _ID_印度尼西亚-_US_美国
+  type: vmess
+  server: v4.hdacd.com
+  port: 30804
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+- name: _HK_中国香港
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
@@ -211,13 +260,6 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
-- name: _HK_中国香港
-  type: vmess
-  server: v10.hdacd.com
-  port: 30807
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -230,24 +272,30 @@ proxy-groups:
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
   - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
   - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
-  - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
-  - 巴西圣保罗 CloudFlare节点
-  - _US_美国
-  - _US_美国
-  - _US_美国
+  - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
+  - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
+  - 美国 V2CROSS.COM
+  - _US_美国
+  - _US_美国
+  - _US_美国
   - 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
-  - _HK_中国香港
-  - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
+  - 亚太地区 V2CROSS.COM
+  - 香港3ripaojiedian
+  - 日本2ripaojiedian
+  - 新加坡ripaojiedian
+  - 新加坡3ripaojiedian
+  - 美国ripaojiedian
+  - _TW_中国台湾
   - 香港ripaojiedian
   - _TW_中国台湾-_SG_新加坡
-  - _TW_中国台湾
   - _ID_印度尼西亚-_GB_英国
+  - _ID_印度尼西亚-_US_美国
+  - _HK_中国香港
   - _ID_印度尼西亚-_HK_中国香港
   - _HK_中国香港-_TW_中国台湾
   - _MY_马来西亚-_JP_日本
-  - _HK_中国香港
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -258,24 +306,30 @@ proxy-groups:
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
   - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
   - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
-  - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
-  - 巴西圣保罗 CloudFlare节点
-  - _US_美国
-  - _US_美国
-  - _US_美国
+  - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
+  - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
+  - 美国 V2CROSS.COM
+  - _US_美国
+  - _US_美国
+  - _US_美国
   - 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
-  - _HK_中国香港
-  - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
+  - 亚太地区 V2CROSS.COM
+  - 香港3ripaojiedian
+  - 日本2ripaojiedian
+  - 新加坡ripaojiedian
+  - 新加坡3ripaojiedian
+  - 美国ripaojiedian
+  - _TW_中国台湾
   - 香港ripaojiedian
   - _TW_中国台湾-_SG_新加坡
-  - _TW_中国台湾
   - _ID_印度尼西亚-_GB_英国
+  - _ID_印度尼西亚-_US_美国
+  - _HK_中国香港
   - _ID_印度尼西亚-_HK_中国香港
   - _HK_中国香港-_TW_中国台湾
   - _MY_马来西亚-_JP_日本
-  - _HK_中国香港
 - name: 🔮 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
