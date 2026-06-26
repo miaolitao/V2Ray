@@ -18,18 +18,6 @@ proxies:
     headers:
       Host: t1.620720.xyz
   tls: true
-- name: VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
-  type: vmess
-  server: support.zoom.us
-  port: 8080
-  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
-  alterId: '0'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /@Malinda6104
-    headers:
-      Host: support.zoom.us
 - name: VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
   type: vmess
   server: sy4.620720.xyz
@@ -56,12 +44,20 @@ proxies:
     headers:
       Host: hgtrojan.zabc.net
   tls: true
-- name: 美国 Fastly全球Anycast节点
+- name: 美国 CloudFlare节点
   type: trojan
-  server: 151.101.1.194
-  port: 80
-  password: MITIVPN
-- name: 免費節點
+  server: 104.16.7.70
+  port: 443
+  password: humanity
+  sni: www.calmlunch.com
+- name: 巴西聖保羅丨yoyapai.comr
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: mitivpn
+  sni: 2.1.mitivpn.dee.srfsl.gleobal.fastl3y.n3et.mitivpn.site
+  skip-cert-verify: true
+- name: 法國節點
   type: vmess
   server: 69.84.182.49
   port: 80
@@ -73,13 +69,6 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
-- name: 巴西聖保羅丨yoyapai.comr
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: mitivpn
-  sni: 2.1.mitivpn.dee.srfsl.gleobal.fastl3y.n3et.mitivpn.site
-  skip-cert-verify: true
 - name: US美国(mibei77.com 米贝节点分享)
   type: trojan
   server: 165.215.250.14
@@ -117,36 +106,33 @@ proxies:
     headers:
       Host: cg1c07.waimaojd.com
   tls: true
-- name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
+- name: VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
   type: vmess
-  server: cg1c01.waimaojd.com
-  port: 443
-  uuid: be8e3136-b874-4085-bd23-ec3699300490
+  server: support.zoom.us
+  port: 8080
+  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
   alterId: '0'
   cipher: auto
   network: ws
   ws-opts:
-    path: /api/v1/graphql
+    path: /@Malinda6104
     headers:
-      Host: cg1c01.waimaojd.com
-  tls: true
-- name: 美国 V2CROSS.COM
+      Host: support.zoom.us
+- name: 希腊 V2CROSS.COM
   type: trojan
-  server: 45.61.52.243
+  server: 92.119.35.131
   port: 443
-  password: O4O8.Ew+ujFX6GJBQ=xQr.heGwux0GYHqk
-  sni: 45.61.52.243
-- name: 意大利 米兰Fastly节点
+  password: urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh
+- name: 希腊 V2CROSS.COM
   type: trojan
-  server: 151.101.242.172
-  port: 80
-  password: MITIVPN
-- name: 罗马尼亚 V2CROSS.COM
-  type: trojan
-  server: 185.137.157.59
+  server: 92.119.35.97
   port: 443
-  password: fFj7MAGy1VlAWmB_gMBG_27oPYTSHvV6MX
-  sni: www.lateralio.click
+  password: urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh
+- name: 希腊 V2CROSS.COM
+  type: trojan
+  server: 92.119.35.117
+  port: 443
+  password: aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR
 - name: 美國
   type: vmess
   server: 82.198.246.37
@@ -154,13 +140,6 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: aes-128-gcm
-- name: 英國節點
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
 - name: 美國節點
   type: vmess
   server: 82.198.246.250
@@ -205,35 +184,7 @@ proxies:
   cipher: auto
 - name: 美國節點
   type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: aes-128-gcm
-- name: 英國節點
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 英國
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 美國節點
-  type: vmess
   server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 美國節點
-  type: vmess
-  server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -241,13 +192,6 @@ proxies:
 - name: 德國節點
   type: vmess
   server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 英國節點
-  type: vmess
-  server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -273,20 +217,6 @@ proxies:
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
-- name: 亞太地區丨yoyapai.comr
-  type: trojan
-  server: 103.45.245.208
-  port: 2053
-  password: rYuChHcwQZskq9E0zdoR
-  sni: vpn5.rnmcnm.com
-  skip-cert-verify: true
-- name: 英國
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
 - name: 德國
   type: vmess
   server: 82.198.246.250
@@ -294,20 +224,19 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 140.82.19.127
-  port: 443
-  password: '114514'
-  sni: tjaaa.hhllfly.kdns.fr
-  skip-cert-verify: true
-- name: _US_美国
+- name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
   type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
+  server: cg1c01.waimaojd.com
+  port: 443
+  uuid: be8e3136-b874-4085-bd23-ec3699300490
+  alterId: '0'
   cipher: auto
+  network: ws
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      Host: cg1c01.waimaojd.com
+  tls: true
 - name: VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
   type: vmess
   server: cg1c04.waimaojd.com
@@ -334,12 +263,6 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
   tls: true
-- name: 韩国 V2CROSS.COM
-  type: trojan
-  server: 211.49.57.178
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  sni: hhcm.hhxaf.cc.cd
 - name: 意大利節點IT丨yoyapai.comr
   type: trojan
   server: 151.241.215.148
@@ -354,6 +277,13 @@ proxies:
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
+- name: 亞太地區丨yoyapai.comr
+  type: trojan
+  server: 103.45.245.208
+  port: 2053
+  password: rYuChHcwQZskq9E0zdoR
+  sni: vpn5.rnmcnm.com
+  skip-cert-verify: true
 - name: 韓國丨yoyapai.comr
   type: trojan
   server: 211.49.57.175
@@ -361,19 +291,12 @@ proxies:
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   sni: hhcm.hhxaf.cc.cd
   skip-cert-verify: true
-- name: HK香港(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 68.64.178.42
-  port: 443
-  password: '114514'
-  sni: tjaaa.hhllfly.kdns.fr
 - name: KR韩国(mibei77.com 米贝节点分享)
   type: trojan
-  server: 141.164.42.2
+  server: 211.49.57.178
   port: 443
-  password: '114514'
-  sni: tjaaa.hhllfly.kdns.fr
-  skip-cert-verify: true
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  sni: hhcm.hhxaf.cc.cd
 - name: US美国(mibei77.com 米贝节点分享)
   type: trojan
   server: 72.249.204.157
@@ -381,12 +304,13 @@ proxies:
   password: '114514'
   sni: tjaaa.hhllfly.kdns.fr
   skip-cert-verify: true
-- name: 美国 华盛顿Cogent通信公司
-  type: trojan
-  server: 38.54.64.247
-  port: 443
-  password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
-  sni: 38.54.64.247
+- name: 免費節點
+  type: vmess
+  server: 160.250.247.70
+  port: 49178
+  uuid: d7c13e10-2ba9-4677-a877-d9e9d1738394
+  alterId: 0
+  cipher: auto
 - name: 韩国KT电信r
   type: trojan
   server: 121.178.83.161
@@ -394,12 +318,11 @@ proxies:
   password: GKHWMe2R4qwNcNxu6l3KMkdd
   sni: vpn1.rnmcnm.com
   skip-cert-verify: true
-- name: 香港節點丨yoyapai.comr
+- name: 香港丨yoyapai.comr
   type: trojan
-  server: adak.sonofthewinds.com
-  port: 34436
-  password: 825929f4-c702-35ce-9124-00d3f95b8c32
-  sni: hh4.sonofthewinds.com
+  server: au-4.tr202605.com
+  port: 443
+  password: 65fQmPHHbPcBCfvSHt
   skip-cert-verify: true
 - name: SG新加坡(mibei77.com 米贝节点分享)
   type: trojan
@@ -414,48 +337,12 @@ proxies:
   port: 443
   password: '114514'
   sni: tjaaa.hhllfly.kdns.fr
-- name: HK香港(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 83.147.60.186
-  port: 443
-  password: '114514'
-  sni: tjaaa.hhllfly.kdns.fr
-- name: HK香港(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 209.33.160.242
-  port: 443
-  password: '114514'
-  sni: tjaaa.hhllfly.kdns.fr
-- name: HK香港(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 209.33.166.199
-  port: 443
-  password: '114514'
-  sni: tjaaa.hhllfly.kdns.fr
-- name: KR韩国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 211.49.57.179
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  sni: tjsp.hhxaf.cc.cd
-- name: HK香港(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 103.219.194.43
-  port: 443
-  password: '114514'
-  sni: tjaaa.hhllfly.kdns.fr
-- name: _TW_中国台湾
-  type: ss
-  server: r3mrcg001286ek2.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: _HK_中国香港
+- name: US美国(mibei77.com 米贝节点分享)
   type: vmess
-  server: v10.hdacd.com
-  port: 30807
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
+  server: 160.250.247.70
+  port: 49178
+  uuid: d7c13e10-2ba9-4677-a877-d9e9d1738394
+  alterId: '0'
   cipher: auto
 - name: _HK_中国香港
   type: vmess
@@ -469,6 +356,11 @@ proxies:
     path: /arki?ed=2048
     headers:
       Host: 47.244.120.197
+- name: 美国 CloudFlare节点
+  type: trojan
+  server: space.byu.id.yxls.eu.cc
+  port: 443
+  password: f922fa0f-3311-4368-85ff-cf65e727c854
 - name: 香港ripaojiedian
   type: vmess
   server: v10.hdacd.com
@@ -482,6 +374,13 @@ proxies:
   port: 19128
   password: gcuCpQfaiVeDBdWG
   sni: yazhou10.dynu.net
+  skip-cert-verify: true
+- name: 香港節點丨yoyapai.comr
+  type: trojan
+  server: adak.sonofthewinds.com
+  port: 34436
+  password: 825929f4-c702-35ce-9124-00d3f95b8c32
+  sni: hh4.sonofthewinds.com
   skip-cert-verify: true
 - name: 臺灣節點丨yoyapai.comr
   type: trojan
@@ -497,32 +396,18 @@ proxies:
   password: 825929f4-c702-35ce-9124-00d3f95b8c32
   sni: gj1.sonofthewinds.com
   skip-cert-verify: true
-- name: SG新加坡(mibei77.com 米贝节点分享)
+- name: US美国(mibei77.com 米贝节点分享)
   type: trojan
   server: jpbgp.netvigor.cc
   port: 19128
   password: OccIqeORGQwiNkwS
   sni: yazhou10.dynu.net
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 154.26.187.69
-  port: 443
-  password: '114514'
-  sni: tjaaa.hhllfly.kdns.fr
-- name: _ID_印度尼西亚-_GB_英国
-  type: vmess
-  server: v36.hdacd.com
-  port: 30836
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-- name: 免費節點
-  type: vmess
-  server: 160.250.247.70
-  port: 49178
-  uuid: d7c13e10-2ba9-4677-a877-d9e9d1738394
-  alterId: 0
-  cipher: auto
+- name: _TW_中国台湾
+  type: ss
+  server: r3mrcg001286ek2.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 - name: 俄羅斯
   type: vmess
   server: renderer-stream-1-411.mirra.now
@@ -536,6 +421,13 @@ proxies:
     headers:
       Host: renderer-stream-1-411.mirra.now
   tls: true
+- name: _ID_印度尼西亚-_GB_英国
+  type: vmess
+  server: v36.hdacd.com
+  port: 30836
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
 - name: _ID_印度尼西亚-_US_美国
   type: vmess
   server: v4.hdacd.com
@@ -557,10 +449,10 @@ proxies:
   uuid: 1d3d868e-ae7b-3762-b9d9-a7f267494c7e
   alterId: 0
   cipher: auto
-- name: _MY_马来西亚-_JP_日本
+- name: _HK_中国香港
   type: vmess
-  server: v6.hdacd.com
-  port: 30806
+  server: v10.hdacd.com
+  port: 30807
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
@@ -572,22 +464,20 @@ proxy-groups:
   - 🔮 负载均衡
   - DIRECT
   - VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720
-  - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
   - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
   - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
-  - 美国 Fastly全球Anycast节点
-  - 免費節點
+  - 美国 CloudFlare节点
   - 巴西聖保羅丨yoyapai.comr
+  - 法國節點
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
-  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
-  - 美国 V2CROSS.COM
-  - 意大利 米兰Fastly节点
-  - 罗马尼亚 V2CROSS.COM
+  - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
+  - 希腊 V2CROSS.COM
+  - 希腊 V2CROSS.COM
+  - 希腊 V2CROSS.COM
   - 美國
-  - 英國節點
   - 美國節點
   - 德國節點
   - 英國節點
@@ -595,77 +485,61 @@ proxy-groups:
   - 美國
   - 英國節點
   - 美國節點
-  - 英國節點
-  - 英國
-  - 美國節點
-  - 美國節點
   - 德國節點
-  - 英國節點
   - 英國
   - 美國節點
   - NL荷蘭丨yoyapai.comr
-  - 亞太地區丨yoyapai.comr
-  - 英國
   - 德國
-  - US美国(mibei77.com 米贝节点分享)
-  - _US_美国
+  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
-  - 韩国 V2CROSS.COM
   - 意大利節點IT丨yoyapai.comr
   - 荷蘭節點丨yoyapai.comr
+  - 亞太地區丨yoyapai.comr
   - 韓國丨yoyapai.comr
-  - HK香港(mibei77.com 米贝节点分享)
   - KR韩国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
-  - 美国 华盛顿Cogent通信公司
+  - 免費節點
   - 韩国KT电信r
-  - 香港節點丨yoyapai.comr
+  - 香港丨yoyapai.comr
   - SG新加坡(mibei77.com 米贝节点分享)
   - HK香港(mibei77.com 米贝节点分享)
-  - HK香港(mibei77.com 米贝节点分享)
-  - HK香港(mibei77.com 米贝节点分享)
-  - HK香港(mibei77.com 米贝节点分享)
-  - KR韩国(mibei77.com 米贝节点分享)
-  - HK香港(mibei77.com 米贝节点分享)
-  - _TW_中国台湾
+  - US美国(mibei77.com 米贝节点分享)
   - _HK_中国香港
-  - _HK_中国香港
+  - 美国 CloudFlare节点
   - 香港ripaojiedian
   - 美國丨yoyapai.comr
+  - 香港節點丨yoyapai.comr
   - 臺灣節點丨yoyapai.comr
   - 日本節點丨yoyapai.comr
-  - SG新加坡(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
-  - _ID_印度尼西亚-_GB_英国
-  - 免費節點
+  - _TW_中国台湾
   - 俄羅斯
+  - _ID_印度尼西亚-_GB_英国
   - _ID_印度尼西亚-_US_美国
   - _ID_印度尼西亚-_HK_中国香港
   - _HK_中国香港-_TW_中国台湾
-  - _MY_马来西亚-_JP_日本
+  - _HK_中国香港
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: &id001
   - VMESS-美国日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720
-  - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
   - VMESS-未知澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-s
   - VMESS-未知美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtroja
-  - 美国 Fastly全球Anycast节点
-  - 免費節點
+  - 美国 CloudFlare节点
   - 巴西聖保羅丨yoyapai.comr
+  - 法國節點
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.wa
-  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
-  - 美国 V2CROSS.COM
-  - 意大利 米兰Fastly节点
-  - 罗马尼亚 V2CROSS.COM
+  - VMESS-美国德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-su
+  - 希腊 V2CROSS.COM
+  - 希腊 V2CROSS.COM
+  - 希腊 V2CROSS.COM
   - 美國
-  - 英國節點
   - 美國節點
   - 德國節點
   - 英國節點
@@ -673,55 +547,41 @@ proxy-groups:
   - 美國
   - 英國節點
   - 美國節點
-  - 英國節點
-  - 英國
-  - 美國節點
-  - 美國節點
   - 德國節點
-  - 英國節點
   - 英國
   - 美國節點
   - NL荷蘭丨yoyapai.comr
-  - 亞太地區丨yoyapai.comr
-  - 英國
   - 德國
-  - US美国(mibei77.com 米贝节点分享)
-  - _US_美国
+  - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.wa
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.c
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.c
-  - 韩国 V2CROSS.COM
   - 意大利節點IT丨yoyapai.comr
   - 荷蘭節點丨yoyapai.comr
+  - 亞太地區丨yoyapai.comr
   - 韓國丨yoyapai.comr
-  - HK香港(mibei77.com 米贝节点分享)
   - KR韩国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
-  - 美国 华盛顿Cogent通信公司
+  - 免費節點
   - 韩国KT电信r
-  - 香港節點丨yoyapai.comr
+  - 香港丨yoyapai.comr
   - SG新加坡(mibei77.com 米贝节点分享)
   - HK香港(mibei77.com 米贝节点分享)
-  - HK香港(mibei77.com 米贝节点分享)
-  - HK香港(mibei77.com 米贝节点分享)
-  - HK香港(mibei77.com 米贝节点分享)
-  - KR韩国(mibei77.com 米贝节点分享)
-  - HK香港(mibei77.com 米贝节点分享)
-  - _TW_中国台湾
+  - US美国(mibei77.com 米贝节点分享)
   - _HK_中国香港
-  - _HK_中国香港
+  - 美国 CloudFlare节点
   - 香港ripaojiedian
   - 美國丨yoyapai.comr
+  - 香港節點丨yoyapai.comr
   - 臺灣節點丨yoyapai.comr
   - 日本節點丨yoyapai.comr
-  - SG新加坡(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
-  - _ID_印度尼西亚-_GB_英国
-  - 免費節點
+  - _TW_中国台湾
   - 俄羅斯
+  - _ID_印度尼西亚-_GB_英国
   - _ID_印度尼西亚-_US_美国
   - _ID_印度尼西亚-_HK_中国香港
   - _HK_中国香港-_TW_中国台湾
-  - _MY_马来西亚-_JP_日本
+  - _HK_中国香港
 - name: 🔮 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
