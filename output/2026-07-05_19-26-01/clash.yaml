@@ -5,38 +5,51 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 美国 CloudFlare节点
+- name: US美国(mibei77.com 米贝节点分享)
   type: trojan
-  server: 104.20.6.134
+  server: 165.215.250.14
   port: 443
   password: humanity
-  sni: www.calmloud.com
-- name: 罗马尼亚 V2CROSS.COM
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+- name: US美国(mibei77.com 米贝节点分享)
   type: trojan
-  server: 185.137.157.145
+  server: 165.215.250.14
   port: 443
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-- name: 罗马尼亚 V2CROSS.COM
+  password: humanity
+  sni: www.creationlong.org
+  skip-cert-verify: true
+- name: US美国(mibei77.com 米贝节点分享)
   type: trojan
-  server: 185.137.157.138
+  server: 165.215.250.14
   port: 443
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-- name: 亚太地区 V2CROSS.COM
-  type: trojan
-  server: 103.125.216.18
-  port: 443
-  password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
 - name: 美国 华盛顿Cogent通信公司
   type: trojan
-  server: 38.60.220.65
+  server: 38.60.136.156
   port: 443
-  password: t5FsyeQXkNCY6eVGiqBXmPu4..jBEpNbak
-- name: _JP_日本
+  password: hCunaKqdEJDBO+3jCrJUSMevXOw9Q_r4Ey
+- name: 罗马尼亚 V2CROSS.COM
   type: trojan
-  server: large-baboon.rooster465.autos
+  server: 185.137.157.135
   port: 443
-  password: PI36027154
-  skip-cert-verify: true
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+- name: _NL_荷兰
+  type: vmess
+  server: c87s5.portablesubmarines.com
+  port: 18339
+  uuid: 3cd9077d-76f7-4104-bd82-eb6916b89d43
+  alterId: 0
+  cipher: auto
+- name: _KR_韩国
+  type: vmess
+  server: 217.142.138.61
+  port: 80
+  uuid: ac1b933d-afff-4487-93ef-f57130a55dff
+  alterId: 0
+  cipher: auto
 - name: 美国 华盛顿Cogent通信公司
   type: trojan
   server: 38.54.64.247
@@ -49,32 +62,40 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: '2'
   cipher: auto
+- name: 日本2ripaojiedian
+  type: trojan
+  server: 16.163.138.198
+  port: 55973
+  password: d6788cf74e6844c45538204efd24b00f
+  sni: www.nintendogames.net
+  skip-cert-verify: true
+- name: 日本3ripaojiedian
+  type: trojan
+  server: 16.163.138.198
+  port: 3743
+  password: d6788cf74e6844c45538204efd24b00f
+  sni: www.nintendogames.net
+  skip-cert-verify: true
+- name: 美国2ripaojiedian
+  type: trojan
+  server: 16.163.138.198
+  port: 49277
+  password: d6788cf74e6844c45538204efd24b00f
+  sni: www.nintendogames.net
+  skip-cert-verify: true
 - name: _HK_中国香港
   type: vmess
-  server: v10.hdacd.com
-  port: 30807
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-- name: _HK_中国香港
-  type: trojan
-  server: jpbgp.netvigor.cc
-  port: 19128
-  password: OccIqeORGQwiNkwS
-  sni: yazhou10.dynu.net
-  skip-cert-verify: true
-- name: _AU_澳大利亚
-  type: trojan
-  server: tight-possum.rooster465.autos
+  server: n1747624274.4u9ma.icu
   port: 443
-  password: PI36027154
-  skip-cert-verify: true
-- name: _JP_日本
-  type: ss
-  server: ss.043.node-for-bigairport.win
-  port: 19001
-  cipher: chacha20-ietf-poly1305
-  password: 792e0bdb-01db-450c-94c4-925151eb396e
+  uuid: d8daf507-a4ac-4eea-8399-8f0cd071eb52
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: n1747624274.4u9ma.icu
+  tls: true
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -82,35 +103,37 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 负载均衡
   - DIRECT
-  - 美国 CloudFlare节点
-  - 罗马尼亚 V2CROSS.COM
-  - 罗马尼亚 V2CROSS.COM
-  - 亚太地区 V2CROSS.COM
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
   - 美国 华盛顿Cogent通信公司
-  - _JP_日本
+  - 罗马尼亚 V2CROSS.COM
+  - _NL_荷兰
+  - _KR_韩国
   - 美国 华盛顿Cogent通信公司
   - 香港ripaojiedian
+  - 日本2ripaojiedian
+  - 日本3ripaojiedian
+  - 美国2ripaojiedian
   - _HK_中国香港
-  - _HK_中国香港
-  - _AU_澳大利亚
-  - _JP_日本
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: &id001
-  - 美国 CloudFlare节点
-  - 罗马尼亚 V2CROSS.COM
-  - 罗马尼亚 V2CROSS.COM
-  - 亚太地区 V2CROSS.COM
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
   - 美国 华盛顿Cogent通信公司
-  - _JP_日本
+  - 罗马尼亚 V2CROSS.COM
+  - _NL_荷兰
+  - _KR_韩国
   - 美国 华盛顿Cogent通信公司
   - 香港ripaojiedian
+  - 日本2ripaojiedian
+  - 日本3ripaojiedian
+  - 美国2ripaojiedian
   - _HK_中国香港
-  - _HK_中国香港
-  - _AU_澳大利亚
-  - _JP_日本
 - name: 🔮 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
