@@ -5,37 +5,24 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 美国 CloudFlare节点
-  type: trojan
-  server: 104.20.6.134
-  port: 443
-  password: humanity
-  sni: www.calmloud.com
 - name: 罗马尼亚 V2CROSS.COM
   type: trojan
-  server: 185.137.157.145
+  server: 185.137.157.128
   port: 443
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-- name: 罗马尼亚 V2CROSS.COM
-  type: trojan
-  server: 185.137.157.138
-  port: 443
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-- name: 亚太地区 V2CROSS.COM
-  type: trojan
-  server: 103.125.216.18
-  port: 443
-  password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
 - name: 美国 华盛顿Cogent通信公司
   type: trojan
-  server: 38.60.220.65
+  server: 38.60.202.163
   port: 443
-  password: t5FsyeQXkNCY6eVGiqBXmPu4..jBEpNbak
-- name: 美国 华盛顿Cogent通信公司
-  type: trojan
-  server: 38.54.64.247
-  port: 443
-  password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
+  password: ZfhGKkAmGl.hxRfIUI0LUU.MuK3hkQdxed
+  sni: 38.60.202.163
+- name: _KR_韩国
+  type: vmess
+  server: 217.142.138.61
+  port: 80
+  uuid: ac1b933d-afff-4487-93ef-f57130a55dff
+  alterId: 0
+  cipher: auto
 - name: 香港ripaojiedian
   type: vmess
   server: v10.hdacd.com
@@ -43,31 +30,40 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: '2'
   cipher: auto
+- name: 日本2ripaojiedian
+  type: trojan
+  server: 16.163.138.198
+  port: 55973
+  password: d6788cf74e6844c45538204efd24b00f
+  sni: www.nintendogames.net
+  skip-cert-verify: true
+- name: 日本3ripaojiedian
+  type: trojan
+  server: 16.163.138.198
+  port: 3743
+  password: d6788cf74e6844c45538204efd24b00f
+  sni: www.nintendogames.net
+  skip-cert-verify: true
+- name: 美国2ripaojiedian
+  type: trojan
+  server: 16.163.138.198
+  port: 49277
+  password: d6788cf74e6844c45538204efd24b00f
+  sni: www.nintendogames.net
+  skip-cert-verify: true
 - name: _HK_中国香港
   type: vmess
-  server: v10.hdacd.com
-  port: 30807
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
+  server: n1747624274.4u9ma.icu
+  port: 443
+  uuid: d8daf507-a4ac-4eea-8399-8f0cd071eb52
+  alterId: 0
   cipher: auto
-- name: _JP_日本
-  type: trojan
-  server: large-baboon.rooster465.autos
-  port: 443
-  password: PI36027154
-  skip-cert-verify: true
-- name: _JP_日本
-  type: ss
-  server: ss.043.node-for-bigairport.win
-  port: 19001
-  cipher: chacha20-ietf-poly1305
-  password: 792e0bdb-01db-450c-94c4-925151eb396e
-- name: _AU_澳大利亚
-  type: trojan
-  server: tight-possum.rooster465.autos
-  port: 443
-  password: PI36027154
-  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: n1747624274.4u9ma.icu
+  tls: true
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -75,33 +71,27 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 负载均衡
   - DIRECT
-  - 美国 CloudFlare节点
   - 罗马尼亚 V2CROSS.COM
-  - 罗马尼亚 V2CROSS.COM
-  - 亚太地区 V2CROSS.COM
   - 美国 华盛顿Cogent通信公司
-  - 美国 华盛顿Cogent通信公司
+  - _KR_韩国
   - 香港ripaojiedian
+  - 日本2ripaojiedian
+  - 日本3ripaojiedian
+  - 美国2ripaojiedian
   - _HK_中国香港
-  - _JP_日本
-  - _JP_日本
-  - _AU_澳大利亚
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: &id001
-  - 美国 CloudFlare节点
   - 罗马尼亚 V2CROSS.COM
-  - 罗马尼亚 V2CROSS.COM
-  - 亚太地区 V2CROSS.COM
   - 美国 华盛顿Cogent通信公司
-  - 美国 华盛顿Cogent通信公司
+  - _KR_韩国
   - 香港ripaojiedian
+  - 日本2ripaojiedian
+  - 日本3ripaojiedian
+  - 美国2ripaojiedian
   - _HK_中国香港
-  - _JP_日本
-  - _JP_日本
-  - _AU_澳大利亚
 - name: 🔮 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
