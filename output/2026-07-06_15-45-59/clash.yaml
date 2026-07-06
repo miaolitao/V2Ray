@@ -1,0 +1,219 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+proxies:
+- name: 美国 CloudFlare节点
+  type: trojan
+  server: www.ignitelimit.com
+  port: 443
+  password: humanity
+  skip-cert-verify: true
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 165.215.250.14
+  port: 443
+  password: humanity
+  sni: www.creationlong.org
+  skip-cert-verify: true
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 165.215.250.14
+  port: 443
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+- name: 罗马尼亚 V2CROSS.COM
+  type: trojan
+  server: 185.137.157.142
+  port: 443
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  sni: 185.137.157.142
+- name: 罗马尼亚 V2CROSS.COM
+  type: trojan
+  server: 185.137.157.135
+  port: 443
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+- name: 罗马尼亚 V2CROSS.COM
+  type: trojan
+  server: 185.137.157.145
+  port: 443
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+- name: _KR_韩国
+  type: vmess
+  server: 217.142.138.61
+  port: 80
+  uuid: ac1b933d-afff-4487-93ef-f57130a55dff
+  alterId: 0
+  cipher: auto
+- name: 美国 华盛顿Cogent通信公司
+  type: trojan
+  server: 38.60.252.118
+  port: 443
+  password: NAdtbpuyJXPH=CfKmdBqD2YVbzdvwAtuxw
+  sni: 38.60.252.118
+- name: 美国3ripaojiedian
+  type: trojan
+  server: 18.163.116.155
+  port: 44265
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: _HK_中国香港
+  type: vmess
+  server: v10.zgtfqs.click
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+- name: _SG_新加坡
+  type: ss
+  server: ss.049.node-for-bigairport.win
+  port: 19000
+  cipher: chacha20-ietf-poly1305
+  password: 792e0bdb-01db-450c-94c4-925151eb396e
+- name: 香港ripaojiedian
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: '2'
+  cipher: auto
+- name: _HK_中国香港
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+- name: _FI_芬兰
+  type: ss
+  server: mail2.thirdpaull.monster
+  port: 57327
+  cipher: chacha20-ietf-poly1305
+  password: 2KAu9eMmGwShWTWcuyynmLE81PVkoKDvQ3fb29dPScc1bMUW5y6hpprXqVWqSqjTi234hFGdDf3ArCuWtBw5FA6zV5wBgWTP
+- name: _HK_中国香港
+  type: vmess
+  server: n1747624274.4u9ma.icu
+  port: 443
+  uuid: d8daf507-a4ac-4eea-8399-8f0cd071eb52
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: n1747624274.4u9ma.icu
+  tls: true
+- name: _HK_中国香港-_SG_新加坡
+  type: trojan
+  server: jpbgp.netvigor.cc
+  port: 19128
+  password: OccIqeORGQwiNkwS
+  sni: yazhou10.dynu.net
+  skip-cert-verify: true
+- name: 香港3ripaojiedian
+  type: trojan
+  server: 16.163.138.198
+  port: 2008
+  password: d6788cf74e6844c45538204efd24b00f
+  sni: www.nintendogames.net
+  skip-cert-verify: true
+- name: 日本2ripaojiedian
+  type: trojan
+  server: 16.163.138.198
+  port: 55973
+  password: d6788cf74e6844c45538204efd24b00f
+  sni: www.nintendogames.net
+  skip-cert-verify: true
+proxy-groups:
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - 🔮 负载均衡
+  - DIRECT
+  - 美国 CloudFlare节点
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - 罗马尼亚 V2CROSS.COM
+  - 罗马尼亚 V2CROSS.COM
+  - 罗马尼亚 V2CROSS.COM
+  - _KR_韩国
+  - 美国 华盛顿Cogent通信公司
+  - 美国3ripaojiedian
+  - _HK_中国香港
+  - _SG_新加坡
+  - 香港ripaojiedian
+  - _HK_中国香港
+  - _FI_芬兰
+  - _HK_中国香港
+  - _HK_中国香港-_SG_新加坡
+  - 香港3ripaojiedian
+  - 日本2ripaojiedian
+- name: ♻️ 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies: &id001
+  - 美国 CloudFlare节点
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - 罗马尼亚 V2CROSS.COM
+  - 罗马尼亚 V2CROSS.COM
+  - 罗马尼亚 V2CROSS.COM
+  - _KR_韩国
+  - 美国 华盛顿Cogent通信公司
+  - 美国3ripaojiedian
+  - _HK_中国香港
+  - _SG_新加坡
+  - 香港ripaojiedian
+  - _HK_中国香港
+  - _FI_芬兰
+  - _HK_中国香港
+  - _HK_中国香港-_SG_新加坡
+  - 香港3ripaojiedian
+  - 日本2ripaojiedian
+- name: 🔮 负载均衡
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies: *id001
+- name: 🎯 全球直连
+  type: select
+  proxies:
+  - DIRECT
+- name: 🛑 全球拦截
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 🐟 漏网之鱼
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - ♻️ 自动选择
+rules:
+- DOMAIN-SUFFIX,local,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,172.16.0.0/12,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT
+- IP-CIDR,10.0.0.0/8,DIRECT
+- IP-CIDR,17.0.0.0/8,DIRECT
+- IP-CIDR,100.64.0.0/10,DIRECT
+- DOMAIN-SUFFIX,google.com,🚀 节点选择
+- DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
+- DOMAIN-SUFFIX,googleusercontent.com,🚀 节点选择
+- DOMAIN-SUFFIX,youtube.com,🚀 节点选择
+- DOMAIN-SUFFIX,ytimg.com,🚀 节点选择
+- DOMAIN-SUFFIX,twitter.com,🚀 节点选择
+- DOMAIN-SUFFIX,facebook.com,🚀 节点选择
+- DOMAIN-SUFFIX,instagram.com,🚀 节点选择
+- DOMAIN-SUFFIX,telegram.org,🚀 节点选择
+- DOMAIN-SUFFIX,github.com,🚀 节点选择
+- DOMAIN-SUFFIX,githubusercontent.com,🚀 节点选择
+- GEOIP,CN,🎯 全球直连
+- MATCH,🐟 漏网之鱼
