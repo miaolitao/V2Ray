@@ -7,10 +7,31 @@ external-controller: 127.0.0.1:9090
 proxies:
 - name: 美国 CloudFlare节点
   type: trojan
-  server: 104.16.174.6
+  server: 104.20.6.134
   port: 443
   password: humanity
-  sni: www.ignitelimit.com
+  sni: www.calmloud.com
+- name: 英國
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 美國節點
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 英國節點
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 - name: 巴西聖保羅丨yoyapai.comr
   type: trojan
   server: 188.114.97.6
@@ -37,19 +58,18 @@ proxies:
   password: Mitivpn
   sni: ssl.fastly.com
   skip-cert-verify: true
+- name: 美國丨yoyapai.comr
+  type: trojan
+  server: www.ignitelimit.com
+  port: 443
+  password: humanity
+  skip-cert-verify: true
 - name: 美國CloudFlare节点丨yoyapai.comr
   type: trojan
   server: 104.25.108.147
   port: 8080
   password: 9c521e24-7326-acd3-acec-d0afac2b465d
   sni: red-cell-47f9.milaniomilan9.workers.dev
-  skip-cert-verify: true
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 165.215.250.14
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
   skip-cert-verify: true
 - name: US美国(mibei77.com 米贝节点分享)
   type: trojan
@@ -63,46 +83,32 @@ proxies:
   server: 165.215.250.14
   port: 443
   password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 165.215.250.14
+  port: 443
+  password: humanity
   sni: www.calmlunch.com
   skip-cert-verify: true
 - name: _US_美国
   type: ss
-  server: 3.17.162.229
+  server: 3.147.78.9
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: _US_美国
-  type: ss
-  server: 3.15.193.107
+- name: 罗马尼亚 V2CROSS.COM
+  type: trojan
+  server: 185.137.157.142
   port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: _US_美国
-  type: vmess
-  server: 107.173.7.186
-  port: 2095
-  uuid: 383737a2-a196-44b6-a9ac-4f8cc23c9637
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: 383737a2-a196-44b6-a9ac-4f8cc23c9637-vm
-    headers:
-      Host: 107.173.7.186
-- name: 英國
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 美國節點
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  sni: 185.137.157.142
+- name: 美国 华盛顿Cogent通信公司
+  type: trojan
+  server: 38.60.136.156
+  port: 443
+  password: hCunaKqdEJDBO+3jCrJUSMevXOw9Q_r4Ey
 - name: NL荷蘭丨yoyapai.comr
   type: trojan
   server: 91.221.190.80
@@ -110,23 +116,6 @@ proxies:
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
-- name: 英國節點
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 罗马尼亚 V2CROSS.COM
-  type: trojan
-  server: 185.137.157.128
-  port: 443
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-- name: 罗马尼亚 V2CROSS.COM
-  type: trojan
-  server: 185.137.157.149
-  port: 443
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
 - name: 意大利節點IT丨yoyapai.comr
   type: trojan
   server: 151.241.215.148
@@ -188,36 +177,19 @@ proxies:
   password: Mitivpn
   sni: ssl.fastly.com
   skip-cert-verify: true
-- name: 美國丨yoyapai.comr
-  type: trojan
-  server: www.ignitelimit.com
-  port: 443
-  password: humanity
-  skip-cert-verify: true
-- name: _NL_荷兰
+- name: _FR_法国
   type: ss
-  server: 82.38.31.35
+  server: 35.180.255.4
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 美国 华盛顿Cogent通信公司
-  type: trojan
-  server: 38.60.252.118
-  port: 443
-  password: NAdtbpuyJXPH=CfKmdBqD2YVbzdvwAtuxw
-  sni: 38.60.252.118
-- name: _HK_中国香港-_DE_德国
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: _KR_韩国
   type: vmess
-  server: planb.mojcn.com
-  port: 16644
-  uuid: 0db8b699-548d-4ed8-b720-6194783ecc9e
+  server: 217.142.138.61
+  port: 80
+  uuid: ac1b933d-afff-4487-93ef-f57130a55dff
   alterId: 0
   cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 445eb7ce2d66c34309d2e1dacbeaf3b9.mobgslb.tbcache.com
 - name: 香港ripaojiedian
   type: vmess
   server: v10.hdacd.com
@@ -232,6 +204,26 @@ proxies:
   password: OccIqeORGQwiNkwS
   sni: yazhou10.dynu.net
   skip-cert-verify: true
+- name: 香港3ripaojiedian
+  type: trojan
+  server: 16.163.138.198
+  port: 2008
+  password: d6788cf74e6844c45538204efd24b00f
+  sni: www.nintendogames.net
+  skip-cert-verify: true
+- name: 俄羅斯
+  type: vmess
+  server: renderer-stream-1-411.mirra.now
+  port: 443
+  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-1-411.mirra.now
+  tls: true
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -240,22 +232,21 @@ proxy-groups:
   - 🔮 负载均衡
   - DIRECT
   - 美国 CloudFlare节点
+  - 英國
+  - 美國節點
+  - 英國節點
   - 巴西聖保羅丨yoyapai.comr
   - 法國節點
   - 美國喬治亞州亞特蘭大丨yoyapai.comr
+  - 美國丨yoyapai.comr
   - 美國CloudFlare节点丨yoyapai.comr
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - _US_美国
-  - _US_美国
-  - _US_美国
-  - 英國
-  - 美國節點
+  - 罗马尼亚 V2CROSS.COM
+  - 美国 华盛顿Cogent通信公司
   - NL荷蘭丨yoyapai.comr
-  - 英國節點
-  - 罗马尼亚 V2CROSS.COM
-  - 罗马尼亚 V2CROSS.COM
   - 意大利節點IT丨yoyapai.comr
   - 荷蘭節點丨yoyapai.comr
   - 亞太地區丨yoyapai.comr
@@ -265,34 +256,33 @@ proxy-groups:
   - 意大利丨yoyapai.comr
   - 瑞典丨yoyapai.comr
   - 美國丨yoyapai.comr
-  - 美國丨yoyapai.comr
-  - _NL_荷兰
-  - 美国 华盛顿Cogent通信公司
-  - _HK_中国香港-_DE_德国
+  - _FR_法国
+  - _KR_韩国
   - 香港ripaojiedian
   - _HK_中国香港-_SG_新加坡
+  - 香港3ripaojiedian
+  - 俄羅斯
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: &id001
   - 美国 CloudFlare节点
+  - 英國
+  - 美國節點
+  - 英國節點
   - 巴西聖保羅丨yoyapai.comr
   - 法國節點
   - 美國喬治亞州亞特蘭大丨yoyapai.comr
+  - 美國丨yoyapai.comr
   - 美國CloudFlare节点丨yoyapai.comr
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - _US_美国
-  - _US_美国
-  - _US_美国
-  - 英國
-  - 美國節點
+  - 罗马尼亚 V2CROSS.COM
+  - 美国 华盛顿Cogent通信公司
   - NL荷蘭丨yoyapai.comr
-  - 英國節點
-  - 罗马尼亚 V2CROSS.COM
-  - 罗马尼亚 V2CROSS.COM
   - 意大利節點IT丨yoyapai.comr
   - 荷蘭節點丨yoyapai.comr
   - 亞太地區丨yoyapai.comr
@@ -302,12 +292,12 @@ proxy-groups:
   - 意大利丨yoyapai.comr
   - 瑞典丨yoyapai.comr
   - 美國丨yoyapai.comr
-  - 美國丨yoyapai.comr
-  - _NL_荷兰
-  - 美国 华盛顿Cogent通信公司
-  - _HK_中国香港-_DE_德国
+  - _FR_法国
+  - _KR_韩国
   - 香港ripaojiedian
   - _HK_中国香港-_SG_新加坡
+  - 香港3ripaojiedian
+  - 俄羅斯
 - name: 🔮 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
