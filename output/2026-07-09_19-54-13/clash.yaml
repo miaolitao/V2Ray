@@ -5,12 +5,6 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 美国 CloudFlare节点
-  type: trojan
-  server: 104.16.174.44
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
 - name: 巴西聖保羅丨yoyapai.comr
   type: trojan
   server: 188.114.97.6
@@ -30,12 +24,11 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
-- name: 美國喬治亞州亞特蘭大丨yoyapai.comr
+- name: 美國丨yoyapai.comr
   type: trojan
-  server: 151.101.56.6
+  server: www.ignitelimit.com
   port: 443
-  password: Mitivpn
-  sni: ssl.fastly.com
+  password: humanity
   skip-cert-verify: true
 - name: 美國CloudFlare节点丨yoyapai.comr
   type: trojan
@@ -44,12 +37,19 @@ proxies:
   password: 9c521e24-7326-acd3-acec-d0afac2b465d
   sni: red-cell-47f9.milaniomilan9.workers.dev
   skip-cert-verify: true
+- name: 美國佐治亞州亞特蘭大丨yoyapai.comr
+  type: trojan
+  server: 151.101.56.6
+  port: 443
+  password: Mitivpn
+  sni: ssl.fastly.com
+  skip-cert-verify: true
 - name: US美国(mibei77.com 米贝节点分享)
   type: trojan
   server: 165.215.250.14
   port: 443
   password: humanity
-  sni: www.creationlong.org
+  sni: www.calmlunch.com
   skip-cert-verify: true
 - name: US美国(mibei77.com 米贝节点分享)
   type: trojan
@@ -63,8 +63,41 @@ proxies:
   server: 165.215.250.14
   port: 443
   password: humanity
-  sni: www.calmlunch.com
+  sni: www.creationlong.org
   skip-cert-verify: true
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.17.131.88
+  port: 443
+  password: humanity
+  sni: www.gossipglove.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 172.64.147.166
+  port: 443
+  password: humanity
+  sni: www.multiplydose.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 172.64.152.23
+  port: 443
+  password: humanity
+  sni: www.calmlunch.com
+- name: 罗马尼亚 V2CROSS.COM
+  type: trojan
+  server: 185.137.157.149
+  port: 443
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+- name: 罗马尼亚 V2CROSS.COM
+  type: trojan
+  server: 185.137.157.135
+  port: 443
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+- name: 罗马尼亚 V2CROSS.COM
+  type: trojan
+  server: 185.137.157.138
+  port: 443
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
 - name: 英國
   type: vmess
   server: 82.198.246.37
@@ -79,29 +112,6 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 英國節點
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 美國丨yoyapai.comr
-  type: trojan
-  server: www.ignitelimit.com
-  port: 443
-  password: humanity
-  skip-cert-verify: true
-- name: 罗马尼亚 V2CROSS.COM
-  type: trojan
-  server: 185.137.157.149
-  port: 443
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-- name: 罗马尼亚 V2CROSS.COM
-  type: trojan
-  server: 185.137.157.128
-  port: 443
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
 - name: NL荷蘭丨yoyapai.comr
   type: trojan
   server: 91.221.190.80
@@ -109,6 +119,44 @@ proxies:
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
+- name: 英國節點
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 瑞典丨yoyapai.comr
+  type: trojan
+  server: 146.75.116.190
+  port: 80
+  password: Mitivpn
+  skip-cert-verify: true
+- name: 美國丨yoyapai.comr
+  type: trojan
+  server: 167.82.101.251
+  port: 443
+  password: Mitivpn
+  sni: ssl.fastly.com
+  skip-cert-verify: true
+- name: GB英国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.248.160.220
+  port: 443
+  password: '521314'
+  sni: tjplay.lxdxo.kdns.fr
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.194.146.86
+  port: 443
+  password: '521314'
+  sni: tjplay.lxdxo.kdns.fr
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.194.144.187
+  port: 443
+  password: '521314'
+  sni: tjplay.lxdxo.kdns.fr
 - name: 意大利節點IT丨yoyapai.comr
   type: trojan
   server: 151.241.215.148
@@ -157,37 +205,12 @@ proxies:
   port: 80
   password: Mitivpn
   skip-cert-verify: true
-- name: 瑞典丨yoyapai.comr
+- name: IN印度(mibei77.com 米贝节点分享)
   type: trojan
-  server: 146.75.116.190
-  port: 80
-  password: Mitivpn
-  skip-cert-verify: true
-- name: 美國丨yoyapai.comr
-  type: trojan
-  server: 167.82.101.251
+  server: 103.83.87.133
   port: 443
-  password: Mitivpn
-  sni: ssl.fastly.com
-  skip-cert-verify: true
-- name: _KR_韩国
-  type: vmess
-  server: 217.142.138.61
-  port: 80
-  uuid: ac1b933d-afff-4487-93ef-f57130a55dff
-  alterId: 0
-  cipher: auto
-- name: _FI_芬兰
-  type: ss
-  server: 109.107.182.229
-  port: 51544
-  cipher: chacha20-ietf-poly1305
-  password: x3ZJXCnqxaoaAIrrkfoaNB
-- name: 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
-  type: trojan
-  server: 130.94.94.15
-  port: 443
-  password: tUtK5TKdjxsPnOyritLtv8OQWHAK8f8yNR
+  password: '521314'
+  sni: tjplay.lxdxo.kdns.fr
 - name: 香港ripaojiedian
   type: vmess
   server: v10.hdacd.com
@@ -195,20 +218,25 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: '2'
   cipher: auto
-- name: 香港3ripaojiedian
+- name: US美国(mibei77.com 米贝节点分享)
   type: trojan
-  server: 16.163.138.198
-  port: 2008
-  password: d6788cf74e6844c45538204efd24b00f
-  sni: www.nintendogames.net
-  skip-cert-verify: true
-- name: 美国2ripaojiedian
+  server: 129.212.229.240
+  port: 443
+  password: '521314'
+  sni: tjplay.lxdxo.kdns.fr
+- name: _HK_中国香港
+  type: vmess
+  server: 47.76.127.88
+  port: 5566
+  uuid: 44712929-c2b7-4fa4-93bd-9de332a78c8c
+  alterId: 0
+  cipher: auto
+- name: 香港 电讯盈科有限公司
   type: trojan
-  server: 16.163.138.198
-  port: 49277
-  password: d6788cf74e6844c45538204efd24b00f
-  sni: www.nintendogames.net
-  skip-cert-verify: true
+  server: jpbgp.netvigor.cc
+  port: 19128
+  password: OccIqeORGQwiNkwS
+  sni: yazhou10.dynu.net
 - name: 俄羅斯
   type: vmess
   server: renderer-stream-1-411.mirra.now
@@ -229,21 +257,29 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 负载均衡
   - DIRECT
-  - 美国 CloudFlare节点
   - 巴西聖保羅丨yoyapai.comr
   - 法國節點
-  - 美國喬治亞州亞特蘭大丨yoyapai.comr
+  - 美國丨yoyapai.comr
   - 美國CloudFlare节点丨yoyapai.comr
+  - 美國佐治亞州亞特蘭大丨yoyapai.comr
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
+  - FR法国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - 罗马尼亚 V2CROSS.COM
+  - 罗马尼亚 V2CROSS.COM
+  - 罗马尼亚 V2CROSS.COM
   - 英國
   - 美國節點
-  - 英國節點
-  - 美國丨yoyapai.comr
-  - 罗马尼亚 V2CROSS.COM
-  - 罗马尼亚 V2CROSS.COM
   - NL荷蘭丨yoyapai.comr
+  - 英國節點
+  - 瑞典丨yoyapai.comr
+  - 美國丨yoyapai.comr
+  - GB英国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
   - 意大利節點IT丨yoyapai.comr
   - 荷蘭節點丨yoyapai.comr
   - 亞太地區丨yoyapai.comr
@@ -251,35 +287,40 @@ proxy-groups:
   - US美國丨yoyapai.comr
   - KR韓國丨yoyapai.comr
   - 意大利丨yoyapai.comr
-  - 瑞典丨yoyapai.comr
-  - 美國丨yoyapai.comr
-  - _KR_韩国
-  - _FI_芬兰
-  - 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+  - IN印度(mibei77.com 米贝节点分享)
   - 香港ripaojiedian
-  - 香港3ripaojiedian
-  - 美国2ripaojiedian
+  - US美国(mibei77.com 米贝节点分享)
+  - _HK_中国香港
+  - 香港 电讯盈科有限公司
   - 俄羅斯
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: &id001
-  - 美国 CloudFlare节点
   - 巴西聖保羅丨yoyapai.comr
   - 法國節點
-  - 美國喬治亞州亞特蘭大丨yoyapai.comr
+  - 美國丨yoyapai.comr
   - 美國CloudFlare节点丨yoyapai.comr
+  - 美國佐治亞州亞特蘭大丨yoyapai.comr
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
+  - FR法国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - 罗马尼亚 V2CROSS.COM
+  - 罗马尼亚 V2CROSS.COM
+  - 罗马尼亚 V2CROSS.COM
   - 英國
   - 美國節點
-  - 英國節點
-  - 美國丨yoyapai.comr
-  - 罗马尼亚 V2CROSS.COM
-  - 罗马尼亚 V2CROSS.COM
   - NL荷蘭丨yoyapai.comr
+  - 英國節點
+  - 瑞典丨yoyapai.comr
+  - 美國丨yoyapai.comr
+  - GB英国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
   - 意大利節點IT丨yoyapai.comr
   - 荷蘭節點丨yoyapai.comr
   - 亞太地區丨yoyapai.comr
@@ -287,14 +328,11 @@ proxy-groups:
   - US美國丨yoyapai.comr
   - KR韓國丨yoyapai.comr
   - 意大利丨yoyapai.comr
-  - 瑞典丨yoyapai.comr
-  - 美國丨yoyapai.comr
-  - _KR_韩国
-  - _FI_芬兰
-  - 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+  - IN印度(mibei77.com 米贝节点分享)
   - 香港ripaojiedian
-  - 香港3ripaojiedian
-  - 美国2ripaojiedian
+  - US美国(mibei77.com 米贝节点分享)
+  - _HK_中国香港
+  - 香港 电讯盈科有限公司
   - 俄羅斯
 - name: 🔮 负载均衡
   type: load-balance

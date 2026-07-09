@@ -18,27 +18,6 @@
   ],
   "outbounds": [
     {
-      "tag": "美国 CloudFlare节点",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.16.174.44",
-            "port": 443,
-            "password": "humanity"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.ignitelimit.com",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
       "tag": "巴西聖保羅丨yoyapai.comr",
       "protocol": "trojan",
       "settings": {
@@ -88,14 +67,14 @@
       }
     },
     {
-      "tag": "美國喬治亞州亞特蘭大丨yoyapai.comr",
+      "tag": "美國丨yoyapai.comr",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "151.101.56.6",
+            "address": "www.ignitelimit.com",
             "port": 443,
-            "password": "Mitivpn"
+            "password": "humanity"
           }
         ]
       },
@@ -103,7 +82,7 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "ssl.fastly.com",
+          "serverName": "",
           "allowInsecure": true
         }
       }
@@ -130,6 +109,27 @@
       }
     },
     {
+      "tag": "美國佐治亞州亞特蘭大丨yoyapai.comr",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "151.101.56.6",
+            "port": 443,
+            "password": "Mitivpn"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ssl.fastly.com",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
       "tag": "US美国(mibei77.com 米贝节点分享)",
       "protocol": "trojan",
       "settings": {
@@ -145,7 +145,7 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "www.creationlong.org",
+          "serverName": "www.calmlunch.com",
           "allowInsecure": true
         }
       }
@@ -187,8 +187,134 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "www.calmlunch.com",
+          "serverName": "www.creationlong.org",
           "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "FR法国(mibei77.com 米贝节点分享)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.17.131.88",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.gossipglove.com",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "172.64.147.166",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.multiplydose.com",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "172.64.152.23",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.calmlunch.com",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "罗马尼亚 V2CROSS.COM",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "185.137.157.149",
+            "port": 443,
+            "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "罗马尼亚 V2CROSS.COM",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "185.137.157.135",
+            "port": 443,
+            "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "罗马尼亚 V2CROSS.COM",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "185.137.157.138",
+            "port": 443,
+            "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
         }
       }
     },
@@ -237,6 +363,27 @@
       }
     },
     {
+      "tag": "NL荷蘭丨yoyapai.comr",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "91.221.190.80",
+            "port": 443,
+            "password": "8r%3C%5B9%27l6hAO%238ZQi"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "Koma-YT.PAGeS.Dev",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
       "tag": "英國節點",
       "protocol": "vmess",
       "settings": {
@@ -259,14 +406,35 @@
       }
     },
     {
+      "tag": "瑞典丨yoyapai.comr",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "146.75.116.190",
+            "port": 80,
+            "password": "Mitivpn"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
       "tag": "美國丨yoyapai.comr",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "www.ignitelimit.com",
+            "address": "167.82.101.251",
             "port": 443,
-            "password": "humanity"
+            "password": "Mitivpn"
           }
         ]
       },
@@ -274,20 +442,20 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "",
+          "serverName": "ssl.fastly.com",
           "allowInsecure": true
         }
       }
     },
     {
-      "tag": "罗马尼亚 V2CROSS.COM",
+      "tag": "GB英国(mibei77.com 米贝节点分享)",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "185.137.157.149",
+            "address": "104.248.160.220",
             "port": 443,
-            "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q"
+            "password": "521314"
           }
         ]
       },
@@ -295,20 +463,20 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "",
+          "serverName": "tjplay.lxdxo.kdns.fr",
           "allowInsecure": false
         }
       }
     },
     {
-      "tag": "罗马尼亚 V2CROSS.COM",
+      "tag": "US美国(mibei77.com 米贝节点分享)",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "185.137.157.128",
+            "address": "104.194.146.86",
             "port": 443,
-            "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q"
+            "password": "521314"
           }
         ]
       },
@@ -316,20 +484,20 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "",
+          "serverName": "tjplay.lxdxo.kdns.fr",
           "allowInsecure": false
         }
       }
     },
     {
-      "tag": "NL荷蘭丨yoyapai.comr",
+      "tag": "US美国(mibei77.com 米贝节点分享)",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "91.221.190.80",
+            "address": "104.194.144.187",
             "port": 443,
-            "password": "8r%3C%5B9%27l6hAO%238ZQi"
+            "password": "521314"
           }
         ]
       },
@@ -337,8 +505,8 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "Koma-YT.PAGeS.Dev",
-          "allowInsecure": true
+          "serverName": "tjplay.lxdxo.kdns.fr",
+          "allowInsecure": false
         }
       }
     },
@@ -490,35 +658,14 @@
       }
     },
     {
-      "tag": "瑞典丨yoyapai.comr",
+      "tag": "IN印度(mibei77.com 米贝节点分享)",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "146.75.116.190",
-            "port": 80,
-            "password": "Mitivpn"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "",
-          "allowInsecure": true
-        }
-      }
-    },
-    {
-      "tag": "美國丨yoyapai.comr",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "167.82.101.251",
+            "address": "103.83.87.133",
             "port": 443,
-            "password": "Mitivpn"
+            "password": "521314"
           }
         ]
       },
@@ -526,64 +673,7 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "ssl.fastly.com",
-          "allowInsecure": true
-        }
-      }
-    },
-    {
-      "tag": "_KR_韩国",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "217.142.138.61",
-            "port": 80,
-            "users": [
-              {
-                "id": "ac1b933d-afff-4487-93ef-f57130a55dff",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "http"
-      }
-    },
-    {
-      "tag": "_FI_芬兰",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "109.107.182.229",
-            "port": 51544,
-            "method": "chacha20-ietf-poly1305",
-            "password": "x3ZJXCnqxaoaAIrrkfoaNB"
-          }
-        ]
-      }
-    },
-    {
-      "tag": "美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "130.94.94.15",
-            "port": 443,
-            "password": "tUtK5TKdjxsPnOyritLtv8OQWHAK8f8yNR"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "",
+          "serverName": "tjplay.lxdxo.kdns.fr",
           "allowInsecure": false
         }
       }
@@ -611,14 +701,14 @@
       }
     },
     {
-      "tag": "香港3ripaojiedian",
+      "tag": "US美国(mibei77.com 米贝节点分享)",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "16.163.138.198",
-            "port": 2008,
-            "password": "d6788cf74e6844c45538204efd24b00f"
+            "address": "129.212.229.240",
+            "port": 443,
+            "password": "521314"
           }
         ]
       },
@@ -626,20 +716,42 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "www.nintendogames.net",
-          "allowInsecure": true
+          "serverName": "tjplay.lxdxo.kdns.fr",
+          "allowInsecure": false
         }
       }
     },
     {
-      "tag": "美国2ripaojiedian",
+      "tag": "_HK_中国香港",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "47.76.127.88",
+            "port": 5566,
+            "users": [
+              {
+                "id": "44712929-c2b7-4fa4-93bd-9de332a78c8c",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "香港 电讯盈科有限公司",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "16.163.138.198",
-            "port": 49277,
-            "password": "d6788cf74e6844c45538204efd24b00f"
+            "address": "jpbgp.netvigor.cc",
+            "port": 19128,
+            "password": "OccIqeORGQwiNkwS"
           }
         ]
       },
@@ -647,8 +759,8 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "www.nintendogames.net",
-          "allowInsecure": true
+          "serverName": "yazhou10.dynu.net",
+          "allowInsecure": false
         }
       }
     },
