@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 美国 CloudFlare节点
-  type: trojan
-  server: 104.18.152.208
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-- name: 美国 CloudFlare节点
-  type: trojan
-  server: 172.67.155.199
-  port: 443
-  password: humanity
-  sni: www.calmloud.com
 - name: 英國
   type: vmess
   server: 82.198.246.37
@@ -71,6 +59,19 @@ proxies:
   password: Mitivpn
   sni: ssl.fastly.com
   skip-cert-verify: true
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.17.131.88
+  port: 443
+  password: humanity
+  sni: www.gossipglove.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 45.131.5.9
+  port: 443
+  password: '521314'
+  sni: tjplay.lxdxo.kdns.fr
+  skip-cert-verify: true
 - name: US美国(mibei77.com 米贝节点分享)
   type: trojan
   server: 165.215.250.14
@@ -92,12 +93,6 @@ proxies:
   password: humanity
   sni: www.creationlong.org
   skip-cert-verify: true
-- name: FR法国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 104.17.131.88
-  port: 443
-  password: humanity
-  sni: www.gossipglove.com
 - name: US美国(mibei77.com 米贝节点分享)
   type: trojan
   server: 172.64.147.166
@@ -110,28 +105,48 @@ proxies:
   port: 443
   password: humanity
   sni: www.calmlunch.com
+- name: _US_美国
+  type: ss
+  server: 18.191.147.2
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 美國丨yoyapai.comr
   type: trojan
   server: www.ignitelimit.com
   port: 443
   password: humanity
   skip-cert-verify: true
+- name: _US_美国
+  type: ss
+  server: 3.16.130.237
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: _US_美国
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+- name: _US_美国
+  type: ss
+  server: 18.191.132.3
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 罗马尼亚 V2CROSS.COM
+  type: trojan
+  server: 185.137.157.145
+  port: 443
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
 - name: 罗马尼亚 V2CROSS.COM
   type: trojan
   server: 185.137.157.142
   port: 443
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-- name: 罗马尼亚 V2CROSS.COM
-  type: trojan
-  server: 185.137.157.140
-  port: 443
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-- name: 罗马尼亚 V2CROSS.COM
-  type: trojan
-  server: 185.137.157.151
-  port: 443
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  sni: 185.137.157.151
 - name: NL荷蘭丨yoyapai.comr
   type: trojan
   server: 91.221.190.80
@@ -200,48 +215,109 @@ proxies:
   password: Mitivpn
   sni: ssl.fastly.com
   skip-cert-verify: true
-- name: GB英国(mibei77.com 米贝节点分享)
+- name: SG新加坡(mibei77.com 米贝节点分享)
   type: trojan
-  server: 104.248.160.220
+  server: busy-lab.rooster465.autos
   port: 443
-  password: '521314'
-  sni: tjplay.lxdxo.kdns.fr
-- name: IN印度(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 103.83.87.133
+  password: PI36027154
+  sni: busy-lab.rooster465.autos
+- name: _FR_法国
+  type: ss
+  server: 13.38.46.189
   port: 443
-  password: '521314'
-  sni: tjplay.lxdxo.kdns.fr
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 129.212.229.240
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: _FR_法国
+  type: ss
+  server: 15.188.74.101
   port: 443
-  password: '521314'
-  sni: tjplay.lxdxo.kdns.fr
-- name: US美国(mibei77.com 米贝节点分享)
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: _HK_中国香港
+  type: vmess
+  server: 47.76.127.88
+  port: 5566
+  uuid: 44712929-c2b7-4fa4-93bd-9de332a78c8c
+  alterId: 0
+  cipher: auto
+- name: 美国 V2CROSS.COM
   type: trojan
-  server: 131.186.27.112
-  port: 2096
-  password: '521314'
-  sni: tjplay.lxdxo.kdns.fr
-- name: US美国(mibei77.com 米贝节点分享)
-  type: trojan
-  server: 104.194.146.86
+  server: 149.104.104.58
   port: 443
-  password: '521314'
-  sni: tjplay.lxdxo.kdns.fr
-- name: US美国(mibei77.com 米贝节点分享)
+  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
+  sni: 149.104.104.58
+- name: SG新加坡(mibei77.com 米贝节点分享)
   type: trojan
-  server: 104.194.144.187
+  server: exciting-grizzly.rooster465.autos
   port: 443
-  password: '521314'
-  sni: tjplay.lxdxo.kdns.fr
-- name: US美国(mibei77.com 米贝节点分享)
+  password: PI36027154
+  sni: exciting-grizzly.rooster465.autos
+- name: SG新加坡(mibei77.com 米贝节点分享)
+  type: trojan
+  server: faithful-clam.rooster465.autos
+  port: 443
+  password: PI36027154
+  sni: faithful-clam.rooster465.autos
+- name: 香港ripaojiedian
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: '2'
+  cipher: auto
+- name: HK香港(mibei77.com 米贝节点分享)
   type: trojan
   server: jpbgp.netvigor.cc
   port: 19128
   password: OccIqeORGQwiNkwS
   sni: yazhou10.dynu.net
+  skip-cert-verify: true
+- name: SG新加坡(mibei77.com 米贝节点分享)
+  type: trojan
+  server: stirred-buck.rooster465.autos
+  port: 443
+  password: PI36027154
+  sni: stirred-buck.rooster465.autos
+- name: _CN_中国
+  type: vmess
+  server: v45.hdacd.com
+  port: 30845
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+- name: _CN_中国
+  type: vmess
+  server: v33.hdacd.com
+  port: 30833
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+- name: _HK_中国香港
+  type: vmess
+  server: n1747624260.4u9ma.icu
+  port: 443
+  uuid: eee8cb72-7eab-4034-a308-ed06cb07e003
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: n1747624260.4u9ma.icu
+  tls: true
+- name: 俄羅斯
+  type: vmess
+  server: renderer-stream-1-411.mirra.now
+  port: 443
+  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-1-411.mirra.now
+  tls: true
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -249,8 +325,6 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 负载均衡
   - DIRECT
-  - 美国 CloudFlare节点
-  - 美国 CloudFlare节点
   - 英國
   - 美國節點
   - 英國節點
@@ -258,14 +332,18 @@ proxy-groups:
   - 法國節點
   - 美國CloudFlare节点丨yoyapai.comr
   - 美國佐治亞州亞特蘭大丨yoyapai.comr
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
   - FR法国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - _US_美国
   - 美國丨yoyapai.comr
-  - 罗马尼亚 V2CROSS.COM
+  - _US_美国
+  - _US_美国
+  - _US_美国
   - 罗马尼亚 V2CROSS.COM
   - 罗马尼亚 V2CROSS.COM
   - NL荷蘭丨yoyapai.comr
@@ -278,20 +356,25 @@ proxy-groups:
   - 意大利丨yoyapai.comr
   - 瑞典丨yoyapai.comr
   - 美國丨yoyapai.comr
-  - GB英国(mibei77.com 米贝节点分享)
-  - IN印度(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
+  - SG新加坡(mibei77.com 米贝节点分享)
+  - _FR_法国
+  - _FR_法国
+  - _HK_中国香港
+  - 美国 V2CROSS.COM
+  - SG新加坡(mibei77.com 米贝节点分享)
+  - SG新加坡(mibei77.com 米贝节点分享)
+  - 香港ripaojiedian
+  - HK香港(mibei77.com 米贝节点分享)
+  - SG新加坡(mibei77.com 米贝节点分享)
+  - _CN_中国
+  - _CN_中国
+  - _HK_中国香港
+  - 俄羅斯
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: &id001
-  - 美国 CloudFlare节点
-  - 美国 CloudFlare节点
   - 英國
   - 美國節點
   - 英國節點
@@ -299,14 +382,18 @@ proxy-groups:
   - 法國節點
   - 美國CloudFlare节点丨yoyapai.comr
   - 美國佐治亞州亞特蘭大丨yoyapai.comr
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
   - FR法国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - _US_美国
   - 美國丨yoyapai.comr
-  - 罗马尼亚 V2CROSS.COM
+  - _US_美国
+  - _US_美国
+  - _US_美国
   - 罗马尼亚 V2CROSS.COM
   - 罗马尼亚 V2CROSS.COM
   - NL荷蘭丨yoyapai.comr
@@ -319,13 +406,20 @@ proxy-groups:
   - 意大利丨yoyapai.comr
   - 瑞典丨yoyapai.comr
   - 美國丨yoyapai.comr
-  - GB英国(mibei77.com 米贝节点分享)
-  - IN印度(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
-  - US美国(mibei77.com 米贝节点分享)
+  - SG新加坡(mibei77.com 米贝节点分享)
+  - _FR_法国
+  - _FR_法国
+  - _HK_中国香港
+  - 美国 V2CROSS.COM
+  - SG新加坡(mibei77.com 米贝节点分享)
+  - SG新加坡(mibei77.com 米贝节点分享)
+  - 香港ripaojiedian
+  - HK香港(mibei77.com 米贝节点分享)
+  - SG新加坡(mibei77.com 米贝节点分享)
+  - _CN_中国
+  - _CN_中国
+  - _HK_中国香港
+  - 俄羅斯
 - name: 🔮 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
