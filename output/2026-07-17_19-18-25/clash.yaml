@@ -1,0 +1,239 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+proxies:
+- name: 美国 CloudFlare节点
+  type: trojan
+  server: 162.159.38.183
+  port: 443
+  password: VPNCUSTOMIZE
+  sni: ww.offers.de5.net
+- name: 西班牙 V2CROSS.COM
+  type: trojan
+  server: 185.18.250.245
+  port: 443
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+- name: 美国 CloudFlare节点
+  type: trojan
+  server: 104.20.6.134
+  port: 443
+  password: humanity
+  sni: www.creationlong.org
+- name: 罗马尼亚 V2CROSS.COM
+  type: trojan
+  server: 185.137.157.128
+  port: 443
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+- name: 罗马尼亚 V2CROSS.COM
+  type: trojan
+  server: 185.137.157.151
+  port: 443
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  sni: 185.137.157.151
+- name: _US_美国
+  type: ss
+  server: 88.210.36.106
+  port: 2377
+  cipher: chacha20-ietf-poly1305
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+- name: _IE_爱尔兰
+  type: trojan
+  server: thankful-piranha.rooster465.autos
+  port: 443
+  password: NQ26071394
+  sni: thankful-piranha.rooster465.autos
+  skip-cert-verify: true
+- name: _IE_爱尔兰
+  type: trojan
+  server: fun-labrador.rooster465.autos
+  port: 443
+  password: NQ26071394
+  sni: fun-labrador.rooster465.autos
+  skip-cert-verify: true
+- name: 美国 V2CROSS.COM
+  type: trojan
+  server: 149.104.104.58
+  port: 443
+  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
+  sni: 149.104.104.58
+- name: _JP_日本
+  type: trojan
+  server: brief-hare.rooster465.autos
+  port: 443
+  password: NQ26071394
+  sni: brief-hare.rooster465.autos
+  skip-cert-verify: true
+- name: _KR_韩国
+  type: trojan
+  server: living-hagfish.rooster465.autos
+  port: 443
+  password: NQ26071394
+  sni: living-hagfish.rooster465.autos
+  skip-cert-verify: true
+- name: _FR_法国
+  type: trojan
+  server: ready-kangaroo.rooster465.autos
+  port: 443
+  password: NQ26071394
+  sni: ready-kangaroo.rooster465.autos
+  skip-cert-verify: true
+- name: _JP_日本
+  type: trojan
+  server: expert-muskrat.rooster465.autos
+  port: 443
+  password: NQ26071394
+  sni: expert-muskrat.rooster465.autos
+  skip-cert-verify: true
+- name: _JP_日本
+  type: trojan
+  server: stunning-mastodon.rooster465.autos
+  port: 443
+  password: NQ26071394
+  sni: stunning-mastodon.rooster465.autos
+  skip-cert-verify: true
+- name: _HK_中国香港
+  type: vmess
+  server: 47.76.127.88
+  port: 5566
+  uuid: 44712929-c2b7-4fa4-93bd-9de332a78c8c
+  alterId: 0
+  cipher: auto
+- name: _SG_新加坡
+  type: trojan
+  server: helping-newt.rooster465.autos
+  port: 443
+  password: NQ26071394
+  sni: helping-newt.rooster465.autos
+  skip-cert-verify: true
+- name: _KR_韩国
+  type: trojan
+  server: guided-pelican.rooster465.autos
+  port: 443
+  password: NQ26071394
+  sni: guided-pelican.rooster465.autos
+  skip-cert-verify: true
+- name: _KR_韩国
+  type: trojan
+  server: accurate-cat.rooster465.autos
+  port: 443
+  password: NQ26071394
+  sni: accurate-cat.rooster465.autos
+  skip-cert-verify: true
+- name: 香港ripaojiedian
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: '2'
+  cipher: auto
+- name: _HK_中国香港
+  type: vmess
+  server: n1747624274.4u9ma.icu
+  port: 443
+  uuid: d8daf507-a4ac-4eea-8399-8f0cd071eb52
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: n1747624274.4u9ma.icu
+  tls: true
+proxy-groups:
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - 🔮 负载均衡
+  - DIRECT
+  - 美国 CloudFlare节点
+  - 西班牙 V2CROSS.COM
+  - 美国 CloudFlare节点
+  - 罗马尼亚 V2CROSS.COM
+  - 罗马尼亚 V2CROSS.COM
+  - _US_美国
+  - _IE_爱尔兰
+  - _IE_爱尔兰
+  - 美国 V2CROSS.COM
+  - _JP_日本
+  - _KR_韩国
+  - _FR_法国
+  - _JP_日本
+  - _JP_日本
+  - _HK_中国香港
+  - _SG_新加坡
+  - _KR_韩国
+  - _KR_韩国
+  - 香港ripaojiedian
+  - _HK_中国香港
+- name: ♻️ 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies: &id001
+  - 美国 CloudFlare节点
+  - 西班牙 V2CROSS.COM
+  - 美国 CloudFlare节点
+  - 罗马尼亚 V2CROSS.COM
+  - 罗马尼亚 V2CROSS.COM
+  - _US_美国
+  - _IE_爱尔兰
+  - _IE_爱尔兰
+  - 美国 V2CROSS.COM
+  - _JP_日本
+  - _KR_韩国
+  - _FR_法国
+  - _JP_日本
+  - _JP_日本
+  - _HK_中国香港
+  - _SG_新加坡
+  - _KR_韩国
+  - _KR_韩国
+  - 香港ripaojiedian
+  - _HK_中国香港
+- name: 🔮 负载均衡
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies: *id001
+- name: 🎯 全球直连
+  type: select
+  proxies:
+  - DIRECT
+- name: 🛑 全球拦截
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 🐟 漏网之鱼
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - ♻️ 自动选择
+rules:
+- DOMAIN-SUFFIX,local,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,172.16.0.0/12,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT
+- IP-CIDR,10.0.0.0/8,DIRECT
+- IP-CIDR,17.0.0.0/8,DIRECT
+- IP-CIDR,100.64.0.0/10,DIRECT
+- DOMAIN-SUFFIX,google.com,🚀 节点选择
+- DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
+- DOMAIN-SUFFIX,googleusercontent.com,🚀 节点选择
+- DOMAIN-SUFFIX,youtube.com,🚀 节点选择
+- DOMAIN-SUFFIX,ytimg.com,🚀 节点选择
+- DOMAIN-SUFFIX,twitter.com,🚀 节点选择
+- DOMAIN-SUFFIX,facebook.com,🚀 节点选择
+- DOMAIN-SUFFIX,instagram.com,🚀 节点选择
+- DOMAIN-SUFFIX,telegram.org,🚀 节点选择
+- DOMAIN-SUFFIX,github.com,🚀 节点选择
+- DOMAIN-SUFFIX,githubusercontent.com,🚀 节点选择
+- GEOIP,CN,🎯 全球直连
+- MATCH,🐟 漏网之鱼
