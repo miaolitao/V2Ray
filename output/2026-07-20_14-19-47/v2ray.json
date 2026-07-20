@@ -1,0 +1,665 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "port": 1080,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    },
+    {
+      "port": 1081,
+      "protocol": "http"
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "美国 CloudFlare节点",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.20.6.134",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.multiplydose.com",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "美国 CloudFlare节点",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.26.6.159",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.creationlong.org",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "165.215.250.14",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.ignitelimit.com",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "165.215.250.14",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.creationlong.org",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "165.215.250.14",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.calmlunch.com",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "_DE_德国",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "63.177.252.44",
+            "port": 443,
+            "method": "aes-256-cfb",
+            "password": "amazonskr05"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "_HK_中国香港",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "47.244.120.197",
+            "port": 36703,
+            "users": [
+              {
+                "id": "45b83519-9c4f-4052-a11b-02e017b636d4",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/arki?ed=2048",
+          "headers": {
+            "Host": "47.244.120.197"
+          }
+        }
+      }
+    },
+    {
+      "tag": "_HK_中国香港",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "47.76.127.88",
+            "port": 5566,
+            "users": [
+              {
+                "id": "44712929-c2b7-4fa4-93bd-9de332a78c8c",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "_CN_中国-_GB_英国",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "v36.hdacd.com",
+            "port": 30836,
+            "users": [
+              {
+                "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+                "alterId": 2,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "香港ripaojiedian",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "v10.hdacd.com",
+            "port": 30807,
+            "users": [
+              {
+                "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+                "alterId": "2",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "_HK_中国香港",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "v10.hdacd.com",
+            "port": 30807,
+            "users": [
+              {
+                "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+                "alterId": 2,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "_CN_中国-_US_美国",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "v4.hdacd.com",
+            "port": 30804,
+            "users": [
+              {
+                "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+                "alterId": 2,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "_JP_日本-_DE_德国",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "gtm1.ktmwan.net",
+            "port": 12898,
+            "users": [
+              {
+                "id": "4941aa8d-07d2-408c-be2c-117debecba30",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "gtm1.ktmwan.net"
+          }
+        }
+      }
+    },
+    {
+      "tag": "_CN_中国-_JP_日本",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "v6.hdacd.com",
+            "port": 30806,
+            "users": [
+              {
+                "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+                "alterId": 2,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "_JP_日本-_US_美国",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "cs.ktmcn.net",
+            "port": 12885,
+            "users": [
+              {
+                "id": "4941aa8d-07d2-408c-be2c-117debecba30",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "cs.ktmcn.net"
+          }
+        }
+      }
+    },
+    {
+      "tag": "_JP_日本",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "gtm1.ktmwan.net",
+            "port": 12883,
+            "users": [
+              {
+                "id": "4941aa8d-07d2-408c-be2c-117debecba30",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "baidu.com"
+          }
+        }
+      }
+    },
+    {
+      "tag": "_JP_日本-_HK_中国香港",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "gtm1.ktmwan.net",
+            "port": 12890,
+            "users": [
+              {
+                "id": "4941aa8d-07d2-408c-be2c-117debecba30",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "baidu.com"
+          }
+        }
+      }
+    },
+    {
+      "tag": "_JP_日本-_AU_澳大利亚",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "gtm1.ktmwan.net",
+            "port": 12889,
+            "users": [
+              {
+                "id": "4941aa8d-07d2-408c-be2c-117debecba30",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "gtm1.ktmwan.net"
+          }
+        }
+      }
+    },
+    {
+      "tag": "_JP_日本-_CA_加拿大",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "gtm1.ktmwan.net",
+            "port": 12897,
+            "users": [
+              {
+                "id": "4941aa8d-07d2-408c-be2c-117debecba30",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "gtm1.ktmwan.net"
+          }
+        }
+      }
+    },
+    {
+      "tag": "_JP_日本-_SG_新加坡",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "cs.ktmcn.net",
+            "port": 12901,
+            "users": [
+              {
+                "id": "4941aa8d-07d2-408c-be2c-117debecba30",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "baidu.com"
+          }
+        }
+      }
+    },
+    {
+      "tag": "_HK_中国香港",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "n1747624260.4u9ma.icu",
+            "port": 443,
+            "users": [
+              {
+                "id": "eee8cb72-7eab-4034-a308-ed06cb07e003",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "n1747624260.4u9ma.icu"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "_JP_日本",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "cs.ktmcn.net",
+            "port": 12883,
+            "users": [
+              {
+                "id": "4941aa8d-07d2-408c-be2c-117debecba30",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "baidu.com"
+          }
+        }
+      }
+    },
+    {
+      "tag": "_JP_日本-_FR_法国",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "gtm1.ktmwan.net",
+            "port": 12899,
+            "users": [
+              {
+                "id": "4941aa8d-07d2-408c-be2c-117debecba30",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "gtm1.ktmwan.net"
+          }
+        }
+      }
+    },
+    {
+      "tag": "_JP_日本-_SG_新加坡",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "gtm1.ktmwan.net",
+            "port": 12901,
+            "users": [
+              {
+                "id": "4941aa8d-07d2-408c-be2c-117debecba30",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "baidu.com"
+          }
+        }
+      }
+    },
+    {
+      "tag": "_US_美国-_FR_法国",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "4cdn.njkrpl.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "a0449b33-d7f6-42a5-8bdc-3b5e727ec9f8",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "4cdn.njkrpl.com"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": false
+        }
+      }
+    }
+  ],
+  "routing": {
+    "domainStrategy": "IPOnDemand",
+    "rules": [
+      {
+        "type": "field",
+        "ip": [
+          "geoip:private"
+        ],
+        "outboundTag": "direct"
+      },
+      {
+        "type": "field",
+        "ip": [
+          "geoip:cn"
+        ],
+        "outboundTag": "direct"
+      }
+    ]
+  }
+}
