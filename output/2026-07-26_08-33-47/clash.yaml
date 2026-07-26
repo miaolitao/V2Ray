@@ -5,18 +5,18 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 荷兰 V2CROSS.COM
+- name: 美国 CloudFlare节点
   type: trojan
-  server: 188.164.248.122
-  port: 443
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  sni: space.byu.id.yxls.eu.cc
-- name: 美国 V2CROSS.COM
-  type: trojan
-  server: 165.215.250.14
+  server: 104.26.14.137
   port: 443
   password: humanity
   sni: www.ignitelimit.com
+- name: 北美地区 V2CROSS.COM
+  type: trojan
+  server: 198.62.62.23
+  port: 443
+  password: humanity
+  sni: www.calmlunch.com
 - name: 荷兰丨yoyapai.comr
   type: trojan
   server: 188.164.248.122
@@ -71,19 +71,46 @@ proxies:
   password: 9c521e24-7326-acd3-acec-d0afac2b465d
   sni: red-cell-47f9.milaniomilan9.workers.dev
   skip-cert-verify: true
-- name: JP日本(mibei77.com 米贝节点分享)
-  type: vmess
-  server: 104.17.77.77
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: '0'
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-  tls: true
+- name: NL荷兰(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 188.164.248.122
+  port: 443
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
+  sni: space.byu.id.yxls.eu.cc
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.16.174.37
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 165.215.250.14
+  port: 443
+  password: humanity
+  sni: www.creationlong.org
+  skip-cert-verify: true
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 165.215.250.14
+  port: 443
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 165.215.250.14
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+- name: 美國丨yoyapai.comr
+  type: trojan
+  server: www.ignitelimit.com
+  port: 443
+  password: humanity
+  skip-cert-verify: true
 - name: NL荷蘭丨yoyapai.comr
   type: trojan
   server: 91.221.190.80
@@ -140,36 +167,26 @@ proxies:
   password: Mitivpn
   sni: ssl.fastly.com
   skip-cert-verify: true
-- name: 美國丨yoyapai.comr
-  type: trojan
-  server: www.ignitelimit.com
-  port: 443
-  password: humanity
-  skip-cert-verify: true
-- name: _HK_中国香港
-  type: ss
-  server: 8.210.171.48
-  port: 443
-  cipher: aes-256-gcm
-  password: a172cf0d-ae89-42f3-8505-0c51dae293a1
-- name: _HK_中国香港
-  type: vmess
-  server: 47.244.120.197
-  port: 44867
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /arki?ed=2048
-    headers:
-      Host: 47.244.120.197
 - name: _HK_中国香港
   type: vmess
   server: 47.76.127.88
   port: 5566
   uuid: 44712929-c2b7-4fa4-93bd-9de332a78c8c
   alterId: 0
+  cipher: auto
+- name: _HK_中国香港
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+- name: _HK_中国香港
+  type: vmess
+  server: v10.zgtfqs.click
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
   cipher: auto
 - name: 香港ripaojiedian
   type: vmess
@@ -178,18 +195,26 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: '2'
   cipher: auto
-- name: _HK_中国香港
+- name: _CN_中国-_US_美国
   type: vmess
-  server: imghk302.igcaches.com
-  port: 18243
-  uuid: f8eca8df-a1a5-4918-a194-d34112a3673f
+  server: v4.hdacd.com
+  port: 30804
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
+  cipher: auto
+- name: 俄羅斯
+  type: vmess
+  server: renderer-stream-1-411.mirra.now
+  port: 443
+  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+  alterId: 0
   cipher: auto
   network: ws
   ws-opts:
-    path: /
+    path: /api/v1/gpu-stream/socket
     headers:
-      Host: imghk302.igcaches.com
+      Host: renderer-stream-1-411.mirra.now
+  tls: true
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -197,8 +222,8 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 负载均衡
   - DIRECT
-  - 荷兰 V2CROSS.COM
-  - 美国 V2CROSS.COM
+  - 美国 CloudFlare节点
+  - 北美地区 V2CROSS.COM
   - 荷兰丨yoyapai.comr
   - 英國
   - 美國節點
@@ -206,7 +231,12 @@ proxy-groups:
   - 巴西聖保羅丨yoyapai.comr
   - 法國節點
   - 美國CloudFlare节点丨yoyapai.comr
-  - JP日本(mibei77.com 米贝节点分享)
+  - NL荷兰(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - 美國丨yoyapai.comr
   - NL荷蘭丨yoyapai.comr
   - 意大利節點IT丨yoyapai.comr
   - 荷蘭節點丨yoyapai.comr
@@ -215,19 +245,19 @@ proxy-groups:
   - US美國丨yoyapai.comr
   - KR韓國丨yoyapai.comr
   - 美國丨yoyapai.comr
-  - 美國丨yoyapai.comr
   - _HK_中国香港
   - _HK_中国香港
   - _HK_中国香港
   - 香港ripaojiedian
-  - _HK_中国香港
+  - _CN_中国-_US_美国
+  - 俄羅斯
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: &id001
-  - 荷兰 V2CROSS.COM
-  - 美国 V2CROSS.COM
+  - 美国 CloudFlare节点
+  - 北美地区 V2CROSS.COM
   - 荷兰丨yoyapai.comr
   - 英國
   - 美國節點
@@ -235,7 +265,12 @@ proxy-groups:
   - 巴西聖保羅丨yoyapai.comr
   - 法國節點
   - 美國CloudFlare节点丨yoyapai.comr
-  - JP日本(mibei77.com 米贝节点分享)
+  - NL荷兰(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - 美國丨yoyapai.comr
   - NL荷蘭丨yoyapai.comr
   - 意大利節點IT丨yoyapai.comr
   - 荷蘭節點丨yoyapai.comr
@@ -244,12 +279,12 @@ proxy-groups:
   - US美國丨yoyapai.comr
   - KR韓國丨yoyapai.comr
   - 美國丨yoyapai.comr
-  - 美國丨yoyapai.comr
   - _HK_中国香港
   - _HK_中国香港
   - _HK_中国香港
   - 香港ripaojiedian
-  - _HK_中国香港
+  - _CN_中国-_US_美国
+  - 俄羅斯
 - name: 🔮 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
