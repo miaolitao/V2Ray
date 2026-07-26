@@ -18,6 +18,48 @@
   ],
   "outbounds": [
     {
+      "tag": "荷兰 V2CROSS.COM",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "188.164.248.122",
+            "port": 443,
+            "password": "c206d543-023d-46cc-9d5a-1f0f2fc16323"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "space.byu.id.yxls.eu.cc",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "美国 CloudFlare节点",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.18.16.56",
+            "port": 443,
+            "password": "VPNCUSTOMIZE"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ww.gameserver.de5.net",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
       "tag": "荷兰丨yoyapai.comr",
       "protocol": "trojan",
       "settings": {
@@ -36,72 +78,6 @@
           "serverName": "space.byu.id.yxls.eu.cc",
           "allowInsecure": true
         }
-      }
-    },
-    {
-      "tag": "英國",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "82.198.246.37",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "美國節點",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "82.198.246.97",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "英國節點",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "82.198.246.250",
-            "port": 180,
-            "users": [
-              {
-                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
       }
     },
     {
@@ -180,28 +156,7 @@
       "settings": {
         "servers": [
           {
-            "address": "188.164.248.122",
-            "port": 443,
-            "password": "c206d543-023d-46cc-9d5a-1f0f2fc16323"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "space.byu.id.yxls.eu.cc",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "US美国(mibei77.com 米贝节点分享)",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.16.174.71",
+            "address": "104.16.174.37",
             "port": 443,
             "password": "humanity"
           }
@@ -212,7 +167,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.ignitelimit.com",
-          "allowInsecure": false
+          "allowInsecure": true
         }
       }
     },
@@ -222,7 +177,28 @@
       "settings": {
         "servers": [
           {
-            "address": "198.62.62.23",
+            "address": "165.215.250.14",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.creationlong.org",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "165.215.250.14",
             "port": 443,
             "password": "humanity"
           }
@@ -233,7 +209,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.calmlunch.com",
-          "allowInsecure": false
+          "allowInsecure": true
         }
       }
     },
@@ -243,7 +219,7 @@
       "settings": {
         "servers": [
           {
-            "address": "104.18.152.143",
+            "address": "165.215.250.14",
             "port": 443,
             "password": "humanity"
           }
@@ -254,21 +230,21 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.ignitelimit.com",
-          "allowInsecure": false
+          "allowInsecure": true
         }
       }
     },
     {
-      "tag": "_US_美国",
+      "tag": "英國",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "guanwang.awsno.com",
-            "port": 443,
+            "address": "82.198.246.37",
+            "port": 180,
             "users": [
               {
-                "id": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -277,12 +253,29 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "",
-          "allowInsecure": false
-        }
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "美國節點",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "82.198.246.97",
+            "port": 180,
+            "users": [
+              {
+                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
       }
     },
     {
@@ -302,6 +295,70 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "Koma-YT.PAGeS.Dev",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "亞太地區丨yoyapai.comr",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "103.45.245.208",
+            "port": 2053,
+            "password": "rYuChHcwQZskq9E0zdoR"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vpn5.rnmcnm.com",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "英國節點",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "82.198.246.250",
+            "port": 180,
+            "users": [
+              {
+                "id": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "美國丨yoyapai.comr",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "167.82.101.251",
+            "port": 443,
+            "password": "Mitivpn"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ssl.fastly.com",
           "allowInsecure": true
         }
       }
@@ -344,27 +401,6 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "Koma-YT.PAGeS.Dev",
-          "allowInsecure": true
-        }
-      }
-    },
-    {
-      "tag": "亞太地區丨yoyapai.comr",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "103.45.245.208",
-            "port": 2053,
-            "password": "rYuChHcwQZskq9E0zdoR"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "vpn5.rnmcnm.com",
           "allowInsecure": true
         }
       }
@@ -438,27 +474,6 @@
       "settings": {
         "servers": [
           {
-            "address": "167.82.101.251",
-            "port": 443,
-            "password": "Mitivpn"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ssl.fastly.com",
-          "allowInsecure": true
-        }
-      }
-    },
-    {
-      "tag": "美國丨yoyapai.comr",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
             "address": "www.ignitelimit.com",
             "port": 443,
             "password": "humanity"
@@ -471,48 +486,6 @@
         "tlsSettings": {
           "serverName": "",
           "allowInsecure": true
-        }
-      }
-    },
-    {
-      "tag": "_NL_荷兰",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.15",
-            "port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
-          }
-        ]
-      }
-    },
-    {
-      "tag": "_HK_中国香港",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "47.244.120.197",
-            "port": 44867,
-            "users": [
-              {
-                "id": "845e6b08-2919-4290-ade0-5dc7dcea59ca",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/arki?ed=2048",
-          "headers": {
-            "Host": "47.244.120.197"
-          }
         }
       }
     },
@@ -539,166 +512,31 @@
       }
     },
     {
-      "tag": "香港ripaojiedian",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "v10.hdacd.com",
-            "port": 30807,
-            "users": [
-              {
-                "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-                "alterId": "2",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "US美国(mibei77.com 米贝节点分享)",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "lt.badns.help",
-            "port": 51360,
-            "users": [
-              {
-                "id": "85ad21e1-c2cd-3407-aa90-815f3f3ea636",
-                "alterId": "0",
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "FR法国(mibei77.com 米贝节点分享)",
-      "protocol": "trojan",
+      "tag": "_HK_中国香港",
+      "protocol": "shadowsocks",
       "settings": {
         "servers": [
           {
-            "address": "moral-dolphin.rooster465.autos",
-            "port": 443,
-            "password": "UZ15382649"
+            "address": "103.149.182.79",
+            "port": 8388,
+            "method": "chacha20-ietf",
+            "password": "asd123456"
           }
         ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "moral-dolphin.rooster465.autos",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "_AU_澳大利亚",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "evident-gnat.rooster465.autos",
-            "port": 443,
-            "password": "JA96378052"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "",
-          "allowInsecure": true
-        }
       }
     },
     {
       "tag": "_HK_中国香港",
-      "protocol": "vmess",
+      "protocol": "shadowsocks",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "n1747624274.4u9ma.icu",
+            "address": "8.210.171.48",
             "port": 443,
-            "users": [
-              {
-                "id": "d8daf507-a4ac-4eea-8399-8f0cd071eb52",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
+            "method": "aes-256-gcm",
+            "password": "a172cf0d-ae89-42f3-8505-0c51dae293a1"
           }
         ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "n1747624274.4u9ma.icu"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "_CN_中国-_FR_法国",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "v35.hdacd.com",
-            "port": 30835,
-            "users": [
-              {
-                "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-                "alterId": 2,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "tag": "_CN_中国-_HK_中国香港",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "v9.hdacd.com",
-            "port": 30809,
-            "users": [
-              {
-                "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-                "alterId": 2,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
       }
     },
     {
@@ -740,11 +578,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "n1747624260.4u9ma.icu",
+            "address": "n1747624274.4u9ma.icu",
             "port": 443,
             "users": [
               {
-                "id": "eee8cb72-7eab-4034-a308-ed06cb07e003",
+                "id": "d8daf507-a4ac-4eea-8399-8f0cd071eb52",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -757,7 +595,7 @@
         "wsSettings": {
           "path": "/",
           "headers": {
-            "Host": "n1747624260.4u9ma.icu"
+            "Host": "n1747624274.4u9ma.icu"
           }
         },
         "security": "tls",
@@ -765,6 +603,28 @@
           "serverName": "",
           "allowInsecure": false
         }
+      }
+    },
+    {
+      "tag": "_CN_中国-_HK_中国香港",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "v9.hdacd.com",
+            "port": 30809,
+            "users": [
+              {
+                "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+                "alterId": 2,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
       }
     }
   ],
