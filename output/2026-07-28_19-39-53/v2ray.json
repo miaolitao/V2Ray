@@ -18,33 +18,12 @@
   ],
   "outbounds": [
     {
-      "tag": "美国 CloudFlare节点",
+      "tag": "欧盟 V2CROSS.COM",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "104.26.14.137",
-            "port": 443,
-            "password": "humanity"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.ignitelimit.com",
-          "allowInsecure": false
-        }
-      }
-    },
-    {
-      "tag": "北美地区 V2CROSS.COM",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "198.62.62.23",
+            "address": "45.80.111.7",
             "port": 443,
             "password": "humanity"
           }
@@ -55,7 +34,49 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.calmlunch.com",
-          "allowInsecure": false
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "美国 CloudFlare节点",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "172.64.146.1",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.gossipglove.com",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "西班牙 V2CROSS.COM",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "185.18.250.245",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.calmlunch.com",
+          "allowInsecure": true
         }
       }
     },
@@ -217,7 +238,28 @@
       }
     },
     {
-      "tag": "NL荷兰(mibei77.com 米贝节点分享)",
+      "tag": "CA加拿大(mibei77.com 米贝节点分享)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "103.133.1.27",
+            "port": 443,
+            "password": "521314"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "hhtj.hhllfly.kdns.fr",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "菲律宾(mibei77.com 米贝节点分享)",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -238,12 +280,12 @@
       }
     },
     {
-      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "tag": "FR法国(mibei77.com 米贝节点分享)",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "104.16.174.37",
+            "address": "104.18.32.47",
             "port": 443,
             "password": "humanity"
           }
@@ -253,18 +295,18 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "www.ignitelimit.com",
+          "serverName": "www.gossipglove.com",
           "allowInsecure": true
         }
       }
     },
     {
-      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "tag": "FR法国(mibei77.com 米贝节点分享)",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "165.215.250.14",
+            "address": "104.19.229.21",
             "port": 443,
             "password": "humanity"
           }
@@ -274,13 +316,34 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "www.creationlong.org",
-          "allowInsecure": true
+          "serverName": "www.gossipglove.com",
+          "allowInsecure": false
         }
       }
     },
     {
       "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "155.46.167.27",
+            "port": 443,
+            "password": "521314"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "hhtj.hhllfly.kdns.fr",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "GB英国(mibei77.com 米贝节点分享)",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -322,6 +385,69 @@
       }
     },
     {
+      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "165.215.250.14",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.creationlong.org",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "US美国(mibei77.com 米贝节点分享)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.19.229.21",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.multiplydose.com",
+          "allowInsecure": false
+        }
+      }
+    },
+    {
+      "tag": "RU俄罗斯(mibei77.com 米贝节点分享)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "176.124.223.27",
+            "port": 443,
+            "password": "521314"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "hhtj.hhllfly.kdns.fr",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
       "tag": "美國丨yoyapai.comr",
       "protocol": "trojan",
       "settings": {
@@ -343,14 +469,14 @@
       }
     },
     {
-      "tag": "NL荷蘭丨yoyapai.comr",
+      "tag": "新加坡ripaojiedian",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "91.221.190.80",
-            "port": 443,
-            "password": "8r%3C%5B9%27l6hAO%238ZQi"
+            "address": "18.163.180.201",
+            "port": 6357,
+            "password": "d1960ba9f0f6353353994fa844cf817b"
           }
         ]
       },
@@ -358,8 +484,29 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "Koma-YT.PAGeS.Dev",
+          "serverName": "www.nintendogames.net",
           "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "新加坡2ripaojiedian",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "18.163.180.201",
+            "port": 48738,
+            "password": "d1960ba9f0f6353353994fa844cf817b"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.nintendogames.net",
+          "allowInsecure": false
         }
       }
     },
@@ -511,25 +658,24 @@
       }
     },
     {
-      "tag": "_HK_中国香港",
-      "protocol": "vmess",
+      "tag": "_SG_新加坡",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "47.76.127.88",
-            "port": 5566,
-            "users": [
-              {
-                "id": "44712929-c2b7-4fa4-93bd-9de332a78c8c",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
+            "address": "apt-midge.rooster465.autos",
+            "port": 443,
+            "password": "IQ68037294"
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp"
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": true
+        }
       }
     },
     {
@@ -555,25 +701,227 @@
       }
     },
     {
-      "tag": "_HK_中国香港",
-      "protocol": "vmess",
+      "tag": "_SG_新加坡",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "v10.zgtfqs.click",
-            "port": 30807,
-            "users": [
-              {
-                "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-                "alterId": 2,
-                "security": "auto"
-              }
-            ]
+            "address": "meet-doe.rooster465.autos",
+            "port": 443,
+            "password": "IQ68037294"
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp"
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "meet-doe.rooster465.autos",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "_SG_新加坡",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "endless-kiwi.rooster465.autos",
+            "port": 443,
+            "password": "IQ68037294"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "_HK_中国香港-_TH_泰国",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "oplosgru-c.catcat321.com",
+            "port": 20023,
+            "password": "ba07a8af-5544-48ac-ab62-3b6c00a44fa6"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "hk.catxstar.com",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "_UA_乌克兰",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "194.54.80.37",
+            "port": 1080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "XF0klw7870vXn3uQIxe19Q"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "_HK_中国香港-_JP_日本",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "oplosgru-c.catcat321.com",
+            "port": 20004,
+            "password": "ba07a8af-5544-48ac-ab62-3b6c00a44fa6"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "hk.catxstar.com",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "_HK_中国香港-_DE_德国",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "Hkdcrtc-e.catcat321.com",
+            "port": 20041,
+            "password": "ba07a8af-5544-48ac-ab62-3b6c00a44fa6"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "de.catxstar.com",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "_HK_中国香港-_NO_挪威",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "Hkdcrtc-e.catcat321.com",
+            "port": 20085,
+            "password": "ba07a8af-5544-48ac-ab62-3b6c00a44fa6"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "hk.catxstar.com",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "_SG_新加坡",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "helpful-possum.rooster465.autos",
+            "port": 443,
+            "password": "FC60532879"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "helpful-possum.rooster465.autos",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "_SG_新加坡",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "45.135.228.169",
+            "port": 443,
+            "password": "IQ68037294"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "fun-salmon.rooster465.autos",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "_HK_中国香港-_UA_乌克兰",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "hkdcrtc-e.catcat321.com",
+            "port": 20066,
+            "password": "ba07a8af-5544-48ac-ab62-3b6c00a44fa6"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "",
+          "allowInsecure": true
+        }
+      }
+    },
+    {
+      "tag": "_HK_中国香港-_JP_日本",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "Hkdcrtc-e.catcat321.com",
+            "port": 20129,
+            "password": "ba07a8af-5544-48ac-ab62-3b6c00a44fa6"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "hk.catxstar.com",
+          "allowInsecure": true
+        }
       }
     },
     {
@@ -599,25 +947,24 @@
       }
     },
     {
-      "tag": "_CN_中国-_US_美国",
-      "protocol": "vmess",
+      "tag": "_SG_新加坡",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "v4.hdacd.com",
-            "port": 30804,
-            "users": [
-              {
-                "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-                "alterId": 2,
-                "security": "auto"
-              }
-            ]
+            "address": "fun-salmon.rooster465.autos",
+            "port": 443,
+            "password": "IQ68037294"
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp"
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "fun-salmon.rooster465.autos",
+          "allowInsecure": true
+        }
       }
     },
     {
@@ -651,6 +998,28 @@
           "serverName": "",
           "allowInsecure": false
         }
+      }
+    },
+    {
+      "tag": "_CN_中国-_HK_中国香港",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "v9.hdacd.com",
+            "port": 30809,
+            "users": [
+              {
+                "id": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+                "alterId": 2,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
       }
     }
   ],
