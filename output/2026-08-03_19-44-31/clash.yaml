@@ -5,26 +5,36 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 新加坡3ripaojiedian
+- name: 美国 CloudFlare节点
   type: trojan
-  server: 43.198.98.22
-  port: 45744
-  password: BxceQaOe
-  sni: t.me%252Fripaojiedian
-  skip-cert-verify: true
-- name: 美国3ripaojiedian
+  server: 198.41.223.96
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国 CloudFlare节点
   type: trojan
-  server: 43.198.98.22
-  port: 35966
-  password: BxceQaOe
-  sni: t.me%2Fripaojiedian
-  skip-cert-verify: true
-- name: _HK_中国香港-_DE_德国
+  server: 104.18.152.97
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)
   type: trojan
-  server: Hkdcrtc-e.catcat321.com
-  port: 20041
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  sni: de.catxstar.com
+  server: 104.16.148.5
+  port: 443
+  password: 19877587-ed94-4033-88cd-4ac50a5e8718
+  sni: dimskiee.biz.id
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: blackshadow.dpdns.org
+  port: 443
+  password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  sni: support.zoom.us.blackshadow.dpdns.org
+- name: _NL_荷兰
+  type: trojan
+  server: 45.130.22.70
+  port: 32914
+  password: 1BARPLkaLl
+  sni: 45.130.22.70
   skip-cert-verify: true
 - name: _HK_中国香港-_DE_德国
   type: trojan
@@ -33,20 +43,12 @@ proxies:
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   sni: de.catxstar.com
   skip-cert-verify: true
-- name: _HK_中国香港
-  type: vmess
-  server: 47.86.167.194
-  port: 800
-  uuid: f2c67cae-c09d-4739-947d-f5302d87a3c0
-  alterId: 0
-  cipher: auto
-- name: 伊朗 V2CROSS.COM
-  type: vmess
-  server: tun1.wizardx1.com
-  port: 2078
-  uuid: 8c207682-e007-4a0d-88a3-68b8638b3d10
-  alterId: '0'
-  cipher: auto
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: oplosgru-c.catcat321.com
+  port: 20004
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: hk.catxstar.com
 - name: 香港ripaojiedian
   type: vmess
   server: v10.hdacd.com
@@ -54,30 +56,16 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: '2'
   cipher: auto
-- name: _HK_中国香港-_IN_印度
-  type: trojan
-  server: oplosgru-c.catcat321.com
-  port: 20035
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  sni: hk.catxstar.com
-  skip-cert-verify: true
-- name: _HK_中国香港
+- name: _CN_中国-_HK_中国香港
   type: vmess
-  server: v10.hdacd.com
-  port: 30807
+  server: v9.hdacd.com
+  port: 30809
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
-- name: _HK_中国香港-_JP_日本
-  type: trojan
-  server: oplosgru-c.catcat321.com
-  port: 20004
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  sni: hk.catxstar.com
-  skip-cert-verify: true
 - name: _HK_中国香港
   type: vmess
-  server: ex1ogt73nzpqkac2.v.3dns.vip
+  server: m01c7b2z26dtqgee.v.3dns.vip
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
@@ -86,18 +74,11 @@ proxies:
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: ex1ogt73nzpqkac2.v.3dns.vip
+      Host: m01c7b2z26dtqgee.v.3dns.vip
   tls: true
-- name: _CN_中国-_US_美国
-  type: vmess
-  server: v24.hdacd.com
-  port: 30824
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
 - name: _HK_中国香港
   type: vmess
-  server: nycqg19zkwacpm1b.v.3dns.vip
+  server: vah4urdzl3jdx5r2.v.3dns.vip
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
@@ -106,7 +87,33 @@ proxies:
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: nycqg19zkwacpm1b.v.3dns.vip
+      Host: vah4urdzl3jdx5r2.v.3dns.vip
+  tls: true
+- name: _HK_中国香港
+  type: vmess
+  server: drbkg16egf3fzlm3.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: drbkg16egf3fzlm3.v.3dns.vip
+  tls: true
+- name: _HK_中国香港
+  type: vmess
+  server: n1747624274.4u9ma.icu
+  port: 443
+  uuid: d8daf507-a4ac-4eea-8399-8f0cd071eb52
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: n1747624274.4u9ma.icu
   tls: true
 proxy-groups:
 - name: 🚀 节点选择
@@ -115,36 +122,36 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 负载均衡
   - DIRECT
-  - 新加坡3ripaojiedian
-  - 美国3ripaojiedian
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点
+  - FR法国(mibei77.com 米贝节点分享)
+  - FR法国(mibei77.com 米贝节点分享)
+  - _NL_荷兰
   - _HK_中国香港-_DE_德国
-  - _HK_中国香港-_DE_德国
-  - _HK_中国香港
-  - 伊朗 V2CROSS.COM
+  - US美国(mibei77.com 米贝节点分享)
   - 香港ripaojiedian
-  - _HK_中国香港-_IN_印度
+  - _CN_中国-_HK_中国香港
   - _HK_中国香港
-  - _HK_中国香港-_JP_日本
   - _HK_中国香港
-  - _CN_中国-_US_美国
+  - _HK_中国香港
   - _HK_中国香港
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: &id001
-  - 新加坡3ripaojiedian
-  - 美国3ripaojiedian
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点
+  - FR法国(mibei77.com 米贝节点分享)
+  - FR法国(mibei77.com 米贝节点分享)
+  - _NL_荷兰
   - _HK_中国香港-_DE_德国
-  - _HK_中国香港-_DE_德国
-  - _HK_中国香港
-  - 伊朗 V2CROSS.COM
+  - US美国(mibei77.com 米贝节点分享)
   - 香港ripaojiedian
-  - _HK_中国香港-_IN_印度
+  - _CN_中国-_HK_中国香港
   - _HK_中国香港
-  - _HK_中国香港-_JP_日本
   - _HK_中国香港
-  - _CN_中国-_US_美国
+  - _HK_中国香港
   - _HK_中国香港
 - name: 🔮 负载均衡
   type: load-balance
