@@ -1,0 +1,448 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+proxies:
+- name: 美国 CloudFlare节点
+  type: trojan
+  server: 172.67.149.60
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 104.16.148.5
+  port: 443
+  password: 19877587-ed94-4033-88cd-4ac50a5e8718
+  sni: dimskiee.biz.id
+- name: 芬兰(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 185.223.169.157
+  port: 443
+  uuid: 5f72f180-b21b-4b7a-8484-240759012604
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /5f72f180-b21b-4b7a-8484-240759096785
+    headers:
+      Host: apjhdggyx.com
+  tls: true
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: blackshadow.dpdns.org
+  port: 443
+  password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  sni: support.zoom.us.blackshadow.dpdns.org
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: blackshadow.dpdns.org
+  port: 443
+  password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  sni: blackshadow.dpdns.org
+- name: 英国 Technicolor SA
+  type: trojan
+  server: oplosgru-c.catcat321.com
+  port: 20004
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: hk.catxstar.com
+- name: 芬兰(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 89.150.35.155
+  port: 443
+  uuid: 5f72f180-b21b-4b7a-8484-240759012604
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /5f72f180-b21b-4b7a-8484-240759096785
+    headers:
+      Host: apjhdggyx.com
+  tls: true
+- name: 芬兰(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 142.132.178.99
+  port: 443
+  uuid: 5f72f180-b21b-4b7a-8484-240759012604
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /5f72f180-b21b-4b7a-8484-240759096785
+    headers:
+      Host: apjhdggyx.com
+  tls: true
+- name: 芬兰(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 194.164.192.16
+  port: 443
+  uuid: 5f72f180-b21b-4b7a-8484-240759012604
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /5f72f180-b21b-4b7a-8484-240759096785
+    headers:
+      Host: apjhdggyx.com
+  tls: true
+- name: 芬兰(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 18.197.218.69
+  port: 443
+  uuid: 5f72f180-b21b-4b7a-8484-240759012604
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /5f72f180-b21b-4b7a-8484-240759096785
+    headers:
+      Host: apjhdggyx.com
+  tls: true
+- name: 芬兰(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 185.246.152.159
+  port: 443
+  uuid: 5f72f180-b21b-4b7a-8484-240759012604
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /5f72f180-b21b-4b7a-8484-240759096785
+    headers:
+      Host: apjhdggyx.com
+  tls: true
+- name: 芬兰(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 94.159.108.42
+  port: 443
+  uuid: 5f72f180-b21b-4b7a-8484-240759012604
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /5f72f180-b21b-4b7a-8484-240759096785
+    headers:
+      Host: apjhdggyx.com
+  tls: true
+- name: 芬兰(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 38.180.219.131
+  port: 443
+  uuid: 5f72f180-b21b-4b7a-8484-240759012604
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /5f72f180-b21b-4b7a-8484-240759096785
+    headers:
+      Host: apjhdggyx.com
+  tls: true
+- name: HK香港(mibei77.com 米贝节点分享)
+  type: vmess
+  server: 210.138.37.53
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: DrBKg16eGf3FZlM3.v.3dns.vip
+  tls: true
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: oplosgru-c.catcat321.com
+  port: 20066
+  password: 41c406e2-12b5-41f2-a329-d0621052d675
+  sni: hk.catxstar.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: oplosgru-c.catcat321.com
+  port: 20088
+  password: 41c406e2-12b5-41f2-a329-d0621052d675
+  sni: hk.catxstar.com
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: hkdcrtc-e.catcat321.com
+  port: 20129
+  password: 41c406e2-12b5-41f2-a329-d0621052d675
+  sni: hk.catxstar.com
+- name: _HK_中国香港-_DE_德国
+  type: trojan
+  server: hkdcrtc-e.catcat321.com
+  port: 20041
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: de.catxstar.com
+  skip-cert-verify: true
+- name: _US_美国
+  type: trojan
+  server: devoted-tapir.rooster465.autos
+  port: 443
+  password: ND91608427
+  sni: devoted-tapir.rooster465.autos
+  skip-cert-verify: true
+- name: US美国(mibei77.com 米贝节点分享)
+  type: trojan
+  server: cf.0sm.com
+  port: 443
+  password: 87961f9d-bee1-4377-826b-e169e7891c4f
+  sni: yks-dd9.pages.dev
+- name: _FR_法国
+  type: trojan
+  server: careful-tadpole.rooster465.autos
+  port: 443
+  password: ND91608427
+  skip-cert-verify: true
+- name: _DE_德国
+  type: trojan
+  server: next-turkey.rooster465.autos
+  port: 443
+  password: ND91608427
+  sni: next-turkey.rooster465.autos
+  skip-cert-verify: true
+- name: 美国 Microsoft数据中心
+  type: vmess
+  server: cindy52.ceoiii.com
+  port: 36803
+  uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
+  alterId: '0'
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: ajax.microsoft.com
+- name: 香港ripaojiedian
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: '2'
+  cipher: auto
+- name: _HK_中国香港
+  type: ss
+  server: 260323.1.0.l3.unclemanco.com
+  port: 9022
+  cipher: aes-128-gcm
+  password: QHPy2u
+- name: _FR_法国
+  type: trojan
+  server: classic-gator.rooster465.autos
+  port: 443
+  password: ND91608427
+  sni: classic-gator.rooster465.autos
+  skip-cert-verify: true
+- name: _HK_中国香港
+  type: trojan
+  server: ace-starling.rooster465.autos
+  port: 443
+  password: ND91608427
+  sni: ace-starling.rooster465.autos
+  skip-cert-verify: true
+- name: _DE_德国
+  type: trojan
+  server: gentle-raptor.rooster465.autos
+  port: 443
+  password: ND91608427
+  sni: gentle-raptor.rooster465.autos
+  skip-cert-verify: true
+- name: _US_美国
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+- name: _HK_中国香港
+  type: ss
+  server: 260323.1.0.l3.unclemanco.com
+  port: 9052
+  cipher: aes-128-gcm
+  password: ayucloud1
+- name: _US_美国
+  type: trojan
+  server: fleet-bonefish.rooster465.autos
+  port: 443
+  password: ND91608427
+  sni: fleet-bonefish.rooster465.autos
+  skip-cert-verify: true
+- name: _HK_中国香港-_US_美国
+  type: ss
+  server: 260323.1.0.l3.unclemanco.com
+  port: 906
+  cipher: aes-128-gcm
+  password: ay2loud1
+- name: _HK_中国香港
+  type: ss
+  server: 260323.1.0.l3.unclemanco.com
+  port: 20012
+  cipher: aes-128-gcm
+  password: QHPy2u
+- name: _HK_中国香港
+  type: trojan
+  server: upright-hamster.rooster465.autos
+  port: 443
+  password: ND91608427
+  sni: upright-hamster.rooster465.autos
+  skip-cert-verify: true
+- name: _CN_中国-_US_美国
+  type: vmess
+  server: v24.hdacd.com
+  port: 30824
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+- name: _JP_日本-_FR_法国
+  type: vmess
+  server: v35.hdacd.com
+  port: 30835
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+- name: _DE_德国
+  type: trojan
+  server: rapid-firefly.rooster465.autos
+  port: 443
+  password: ND91608427
+  sni: rapid-firefly.rooster465.autos
+  skip-cert-verify: true
+- name: _HK_中国香港
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+proxy-groups:
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - 🔮 负载均衡
+  - DIRECT
+  - 美国 CloudFlare节点
+  - FR法国(mibei77.com 米贝节点分享)
+  - 芬兰(mibei77.com 米贝节点分享)
+  - FR法国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - 英国 Technicolor SA
+  - 芬兰(mibei77.com 米贝节点分享)
+  - 芬兰(mibei77.com 米贝节点分享)
+  - 芬兰(mibei77.com 米贝节点分享)
+  - 芬兰(mibei77.com 米贝节点分享)
+  - 芬兰(mibei77.com 米贝节点分享)
+  - 芬兰(mibei77.com 米贝节点分享)
+  - 芬兰(mibei77.com 米贝节点分享)
+  - HK香港(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - _HK_中国香港-_DE_德国
+  - _US_美国
+  - US美国(mibei77.com 米贝节点分享)
+  - _FR_法国
+  - _DE_德国
+  - 美国 Microsoft数据中心
+  - 香港ripaojiedian
+  - _HK_中国香港
+  - _FR_法国
+  - _HK_中国香港
+  - _DE_德国
+  - _US_美国
+  - _HK_中国香港
+  - _US_美国
+  - _HK_中国香港-_US_美国
+  - _HK_中国香港
+  - _HK_中国香港
+  - _CN_中国-_US_美国
+  - _JP_日本-_FR_法国
+  - _DE_德国
+  - _HK_中国香港
+- name: ♻️ 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies: &id001
+  - 美国 CloudFlare节点
+  - FR法国(mibei77.com 米贝节点分享)
+  - 芬兰(mibei77.com 米贝节点分享)
+  - FR法国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - 英国 Technicolor SA
+  - 芬兰(mibei77.com 米贝节点分享)
+  - 芬兰(mibei77.com 米贝节点分享)
+  - 芬兰(mibei77.com 米贝节点分享)
+  - 芬兰(mibei77.com 米贝节点分享)
+  - 芬兰(mibei77.com 米贝节点分享)
+  - 芬兰(mibei77.com 米贝节点分享)
+  - 芬兰(mibei77.com 米贝节点分享)
+  - HK香港(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)
+  - _HK_中国香港-_DE_德国
+  - _US_美国
+  - US美国(mibei77.com 米贝节点分享)
+  - _FR_法国
+  - _DE_德国
+  - 美国 Microsoft数据中心
+  - 香港ripaojiedian
+  - _HK_中国香港
+  - _FR_法国
+  - _HK_中国香港
+  - _DE_德国
+  - _US_美国
+  - _HK_中国香港
+  - _US_美国
+  - _HK_中国香港-_US_美国
+  - _HK_中国香港
+  - _HK_中国香港
+  - _CN_中国-_US_美国
+  - _JP_日本-_FR_法国
+  - _DE_德国
+  - _HK_中国香港
+- name: 🔮 负载均衡
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies: *id001
+- name: 🎯 全球直连
+  type: select
+  proxies:
+  - DIRECT
+- name: 🛑 全球拦截
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 🐟 漏网之鱼
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - ♻️ 自动选择
+rules:
+- DOMAIN-SUFFIX,local,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,172.16.0.0/12,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT
+- IP-CIDR,10.0.0.0/8,DIRECT
+- IP-CIDR,17.0.0.0/8,DIRECT
+- IP-CIDR,100.64.0.0/10,DIRECT
+- DOMAIN-SUFFIX,google.com,🚀 节点选择
+- DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
+- DOMAIN-SUFFIX,googleusercontent.com,🚀 节点选择
+- DOMAIN-SUFFIX,youtube.com,🚀 节点选择
+- DOMAIN-SUFFIX,ytimg.com,🚀 节点选择
+- DOMAIN-SUFFIX,twitter.com,🚀 节点选择
+- DOMAIN-SUFFIX,facebook.com,🚀 节点选择
+- DOMAIN-SUFFIX,instagram.com,🚀 节点选择
+- DOMAIN-SUFFIX,telegram.org,🚀 节点选择
+- DOMAIN-SUFFIX,github.com,🚀 节点选择
+- DOMAIN-SUFFIX,githubusercontent.com,🚀 节点选择
+- GEOIP,CN,🎯 全球直连
+- MATCH,🐟 漏网之鱼
