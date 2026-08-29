@@ -1,0 +1,254 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+proxies:
+- name: 美国 CloudFlare节点
+  type: trojan
+  server: 104.18.23.63
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国 CloudFlare节点
+  type: trojan
+  server: 104.18.152.155
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国 CloudFlare节点
+  type: trojan
+  server: 104.18.22.63
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国 加州
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 加拿大 V2CROSS.COM
+  type: trojan
+  server: 130.250.137.171
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国 CloudFlare节点
+  type: trojan
+  server: 104.18.152.149
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国 CloudFlare节点
+  type: trojan
+  server: 104.18.152.233
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国 CloudFlare节点
+  type: trojan
+  server: 104.18.152.210
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国 CloudFlare节点
+  type: trojan
+  server: 104.16.7.70
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国 CloudFlare节点
+  type: trojan
+  server: 104.16.174.33
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国 CloudFlare节点
+  type: trojan
+  server: 104.16.174.6
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国 CloudFlare节点
+  type: trojan
+  server: 104.16.174.22
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国 CloudFlare节点
+  type: trojan
+  server: 172.67.221.242
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国 CloudFlare节点
+  type: trojan
+  server: 104.18.152.179
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: _US_美国
+  type: vmess
+  server: 192.227.247.27
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+- name: 美国 CloudFlare节点
+  type: trojan
+  server: www.ignitelimit.com
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 美国 加州
+  type: trojan
+  server: render.com
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+- name: _CN_中国-_US_美国
+  type: ss
+  server: 121.46.230.233
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: _CN_中国-_US_美国
+  type: ss
+  server: 121.46.230.232
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: _TH_泰国
+  type: ss
+  server: 103.169.67.34
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: 香港ripaojiedian
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: '2'
+  cipher: auto
+- name: _CN_中国-_US_美国
+  type: vmess
+  server: v4.hdacd.com
+  port: 30804
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+- name: _HK_中国香港
+  type: vmess
+  server: t.cnmjcn.cyou
+  port: 16632
+  uuid: 62319519-82bc-46ff-99cd-237bd0882cef
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 1b24b66c02c843942070b76b27406898.mobgslb.tbcache.com
+proxy-groups:
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - 🔮 负载均衡
+  - DIRECT
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点
+  - 美国 加州
+  - 加拿大 V2CROSS.COM
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点
+  - _US_美国
+  - 美国 CloudFlare节点
+  - 美国 加州
+  - _CN_中国-_US_美国
+  - _CN_中国-_US_美国
+  - _TH_泰国
+  - 香港ripaojiedian
+  - _CN_中国-_US_美国
+  - _HK_中国香港
+- name: ♻️ 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies: &id001
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点
+  - 美国 加州
+  - 加拿大 V2CROSS.COM
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点
+  - 美国 CloudFlare节点
+  - _US_美国
+  - 美国 CloudFlare节点
+  - 美国 加州
+  - _CN_中国-_US_美国
+  - _CN_中国-_US_美国
+  - _TH_泰国
+  - 香港ripaojiedian
+  - _CN_中国-_US_美国
+  - _HK_中国香港
+- name: 🔮 负载均衡
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies: *id001
+- name: 🎯 全球直连
+  type: select
+  proxies:
+  - DIRECT
+- name: 🛑 全球拦截
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 🐟 漏网之鱼
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - ♻️ 自动选择
+rules:
+- DOMAIN-SUFFIX,local,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,172.16.0.0/12,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT
+- IP-CIDR,10.0.0.0/8,DIRECT
+- IP-CIDR,17.0.0.0/8,DIRECT
+- IP-CIDR,100.64.0.0/10,DIRECT
+- DOMAIN-SUFFIX,google.com,🚀 节点选择
+- DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
+- DOMAIN-SUFFIX,googleusercontent.com,🚀 节点选择
+- DOMAIN-SUFFIX,youtube.com,🚀 节点选择
+- DOMAIN-SUFFIX,ytimg.com,🚀 节点选择
+- DOMAIN-SUFFIX,twitter.com,🚀 节点选择
+- DOMAIN-SUFFIX,facebook.com,🚀 节点选择
+- DOMAIN-SUFFIX,instagram.com,🚀 节点选择
+- DOMAIN-SUFFIX,telegram.org,🚀 节点选择
+- DOMAIN-SUFFIX,github.com,🚀 节点选择
+- DOMAIN-SUFFIX,githubusercontent.com,🚀 节点选择
+- GEOIP,CN,🎯 全球直连
+- MATCH,🐟 漏网之鱼
